@@ -1,0 +1,45 @@
+{
+  "benchmark": "adversarial_memory_corpus",
+  "version": "0.1",
+  "generated_at": "2026-09-03",
+  "experiments": {
+    "05": {
+      "story": "meridian_bay",
+      "title": "Contested Reality",
+      "memories": 202,
+      "queries": 153,
+      "claims": 25,
+      "directory": "experiment_05_contested_reality"
+    }
+  },
+  "total_memories": 202,
+  "total_queries": 153,
+  "blind_run_recommendation": {
+    "strip_fields": [
+      "_oracle"
+    ],
+    "optionally_strip": [
+      "subject_entity_id",
+      "truth_role",
+      "scope"
+    ],
+    "preserve": [
+      "event_time",
+      "observation_time",
+      "ingestion_time",
+      "text",
+      "source_id",
+      "source_type"
+    ]
+  },
+  "stage_status": {
+    "stage_1_candidate_selection": "complete",
+    "stage_2_story_bible": "complete",
+    "stage_3_experimental_map": "complete",
+    "stage_4_seed_corpus": "complete (superseded by stage 5 full corpus)",
+    "stage_5_full_expansion": "complete (202 memories; below the 350-700 preferred band, above the 200 floor)",
+    "stage_6_controlled_perturbations": "plan complete for all 7 types; materialized World-B variant files not yet generated for 5 of 7 (see experiment README Status)",
+    "stage_7_ground_truth_and_queries": "complete (153 queries)",
+    "stage_8_self_review": "complete"
+  }
+}
