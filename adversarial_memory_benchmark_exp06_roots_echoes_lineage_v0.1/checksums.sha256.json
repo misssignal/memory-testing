@@ -1,0 +1,21 @@
+{
+  "EXPERIMENT_MAP.md": "79474cad65ad05e014d1569ee4cc3a16c232fd1be5c3516719c6d0d90c7242e4",
+  "README.md": "069a36a6ee14e1da3fec5622a8d0d9e5d94e493f9660c3cc4f2ecfaf1a03d5ff",
+  "experiment_06_roots_echoes_evidence_lineage/README.md": "6ea2b9f43cef3d9ac77aa24ddf8f7fd00e462728f47a76eca25c30d13a9d3e30",
+  "experiment_06_roots_echoes_evidence_lineage/claim_lineage.json": "7a5063df64f9f716d31e2e509f0d964764045c63385ded89fda9d0bf5f203fb8",
+  "experiment_06_roots_echoes_evidence_lineage/ingestion_chronological.jsonl": "f43b4119f112218d289853b93530d9194b8171b35d3ff1e36cb5ec8fc99b1197",
+  "experiment_06_roots_echoes_evidence_lineage/ingestion_late_arrival.jsonl": "98b1e6d5ec0f49b88dae97b1d772ba187405fef336826bec84f3cca2f1b8a35a",
+  "experiment_06_roots_echoes_evidence_lineage/ingestion_shuffled.jsonl": "f473f0262c562e2199b5d951403676320203956178a722db849e4771f1dc75c8",
+  "experiment_06_roots_echoes_evidence_lineage/memories.jsonl": "1e887f82b8d79253e7e989f0760051ead92ce56df789e8ef773cc76912699f46",
+  "experiment_06_roots_echoes_evidence_lineage/perturbations/perturbation_plan.json": "9fc68d8a01c02e77eeb3744adada669e0d1dd3fda9321123f5482fe375f47b38",
+  "experiment_06_roots_echoes_evidence_lineage/provenance.json": "2064b10c5eb4915b62b566f53d249c7a4b8d54d3703f54a78a9cc74343a2b0e3",
+  "experiment_06_roots_echoes_evidence_lineage/provenance_bible.md": "de60cb8df459cac4c5e945927329d36f6e711193d8b3128a3745055b47388cc5",
+  "experiment_06_roots_echoes_evidence_lineage/provenance_graph.json": "5ed054663c8b7fd786c4ee26179a2e1f9fdc4e98e4d4c38958abe1602de826c5",
+  "experiment_06_roots_echoes_evidence_lineage/queries.jsonl": "e7bc03b5a15cb6d7aad1087513071bed725f38a5af9bf70d423f75b274f37043",
+  "experiment_06_roots_echoes_evidence_lineage/self_review.md": "4f1064d8ee305144a9f878f47cee689b85af4562390dcabc03908ece2fddc88c",
+  "experiment_06_roots_echoes_evidence_lineage/sources.md": "6797d0d73b5c802ea58c774b1ba669d8486a048946f7f05ede3d616858a0b6f7",
+  "experiment_06_roots_echoes_evidence_lineage/story_bible.md": "a95e0b70cdb7af8bc8af932e6c5648658728013102e418d770a5e82ca3062511",
+  "experiment_06_roots_echoes_evidence_lineage/truth_state.json": "f420109694ee0c81eb7d8739dedebfbb875d2122782df7515853c587f366e02a",
+  "manifest.json": "e29b25fa349562cac3c626c99a40b5f365ba8ea7480e887cd26f089071b8a5ef",
+  "schema.json": "d13df7c1b9b781fdb1113562dbbff0693f01bead9715a7a252ef194f33517425"
+}

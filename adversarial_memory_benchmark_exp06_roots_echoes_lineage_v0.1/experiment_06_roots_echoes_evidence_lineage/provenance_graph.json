@@ -1,0 +1,7662 @@
+{
+  "experiment": "06",
+  "nodes": [
+    {
+      "node_id": "e06m_0001",
+      "node_type": "evidence_root",
+      "family": "06.1",
+      "fact_id": "F06-001",
+      "claims": [
+        "e06c_0001"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0001"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0002",
+      "node_type": "primary_observation",
+      "family": "06.1",
+      "fact_id": "F06-001",
+      "claims": [
+        "e06c_0002"
+      ],
+      "derived_from": [
+        "e06m_0001"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0001"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0003",
+      "node_type": "interpretation",
+      "family": "06.1",
+      "fact_id": "F06-001",
+      "claims": [
+        "e06c_0003"
+      ],
+      "derived_from": [
+        "e06m_0002"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0001"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0004",
+      "node_type": "derived_summary",
+      "family": "06.1",
+      "fact_id": "F06-001",
+      "claims": [
+        "e06c_0004"
+      ],
+      "derived_from": [
+        "e06m_0003"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0001"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0005",
+      "node_type": "transformed_claim",
+      "family": "06.1",
+      "fact_id": "F06-001",
+      "claims": [
+        "e06c_0005"
+      ],
+      "derived_from": [
+        "e06m_0004"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0001"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0006",
+      "node_type": "copied_claim",
+      "family": "06.1",
+      "fact_id": "F06-001",
+      "claims": [
+        "e06c_0006"
+      ],
+      "derived_from": [
+        "e06m_0005"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0001"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0007",
+      "node_type": "evidence_root",
+      "family": "06.1",
+      "fact_id": "F06-002",
+      "claims": [
+        "e06c_0007"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0007"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0008",
+      "node_type": "primary_observation",
+      "family": "06.1",
+      "fact_id": "F06-002",
+      "claims": [
+        "e06c_0008"
+      ],
+      "derived_from": [
+        "e06m_0007"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0007"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0009",
+      "node_type": "interpretation",
+      "family": "06.1",
+      "fact_id": "F06-002",
+      "claims": [
+        "e06c_0009"
+      ],
+      "derived_from": [
+        "e06m_0008"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0007"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0010",
+      "node_type": "derived_summary",
+      "family": "06.1",
+      "fact_id": "F06-002",
+      "claims": [
+        "e06c_0010"
+      ],
+      "derived_from": [
+        "e06m_0009"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0007"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0011",
+      "node_type": "transformed_claim",
+      "family": "06.1",
+      "fact_id": "F06-002",
+      "claims": [
+        "e06c_0011"
+      ],
+      "derived_from": [
+        "e06m_0010"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0007"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0012",
+      "node_type": "copied_claim",
+      "family": "06.1",
+      "fact_id": "F06-002",
+      "claims": [
+        "e06c_0012"
+      ],
+      "derived_from": [
+        "e06m_0011"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0007"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0013",
+      "node_type": "evidence_root",
+      "family": "06.1",
+      "fact_id": "F06-003",
+      "claims": [
+        "e06c_0013"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0013"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0014",
+      "node_type": "primary_observation",
+      "family": "06.1",
+      "fact_id": "F06-003",
+      "claims": [
+        "e06c_0014"
+      ],
+      "derived_from": [
+        "e06m_0013"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0013"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0015",
+      "node_type": "interpretation",
+      "family": "06.1",
+      "fact_id": "F06-003",
+      "claims": [
+        "e06c_0015"
+      ],
+      "derived_from": [
+        "e06m_0014"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0013"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0016",
+      "node_type": "derived_summary",
+      "family": "06.1",
+      "fact_id": "F06-003",
+      "claims": [
+        "e06c_0016"
+      ],
+      "derived_from": [
+        "e06m_0015"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0013"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0017",
+      "node_type": "transformed_claim",
+      "family": "06.1",
+      "fact_id": "F06-003",
+      "claims": [
+        "e06c_0017"
+      ],
+      "derived_from": [
+        "e06m_0016"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0013"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0018",
+      "node_type": "copied_claim",
+      "family": "06.1",
+      "fact_id": "F06-003",
+      "claims": [
+        "e06c_0018"
+      ],
+      "derived_from": [
+        "e06m_0017"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0013"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0019",
+      "node_type": "evidence_root",
+      "family": "06.1",
+      "fact_id": "F06-004",
+      "claims": [
+        "e06c_0019"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0019"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0020",
+      "node_type": "primary_observation",
+      "family": "06.1",
+      "fact_id": "F06-004",
+      "claims": [
+        "e06c_0020"
+      ],
+      "derived_from": [
+        "e06m_0019"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0019"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0021",
+      "node_type": "interpretation",
+      "family": "06.1",
+      "fact_id": "F06-004",
+      "claims": [
+        "e06c_0021"
+      ],
+      "derived_from": [
+        "e06m_0020"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0019"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0022",
+      "node_type": "derived_summary",
+      "family": "06.1",
+      "fact_id": "F06-004",
+      "claims": [
+        "e06c_0022"
+      ],
+      "derived_from": [
+        "e06m_0021"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0019"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0023",
+      "node_type": "transformed_claim",
+      "family": "06.1",
+      "fact_id": "F06-004",
+      "claims": [
+        "e06c_0023"
+      ],
+      "derived_from": [
+        "e06m_0022"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0019"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0024",
+      "node_type": "copied_claim",
+      "family": "06.1",
+      "fact_id": "F06-004",
+      "claims": [
+        "e06c_0024"
+      ],
+      "derived_from": [
+        "e06m_0023"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0019"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0025",
+      "node_type": "evidence_root",
+      "family": "06.1",
+      "fact_id": "F06-005",
+      "claims": [
+        "e06c_0025"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0025"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0026",
+      "node_type": "primary_observation",
+      "family": "06.1",
+      "fact_id": "F06-005",
+      "claims": [
+        "e06c_0026"
+      ],
+      "derived_from": [
+        "e06m_0025"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0025"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0027",
+      "node_type": "interpretation",
+      "family": "06.1",
+      "fact_id": "F06-005",
+      "claims": [
+        "e06c_0027"
+      ],
+      "derived_from": [
+        "e06m_0026"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0025"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0028",
+      "node_type": "derived_summary",
+      "family": "06.1",
+      "fact_id": "F06-005",
+      "claims": [
+        "e06c_0028"
+      ],
+      "derived_from": [
+        "e06m_0027"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0025"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0029",
+      "node_type": "transformed_claim",
+      "family": "06.1",
+      "fact_id": "F06-005",
+      "claims": [
+        "e06c_0029"
+      ],
+      "derived_from": [
+        "e06m_0028"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0025"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0030",
+      "node_type": "copied_claim",
+      "family": "06.1",
+      "fact_id": "F06-005",
+      "claims": [
+        "e06c_0030"
+      ],
+      "derived_from": [
+        "e06m_0029"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0025"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0031",
+      "node_type": "evidence_root",
+      "family": "06.1",
+      "fact_id": "F06-006",
+      "claims": [
+        "e06c_0031"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0031"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0032",
+      "node_type": "primary_observation",
+      "family": "06.1",
+      "fact_id": "F06-006",
+      "claims": [
+        "e06c_0032"
+      ],
+      "derived_from": [
+        "e06m_0031"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0031"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0033",
+      "node_type": "interpretation",
+      "family": "06.1",
+      "fact_id": "F06-006",
+      "claims": [
+        "e06c_0033"
+      ],
+      "derived_from": [
+        "e06m_0032"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0031"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0034",
+      "node_type": "derived_summary",
+      "family": "06.1",
+      "fact_id": "F06-006",
+      "claims": [
+        "e06c_0034"
+      ],
+      "derived_from": [
+        "e06m_0033"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0031"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0035",
+      "node_type": "transformed_claim",
+      "family": "06.1",
+      "fact_id": "F06-006",
+      "claims": [
+        "e06c_0035"
+      ],
+      "derived_from": [
+        "e06m_0034"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0031"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0036",
+      "node_type": "copied_claim",
+      "family": "06.1",
+      "fact_id": "F06-006",
+      "claims": [
+        "e06c_0036"
+      ],
+      "derived_from": [
+        "e06m_0035"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0031"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0037",
+      "node_type": "evidence_root",
+      "family": "06.1",
+      "fact_id": "F06-007",
+      "claims": [
+        "e06c_0037"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0037"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0038",
+      "node_type": "primary_observation",
+      "family": "06.1",
+      "fact_id": "F06-007",
+      "claims": [
+        "e06c_0038"
+      ],
+      "derived_from": [
+        "e06m_0037"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0037"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0039",
+      "node_type": "interpretation",
+      "family": "06.1",
+      "fact_id": "F06-007",
+      "claims": [
+        "e06c_0039"
+      ],
+      "derived_from": [
+        "e06m_0038"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0037"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0040",
+      "node_type": "derived_summary",
+      "family": "06.1",
+      "fact_id": "F06-007",
+      "claims": [
+        "e06c_0040"
+      ],
+      "derived_from": [
+        "e06m_0039"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0037"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0041",
+      "node_type": "transformed_claim",
+      "family": "06.1",
+      "fact_id": "F06-007",
+      "claims": [
+        "e06c_0041"
+      ],
+      "derived_from": [
+        "e06m_0040"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0037"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0042",
+      "node_type": "copied_claim",
+      "family": "06.1",
+      "fact_id": "F06-007",
+      "claims": [
+        "e06c_0042"
+      ],
+      "derived_from": [
+        "e06m_0041"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0037"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0043",
+      "node_type": "evidence_root",
+      "family": "06.1",
+      "fact_id": "F06-008",
+      "claims": [
+        "e06c_0043"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0043"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0044",
+      "node_type": "primary_observation",
+      "family": "06.1",
+      "fact_id": "F06-008",
+      "claims": [
+        "e06c_0044"
+      ],
+      "derived_from": [
+        "e06m_0043"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0043"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0045",
+      "node_type": "interpretation",
+      "family": "06.1",
+      "fact_id": "F06-008",
+      "claims": [
+        "e06c_0045"
+      ],
+      "derived_from": [
+        "e06m_0044"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0043"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0046",
+      "node_type": "derived_summary",
+      "family": "06.1",
+      "fact_id": "F06-008",
+      "claims": [
+        "e06c_0046"
+      ],
+      "derived_from": [
+        "e06m_0045"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0043"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0047",
+      "node_type": "transformed_claim",
+      "family": "06.1",
+      "fact_id": "F06-008",
+      "claims": [
+        "e06c_0047"
+      ],
+      "derived_from": [
+        "e06m_0046"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0043"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0048",
+      "node_type": "copied_claim",
+      "family": "06.1",
+      "fact_id": "F06-008",
+      "claims": [
+        "e06c_0048"
+      ],
+      "derived_from": [
+        "e06m_0047"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0043"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0049",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-009",
+      "claims": [
+        "e06c_0049"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0049"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0050",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-009",
+      "claims": [
+        "e06c_0050"
+      ],
+      "derived_from": [
+        "e06m_0049"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0049"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0051",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-009",
+      "claims": [
+        "e06c_0051"
+      ],
+      "derived_from": [
+        "e06m_0050"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0049"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0052",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-009",
+      "claims": [
+        "e06c_0052"
+      ],
+      "derived_from": [
+        "e06m_0050"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0049"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0053",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-009",
+      "claims": [
+        "e06c_0053"
+      ],
+      "derived_from": [
+        "e06m_0050"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0049"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0054",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-009",
+      "claims": [
+        "e06c_0054"
+      ],
+      "derived_from": [
+        "e06m_0050"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0049"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0055",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-010",
+      "claims": [
+        "e06c_0055"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0055"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0056",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-010",
+      "claims": [
+        "e06c_0056"
+      ],
+      "derived_from": [
+        "e06m_0055"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0055"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0057",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-010",
+      "claims": [
+        "e06c_0057"
+      ],
+      "derived_from": [
+        "e06m_0056"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0055"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0058",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-010",
+      "claims": [
+        "e06c_0058"
+      ],
+      "derived_from": [
+        "e06m_0056"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0055"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0059",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-010",
+      "claims": [
+        "e06c_0059"
+      ],
+      "derived_from": [
+        "e06m_0056"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0055"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0060",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-010",
+      "claims": [
+        "e06c_0060"
+      ],
+      "derived_from": [
+        "e06m_0056"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0055"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0061",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-011",
+      "claims": [
+        "e06c_0061"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0061"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0062",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-011",
+      "claims": [
+        "e06c_0062"
+      ],
+      "derived_from": [
+        "e06m_0061"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0061"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0063",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-011",
+      "claims": [
+        "e06c_0063"
+      ],
+      "derived_from": [
+        "e06m_0062"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0061"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0064",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-011",
+      "claims": [
+        "e06c_0064"
+      ],
+      "derived_from": [
+        "e06m_0062"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0061"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0065",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-011",
+      "claims": [
+        "e06c_0065"
+      ],
+      "derived_from": [
+        "e06m_0062"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0061"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0066",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-011",
+      "claims": [
+        "e06c_0066"
+      ],
+      "derived_from": [
+        "e06m_0062"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0061"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0067",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-012",
+      "claims": [
+        "e06c_0067"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0067"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0068",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-012",
+      "claims": [
+        "e06c_0068"
+      ],
+      "derived_from": [
+        "e06m_0067"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0067"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0069",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-012",
+      "claims": [
+        "e06c_0069"
+      ],
+      "derived_from": [
+        "e06m_0068"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0067"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0070",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-012",
+      "claims": [
+        "e06c_0070"
+      ],
+      "derived_from": [
+        "e06m_0068"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0067"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0071",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-012",
+      "claims": [
+        "e06c_0071"
+      ],
+      "derived_from": [
+        "e06m_0068"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0067"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0072",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-012",
+      "claims": [
+        "e06c_0072"
+      ],
+      "derived_from": [
+        "e06m_0068"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0067"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0073",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-013",
+      "claims": [
+        "e06c_0073"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0073"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0074",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-013",
+      "claims": [
+        "e06c_0074"
+      ],
+      "derived_from": [
+        "e06m_0073"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0073"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0075",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-013",
+      "claims": [
+        "e06c_0075"
+      ],
+      "derived_from": [
+        "e06m_0074"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0073"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0076",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-013",
+      "claims": [
+        "e06c_0076"
+      ],
+      "derived_from": [
+        "e06m_0074"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0073"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0077",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-013",
+      "claims": [
+        "e06c_0077"
+      ],
+      "derived_from": [
+        "e06m_0074"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0073"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0078",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-013",
+      "claims": [
+        "e06c_0078"
+      ],
+      "derived_from": [
+        "e06m_0074"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0073"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0079",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-014",
+      "claims": [
+        "e06c_0079"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0079"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0080",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-014",
+      "claims": [
+        "e06c_0080"
+      ],
+      "derived_from": [
+        "e06m_0079"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0079"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0081",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-014",
+      "claims": [
+        "e06c_0081"
+      ],
+      "derived_from": [
+        "e06m_0080"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0079"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0082",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-014",
+      "claims": [
+        "e06c_0082"
+      ],
+      "derived_from": [
+        "e06m_0080"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0079"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0083",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-014",
+      "claims": [
+        "e06c_0083"
+      ],
+      "derived_from": [
+        "e06m_0080"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0079"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0084",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-014",
+      "claims": [
+        "e06c_0084"
+      ],
+      "derived_from": [
+        "e06m_0080"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0079"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0085",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-015",
+      "claims": [
+        "e06c_0085"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0085"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0086",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-015",
+      "claims": [
+        "e06c_0086"
+      ],
+      "derived_from": [
+        "e06m_0085"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0085"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0087",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-015",
+      "claims": [
+        "e06c_0087"
+      ],
+      "derived_from": [
+        "e06m_0086"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0085"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0088",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-016",
+      "claims": [
+        "e06c_0088"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0088"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0089",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-016",
+      "claims": [
+        "e06c_0089"
+      ],
+      "derived_from": [
+        "e06m_0088"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0088"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0090",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-016",
+      "claims": [
+        "e06c_0090"
+      ],
+      "derived_from": [
+        "e06m_0089"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0088"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0091",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-016",
+      "claims": [
+        "e06c_0091"
+      ],
+      "derived_from": [
+        "e06m_0089"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0088"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0092",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-016",
+      "claims": [
+        "e06c_0092"
+      ],
+      "derived_from": [
+        "e06m_0089"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0088"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0093",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-016",
+      "claims": [
+        "e06c_0093"
+      ],
+      "derived_from": [
+        "e06m_0089"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0088"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0094",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-016",
+      "claims": [
+        "e06c_0094"
+      ],
+      "derived_from": [
+        "e06m_0089"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0088"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0095",
+      "node_type": "evidence_root",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0095"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0096",
+      "node_type": "primary_observation",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0096"
+      ],
+      "derived_from": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0097",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0097"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0098",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0098"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0099",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0099"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0100",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0100"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0101",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0101"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0102",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0102"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0103",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0103"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0104",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0104"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0105",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0105"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0106",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0106"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0107",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0107"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0108",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0108"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0109",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0109"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0110",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0110"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0111",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0111"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0112",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0112"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0113",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0113"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0114",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0114"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0115",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0115"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0116",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0116"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0117",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0117"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0118",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0118"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0119",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0119"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0120",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0120"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0121",
+      "node_type": "transformed_claim",
+      "family": "06.2",
+      "fact_id": "F06-017",
+      "claims": [
+        "e06c_0121"
+      ],
+      "derived_from": [
+        "e06m_0096"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0095"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0122",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-018",
+      "claims": [
+        "e06c_0122"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0122"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0123",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-018",
+      "claims": [
+        "e06c_0123"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0123"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0124",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-018",
+      "claims": [
+        "e06c_0124"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0124"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0125",
+      "node_type": "derived_summary",
+      "family": "06.3",
+      "fact_id": "F06-018",
+      "claims": [
+        "e06c_0125"
+      ],
+      "derived_from": [
+        "e06m_0122",
+        "e06m_0123",
+        "e06m_0124"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0122",
+        "e06m_0123",
+        "e06m_0124"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0126",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-019",
+      "claims": [
+        "e06c_0126"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0126"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0127",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-019",
+      "claims": [
+        "e06c_0127"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0127"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0128",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-019",
+      "claims": [
+        "e06c_0128"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0128"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0129",
+      "node_type": "derived_summary",
+      "family": "06.3",
+      "fact_id": "F06-019",
+      "claims": [
+        "e06c_0129"
+      ],
+      "derived_from": [
+        "e06m_0126",
+        "e06m_0127",
+        "e06m_0128"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0126",
+        "e06m_0127",
+        "e06m_0128"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0130",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-020",
+      "claims": [
+        "e06c_0130"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0130"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0131",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-020",
+      "claims": [
+        "e06c_0131"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0131"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0132",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-020",
+      "claims": [
+        "e06c_0132"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0132"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0133",
+      "node_type": "derived_summary",
+      "family": "06.3",
+      "fact_id": "F06-020",
+      "claims": [
+        "e06c_0133"
+      ],
+      "derived_from": [
+        "e06m_0130",
+        "e06m_0131",
+        "e06m_0132"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0130",
+        "e06m_0131",
+        "e06m_0132"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0134",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-021",
+      "claims": [
+        "e06c_0134"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0134"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0135",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-021",
+      "claims": [
+        "e06c_0135"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0135"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0136",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-021",
+      "claims": [
+        "e06c_0136"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0136"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0137",
+      "node_type": "derived_summary",
+      "family": "06.3",
+      "fact_id": "F06-021",
+      "claims": [
+        "e06c_0137"
+      ],
+      "derived_from": [
+        "e06m_0134",
+        "e06m_0135",
+        "e06m_0136"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0134",
+        "e06m_0135",
+        "e06m_0136"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0138",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-022",
+      "claims": [
+        "e06c_0138"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0138"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0139",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-022",
+      "claims": [
+        "e06c_0139"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0139"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0140",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-022",
+      "claims": [
+        "e06c_0140"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0140"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0141",
+      "node_type": "derived_summary",
+      "family": "06.3",
+      "fact_id": "F06-022",
+      "claims": [
+        "e06c_0141"
+      ],
+      "derived_from": [
+        "e06m_0138",
+        "e06m_0139",
+        "e06m_0140"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0138",
+        "e06m_0139",
+        "e06m_0140"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0142",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-023",
+      "claims": [
+        "e06c_0142"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0142"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0143",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-023",
+      "claims": [
+        "e06c_0143"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0143"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0144",
+      "node_type": "evidence_root",
+      "family": "06.3",
+      "fact_id": "F06-023",
+      "claims": [
+        "e06c_0144"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0144"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0145",
+      "node_type": "derived_summary",
+      "family": "06.3",
+      "fact_id": "F06-023",
+      "claims": [
+        "e06c_0145"
+      ],
+      "derived_from": [
+        "e06m_0142",
+        "e06m_0143",
+        "e06m_0144"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0142",
+        "e06m_0143",
+        "e06m_0144"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0146",
+      "node_type": "evidence_root",
+      "family": "06.4",
+      "fact_id": "F06-024",
+      "claims": [
+        "e06c_0146"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0146"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0147",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-024",
+      "claims": [
+        "e06c_0147"
+      ],
+      "derived_from": [
+        "e06m_0146"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0146"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0148",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-024",
+      "claims": [
+        "e06c_0148"
+      ],
+      "derived_from": [
+        "e06m_0147"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0146"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0149",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-024",
+      "claims": [
+        "e06c_0149"
+      ],
+      "derived_from": [
+        "e06m_0146"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0146"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0150",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-024",
+      "claims": [
+        "e06c_0150"
+      ],
+      "derived_from": [
+        "e06m_0149"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0146"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0151",
+      "node_type": "evidence_root",
+      "family": "06.4",
+      "fact_id": "F06-025",
+      "claims": [
+        "e06c_0151"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0151"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0152",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-025",
+      "claims": [
+        "e06c_0152"
+      ],
+      "derived_from": [
+        "e06m_0151"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0151"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0153",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-025",
+      "claims": [
+        "e06c_0153"
+      ],
+      "derived_from": [
+        "e06m_0152"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0151"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0154",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-025",
+      "claims": [
+        "e06c_0154"
+      ],
+      "derived_from": [
+        "e06m_0151"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0151"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0155",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-025",
+      "claims": [
+        "e06c_0155"
+      ],
+      "derived_from": [
+        "e06m_0154"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0151"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0156",
+      "node_type": "evidence_root",
+      "family": "06.4",
+      "fact_id": "F06-026",
+      "claims": [
+        "e06c_0156"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0156"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0157",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-026",
+      "claims": [
+        "e06c_0157"
+      ],
+      "derived_from": [
+        "e06m_0156"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0156"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0158",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-026",
+      "claims": [
+        "e06c_0158"
+      ],
+      "derived_from": [
+        "e06m_0157"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0156"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0159",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-026",
+      "claims": [
+        "e06c_0159"
+      ],
+      "derived_from": [
+        "e06m_0156"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0156"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0160",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-026",
+      "claims": [
+        "e06c_0160"
+      ],
+      "derived_from": [
+        "e06m_0159"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0156"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0161",
+      "node_type": "evidence_root",
+      "family": "06.4",
+      "fact_id": "F06-027",
+      "claims": [
+        "e06c_0161"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0161"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0162",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-027",
+      "claims": [
+        "e06c_0162"
+      ],
+      "derived_from": [
+        "e06m_0161"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0161"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0163",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-027",
+      "claims": [
+        "e06c_0163"
+      ],
+      "derived_from": [
+        "e06m_0162"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0161"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0164",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-027",
+      "claims": [
+        "e06c_0164"
+      ],
+      "derived_from": [
+        "e06m_0161"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0161"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0165",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-027",
+      "claims": [
+        "e06c_0165"
+      ],
+      "derived_from": [
+        "e06m_0164"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0161"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0166",
+      "node_type": "evidence_root",
+      "family": "06.4",
+      "fact_id": "F06-028",
+      "claims": [
+        "e06c_0166"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0166"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0167",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-028",
+      "claims": [
+        "e06c_0167"
+      ],
+      "derived_from": [
+        "e06m_0166"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0166"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0168",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-028",
+      "claims": [
+        "e06c_0168"
+      ],
+      "derived_from": [
+        "e06m_0167"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0166"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0169",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-028",
+      "claims": [
+        "e06c_0169"
+      ],
+      "derived_from": [
+        "e06m_0166"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0166"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0170",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-028",
+      "claims": [
+        "e06c_0170"
+      ],
+      "derived_from": [
+        "e06m_0169"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0166"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0171",
+      "node_type": "evidence_root",
+      "family": "06.4",
+      "fact_id": "F06-029",
+      "claims": [
+        "e06c_0171"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0171"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0172",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-029",
+      "claims": [
+        "e06c_0172"
+      ],
+      "derived_from": [
+        "e06m_0171"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0171"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0173",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-029",
+      "claims": [
+        "e06c_0173"
+      ],
+      "derived_from": [
+        "e06m_0172"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0171"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0174",
+      "node_type": "interpretation",
+      "family": "06.4",
+      "fact_id": "F06-029",
+      "claims": [
+        "e06c_0174"
+      ],
+      "derived_from": [
+        "e06m_0171"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0171"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0175",
+      "node_type": "transformed_claim",
+      "family": "06.4",
+      "fact_id": "F06-029",
+      "claims": [
+        "e06c_0175"
+      ],
+      "derived_from": [
+        "e06m_0174"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0171"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0176",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-030",
+      "claims": [
+        "e06c_0176"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0176"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0177",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-030",
+      "claims": [
+        "e06c_0177"
+      ],
+      "derived_from": [
+        "e06m_0176"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0176"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0178",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-031",
+      "claims": [
+        "e06c_0178"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0178"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0179",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-031",
+      "claims": [
+        "e06c_0179"
+      ],
+      "derived_from": [
+        "e06m_0178"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0178"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0180",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-031",
+      "claims": [
+        "e06c_0180"
+      ],
+      "derived_from": [
+        "e06m_0179"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0178"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0181",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-032",
+      "claims": [
+        "e06c_0181"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0181"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0182",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-032",
+      "claims": [
+        "e06c_0182"
+      ],
+      "derived_from": [
+        "e06m_0181"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0181"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0183",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-032",
+      "claims": [
+        "e06c_0183"
+      ],
+      "derived_from": [
+        "e06m_0182"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0181"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0184",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-032",
+      "claims": [
+        "e06c_0184"
+      ],
+      "derived_from": [
+        "e06m_0183"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0181"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0185",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-032",
+      "claims": [
+        "e06c_0185"
+      ],
+      "derived_from": [
+        "e06m_0184"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0181"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0186",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0186"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0187",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0187"
+      ],
+      "derived_from": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0188",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0188"
+      ],
+      "derived_from": [
+        "e06m_0187"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0189",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0189"
+      ],
+      "derived_from": [
+        "e06m_0188"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0190",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0190"
+      ],
+      "derived_from": [
+        "e06m_0189"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0191",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0191"
+      ],
+      "derived_from": [
+        "e06m_0190"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0192",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0192"
+      ],
+      "derived_from": [
+        "e06m_0191"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0193",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0193"
+      ],
+      "derived_from": [
+        "e06m_0192"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0194",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-033",
+      "claims": [
+        "e06c_0194"
+      ],
+      "derived_from": [
+        "e06m_0193"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0186"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0195",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-034",
+      "claims": [
+        "e06c_0195"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0195"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0196",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-034",
+      "claims": [
+        "e06c_0196"
+      ],
+      "derived_from": [
+        "e06m_0195"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0195"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0197",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-035",
+      "claims": [
+        "e06c_0197"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0197"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0198",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-035",
+      "claims": [
+        "e06c_0198"
+      ],
+      "derived_from": [
+        "e06m_0197"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0197"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0199",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-035",
+      "claims": [
+        "e06c_0199"
+      ],
+      "derived_from": [
+        "e06m_0198"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0197"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0200",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-036",
+      "claims": [
+        "e06c_0200"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0200"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0201",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-036",
+      "claims": [
+        "e06c_0201"
+      ],
+      "derived_from": [
+        "e06m_0200"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0200"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0202",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-036",
+      "claims": [
+        "e06c_0202"
+      ],
+      "derived_from": [
+        "e06m_0201"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0200"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0203",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-036",
+      "claims": [
+        "e06c_0203"
+      ],
+      "derived_from": [
+        "e06m_0202"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0200"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0204",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-036",
+      "claims": [
+        "e06c_0204"
+      ],
+      "derived_from": [
+        "e06m_0203"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0200"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0205",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0205"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0206",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0206"
+      ],
+      "derived_from": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0207",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0207"
+      ],
+      "derived_from": [
+        "e06m_0206"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0208",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0208"
+      ],
+      "derived_from": [
+        "e06m_0207"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0209",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0209"
+      ],
+      "derived_from": [
+        "e06m_0208"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0210",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0210"
+      ],
+      "derived_from": [
+        "e06m_0209"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0211",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0211"
+      ],
+      "derived_from": [
+        "e06m_0210"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0212",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0212"
+      ],
+      "derived_from": [
+        "e06m_0211"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0213",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-037",
+      "claims": [
+        "e06c_0213"
+      ],
+      "derived_from": [
+        "e06m_0212"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0205"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0214",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-038",
+      "claims": [
+        "e06c_0214"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0214"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0215",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-038",
+      "claims": [
+        "e06c_0215"
+      ],
+      "derived_from": [
+        "e06m_0214"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0214"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0216",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-039",
+      "claims": [
+        "e06c_0216"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0216"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0217",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-039",
+      "claims": [
+        "e06c_0217"
+      ],
+      "derived_from": [
+        "e06m_0216"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0216"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0218",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-039",
+      "claims": [
+        "e06c_0218"
+      ],
+      "derived_from": [
+        "e06m_0217"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0216"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0219",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-040",
+      "claims": [
+        "e06c_0219"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0219"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0220",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-040",
+      "claims": [
+        "e06c_0220"
+      ],
+      "derived_from": [
+        "e06m_0219"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0219"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0221",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-040",
+      "claims": [
+        "e06c_0221"
+      ],
+      "derived_from": [
+        "e06m_0220"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0219"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0222",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-040",
+      "claims": [
+        "e06c_0222"
+      ],
+      "derived_from": [
+        "e06m_0221"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0219"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0223",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-040",
+      "claims": [
+        "e06c_0223"
+      ],
+      "derived_from": [
+        "e06m_0222"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0219"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0224",
+      "node_type": "evidence_root",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0224"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0225",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0225"
+      ],
+      "derived_from": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0226",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0226"
+      ],
+      "derived_from": [
+        "e06m_0225"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0227",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0227"
+      ],
+      "derived_from": [
+        "e06m_0226"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0228",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0228"
+      ],
+      "derived_from": [
+        "e06m_0227"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0229",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0229"
+      ],
+      "derived_from": [
+        "e06m_0228"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0230",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0230"
+      ],
+      "derived_from": [
+        "e06m_0229"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0231",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0231"
+      ],
+      "derived_from": [
+        "e06m_0230"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0232",
+      "node_type": "transformed_claim",
+      "family": "06.5",
+      "fact_id": "F06-041",
+      "claims": [
+        "e06c_0232"
+      ],
+      "derived_from": [
+        "e06m_0231"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0224"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0233",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-042",
+      "claims": [
+        "e06c_0233"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0233"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0234",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-042",
+      "claims": [
+        "e06c_0234"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0234"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0235",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-042",
+      "claims": [
+        "e06c_0235"
+      ],
+      "derived_from": [
+        "e06m_0233",
+        "e06m_0234"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0233",
+        "e06m_0234"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0236",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-042",
+      "claims": [
+        "e06c_0236"
+      ],
+      "derived_from": [
+        "e06m_0233"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0233"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0237",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-043",
+      "claims": [
+        "e06c_0237"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0237"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0238",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-043",
+      "claims": [
+        "e06c_0238"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0238"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0239",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-043",
+      "claims": [
+        "e06c_0239"
+      ],
+      "derived_from": [
+        "e06m_0237",
+        "e06m_0238"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0237",
+        "e06m_0238"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0240",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-043",
+      "claims": [
+        "e06c_0240"
+      ],
+      "derived_from": [
+        "e06m_0237"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0237"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0241",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-044",
+      "claims": [
+        "e06c_0241"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0241"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0242",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-044",
+      "claims": [
+        "e06c_0242"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0242"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0243",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-044",
+      "claims": [
+        "e06c_0243"
+      ],
+      "derived_from": [
+        "e06m_0241",
+        "e06m_0242"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0241",
+        "e06m_0242"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0244",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-044",
+      "claims": [
+        "e06c_0244"
+      ],
+      "derived_from": [
+        "e06m_0241"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0241"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0245",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-045",
+      "claims": [
+        "e06c_0245"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0245"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0246",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-045",
+      "claims": [
+        "e06c_0246"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0246"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0247",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-045",
+      "claims": [
+        "e06c_0247"
+      ],
+      "derived_from": [
+        "e06m_0245",
+        "e06m_0246"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0245",
+        "e06m_0246"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0248",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-045",
+      "claims": [
+        "e06c_0248"
+      ],
+      "derived_from": [
+        "e06m_0245"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0245"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0249",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-046",
+      "claims": [
+        "e06c_0249"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0249"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0250",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-046",
+      "claims": [
+        "e06c_0250"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0250"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0251",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-046",
+      "claims": [
+        "e06c_0251"
+      ],
+      "derived_from": [
+        "e06m_0249",
+        "e06m_0250"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0249",
+        "e06m_0250"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0252",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-046",
+      "claims": [
+        "e06c_0252"
+      ],
+      "derived_from": [
+        "e06m_0249"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0249"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0253",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-047",
+      "claims": [
+        "e06c_0253"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0253"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0254",
+      "node_type": "evidence_root",
+      "family": "06.6",
+      "fact_id": "F06-047",
+      "claims": [
+        "e06c_0254"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0254"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0255",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-047",
+      "claims": [
+        "e06c_0255"
+      ],
+      "derived_from": [
+        "e06m_0253",
+        "e06m_0254"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0253",
+        "e06m_0254"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0256",
+      "node_type": "derived_summary",
+      "family": "06.6",
+      "fact_id": "F06-047",
+      "claims": [
+        "e06c_0256"
+      ],
+      "derived_from": [
+        "e06m_0253"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0253"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0257",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-048",
+      "claims": [
+        "e06c_0257"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0257"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0258",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-048",
+      "claims": [
+        "e06c_0258"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0258"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0259",
+      "node_type": "derived_summary",
+      "family": "06.7",
+      "fact_id": "F06-048",
+      "claims": [
+        "e06c_0259",
+        "e06c_0260"
+      ],
+      "derived_from": [
+        "e06m_0257",
+        "e06m_0258"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0257",
+        "e06m_0258"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0260",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-049",
+      "claims": [
+        "e06c_0261"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0260"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0261",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-049",
+      "claims": [
+        "e06c_0262"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0261"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0262",
+      "node_type": "derived_summary",
+      "family": "06.7",
+      "fact_id": "F06-049",
+      "claims": [
+        "e06c_0263",
+        "e06c_0264"
+      ],
+      "derived_from": [
+        "e06m_0260",
+        "e06m_0261"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0260",
+        "e06m_0261"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0263",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-050",
+      "claims": [
+        "e06c_0265"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0263"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0264",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-050",
+      "claims": [
+        "e06c_0266"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0264"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0265",
+      "node_type": "derived_summary",
+      "family": "06.7",
+      "fact_id": "F06-050",
+      "claims": [
+        "e06c_0267",
+        "e06c_0268"
+      ],
+      "derived_from": [
+        "e06m_0263",
+        "e06m_0264"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0263",
+        "e06m_0264"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0266",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-051",
+      "claims": [
+        "e06c_0269"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0266"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0267",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-051",
+      "claims": [
+        "e06c_0270"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0267"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0268",
+      "node_type": "derived_summary",
+      "family": "06.7",
+      "fact_id": "F06-051",
+      "claims": [
+        "e06c_0271",
+        "e06c_0272"
+      ],
+      "derived_from": [
+        "e06m_0266",
+        "e06m_0267"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0266",
+        "e06m_0267"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0269",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-052",
+      "claims": [
+        "e06c_0273"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0269"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0270",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-052",
+      "claims": [
+        "e06c_0274"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0270"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0271",
+      "node_type": "derived_summary",
+      "family": "06.7",
+      "fact_id": "F06-052",
+      "claims": [
+        "e06c_0275",
+        "e06c_0276"
+      ],
+      "derived_from": [
+        "e06m_0269",
+        "e06m_0270"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0269",
+        "e06m_0270"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0272",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-053",
+      "claims": [
+        "e06c_0277"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0272"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0273",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-053",
+      "claims": [
+        "e06c_0278"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0273"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0274",
+      "node_type": "derived_summary",
+      "family": "06.7",
+      "fact_id": "F06-053",
+      "claims": [
+        "e06c_0279",
+        "e06c_0280"
+      ],
+      "derived_from": [
+        "e06m_0272",
+        "e06m_0273"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0272",
+        "e06m_0273"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0275",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-054",
+      "claims": [
+        "e06c_0281"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0275"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0276",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-054",
+      "claims": [
+        "e06c_0282"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0276"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0277",
+      "node_type": "derived_summary",
+      "family": "06.7",
+      "fact_id": "F06-054",
+      "claims": [
+        "e06c_0283"
+      ],
+      "derived_from": [
+        "e06m_0275",
+        "e06m_0276"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0275",
+        "e06m_0276"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0278",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-055",
+      "claims": [
+        "e06c_0284"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0278"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0279",
+      "node_type": "evidence_root",
+      "family": "06.7",
+      "fact_id": "F06-055",
+      "claims": [
+        "e06c_0285"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0279"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0280",
+      "node_type": "derived_summary",
+      "family": "06.7",
+      "fact_id": "F06-055",
+      "claims": [
+        "e06c_0286"
+      ],
+      "derived_from": [
+        "e06m_0278",
+        "e06m_0279"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0278",
+        "e06m_0279"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0281",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-056",
+      "claims": [
+        "e06c_0287"
+      ],
+      "derived_from": [
+        "e06m_0283"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0282",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-056",
+      "claims": [
+        "e06c_0288"
+      ],
+      "derived_from": [
+        "e06m_0281"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0283",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-056",
+      "claims": [
+        "e06c_0289"
+      ],
+      "derived_from": [
+        "e06m_0282"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0284",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-057",
+      "claims": [
+        "e06c_0290"
+      ],
+      "derived_from": [
+        "e06m_0286"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0285",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-057",
+      "claims": [
+        "e06c_0291"
+      ],
+      "derived_from": [
+        "e06m_0284"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0286",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-057",
+      "claims": [
+        "e06c_0292"
+      ],
+      "derived_from": [
+        "e06m_0285"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0287",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-058",
+      "claims": [
+        "e06c_0293"
+      ],
+      "derived_from": [
+        "e06m_0289"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0288",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-058",
+      "claims": [
+        "e06c_0294"
+      ],
+      "derived_from": [
+        "e06m_0287"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0289",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-058",
+      "claims": [
+        "e06c_0295"
+      ],
+      "derived_from": [
+        "e06m_0288"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0290",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-059",
+      "claims": [
+        "e06c_0296"
+      ],
+      "derived_from": [
+        "e06m_0292"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0291",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-059",
+      "claims": [
+        "e06c_0297"
+      ],
+      "derived_from": [
+        "e06m_0290"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0292",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-059",
+      "claims": [
+        "e06c_0298"
+      ],
+      "derived_from": [
+        "e06m_0291"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0293",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-060",
+      "claims": [
+        "e06c_0299"
+      ],
+      "derived_from": [
+        "e06m_0295"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0294",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-060",
+      "claims": [
+        "e06c_0300"
+      ],
+      "derived_from": [
+        "e06m_0293"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0295",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-060",
+      "claims": [
+        "e06c_0301"
+      ],
+      "derived_from": [
+        "e06m_0294"
+      ],
+      "ultimate_evidence_roots": [],
+      "ultimate_evidence_roots_note": "unresolvable: node participates in a citation cycle",
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0296",
+      "node_type": "evidence_root",
+      "family": "06.8",
+      "fact_id": "F06-061",
+      "claims": [
+        "e06c_0302"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0296"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0297",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-061",
+      "claims": [
+        "e06c_0303"
+      ],
+      "derived_from": [
+        "e06m_0296"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0296"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0298",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-061",
+      "claims": [
+        "e06c_0304"
+      ],
+      "derived_from": [
+        "e06m_0297"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0296"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0299",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-061",
+      "claims": [
+        "e06c_0305"
+      ],
+      "derived_from": [
+        "e06m_0298"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0296"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0300",
+      "node_type": "evidence_root",
+      "family": "06.8",
+      "fact_id": "F06-062",
+      "claims": [
+        "e06c_0306"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0300"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0301",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-062",
+      "claims": [
+        "e06c_0307"
+      ],
+      "derived_from": [
+        "e06m_0300"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0300"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0302",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-062",
+      "claims": [
+        "e06c_0308"
+      ],
+      "derived_from": [
+        "e06m_0301"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0300"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0303",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-062",
+      "claims": [
+        "e06c_0309"
+      ],
+      "derived_from": [
+        "e06m_0302"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0300"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0304",
+      "node_type": "evidence_root",
+      "family": "06.8",
+      "fact_id": "F06-063",
+      "claims": [
+        "e06c_0310"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0304"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0305",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-063",
+      "claims": [
+        "e06c_0311"
+      ],
+      "derived_from": [
+        "e06m_0304"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0304"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0306",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-063",
+      "claims": [
+        "e06c_0312"
+      ],
+      "derived_from": [
+        "e06m_0305"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0304"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0307",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-063",
+      "claims": [
+        "e06c_0313"
+      ],
+      "derived_from": [
+        "e06m_0306"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0304"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0308",
+      "node_type": "evidence_root",
+      "family": "06.8",
+      "fact_id": "F06-064",
+      "claims": [
+        "e06c_0314"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0308"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0309",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-064",
+      "claims": [
+        "e06c_0315"
+      ],
+      "derived_from": [
+        "e06m_0308"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0308"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0310",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-064",
+      "claims": [
+        "e06c_0316"
+      ],
+      "derived_from": [
+        "e06m_0309"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0308"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0311",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-064",
+      "claims": [
+        "e06c_0317"
+      ],
+      "derived_from": [
+        "e06m_0310"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0308"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0312",
+      "node_type": "evidence_root",
+      "family": "06.8",
+      "fact_id": "F06-065",
+      "claims": [
+        "e06c_0318"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0312"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0313",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-065",
+      "claims": [
+        "e06c_0319"
+      ],
+      "derived_from": [
+        "e06m_0312"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0312"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0314",
+      "node_type": "interpretation",
+      "family": "06.8",
+      "fact_id": "F06-065",
+      "claims": [
+        "e06c_0320"
+      ],
+      "derived_from": [
+        "e06m_0313"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0312"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0315",
+      "node_type": "transformed_claim",
+      "family": "06.8",
+      "fact_id": "F06-065",
+      "claims": [
+        "e06c_0321"
+      ],
+      "derived_from": [
+        "e06m_0314"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0312"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0316",
+      "node_type": "evidence_root",
+      "family": "06.9",
+      "fact_id": "F06-066",
+      "claims": [
+        "e06c_0322"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0316"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0317",
+      "node_type": "transformed_claim",
+      "family": "06.9",
+      "fact_id": "F06-066",
+      "claims": [
+        "e06c_0323"
+      ],
+      "derived_from": [
+        "e06m_0316"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0316"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": true
+    },
+    {
+      "node_id": "e06m_0318",
+      "node_type": "evidence_root",
+      "family": "06.9",
+      "fact_id": "F06-067",
+      "claims": [
+        "e06c_0324"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0318"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0319",
+      "node_type": "transformed_claim",
+      "family": "06.9",
+      "fact_id": "F06-067",
+      "claims": [
+        "e06c_0325"
+      ],
+      "derived_from": [
+        "e06m_0318"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0318"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": true
+    },
+    {
+      "node_id": "e06m_0320",
+      "node_type": "evidence_root",
+      "family": "06.9",
+      "fact_id": "F06-068",
+      "claims": [
+        "e06c_0326"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0320"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0321",
+      "node_type": "transformed_claim",
+      "family": "06.9",
+      "fact_id": "F06-068",
+      "claims": [
+        "e06c_0327"
+      ],
+      "derived_from": [
+        "e06m_0320"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0320"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": true
+    },
+    {
+      "node_id": "e06m_0322",
+      "node_type": "evidence_root",
+      "family": "06.9",
+      "fact_id": "F06-069",
+      "claims": [
+        "e06c_0328"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0322"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0323",
+      "node_type": "transformed_claim",
+      "family": "06.9",
+      "fact_id": "F06-069",
+      "claims": [
+        "e06c_0329"
+      ],
+      "derived_from": [
+        "e06m_0322"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0322"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": true
+    },
+    {
+      "node_id": "e06m_0324",
+      "node_type": "evidence_root",
+      "family": "06.9",
+      "fact_id": "F06-070",
+      "claims": [
+        "e06c_0330"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0324"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0325",
+      "node_type": "transformed_claim",
+      "family": "06.9",
+      "fact_id": "F06-070",
+      "claims": [
+        "e06c_0331"
+      ],
+      "derived_from": [
+        "e06m_0324"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0324"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": true
+    },
+    {
+      "node_id": "e06m_0326",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-071",
+      "claims": [
+        "e06c_0332"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0327",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-071",
+      "claims": [
+        "e06c_0333"
+      ],
+      "derived_from": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0328",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-071",
+      "claims": [
+        "e06c_0334"
+      ],
+      "derived_from": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0329",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-071",
+      "claims": [
+        "e06c_0335"
+      ],
+      "derived_from": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0330",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-071",
+      "claims": [
+        "e06c_0336"
+      ],
+      "derived_from": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0331",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-071",
+      "claims": [
+        "e06c_0337"
+      ],
+      "derived_from": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0326"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0332",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-072",
+      "claims": [
+        "e06c_0338"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0332"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0333",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-072",
+      "claims": [
+        "e06c_0339"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0333"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0334",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-072",
+      "claims": [
+        "e06c_0340"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0334"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0335",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-072",
+      "claims": [
+        "e06c_0341"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0335"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0336",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-072",
+      "claims": [
+        "e06c_0342"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0336"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0337",
+      "node_type": "derived_summary",
+      "family": "06.10",
+      "fact_id": "F06-072",
+      "claims": [
+        "e06c_0343"
+      ],
+      "derived_from": [
+        "e06m_0332",
+        "e06m_0333",
+        "e06m_0334",
+        "e06m_0335",
+        "e06m_0336"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0332",
+        "e06m_0333",
+        "e06m_0334",
+        "e06m_0335",
+        "e06m_0336"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0338",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-073",
+      "claims": [
+        "e06c_0344"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0339",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-073",
+      "claims": [
+        "e06c_0345"
+      ],
+      "derived_from": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0340",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-073",
+      "claims": [
+        "e06c_0346"
+      ],
+      "derived_from": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0341",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-073",
+      "claims": [
+        "e06c_0347"
+      ],
+      "derived_from": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0342",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-073",
+      "claims": [
+        "e06c_0348"
+      ],
+      "derived_from": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0343",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-073",
+      "claims": [
+        "e06c_0349"
+      ],
+      "derived_from": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0338"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0344",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-074",
+      "claims": [
+        "e06c_0350"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0344"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0345",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-074",
+      "claims": [
+        "e06c_0351"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0345"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0346",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-074",
+      "claims": [
+        "e06c_0352"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0346"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0347",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-074",
+      "claims": [
+        "e06c_0353"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0347"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0348",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-074",
+      "claims": [
+        "e06c_0354"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0348"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0349",
+      "node_type": "derived_summary",
+      "family": "06.10",
+      "fact_id": "F06-074",
+      "claims": [
+        "e06c_0355"
+      ],
+      "derived_from": [
+        "e06m_0344",
+        "e06m_0345",
+        "e06m_0346",
+        "e06m_0347",
+        "e06m_0348"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0344",
+        "e06m_0345",
+        "e06m_0346",
+        "e06m_0347",
+        "e06m_0348"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0350",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-075",
+      "claims": [
+        "e06c_0356"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0351",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-075",
+      "claims": [
+        "e06c_0357"
+      ],
+      "derived_from": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0352",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-075",
+      "claims": [
+        "e06c_0358"
+      ],
+      "derived_from": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0353",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-075",
+      "claims": [
+        "e06c_0359"
+      ],
+      "derived_from": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0354",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-075",
+      "claims": [
+        "e06c_0360"
+      ],
+      "derived_from": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0355",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-075",
+      "claims": [
+        "e06c_0361"
+      ],
+      "derived_from": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0350"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0356",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-076",
+      "claims": [
+        "e06c_0362"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0356"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0357",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-076",
+      "claims": [
+        "e06c_0363"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0357"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0358",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-076",
+      "claims": [
+        "e06c_0364"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0358"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0359",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-076",
+      "claims": [
+        "e06c_0365"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0359"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0360",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-076",
+      "claims": [
+        "e06c_0366"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0360"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0361",
+      "node_type": "derived_summary",
+      "family": "06.10",
+      "fact_id": "F06-076",
+      "claims": [
+        "e06c_0367"
+      ],
+      "derived_from": [
+        "e06m_0356",
+        "e06m_0357",
+        "e06m_0358",
+        "e06m_0359",
+        "e06m_0360"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0356",
+        "e06m_0357",
+        "e06m_0358",
+        "e06m_0359",
+        "e06m_0360"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0362",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-077",
+      "claims": [
+        "e06c_0368"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0363",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-077",
+      "claims": [
+        "e06c_0369"
+      ],
+      "derived_from": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0364",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-077",
+      "claims": [
+        "e06c_0370"
+      ],
+      "derived_from": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0365",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-077",
+      "claims": [
+        "e06c_0371"
+      ],
+      "derived_from": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0366",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-077",
+      "claims": [
+        "e06c_0372"
+      ],
+      "derived_from": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0367",
+      "node_type": "transformed_claim",
+      "family": "06.10",
+      "fact_id": "F06-077",
+      "claims": [
+        "e06c_0373"
+      ],
+      "derived_from": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0362"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0368",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-078",
+      "claims": [
+        "e06c_0374"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0368"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0369",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-078",
+      "claims": [
+        "e06c_0375"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0369"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0370",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-078",
+      "claims": [
+        "e06c_0376"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0370"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0371",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-078",
+      "claims": [
+        "e06c_0377"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0371"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0372",
+      "node_type": "evidence_root",
+      "family": "06.10",
+      "fact_id": "F06-078",
+      "claims": [
+        "e06c_0378"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0372"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0373",
+      "node_type": "derived_summary",
+      "family": "06.10",
+      "fact_id": "F06-078",
+      "claims": [
+        "e06c_0379"
+      ],
+      "derived_from": [
+        "e06m_0368",
+        "e06m_0369",
+        "e06m_0370",
+        "e06m_0371",
+        "e06m_0372"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0368",
+        "e06m_0369",
+        "e06m_0370",
+        "e06m_0371",
+        "e06m_0372"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0374",
+      "node_type": "evidence_root",
+      "family": "06.11",
+      "fact_id": "F06-079",
+      "claims": [
+        "e06c_0380"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0374"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": false,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0375",
+      "node_type": "interpretation",
+      "family": "06.11",
+      "fact_id": "F06-079",
+      "claims": [
+        "e06c_0381"
+      ],
+      "derived_from": [
+        "e06m_0374"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0374"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0376",
+      "node_type": "transformed_claim",
+      "family": "06.11",
+      "fact_id": "F06-079",
+      "claims": [
+        "e06c_0382"
+      ],
+      "derived_from": [
+        "e06m_0375"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0374"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0377",
+      "node_type": "evidence_root",
+      "family": "06.11",
+      "fact_id": "F06-080",
+      "claims": [
+        "e06c_0383"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0377"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": false,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0378",
+      "node_type": "interpretation",
+      "family": "06.11",
+      "fact_id": "F06-080",
+      "claims": [
+        "e06c_0384"
+      ],
+      "derived_from": [
+        "e06m_0377"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0377"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0379",
+      "node_type": "transformed_claim",
+      "family": "06.11",
+      "fact_id": "F06-080",
+      "claims": [
+        "e06c_0385"
+      ],
+      "derived_from": [
+        "e06m_0378"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0377"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0380",
+      "node_type": "evidence_root",
+      "family": "06.11",
+      "fact_id": "F06-081",
+      "claims": [
+        "e06c_0386"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0380"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": false,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0381",
+      "node_type": "interpretation",
+      "family": "06.11",
+      "fact_id": "F06-081",
+      "claims": [
+        "e06c_0387"
+      ],
+      "derived_from": [
+        "e06m_0380"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0380"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0382",
+      "node_type": "transformed_claim",
+      "family": "06.11",
+      "fact_id": "F06-081",
+      "claims": [
+        "e06c_0388"
+      ],
+      "derived_from": [
+        "e06m_0381"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0380"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0383",
+      "node_type": "evidence_root",
+      "family": "06.11",
+      "fact_id": "F06-082",
+      "claims": [
+        "e06c_0389"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0383"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": false,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0384",
+      "node_type": "interpretation",
+      "family": "06.11",
+      "fact_id": "F06-082",
+      "claims": [
+        "e06c_0390"
+      ],
+      "derived_from": [
+        "e06m_0383"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0383"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0385",
+      "node_type": "transformed_claim",
+      "family": "06.11",
+      "fact_id": "F06-082",
+      "claims": [
+        "e06c_0391"
+      ],
+      "derived_from": [
+        "e06m_0384"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0383"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0386",
+      "node_type": "evidence_root",
+      "family": "06.11",
+      "fact_id": "F06-083",
+      "claims": [
+        "e06c_0392"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0386"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": false,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0387",
+      "node_type": "interpretation",
+      "family": "06.11",
+      "fact_id": "F06-083",
+      "claims": [
+        "e06c_0393"
+      ],
+      "derived_from": [
+        "e06m_0386"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0386"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0388",
+      "node_type": "transformed_claim",
+      "family": "06.11",
+      "fact_id": "F06-083",
+      "claims": [
+        "e06c_0394"
+      ],
+      "derived_from": [
+        "e06m_0387"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0386"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0389",
+      "node_type": "evidence_root",
+      "family": "06.12",
+      "fact_id": "F06-084",
+      "claims": [
+        "e06c_0395"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0389"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0390",
+      "node_type": "derived_summary",
+      "family": "06.12",
+      "fact_id": "F06-084",
+      "claims": [
+        "e06c_0396"
+      ],
+      "derived_from": [
+        "e06m_0389"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0389"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0391",
+      "node_type": "model_generated",
+      "family": "06.12",
+      "fact_id": "F06-084",
+      "claims": [
+        "e06c_0397"
+      ],
+      "derived_from": [
+        "e06m_0390"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0389"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0392",
+      "node_type": "reingested",
+      "family": "06.12",
+      "fact_id": "F06-084",
+      "claims": [
+        "e06c_0398"
+      ],
+      "derived_from": [
+        "e06m_0391"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0389"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0393",
+      "node_type": "copied_claim",
+      "family": "06.12",
+      "fact_id": "F06-084",
+      "claims": [
+        "e06c_0399"
+      ],
+      "derived_from": [
+        "e06m_0392"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0389"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0394",
+      "node_type": "evidence_root",
+      "family": "06.12",
+      "fact_id": "F06-085",
+      "claims": [
+        "e06c_0400"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0394"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0395",
+      "node_type": "derived_summary",
+      "family": "06.12",
+      "fact_id": "F06-085",
+      "claims": [
+        "e06c_0401"
+      ],
+      "derived_from": [
+        "e06m_0394"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0394"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0396",
+      "node_type": "model_generated",
+      "family": "06.12",
+      "fact_id": "F06-085",
+      "claims": [
+        "e06c_0402"
+      ],
+      "derived_from": [
+        "e06m_0395"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0394"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0397",
+      "node_type": "reingested",
+      "family": "06.12",
+      "fact_id": "F06-085",
+      "claims": [
+        "e06c_0403"
+      ],
+      "derived_from": [
+        "e06m_0396"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0394"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0398",
+      "node_type": "copied_claim",
+      "family": "06.12",
+      "fact_id": "F06-085",
+      "claims": [
+        "e06c_0404"
+      ],
+      "derived_from": [
+        "e06m_0397"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0394"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0399",
+      "node_type": "evidence_root",
+      "family": "06.12",
+      "fact_id": "F06-086",
+      "claims": [
+        "e06c_0405"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0399"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0400",
+      "node_type": "derived_summary",
+      "family": "06.12",
+      "fact_id": "F06-086",
+      "claims": [
+        "e06c_0406"
+      ],
+      "derived_from": [
+        "e06m_0399"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0399"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0401",
+      "node_type": "model_generated",
+      "family": "06.12",
+      "fact_id": "F06-086",
+      "claims": [
+        "e06c_0407"
+      ],
+      "derived_from": [
+        "e06m_0400"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0399"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0402",
+      "node_type": "reingested",
+      "family": "06.12",
+      "fact_id": "F06-086",
+      "claims": [
+        "e06c_0408"
+      ],
+      "derived_from": [
+        "e06m_0401"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0399"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0403",
+      "node_type": "copied_claim",
+      "family": "06.12",
+      "fact_id": "F06-086",
+      "claims": [
+        "e06c_0409"
+      ],
+      "derived_from": [
+        "e06m_0402"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0399"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0404",
+      "node_type": "evidence_root",
+      "family": "06.12",
+      "fact_id": "F06-087",
+      "claims": [
+        "e06c_0410"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0404"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0405",
+      "node_type": "derived_summary",
+      "family": "06.12",
+      "fact_id": "F06-087",
+      "claims": [
+        "e06c_0411"
+      ],
+      "derived_from": [
+        "e06m_0404"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0404"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0406",
+      "node_type": "model_generated",
+      "family": "06.12",
+      "fact_id": "F06-087",
+      "claims": [
+        "e06c_0412"
+      ],
+      "derived_from": [
+        "e06m_0405"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0404"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0407",
+      "node_type": "reingested",
+      "family": "06.12",
+      "fact_id": "F06-087",
+      "claims": [
+        "e06c_0413"
+      ],
+      "derived_from": [
+        "e06m_0406"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0404"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0408",
+      "node_type": "copied_claim",
+      "family": "06.12",
+      "fact_id": "F06-087",
+      "claims": [
+        "e06c_0414"
+      ],
+      "derived_from": [
+        "e06m_0407"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0404"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0409",
+      "node_type": "evidence_root",
+      "family": "06.12",
+      "fact_id": "F06-088",
+      "claims": [
+        "e06c_0415"
+      ],
+      "derived_from": [],
+      "ultimate_evidence_roots": [
+        "e06m_0409"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": true,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0410",
+      "node_type": "derived_summary",
+      "family": "06.12",
+      "fact_id": "F06-088",
+      "claims": [
+        "e06c_0416"
+      ],
+      "derived_from": [
+        "e06m_0409"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0409"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0411",
+      "node_type": "model_generated",
+      "family": "06.12",
+      "fact_id": "F06-088",
+      "claims": [
+        "e06c_0417"
+      ],
+      "derived_from": [
+        "e06m_0410"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0409"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0412",
+      "node_type": "reingested",
+      "family": "06.12",
+      "fact_id": "F06-088",
+      "claims": [
+        "e06c_0418"
+      ],
+      "derived_from": [
+        "e06m_0411"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0409"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    },
+    {
+      "node_id": "e06m_0413",
+      "node_type": "copied_claim",
+      "family": "06.12",
+      "fact_id": "F06-088",
+      "claims": [
+        "e06c_0419"
+      ],
+      "derived_from": [
+        "e06m_0412"
+      ],
+      "ultimate_evidence_roots": [
+        "e06m_0409"
+      ],
+      "ultimate_evidence_roots_note": null,
+      "adds_new_evidence": false,
+      "retrievable": true,
+      "contradicts_derivation_source": false
+    }
+  ]
+}

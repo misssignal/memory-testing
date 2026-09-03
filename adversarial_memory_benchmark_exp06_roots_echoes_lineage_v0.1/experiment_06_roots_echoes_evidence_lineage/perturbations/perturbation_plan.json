@@ -1,0 +1,435 @@
+{
+  "experiment": "06",
+  "dimensions": {
+    "derivative_copy_count": [
+      1,
+      4,
+      5,
+      25
+    ],
+    "graph_depth": [
+      1,
+      2,
+      4,
+      8
+    ],
+    "graph_breadth_fanout": [
+      1,
+      4,
+      5,
+      25
+    ],
+    "independent_root_count": [
+      1,
+      2,
+      3,
+      5
+    ],
+    "provenance_metadata_visibility": [
+      "exposed_in_derived_from",
+      "hidden_pending__oracle_strip"
+    ],
+    "provenance_completeness": [
+      "complete",
+      "partial_citation_drop",
+      "root_inaccessible"
+    ],
+    "source_disappearance": [
+      false,
+      true
+    ],
+    "unsupported_claim_injection": [
+      false,
+      true
+    ],
+    "cycle_presence": [
+      false,
+      true
+    ],
+    "reingestion_depth": [
+      0,
+      1,
+      2
+    ]
+  },
+  "perturbations": [
+    {
+      "id": "P06-A",
+      "name": "Fan-out manipulation",
+      "description": "One evidence root produces 1 / 5 / 25 derivative write-ups. No new evidence enters at any fan-out level.",
+      "instances": {
+        "fanout_1": {
+          "fact_id": "F06-015",
+          "root": "e06m_0085",
+          "descendant_count": 1,
+          "memory_ids": [
+            "e06m_0085",
+            "e06m_0086",
+            "e06m_0087"
+          ]
+        },
+        "fanout_5": {
+          "fact_id": "F06-016",
+          "root": "e06m_0088",
+          "descendant_count": 5,
+          "memory_ids": [
+            "e06m_0088",
+            "e06m_0089",
+            "e06m_0090",
+            "e06m_0091",
+            "e06m_0092",
+            "e06m_0093",
+            "e06m_0094"
+          ]
+        },
+        "fanout_25": {
+          "fact_id": "F06-017",
+          "root": "e06m_0095",
+          "descendant_count": 25,
+          "memory_ids": [
+            "e06m_0095",
+            "e06m_0096",
+            "e06m_0097",
+            "e06m_0098",
+            "e06m_0099",
+            "e06m_0100",
+            "e06m_0101",
+            "e06m_0102",
+            "e06m_0103",
+            "e06m_0104",
+            "e06m_0105",
+            "e06m_0106",
+            "e06m_0107",
+            "e06m_0108",
+            "e06m_0109",
+            "e06m_0110",
+            "e06m_0111",
+            "e06m_0112",
+            "e06m_0113",
+            "e06m_0114",
+            "e06m_0115",
+            "e06m_0116",
+            "e06m_0117",
+            "e06m_0118",
+            "e06m_0119",
+            "e06m_0120",
+            "e06m_0121"
+          ]
+        }
+      },
+      "expected_independent_evidence_count": 1,
+      "naive_failure_mode": "Scoring confidence/independent-root-count proportional to document count (e.g. reporting 25 independent observations for fanout_25).",
+      "metric": "Derivative Inflation Rate, Fan-out Robustness"
+    },
+    {
+      "id": "P06-B",
+      "name": "Independent-root substitution",
+      "description": "Replace a 5-copies-of-1-root world (World A) with a 5-genuinely-independent-roots world (World B), holding claim wording and document count constant.",
+      "world_a": {
+        "fact_id": "F06-071",
+        "root": "e06m_0326",
+        "memory_ids": [
+          "e06m_0326",
+          "e06m_0327",
+          "e06m_0328",
+          "e06m_0329",
+          "e06m_0330",
+          "e06m_0331"
+        ],
+        "independent_root_count": 1
+      },
+      "world_b": {
+        "fact_id": "F06-072",
+        "roots": [
+          "e06m_0332",
+          "e06m_0333",
+          "e06m_0334",
+          "e06m_0335",
+          "e06m_0336"
+        ],
+        "memory_ids": [
+          "e06m_0332",
+          "e06m_0333",
+          "e06m_0334",
+          "e06m_0335",
+          "e06m_0336",
+          "e06m_0337"
+        ],
+        "independent_root_count": 5
+      },
+      "expected_effect": "Confidence/independent-root-count should increase from World A to World B despite both surfacing 5 documents.",
+      "naive_failure_mode": "Treating World A and World B identically because both retrieve 5 similar documents (surface-level retrieval count used as a confidence proxy).",
+      "metric": "Independent Evidence Count Error"
+    },
+    {
+      "id": "P06-C",
+      "name": "Derivation depth",
+      "description": "Same claim and same root; vary derivation depth 1 / 2 / 4 / 8 across otherwise parallel chains, holding wording pattern constant.",
+      "instances": {
+        "1": [
+          {
+            "fact_id": "F06-030",
+            "root": "e06m_0176",
+            "leaf": "e06m_0177",
+            "chain": [
+              "e06m_0176",
+              "e06m_0177"
+            ]
+          },
+          {
+            "fact_id": "F06-034",
+            "root": "e06m_0195",
+            "leaf": "e06m_0196",
+            "chain": [
+              "e06m_0195",
+              "e06m_0196"
+            ]
+          },
+          {
+            "fact_id": "F06-038",
+            "root": "e06m_0214",
+            "leaf": "e06m_0215",
+            "chain": [
+              "e06m_0214",
+              "e06m_0215"
+            ]
+          }
+        ],
+        "2": [
+          {
+            "fact_id": "F06-031",
+            "root": "e06m_0178",
+            "leaf": "e06m_0180",
+            "chain": [
+              "e06m_0178",
+              "e06m_0179",
+              "e06m_0180"
+            ]
+          },
+          {
+            "fact_id": "F06-035",
+            "root": "e06m_0197",
+            "leaf": "e06m_0199",
+            "chain": [
+              "e06m_0197",
+              "e06m_0198",
+              "e06m_0199"
+            ]
+          },
+          {
+            "fact_id": "F06-039",
+            "root": "e06m_0216",
+            "leaf": "e06m_0218",
+            "chain": [
+              "e06m_0216",
+              "e06m_0217",
+              "e06m_0218"
+            ]
+          }
+        ],
+        "4": [
+          {
+            "fact_id": "F06-032",
+            "root": "e06m_0181",
+            "leaf": "e06m_0185",
+            "chain": [
+              "e06m_0181",
+              "e06m_0182",
+              "e06m_0183",
+              "e06m_0184",
+              "e06m_0185"
+            ]
+          },
+          {
+            "fact_id": "F06-036",
+            "root": "e06m_0200",
+            "leaf": "e06m_0204",
+            "chain": [
+              "e06m_0200",
+              "e06m_0201",
+              "e06m_0202",
+              "e06m_0203",
+              "e06m_0204"
+            ]
+          },
+          {
+            "fact_id": "F06-040",
+            "root": "e06m_0219",
+            "leaf": "e06m_0223",
+            "chain": [
+              "e06m_0219",
+              "e06m_0220",
+              "e06m_0221",
+              "e06m_0222",
+              "e06m_0223"
+            ]
+          }
+        ],
+        "8": [
+          {
+            "fact_id": "F06-033",
+            "root": "e06m_0186",
+            "leaf": "e06m_0194",
+            "chain": [
+              "e06m_0186",
+              "e06m_0187",
+              "e06m_0188",
+              "e06m_0189",
+              "e06m_0190",
+              "e06m_0191",
+              "e06m_0192",
+              "e06m_0193",
+              "e06m_0194"
+            ]
+          },
+          {
+            "fact_id": "F06-037",
+            "root": "e06m_0205",
+            "leaf": "e06m_0213",
+            "chain": [
+              "e06m_0205",
+              "e06m_0206",
+              "e06m_0207",
+              "e06m_0208",
+              "e06m_0209",
+              "e06m_0210",
+              "e06m_0211",
+              "e06m_0212",
+              "e06m_0213"
+            ]
+          },
+          {
+            "fact_id": "F06-041",
+            "root": "e06m_0224",
+            "leaf": "e06m_0232",
+            "chain": [
+              "e06m_0224",
+              "e06m_0225",
+              "e06m_0226",
+              "e06m_0227",
+              "e06m_0228",
+              "e06m_0229",
+              "e06m_0230",
+              "e06m_0231",
+              "e06m_0232"
+            ]
+          }
+        ]
+      },
+      "expected_effect": "Root recovery accuracy should not degrade with depth in this corpus -- every edge is intact end to end (Control D, deep-but-complete lineage).",
+      "naive_failure_mode": "Root-recovery accuracy dropping as depth increases, or the system silently truncating lineage at some fixed hop limit.",
+      "metric": "Depth Robustness, Root Recovery Accuracy"
+    },
+    {
+      "id": "P06-D",
+      "name": "Provenance-edge removal",
+      "description": "Remove exactly one lineage edge from an otherwise complete chain and ask whether the system reports incomplete lineage or invents the missing connection.",
+      "base_instance": {
+        "fact_id": "F06-042",
+        "memory_ids": [
+          "e06m_0233",
+          "e06m_0234",
+          "e06m_0235",
+          "e06m_0236"
+        ]
+      },
+      "edge_removed": {
+        "from_node": "e06m_0234",
+        "to_node": "e06m_0236",
+        "description": "The 'late' derivative (index 3) drops its citation to the second evidence root (index 1) that the 'mid' derivative (index 2) still carries."
+      },
+      "expected_effect": "A query against the 'late' node alone should report partial/incomplete provenance (one root, not two), not silently assume completeness and not fabricate the missing edge.",
+      "naive_failure_mode": "Reporting 'complete provenance' for 'late' because a similarly-worded sibling record ('mid') happens to have both citations, without noticing 'late' itself only cites one.",
+      "metric": "Provenance Path Accuracy, Provenance Hallucination Rate"
+    },
+    {
+      "id": "P06-E",
+      "name": "Circularity injection",
+      "description": "Take an acyclic citation graph (root -> A -> B -> C) and add one backward citation (C -> A) producing a 3-cycle. No new evidence enters.",
+      "acyclic_base": {
+        "fact_id": "F06-061",
+        "root": "e06m_0296",
+        "memory_ids": [
+          "e06m_0296",
+          "e06m_0297",
+          "e06m_0298",
+          "e06m_0299"
+        ],
+        "independent_root_count": 1
+      },
+      "cyclic_variant": {
+        "fact_id": "F06-056",
+        "memory_ids": [
+          "e06m_0281",
+          "e06m_0282",
+          "e06m_0283"
+        ],
+        "independent_root_count": 0,
+        "note": "root node removed / replaced by the backward citation; A, B, C cite only each other"
+      },
+      "expected_effect": "must_detect_cycle=true and independent-root count drops to 0 for the cyclic variant, even though the wording of A/B/C is nearly identical to the acyclic base.",
+      "naive_failure_mode": "Treating the cycle as three corroborating sources because each individual citation edge looks like normal support.",
+      "metric": "Circularity Detection Rate"
+    },
+    {
+      "id": "P06-F",
+      "name": "Unsupported sentence insertion",
+      "description": "Add one unsupported causal assertion to an otherwise fully-sourced summary.",
+      "instance": {
+        "fact_id": "F06-048",
+        "memory_ids": [
+          "e06m_0257",
+          "e06m_0258",
+          "e06m_0259"
+        ],
+        "summary_node": "e06m_0259"
+      },
+      "control_f_sibling_family": "unsupported claims flagged control=F_fully_supported in instances_registry.json (grounded-only variants of this same motif)",
+      "expected_effect": "Claim-level provenance discrimination: the pump-stop and temperature-rise clauses remain supported; the firmware-bug clause is flagged unsupported, without downgrading or upgrading the sourced clauses.",
+      "naive_failure_mode": "Document-level provenance scoring that marks the whole summary 'sourced' because most of it is, silently inheriting support for the firmware clause.",
+      "metric": "Unsupported Claim Detection, Claim-Level Provenance Accuracy"
+    },
+    {
+      "id": "P06-G",
+      "name": "Reingested model summary",
+      "description": "Insert a previously-generated derived summary as though it were a new memory object, then let a further report derive from that reingested memory.",
+      "instance": {
+        "fact_id": "F06-084",
+        "chain": [
+          "e06m_0389",
+          "e06m_0390",
+          "e06m_0391",
+          "e06m_0392",
+          "e06m_0393"
+        ],
+        "model_generated_node": "e06m_0391",
+        "reingested_node": "e06m_0392"
+      },
+      "expected_effect": "new_memory_object=true for the reingested node, but new_evidence_root=false; the whole chain still resolves to the single original sensor-log root.",
+      "naive_failure_mode": "Treating the reingested wiki copy of the AI summary as a second, corroborating observation because it has its own memory_id and source_id.",
+      "metric": "Provenance Hallucination Rate, Independent Evidence Count Error"
+    },
+    {
+      "id": "P06-H",
+      "name": "Root becomes inaccessible",
+      "description": "Keep the provenance edge (derived_from / citation by name and source_id) but tombstone the source's retrievable content.",
+      "instance": {
+        "fact_id": "F06-079",
+        "memory_ids": [
+          "e06m_0374",
+          "e06m_0375",
+          "e06m_0376"
+        ],
+        "tombstoned_root": "e06m_0374"
+      },
+      "three_distinct_questions": [
+        "Where did the claim originate? (answerable -- historically sourced, root identified by id)",
+        "Can the underlying evidence currently be inspected? (no -- content withheld/tombstoned)",
+        "How strong is the surviving support? (reduced-confidence, not zero and not full -- a preserved citation chain to a known-but-unverifiable root)"
+      ],
+      "naive_failure_mode": "Collapsing all three questions into one answer -- either claiming the root is still fully verifiable, or claiming the claim is now baseless because the root can't be reread.",
+      "metric": "Provenance Hallucination Rate, Root Recovery Accuracy"
+    }
+  ],
+  "recommended_first_perturbation": "P06-A using the fanout_1 / fanout_5 / fanout_25 triple (F06-015 / F06-016 / F06-017) -- cheapest to score and most diagnostic of the central research question (citation count vs. evidence independence)."
+}
