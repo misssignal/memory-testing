@@ -1,0 +1,44 @@
+{
+  "benchmark": "adversarial_memory_corpus",
+  "version": "0.1",
+  "generated_at": "2026-09-03",
+  "experiments": {
+    "06": {
+      "story": "thornfield_sentinel",
+      "title": "Roots, Echoes, and Evidence Lineage",
+      "memories": 413,
+      "queries": 128,
+      "fact_instances": 88,
+      "directory": "experiment_06_roots_echoes_evidence_lineage"
+    }
+  },
+  "total_memories": 413,
+  "total_queries": 128,
+  "blind_run_recommendation": {
+    "strip_fields": [
+      "_oracle"
+    ],
+    "strip_with_extra_care": [
+      "_oracle.archived_text_dev_only"
+    ],
+    "optionally_strip": [
+      "subject_entity_id"
+    ],
+    "preserve": [
+      "event_time",
+      "observation_time",
+      "ingestion_time",
+      "text",
+      "source_id",
+      "source_type",
+      "derived_from",
+      "contradicts",
+      "tags"
+    ],
+    "note": "derived_from and contradicts are ordinary required base-schema fields, not oracle metadata -- they are the graph edges this experiment tests, and must be preserved (not stripped) for the corpus to be usable at all. What is stripped is only the _oracle side-channel that names ground truth (ultimate roots, cycle membership, unsupported-clause spans, etc.)."
+  },
+  "companion_files": {
+    "provenance_graph.json": "per-experiment, node-level lineage graph (spec section 6)",
+    "claim_lineage.json": "per-experiment, claim-level provenance (spec section 6)"
+  }
+}

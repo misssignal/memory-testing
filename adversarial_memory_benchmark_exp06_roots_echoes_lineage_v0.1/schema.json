@@ -1,0 +1,133 @@
+{
+  "memory_record": {
+    "required": [
+      "memory_id",
+      "experiment",
+      "story_id",
+      "event_time",
+      "observation_time",
+      "ingestion_time",
+      "subject_text",
+      "subject_entity_id",
+      "predicate",
+      "object",
+      "text",
+      "memory_type",
+      "truth_role",
+      "scope",
+      "source_id",
+      "source_type",
+      "derived_from",
+      "supersedes",
+      "contradicts",
+      "aliases_used",
+      "tags"
+    ],
+    "scope_keys": [
+      "project",
+      "team",
+      "environment",
+      "platform",
+      "region",
+      "facility",
+      "version",
+      "customer_tier",
+      "employment_class",
+      "release_channel",
+      "authority"
+    ],
+    "truth_roles": [
+      "globally_true",
+      "scoped_true",
+      "partially_true",
+      "overgeneralized",
+      "underspecified",
+      "false",
+      "outdated",
+      "exception",
+      "unresolved",
+      "corrected"
+    ],
+    "notes": {
+      "_oracle": "Development-only metadata; strip for blind-system runs.",
+      "null_scope": "Null means not normalized/unspecified in the exposed record, not necessarily global.",
+      "unchanged_from_exp03_04": "This required-field list and its notes are byte-identical to the exp03/04 bundle's schema.json, per the additive-only convention: the shared harness parses memory_record the same way across every experiment."
+    },
+    "experiment_06_extension": {
+      "note": "Experiment 06 adds no new REQUIRED top-level fields (so the shared harness can still parse this bundle with an unmodified memory_record reader). Its lineage semantics live in three places: the existing `derived_from` field (already required by the base schema, used here as the graph edge list), the existing `contradicts` field (used by the `contradiction` family to flag metadata/content mismatch), and two new sibling files that carry graph-level and claim-level detail that does not fit a flat per-memory record.",
+      "_oracle.node_type": "enum: evidence_root | primary_observation | interpretation | derived_summary | transformed_claim | copied_claim | quoted_claim | model_generated | reingested (see provenance_bible.md for definitions)",
+      "_oracle.is_evidence_root": "bool",
+      "_oracle.adds_new_evidence": "bool -- false for every node that is not itself an evidence_root, including model_generated/reingested nodes (Invariant 06-A)",
+      "_oracle.retrievable": "bool -- false only for tombstoned sources (the `disappearance` family); such records have their exposed `text` replaced with a tombstone stub and their real content moved to `_oracle.archived_text_dev_only`",
+      "_oracle.archived_text_dev_only": "string|null -- present only when retrievable=false; MUST be stripped for blind runs even more carefully than the rest of _oracle, since it directly answers the P06-H queries by inspection",
+      "_oracle.unsupported_clause": "string|null -- the exact substring of `text` that is an injected, unsupported assertion (06.7); null for every other memory",
+      "_oracle.dev_flags": "list[str] -- development-only labels such as 'cycle_member'; never mirrored into the exposed `tags` field (see self_review.md, Audit method, for why this separation matters)",
+      "_oracle.fact_id": "groups memories belonging to one lineage cluster, analogous to exp03/04's fact_id (F04-NNN); this bundle uses F06-NNN",
+      "_oracle.instance_meta": "free-form dict recording which perturbation (if any) this instance realizes, e.g. {'perturbation': 'P06-A_fanout25'}"
+    },
+    "provenance_graph_node": {
+      "file": "provenance_graph.json",
+      "shape": {
+        "node_id": "== memory_id",
+        "node_type": "see _oracle.node_type enum above",
+        "family": "adversarial subfamily tag, e.g. '06.4'",
+        "fact_id": "F06-NNN",
+        "claims": "list[claim_id] belonging to this node",
+        "derived_from": "list[memory_id], identical to the memory record's own derived_from",
+        "ultimate_evidence_roots": "list[memory_id] -- transitive closure to nodes with is_evidence_root=true; [] for nodes that only participate in an unresolvable citation cycle (see ultimate_evidence_roots_note)",
+        "ultimate_evidence_roots_note": "string|null -- explains why roots are [] when relevant (currently only used for cycle membership)",
+        "adds_new_evidence": "bool",
+        "retrievable": "bool",
+        "contradicts_derivation_source": "bool -- true when this node's `contradicts` list is non-empty"
+      }
+    },
+    "claim_lineage_record": {
+      "file": "claim_lineage.json",
+      "shape": {
+        "claim_id": "string",
+        "memory_id": "the memory this claim's text appears in",
+        "claim_text": "the specific clause/sentence this claim covers -- may be a strict substring of the memory's full `text`",
+        "supported": "bool",
+        "support": "list of {root: memory_id, path: list[memory_id] from root to this memory} -- [] when supported=false",
+        "cycle_member": "bool",
+        "note": "string, optional -- present on unsupported-clause claims explaining why (Invariant 06-E)"
+      }
+    }
+  },
+  "query_record": {
+    "required": [
+      "query_id",
+      "query",
+      "category",
+      "target_entity_ids",
+      "forbidden_entity_ids",
+      "expected_claims",
+      "acceptable_claims",
+      "forbidden_claims",
+      "required_scope",
+      "relevant_memory_ids",
+      "distractor_memory_ids",
+      "must_disambiguate",
+      "must_preserve_scope",
+      "must_surface_multiple_states",
+      "should_abstain",
+      "notes"
+    ],
+    "notes": {
+      "unchanged_from_exp03_04": "This required-field list is byte-identical to the exp03/04 bundle's query_record schema."
+    },
+    "experiment_06_extension": {
+      "categories": ["9.1", "9.2", "9.3", "9.4", "9.5", "9.6", "9.7", "9.8"],
+      "category_legend": {
+        "9.1": "root tracing", "9.2": "independence", "9.3": "path reconstruction",
+        "9.4": "unsupported claim detection", "9.5": "circular citation",
+        "9.6": "provenance completeness", "9.7": "source-loss queries", "9.8": "comparison queries"
+      },
+      "required_source_roots": "list[memory_id] -- the evidence roots a correct answer must cite; [] when none exist (cyclic/unsupported cases)",
+      "expected_independent_root_count": "int|null -- the correct count of genuinely independent evidence roots for this query's claim",
+      "expected_lineage_paths": "list[list[memory_id]] -- one or more root-to-claim paths a correct path-reconstruction answer should be able to name",
+      "must_detect_cycle": "bool -- true iff the correct answer must flag that the supporting citations form a cycle",
+      "must_report_missing_provenance": "bool -- true iff the correct answer must explicitly flag incomplete/unverifiable lineage rather than treating it as either fully known or fully absent"
+    }
+  }
+}
