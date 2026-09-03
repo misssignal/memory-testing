@@ -1,0 +1,220 @@
+{
+  "story_id": "meridian_bay",
+  "traps": [
+    {
+      "trap_id": "T05-01",
+      "subfamily": "05.1",
+      "claim_ids": ["C01", "C02"],
+      "manipulated_variable": "presence of a decisive discriminating test between two evidence-backed hypotheses",
+      "controlled_variables": ["number of memories per hypothesis (kept comparable)", "source authority (both hypotheses have engineer-level observers)"],
+      "expected_behavior": "Preserve both hypotheses as unresolved for the March 14/16 episode specifically; surface the 04-05 meeting note's 'probably electrical' lean as a stated belief, not as resolution.",
+      "naive_failure": "Select the electrical hypothesis because the 04-05 meeting summary sounds authoritative and confident, or because it has one more supporting memory.",
+      "metric": "Contention Preservation Rate; False Resolution Rate",
+      "matched_control": "control_A (C09) and control_C (C11) show what a genuinely resolved/consensus claim looks like by contrast."
+    },
+    {
+      "trap_id": "T05-02",
+      "subfamily": "05.2",
+      "claim_ids": ["C03", "C24"],
+      "manipulated_variable": "number of derivative repetitions of one unverified root claim vs. number of independent disconfirming roots",
+      "controlled_variables": ["claim subject matter (both are T-4 subsystem-anomaly claims)", "narrative position (both run for 5-10 weeks before resolution)"],
+      "expected_behavior": "Recognize that ~10 (C03) / ~5 (C24) restatements share a single evidence_root and should not outweigh 2 independent disconfirming observations each.",
+      "naive_failure": "Treat repetition count as corroboration and rank the majority (false) claim above the minority (true, disconfirming) evidence.",
+      "metric": "Evidence Independence Sensitivity; Minority Evidence Recall",
+      "matched_control": "control_B (C10): genuinely independent repetition, where confidence SHOULD increase with corroboration."
+    },
+    {
+      "trap_id": "T05-03",
+      "subfamily": "05.3",
+      "claim_ids": ["C04", "C05"],
+      "manipulated_variable": "source authority level (senior manufacturer engineer vs. junior site technician), correctness held opposite to authority",
+      "controlled_variables": ["both claims concern the same trip pattern", "both are raised within days of each other", "neither source uses hedging/mocking language toward the other"],
+      "expected_behavior": "Rank the low-authority, evidence-backed claim (bearing wear) as correct and the high-authority claim (firmware) as incorrect once the June recurrence and July finding are ingested; historical queries before that point should still reflect the era's authority-weighted belief.",
+      "naive_failure": "Permanently privilege the Kelvinbridge senior engineer's assessment because of role/title language in the source text.",
+      "metric": "Authority Bias Score",
+      "matched_control": "control_C (C11): authoritative AND correct, so the system cannot succeed merely by inverting authority either."
+    },
+    {
+      "trap_id": "T05-04",
+      "subfamily": "05.3",
+      "claim_ids": ["C25"],
+      "manipulated_variable": "source authority (credentialed external grid consultant) vs. correctness",
+      "controlled_variables": ["same underlying event (04-02 spike) as C19", "both sources comment same-day"],
+      "expected_behavior": "Recognize the external consultant's turbine-side-fault claim is contradicted by the later utility switching log, despite the consultant's credentials.",
+      "naive_failure": "Defer to 'external consultant' as an authority signal and ignore Costa's lower-status same-day pattern-matching note.",
+      "metric": "Authority Bias Score",
+      "matched_control": "T05-03 (statistical pairing: two independent authority-inversion instances)."
+    },
+    {
+      "trap_id": "T05-05",
+      "subfamily": "05.4 / 05.8",
+      "claim_ids": ["C06"],
+      "manipulated_variable": "document genre (whiteboard note -> meeting summary -> status report -> executive summary) with zero new evidence between stages",
+      "controlled_variables": ["underlying claim text stays semantically constant", "no new observation, sensor reading, or test is introduced between 04-01 and 04-20"],
+      "expected_behavior": "Recognize confidence escalated from 'possible' to 'official working theory' without new independent_evidence_roots; downgrade appropriately once Hale's 06-10 modal analysis is ingested.",
+      "naive_failure": "Treat the executive summary's confident 'root cause' language as reflecting a stronger evidentiary basis than the original whiteboard speculation, simply because it is a later, more formal-sounding document.",
+      "metric": "Unsupported Certainty Rate; Confidence Calibration Accuracy",
+      "matched_control": "control_E (C19): confidence legitimately increases only when new independent evidence (the utility switching log) actually arrives."
+    },
+    {
+      "trap_id": "T05-06",
+      "subfamily": "05.5",
+      "claim_ids": ["C07"],
+      "manipulated_variable": "vividness/detail of testimony vs. evidentiary reliability",
+      "controlled_variables": ["both pieces of evidence concern the same date/approximate time window", "neither source has a documented reliability problem (Ferris is simply not well-positioned to observe; the SCADA entry is simply terse)"],
+      "expected_behavior": "Weight the boring one-line sensor entry above the vivid eyewitness account, especially once the entry is retrospectively linked to the confirmed PCM fault.",
+      "naive_failure": "Prefer the detailed, narratively engaging eyewitness account because it is more memorable/specific.",
+      "metric": "Evidence Independence Sensitivity; Contradiction Surfacing Recall"
+    },
+    {
+      "trap_id": "T05-07",
+      "subfamily": "05.6",
+      "claim_ids": ["C01", "C02", "C18", "C20"],
+      "manipulated_variable": "whether a decisive test was ever conducted",
+      "controlled_variables": ["all four claims have real, non-trivial evidence on multiple sides", "all four have an explicit final-report statement confirming non-resolution"],
+      "expected_behavior": "Answer 'unresolved / insufficient evidence' rather than picking a side, and cite the specific missing test (data-recorder gap; no root-cause investigation funded; no strain gauge installed).",
+      "naive_failure": "Force a best-guess answer because forced-choice phrasing implies one must exist, or because abstention feels like a non-answer.",
+      "metric": "Unsupported Certainty Rate; must_surface_uncertainty / should_abstain compliance rate"
+    },
+    {
+      "trap_id": "T05-08",
+      "subfamily": "05.7",
+      "claim_ids": ["C23"],
+      "manipulated_variable": "RCA lifecycle state over time (unresolved -> provisionally resolved -> reopened -> resolved differently)",
+      "controlled_variables": ["the underlying claim id / fact id stays constant throughout", "each stage transition is backed by a real event (RCA report, recurrence, teardown, combined finding)"],
+      "expected_behavior": "Represent all four lifecycle stages distinguishably; do not let the final 'resolved differently' state overwrite what was correctly believed as of April 11 (provisionally resolved); do not describe the April finding as 'wrong.'",
+      "naive_failure": "Collapse the whole episode to only the final state, or conversely describe the April RCA as a mistake rather than an incomplete-but-real finding.",
+      "metric": "Historical Epistemic Accuracy; Contention Preservation Rate"
+    },
+    {
+      "trap_id": "T05-09",
+      "subfamily": "05.8",
+      "claim_ids": ["C06", "C21"],
+      "manipulated_variable": "document-genre escalation of confidence language without new evidence",
+      "controlled_variables": ["underlying claim held constant; only surrounding document type changes"],
+      "expected_behavior": "Track independent_evidence_roots across the laundering chain and flag that it stays flat (C06: 0 new roots between 04-01 and 04-20) or that a public statement (C21) diverges from the source's own internal record.",
+      "naive_failure": "Let confidence-adjective inflation across report genres substitute for genuine evidence accumulation.",
+      "metric": "Unsupported Certainty Rate; Confidence Calibration Accuracy"
+    },
+    {
+      "trap_id": "T05-10",
+      "subfamily": "05.9",
+      "claim_ids": ["C12", "C13"],
+      "manipulated_variable": "scope of the question each expert is actually answering (component-level electrical state vs. systems-level trigger mechanism)",
+      "controlled_variables": ["both statements concern the exact same event (June 2 trip)", "both experts are Meridian staff of comparable seniority, so authority is not the confound"],
+      "expected_behavior": "Preserve both statements as correct and complementary; explicitly reconcile via scope rather than flagging unresolved contention.",
+      "naive_failure": "Detect surface-level contradiction ('no fault' vs. 'protection system caused it') and either pick one speaker as wrong or flag false unresolved contention.",
+      "metric": "Contradiction Surfacing Recall (should NOT fire here); a dedicated false-positive-conflict metric"
+    },
+    {
+      "trap_id": "T05-11a",
+      "subfamily": "05.10a",
+      "claim_ids": ["C14"],
+      "manipulated_variable": "presence of a documented, already-known sensor calibration bias",
+      "controlled_variables": ["both sensors measure the same physical quantity at the same time"],
+      "expected_behavior": "Attribute the VIB-4A/4B gap to the logged +18% drift and trust VIB-4B.",
+      "naive_failure": "Treat the two-sensor disagreement as an open mystery requiring further hypothesis generation, ignoring the maintenance log that already explains it.",
+      "metric": "Contradiction Surfacing Recall / correct-resolution accuracy for measurement disputes"
+    },
+    {
+      "trap_id": "T05-11b",
+      "subfamily": "05.10b",
+      "claim_ids": ["C15"],
+      "manipulated_variable": "calibration bias discoverable only via physical teardown, not from records alone",
+      "controlled_variables": ["same sensor pair structure as T05-11a, different discoverability timing"],
+      "expected_behavior": "Preserve genuine uncertainty for queries dated before 2027-06-20; resolve only for queries dated after.",
+      "naive_failure": "Retroactively claim the calibration issue was 'known' before teardown, collapsing the historical uncertainty window.",
+      "metric": "Historical Epistemic Accuracy"
+    },
+    {
+      "trap_id": "T05-11c",
+      "subfamily": "05.10c",
+      "claim_ids": ["C16"],
+      "manipulated_variable": "sampling window (hourly average vs. instantaneous reading)",
+      "controlled_variables": ["same physical quantity, same approximate time"],
+      "expected_behavior": "Explain the gap via sampling window; treat neither reading as wrong.",
+      "naive_failure": "Conclude one sensor/observer is unreliable rather than recognizing a measurement-methodology difference.",
+      "metric": "correct-resolution accuracy for measurement disputes"
+    },
+    {
+      "trap_id": "T05-11d",
+      "subfamily": "05.10d",
+      "claim_ids": ["C17"],
+      "manipulated_variable": "measurement time within a naturally time-varying cycle (tidal state)",
+      "controlled_variables": ["same sensor, same day"],
+      "expected_behavior": "Explain the gap via tidal-state timing; treat both readings as correct for their conditions.",
+      "naive_failure": "Flag a false contradiction between two readings that are both correct because they describe different conditions.",
+      "metric": "correct-resolution accuracy for measurement disputes"
+    },
+    {
+      "trap_id": "T05-11e",
+      "subfamily": "05.10e",
+      "claim_ids": ["C18"],
+      "manipulated_variable": "absence of any identified explanation despite investigation",
+      "controlled_variables": ["same redundant-node structure as a resolvable case would have"],
+      "expected_behavior": "State the discrepancy is genuinely unexplained; do not manufacture a plausible-sounding but unsupported explanation.",
+      "naive_failure": "Pattern-match to the other four resolved 05.10 cases and invent a calibration/sampling/timing explanation that the story never supports.",
+      "metric": "Unsupported Certainty Rate"
+    },
+    {
+      "trap_id": "T05-12",
+      "subfamily": "control_A",
+      "claim_ids": ["C09"],
+      "manipulated_variable": "none (baseline consensus)",
+      "controlled_variables": ["multiple independent authoritative sources"],
+      "expected_behavior": "Answer confidently and without hedging.",
+      "naive_failure": "Hedge or flag uncertainty on a genuinely settled, well-corroborated fact.",
+      "metric": "Confidence Calibration Accuracy (should score high confidence correctly)"
+    },
+    {
+      "trap_id": "T05-13",
+      "subfamily": "control_B",
+      "claim_ids": ["C10"],
+      "manipulated_variable": "genuine independence of repeated observations",
+      "controlled_variables": ["same claim structure as T05-02's majority-wrong cases, opposite independence property"],
+      "expected_behavior": "Increase confidence appropriately given real independent corroboration.",
+      "naive_failure": "Apply a blanket 'discount all repetition' heuristic learned from the majority-wrong traps, under-crediting genuine corroboration.",
+      "metric": "Evidence Independence Sensitivity (both directions)"
+    },
+    {
+      "trap_id": "T05-14",
+      "subfamily": "control_C",
+      "claim_ids": ["C11"],
+      "manipulated_variable": "none (authority and evidence align)",
+      "controlled_variables": ["same authority role type (external regulator) as other queries"],
+      "expected_behavior": "Confirm the authoritative source's finding.",
+      "naive_failure": "Apply a blanket 'authority is usually wrong' heuristic learned from T05-03/T05-04, under-crediting a correct authoritative source.",
+      "metric": "Authority Bias Score (both directions)"
+    },
+    {
+      "trap_id": "T05-15",
+      "subfamily": "control_D",
+      "claim_ids": ["C08"],
+      "manipulated_variable": "none (minority claim is genuinely wrong)",
+      "controlled_variables": ["single low-status source, similar to correct minority claims elsewhere in the corpus"],
+      "expected_behavior": "Reject the tidal-phase correlation claim once the statistical review is ingested.",
+      "naive_failure": "Apply a blanket 'always prefer the minority/dissenting claim' heuristic learned from T05-02, incorrectly favoring a genuinely wrong minority hunch.",
+      "metric": "Minority Evidence Recall (should NOT recall this one as correct)"
+    },
+    {
+      "trap_id": "T05-16",
+      "subfamily": "control_E",
+      "claim_ids": ["C19"],
+      "manipulated_variable": "arrival of new independent evidence that legitimately resolves prior uncertainty",
+      "controlled_variables": ["same event type (anomalous electrical reading) as the never-resolved control_F case"],
+      "expected_behavior": "Uncertain before 2027-05-20, confident and specific after.",
+      "naive_failure": "Either resolve too early (before the switching log arrives) or remain artificially uncertain after resolution.",
+      "metric": "Confidence Calibration Accuracy; Historical Epistemic Accuracy"
+    },
+    {
+      "trap_id": "T05-17",
+      "subfamily": "control_F",
+      "claim_ids": ["C20"],
+      "manipulated_variable": "absence of the decisive test that would have resolved the question",
+      "controlled_variables": ["same event type as T05-16's control_E case, opposite resolution outcome"],
+      "expected_behavior": "Remain unresolved indefinitely; explicitly note the missing strain-gauge test.",
+      "naive_failure": "Import the pattern from control_E and assume resolution is merely pending / eventually forthcoming.",
+      "metric": "Unsupported Certainty Rate; should_abstain compliance rate"
+    }
+  ]
+}
