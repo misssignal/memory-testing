@@ -1,0 +1,21 @@
+{
+  "EXPERIMENT_MAP.md": "be9c4a146a9061c83b085d46c3f1860642903fd02d87b2cdf557a8c39108f28b",
+  "README.md": "9107d9cca60cd30ef1b830208ec38e049cbd442d9bf8a543ba54aae0a09e7b0a",
+  "SELF_REVIEW.md": "9a47ff4b50a00b332393c5d077938fbb96bc9e62eecc11457c0d10c4c8974a93",
+  "STAGE_1_SELECTION.md": "3d576279bceac74c40bba749e7a3a2857746f447b8e8e7b0fc0bed5a25884220",
+  "experiment_07_the_shape_of_what_is_not_known/README.md": "8694836881e515808de368ed60cd3ef9ef0f859362779bd73c94ea581c3f7e85",
+  "experiment_07_the_shape_of_what_is_not_known/experimental_map.md": "d78ca570e045731407bb1fc981bb79533ee8b84b196c727a8965f9c68ab9bd16",
+  "experiment_07_the_shape_of_what_is_not_known/ingestion_chronological.jsonl": "594233f563b4fe9e75cc1236a9cb64b7dcb20e4889011f825a75558201a761be",
+  "experiment_07_the_shape_of_what_is_not_known/ingestion_late_arrival.jsonl": "a0e8f2f5bda9e01fa8e1c395fe701abbb57ee4f06b90b2f4dc8640b18c900156",
+  "experiment_07_the_shape_of_what_is_not_known/ingestion_shuffled.jsonl": "f8d02c80a96b996211a2a4a3496a92b41c06ed93da2af96db2db1658a4f58659",
+  "experiment_07_the_shape_of_what_is_not_known/memories.jsonl": "8cef7d5ba1368988c54dd0b9c1d28a92f4d94bb87582564ebf3be7b2125763a6",
+  "experiment_07_the_shape_of_what_is_not_known/missingness_map.json": "216f6b0b5f1327f155bfac687d2bf5aa001291b0ccc4ef43e9d20e416270d9f0",
+  "experiment_07_the_shape_of_what_is_not_known/perturbations/perturbation_plan.json": "7bb35b86a9569849e3d00c71bf45d214d8450c867470ab6db488f62fce900031",
+  "experiment_07_the_shape_of_what_is_not_known/provenance.json": "455ee8534adbcd50b8382bcd72a7fe8820d9c10576c6cbd5e7cee35b62d686b7",
+  "experiment_07_the_shape_of_what_is_not_known/queries.jsonl": "3ac242864c10f5d71590e9bd3ad7bf7f5dd8d739cad2ceabc8eddf513b177e0b",
+  "experiment_07_the_shape_of_what_is_not_known/sources.md": "01556beee79cf6404719c48d583d562bbf72f3e83e6e49af3507456ddc641de9",
+  "experiment_07_the_shape_of_what_is_not_known/story_bible.md": "6c98479a9712d41c9758caf03bbbeb7b17120a77cf4d223b9383a767dd954c96",
+  "experiment_07_the_shape_of_what_is_not_known/truth_state.json": "313447ca72a40de9b18963d5567deda96c0530ae29039f8f1819110ac4bd12b1",
+  "manifest.json": "de6197e112bc4d084b7d666c99f4c78f69674d907ece3815e8e8eb78c5d1e7f5",
+  "schema.json": "e5bac7da04955011dd5800e20b93cfd9920a9ce49350aad8ee271c50a399479a"
+}

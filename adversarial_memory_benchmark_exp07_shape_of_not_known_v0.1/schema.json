@@ -1,0 +1,135 @@
+{
+  "memory_record": {
+    "required": [
+      "memory_id",
+      "experiment",
+      "story_id",
+      "event_time",
+      "observation_time",
+      "ingestion_time",
+      "subject_text",
+      "subject_entity_id",
+      "predicate",
+      "object",
+      "text",
+      "memory_type",
+      "truth_role",
+      "scope",
+      "source_id",
+      "source_type",
+      "derived_from",
+      "supersedes",
+      "contradicts",
+      "aliases_used",
+      "tags"
+    ],
+    "scope_keys": [
+      "project",
+      "team",
+      "environment",
+      "platform",
+      "region",
+      "facility",
+      "version",
+      "customer_tier",
+      "employment_class",
+      "release_channel",
+      "authority"
+    ],
+    "truth_roles": [
+      "globally_true",
+      "scoped_true",
+      "partially_true",
+      "overgeneralized",
+      "underspecified",
+      "false",
+      "outdated",
+      "exception",
+      "unresolved",
+      "corrected"
+    ],
+    "notes": {
+      "_oracle": "Development-only metadata; strip for blind-system runs.",
+      "null_scope": "Null means not normalized/unspecified in the exposed record, not necessarily global.",
+      "_oracle.claim_id": "Links a memory to its missingness_map.json / experimental_map.md proposition, when applicable. Null for narrative filler.",
+      "_oracle.coverage_role": "One of trap_anchor | supporting | control_anchor | narrative_filler. Marks whether a memory is load-bearing evidence for a claim or ambient narrative texture."
+    },
+    "base_schema": "Inherits the base memory_record shape from the Experiments 03/04 bundle (adversarial_memory_benchmark_exp03_04_v0.1/schema.json); no required field was removed or repurposed."
+  },
+  "query_record": {
+    "required": [
+      "query_id",
+      "query",
+      "category",
+      "target_entity_ids",
+      "forbidden_entity_ids",
+      "expected_claims",
+      "acceptable_claims",
+      "forbidden_claims",
+      "required_scope",
+      "relevant_memory_ids",
+      "distractor_memory_ids",
+      "must_disambiguate",
+      "must_preserve_scope",
+      "must_surface_multiple_states",
+      "should_abstain",
+      "notes",
+      "answerability",
+      "missingness_type",
+      "compatible_world_count",
+      "negative_inference_valid",
+      "premise_valid",
+      "required_abstention_reason"
+    ],
+    "experiment_07_additions": {
+      "answerability": {
+        "enum": [
+          "known_true",
+          "known_false",
+          "known_value",
+          "inferable",
+          "unknown_missing",
+          "unknown_inaccessible",
+          "unknown_underdetermined",
+          "unknown_conflicted"
+        ],
+        "description": "The correct epistemic status of the query's answer, per the corpus's authoritative missingness_map.json. Deliberately not collapsed to a single 'unknown' bucket — see the generation spec's Stage 7."
+      },
+      "missingness_type": {
+        "enum": [
+          "never_recorded",
+          "coverage_gap",
+          "inaccessible_source",
+          "lost_evidence",
+          "underdetermined_multi_world",
+          "known_unspecified_value",
+          "default_value_trap",
+          "continuity_gap",
+          "ambiguous_enumeration_language",
+          "document_never_existed",
+          "premise_invalid",
+          "deduction_licensed",
+          null
+        ],
+        "description": "Why the answer has the answerability status it does. Null for plain known_true/known_false/known_value/inferable queries that need no missingness explanation."
+      },
+      "compatible_world_count": {
+        "type": "integer_or_null",
+        "description": "Number of hidden-world states the evidence is compatible with (>=2 for genuine underdetermination; 1 for a fully resolved claim; null when not meaningful, e.g. a pure premise-rejection query)."
+      },
+      "negative_inference_valid": {
+        "type": "boolean_or_null",
+        "description": "Whether a 'no matching record' result licenses a confident negative answer for this specific query's scope. True only when the underlying channel is exhaustive for that scope and window."
+      },
+      "premise_valid": {
+        "type": "boolean",
+        "description": "False when the query's own phrasing presupposes an event, approval, or document that the corpus does not establish. A correct system should reject or qualify the premise rather than answer as posed."
+      },
+      "required_abstention_reason": {
+        "type": "string_or_null",
+        "description": "The specific, checkable reason a correct system should give for abstaining (or for the confidence of a negative/positive answer), drawn from the story bible's observability model. Null when should_abstain is false and no explanation is needed."
+      }
+    },
+    "base_schema": "Inherits the base query_record shape from the Experiments 03/04 bundle; all prior required fields are preserved unchanged, only extended."
+  }
+}
