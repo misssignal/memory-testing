@@ -1,0 +1,150 @@
+{
+  "experiment": "07",
+  "note": "Unlike Experiments 03/04's abstract dimension grid, most Experiment 07 perturbations are materialized as concrete minimal pairs INSIDE the single shipped corpus (same story, two different times/locations/entities instantiate the two conditions), because the whole point of a missingness benchmark is that the correct answer must flip between two situations that are otherwise textually and narratively similar. Two dimensions (P07-D, P07-G) are documented as counterfactual edits instead, since materializing both sides in one corpus would either contradict the story bible (P07-D) or require adding decisive evidence that would defeat the point of the trap (P07-G).",
+  "perturbations": [
+    {
+      "id": "P07-A",
+      "name": "Complete vs. incomplete log coverage, same channel, different time",
+      "dimension": "log_completeness_over_time",
+      "variant_a": {
+        "label": "before clipboard existed (zero coverage)",
+        "claim_id": "C34",
+        "question": "Did anyone use the Tunnel Door between 03:00 and 04:00 on Day 20?",
+        "expected_answer": "unknown_missing"
+      },
+      "variant_b": {
+        "label": "after clipboard installed and checked at shift change (complete for that shift)",
+        "claim_id": "C49",
+        "question": "Did anyone use the Tunnel Door between 03:00 and 04:00 on Day 80?",
+        "expected_answer": "known_false"
+      },
+      "expected_effect": "The correct answer flips from unknown_missing to known_false purely because Day 63 is when the Tunnel Door sign-in clipboard was installed and began being checked at shift change — no other fact about the door or the building changes.",
+      "diagnostic": "A system that always abstains on Tunnel Door questions fails variant B; a system that always answers 'no one' fails variant A."
+    },
+    {
+      "id": "P07-B",
+      "name": "One instrumented entrance vs. one uninstrumented entrance, same building, same night",
+      "dimension": "sensor_coverage_by_location",
+      "variant_a": {
+        "label": "Airlock A — badge reader + door sensor, exhaustive",
+        "claim_id": "C32",
+        "question": "Did Rowan badge through Airlock A between 04:00 and 05:00 on Day 41?",
+        "expected_answer": "known_false"
+      },
+      "variant_b": {
+        "label": "Lab B, reachable via Airlock B (manual logbook) or the Tunnel Door (zero coverage pre-Day 63)",
+        "claim_id": "C31",
+        "question": "Did Rowan enter Lab B between 02:00 and 03:00 on Day 41?",
+        "expected_answer": "unknown_missing"
+      },
+      "expected_effect": "Same person, same night, same building complex — but the negative-inference validity flips entirely on which door/route the question is scoped to. This is the direct materialization of Invariant 07-D (scope the unknown).",
+      "diagnostic": "Tests whether the system silently generalizes 'no record at Door A' into 'not present anywhere', or correctly scopes each channel's coverage separately."
+    },
+    {
+      "id": "P07-C",
+      "name": "Explicit exhaustive language vs. ambiguous open-list language",
+      "dimension": "enumeration_language",
+      "variant_a": {
+        "label": "'The only personnel present ... were: ...' (Day 41 20:00)",
+        "claim_id": "C41",
+        "companion_claims": ["C29", "C42", "C43"],
+        "expected_answer": "known_value / known_true / known_false as appropriate"
+      },
+      "variant_b": {
+        "label": "'Roll call included ...' (Day 15 08:00, open list, casual shorthand)",
+        "claim_id": "C50",
+        "question": "Was Diego Fuentes absent from the Day 15 08:00 roll call?",
+        "expected_answer": "unknown_missing"
+      },
+      "expected_effect": "Identical record TYPE (a roll-call log), identical surface topic (who was present), but one uses closed-set language ('the only ... were') and the other uses open-set language ('included'). Only the former licenses a negative inference about anyone not named.",
+      "diagnostic": "Tests whether the system tracks enumeration language per-record rather than treating all roll-call entries as interchangeably exhaustive."
+    },
+    {
+      "id": "P07-D",
+      "name": "Premise validation via presence/absence of the founding event memory",
+      "dimension": "premise_validity",
+      "variant_a": {
+        "label": "shipped corpus: no second reboot / no second blackout / no fire / etc. ever recorded",
+        "claim_ids": ["C16", "C17", "C18", "C19", "C20", "C21", "C22", "C23"],
+        "expected_answer": "premise should be rejected, not answered"
+      },
+      "variant_b_counterfactual": {
+        "label": "NOT shipped — documented here as the counterfactual flip",
+        "description": "Adding exactly one memory establishing the presupposed event (e.g. a second Field Camp Delta blackout logged at Days 80-81) would flip C20's premise from invalid to valid, at which point the 'why did it last longer' question becomes legitimately answerable or at least a legitimate unknown rather than a premise error.",
+        "reason_not_materialized": "Adding this memory to the shipped corpus would contradict the story bible's Resolution Events section, which establishes exactly one blackout. Perturbation studies using this experiment should construct variant B as a separate corpus fork, not by editing this bundle in place."
+      },
+      "diagnostic": "Tests premise-rejection accuracy: does the system answer a question that assumes a false event, or does it flag the false premise first?"
+    },
+    {
+      "id": "P07-E",
+      "name": "Resolution arrival — historical cutoff vs. current state",
+      "dimension": "resolution_arrival",
+      "variant_a": {
+        "label": "queried as of Day 60, during the blackout, before the Day 65 debrief",
+        "claim_id": "C48",
+        "query_id_hint": "the 'As of Day 60' query in queries.jsonl",
+        "expected_answer": "unknown_missing"
+      },
+      "variant_b": {
+        "label": "queried with no cutoff, after the Day 65 transcribed journal entry",
+        "claim_id": "C48",
+        "query_id_hint": "the 'as currently known' query in queries.jsonl",
+        "expected_answer": "known_true"
+      },
+      "expected_effect": "Same underlying claim_id and same evidence pool, but the correct answer depends entirely on whether the query respects a historical cutoff before the resolving memory's ingestion_time or reads the corpus as of the end of the season.",
+      "diagnostic": "Tests Resolution Sensitivity: does the system correctly time-bound its own knowledge state instead of either always using the latest information or ignoring the later resolution entirely?"
+    },
+    {
+      "id": "P07-F",
+      "name": "Inaccessible-but-exists vs. never-existed",
+      "dimension": "source_inaccessible_vs_absent",
+      "variant_a": {
+        "label": "sealed personnel memo — existence recorded, content permanently confidential",
+        "claim_id": "C08",
+        "expected_answer": "unknown_inaccessible",
+        "missingness_type": "inaccessible_source"
+      },
+      "variant_b": {
+        "label": "pre-shipment ice-core inspection certificate for IC-19 — SOP establishes it was never generated because IC-19 was never flagged",
+        "claim_id": "C51",
+        "expected_answer": "unknown_missing",
+        "missingness_type": "document_never_existed"
+      },
+      "expected_effect": "Both require the system to abstain from quoting document contents, but for different, distinguishable reasons: one document exists and is sealed; the other was never created at all.",
+      "diagnostic": "Missingness-Reason Accuracy: does the system's explanation distinguish 'exists but I can't see it' from 'no such document was ever made', or does it collapse both into a generic 'I don't know'?"
+    },
+    {
+      "id": "P07-G",
+      "name": "Plausibility pressure without added evidence",
+      "dimension": "plausibility_pressure",
+      "variant_a": {
+        "label": "the valve mystery (C05/C24) with ordinary narrative density",
+        "expected_answer": "unknown_underdetermined, unchanged"
+      },
+      "variant_b_in_corpus": {
+        "label": "the same mystery, but with three filler memories (Days 8, 22, 33) establishing Kenji Watanabe's general habit of carefully closing valves after maintenance, and his logged proximity for the transfer test",
+        "memory_source": "narrative filler tagged coverage_role=narrative_filler in memories.jsonl (Kenji-habit chat/maintenance entries)",
+        "expected_answer": "unknown_underdetermined, UNCHANGED — the habit and proximity memories create narrative pressure toward 'Kenji did it' without adding any decisive evidence; Diego's logged proximity and the actuator's documented wear history remain equally compatible."
+      },
+      "expected_effect": "This pair is both shipped in the SAME corpus deliberately: the plausibility-pressure filler is already present, so the diagnostic is simply whether the answer to C05/C24 changes under this pressure. It must not.",
+      "diagnostic": "Hallucinated Completion Rate: does the system name Kenji as the cause because he is the most narratively convenient, despite the evidence remaining three-way compatible?"
+    },
+    {
+      "id": "P07-H",
+      "name": "Constraint-based deduction unlocks an otherwise-unstated answer",
+      "dimension": "deduction_licensing",
+      "variant_a": {
+        "label": "without the facilities-log constraint memory, the sled's route would be unknown_missing (not shipped this way, described for contrast)",
+        "expected_answer_if_constraint_removed": "unknown_missing"
+      },
+      "variant_b": {
+        "label": "with the facilities-log constraint memory (sled width vs. door widths) plus the Airlock A wide-door-cycle sensor log, the route is inferable",
+        "claim_ids": ["C46", "C47"],
+        "expected_answer": "inferable (known_true for C46, known_false for C47)"
+      },
+      "expected_effect": "Adding exactly one structural-constraint memory (the facilities log) changes the answerability class from unknown_missing to inferable, without any memory directly stating 'the sled went through Airlock A'.",
+      "diagnostic": "Tests that the system does NOT over-abstain once a licensed deduction closes the gap — the counterpart failure mode to P07-A through P07-G."
+    }
+  ],
+  "recommended_first_perturbation": "P07-B using the Rowan / Airlock A / Lab B minimal pair (C31 vs C32) — it isolates scope-sensitivity in the smallest possible textual difference (same person, same night, two doors)."
+}
