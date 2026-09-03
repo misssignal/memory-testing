@@ -1,0 +1,78 @@
+{
+  "experiment": "05",
+  "story_id": "meridian_bay",
+  "note": "This corpus ships World A (the base memories.jsonl) for every perturbation below. Each entry documents exactly what a World-B variant would change, the anchor claim/evidence to build it from, and the single measurable prediction -- following the exp03/04 v0.1 convention of shipping the plan as the Stage-6 deliverable, with generation of the actual variant record sets left to a future revision (see README.md Status).",
+  "perturbations": [
+    {
+      "id": "P05-A",
+      "name": "Repetition count",
+      "anchor": "C03 (biofouling, F05-003)",
+      "world_a": "10 derivative restatements of the single 2027-03-20 root claim (as shipped).",
+      "world_b": "Same root claim repeated only 2x instead of 10x, all other memories (including the 2 independent disconfirmations) unchanged.",
+      "held_constant": ["independent_evidence_roots (still 1 supporting + 2 disconfirming)", "confidence language used in each individual restatement", "claim text", "surrounding narrative"],
+      "prediction": "A system whose confidence in biofouling scales with repetition count will show HIGHER confidence in World A (10x) than World B (2x) despite identical independent evidence; a system that weighs evidence independence correctly will show approximately the SAME (low) confidence in both worlds.",
+      "metric": "Evidence Independence Sensitivity"
+    },
+    {
+      "id": "P05-B",
+      "name": "Authority label",
+      "anchor": "C04/C05 (firmware vs. bearing wear, F05-004/F05-005)",
+      "world_a": "Firmware claim attributed to Dr. Adaeze Okafor, Kelvinbridge senior reliability engineer (as shipped).",
+      "world_b": "Identical claim text and identical supporting telemetry, but attributed to an unnamed junior Kelvinbridge field technician instead.",
+      "held_constant": ["claim text", "underlying telemetry evidence", "date", "eventual disproof via the June recurrence"],
+      "prediction": "A system sensitive to authority-as-truth will report higher initial confidence in World A than World B despite identical evidence; a well-calibrated system's confidence should not depend on the label.",
+      "metric": "Authority Bias Score"
+    },
+    {
+      "id": "P05-C",
+      "name": "One independent corroborator added",
+      "anchor": "C10 (gearbox noise, F05-010) vs. C03 (biofouling, F05-003)",
+      "world_a_equivalent": "C03 as shipped: three-plus reports all derive from one root (evidence_root=root_misread_log_0320).",
+      "world_b_equivalent": "C10 as shipped: the same repetition-count shape, but with a genuinely independent third source (the acoustic sensor) added on top of the two technician observations.",
+      "held_constant": ["number of total supporting memories in the same range", "claim domain (T-4 subsystem anomaly)"],
+      "prediction": "Confidence may appropriately increase in the C10-shaped case (independent corroborator added) but must NOT increase to the same degree in the C03-shaped case (derivative copies only). This pair is already present in the shipped corpus as a naturalistic instance of P05-C rather than requiring a synthetic variant.",
+      "metric": "Evidence Independence Sensitivity"
+    },
+    {
+      "id": "P05-D",
+      "name": "Confidence wording",
+      "anchor": "C06 (harmonic resonance, F05-006)",
+      "world_a": "Laundering chain as shipped: 'maybe... need to check' (possible) -> 'likely contributing factor' (probable) -> 'identified as a contributing factor' (official_working_theory) -> 'root cause' (official_working_theory, laundering peak).",
+      "world_b": "Same four documents, same dates, same derivation chain, but every confidence adjective flattened to 'possible' throughout (i.e. the escalating language is removed while the document-genre progression is kept).",
+      "held_constant": ["underlying evidence (none added at any stage)", "document genre progression", "dates", "derived_from chain"],
+      "prediction": "The evidence is equally weak in both worlds (independent_evidence_roots stays 0 across the whole span in both). A calibration-sensitive system should NOT report higher confidence in World A merely because the words got more confident; a confidence-laundering-vulnerable system will.",
+      "metric": "Confidence Calibration Accuracy; Unsupported Certainty Rate"
+    },
+    {
+      "id": "P05-E",
+      "name": "Resolution withheld",
+      "anchor": "C19 (control_E, resolves) vs. C20 (control_F, never resolves)",
+      "world_a_equivalent": "C19 as shipped: decisive evidence (the utility switching log) does eventually arrive.",
+      "world_b_equivalent": "C20 as shipped: the decisive test (a strain gauge on the subsea connector) is proposed (2027-08-05 filler memory) but never funded or installed.",
+      "held_constant": ["event type (anomalous electrical reading on T-4's export line)", "initial uncertainty framing", "number of competing hypotheses (2 in each)"],
+      "prediction": "A system should answer these two structurally similar cases DIFFERENTLY once both are fully ingested: confidently resolved for C19, explicitly and permanently unresolved for C20. This pair is already present in the shipped corpus as a naturalistic instance of P05-E.",
+      "metric": "Unsupported Certainty Rate; should_abstain compliance"
+    },
+    {
+      "id": "P05-F",
+      "name": "Wrong authority corrected",
+      "anchor": "C21 (Kelvinbridge public statement, F05-021)",
+      "world_a": "As shipped: Voss's 2027-06-25 public 'installation error' statement is contradicted by Kelvinbridge's own 06-20 internal note and by the 07-01 MESB finding, but the spokesperson never issues a public retraction within the story window.",
+      "world_b": "Identical corpus plus one additional memory: a 2027-08-10 Kelvinbridge public retraction explicitly withdrawing the installation-error claim.",
+      "held_constant": ["all prior memories", "internal engineering note content", "MESB finding content"],
+      "prediction": "A historical query ('what did Kelvinbridge state as of 2027-07-01?') must return the same answer in both worlds (the unretracted public claim). A current-state query ('is installation error currently claimed by Kelvinbridge?') must differ: still-claimed in World A, retracted in World B. This isolates whether retraction propagation contaminates historical-state answers.",
+      "metric": "Historical Epistemic Accuracy"
+    },
+    {
+      "id": "P05-G",
+      "name": "Minority evidence removed",
+      "anchor": "C03 (biofouling, F05-003)",
+      "world_a": "As shipped: two independent disconfirming observations present (dive inspection 05-01; independent accelerometer 05-10).",
+      "world_b": "Identical corpus with the independent accelerometer memory (e05m for evidence_root=root_independent_accelerometer_0510) removed, leaving only the single dive inspection as independent counter-evidence.",
+      "held_constant": ["all ten derivative restatements", "the dive inspection memory", "all dates"],
+      "prediction": "Uncertainty about the biofouling theory should appropriately be HIGHER (less confidently disproven) in World B than World A -- one independent disconfirming source is weaker than two. A system insensitive to this should show identical confidence in both worlds.",
+      "metric": "Evidence Independence Sensitivity"
+    }
+  ],
+  "generation_status": "Plan complete for all seven required perturbation types (P05-A through P05-G). Three (P05-C, P05-E, P05-G-adjacent) are additionally instantiated naturally within the shipped World-A corpus via matched claim pairs, so their prediction can be tested today by comparing C03 vs C10, C19 vs C20, and C03's two-root vs one-root evidence structure directly. Materialized World-B variant memory/query files for P05-A, P05-B, P05-D, P05-F, and full P05-G are not yet generated -- see README.md Status."
+}

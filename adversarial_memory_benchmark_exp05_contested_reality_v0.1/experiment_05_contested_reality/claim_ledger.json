@@ -1,0 +1,1073 @@
+{
+  "story_id": "meridian_bay",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "fact_id": "F05-001",
+      "claim": "The March 14/16 T-4 trips were caused by a ground fault in the Power Conversion Module.",
+      "adversarial_subfamily": [
+        "05.1",
+        "05.6"
+      ],
+      "objective_status": "underdetermined",
+      "resolution_status": "unresolved",
+      "supporting_evidence": [
+        "E001_1",
+        "E001_2",
+        "E001_3",
+        "E001_5",
+        "E001_8"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 6,
+      "independent_evidence_root_labels": [
+        "root_costa_review_0324",
+        "root_hale_early_consult_0330",
+        "root_megger_test_0321",
+        "root_park_pcm_review_0319",
+        "root_pcm_leakage_current_0314",
+        "root_pcm_leakage_current_0316"
+      ],
+      "memory_ids": [
+        "e05m_0001",
+        "e05m_0002",
+        "e05m_0003",
+        "e05m_0004",
+        "e05m_0005",
+        "e05m_0006",
+        "e05m_0097",
+        "e05m_0098",
+        "e05m_0141"
+      ],
+      "belief_states": {
+        "2027-03-22": {
+          "investigation_team": "uncertain"
+        },
+        "2027-04-05": {
+          "investigation_team": "probable"
+        },
+        "2027-08-01": {
+          "investigation_team": "unresolved"
+        }
+      }
+    },
+    {
+      "claim_id": "C02",
+      "fact_id": "F05-002",
+      "claim": "The March 14/16 T-4 trips were caused by mechanical bearing degradation triggering a vibration protective trip.",
+      "adversarial_subfamily": [
+        "05.1",
+        "05.6"
+      ],
+      "objective_status": "underdetermined",
+      "resolution_status": "unresolved",
+      "supporting_evidence": [
+        "E002_1",
+        "E002_2",
+        "E002_5",
+        "E002_6",
+        "E002_7"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 4,
+      "independent_evidence_root_labels": [
+        "root_ahn_vib_review_0408",
+        "root_nandy_near_trip_0323",
+        "root_nandy_temp_drift_0318",
+        "root_vib_amplitude_climb_0314"
+      ],
+      "memory_ids": [
+        "e05m_0007",
+        "e05m_0008",
+        "e05m_0009",
+        "e05m_0010",
+        "e05m_0099",
+        "e05m_0100",
+        "e05m_0142"
+      ],
+      "belief_states": {
+        "2027-03-22": {
+          "investigation_team": "unconsidered"
+        },
+        "2027-04-05": {
+          "investigation_team": "possible"
+        },
+        "2027-08-01": {
+          "investigation_team": "unresolved"
+        }
+      }
+    },
+    {
+      "claim_id": "C03",
+      "fact_id": "F05-003",
+      "claim": "Biofouling on the VIB-4A sensor housing is causing spurious T-4 trips.",
+      "adversarial_subfamily": [
+        "05.2"
+      ],
+      "objective_status": "false",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E003_1",
+        "E003_2",
+        "E003_3",
+        "E003_4",
+        "E003_5",
+        "E003_6",
+        "E003_7",
+        "E003_8",
+        "E003_9",
+        "E003_10",
+        "E003_11"
+      ],
+      "contradicting_evidence": [
+        "E003_12",
+        "E003_13",
+        "E003_14",
+        "E003_15",
+        "E003_16"
+      ],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "e05m_0143",
+        "root_dive_inspection_0501",
+        "root_independent_accelerometer_0510"
+      ],
+      "memory_ids": [
+        "e05m_0011",
+        "e05m_0012",
+        "e05m_0013",
+        "e05m_0014",
+        "e05m_0015",
+        "e05m_0016",
+        "e05m_0017",
+        "e05m_0018",
+        "e05m_0019",
+        "e05m_0020",
+        "e05m_0021",
+        "e05m_0022",
+        "e05m_0023",
+        "e05m_0024",
+        "e05m_0143",
+        "e05m_0197"
+      ],
+      "belief_states": {
+        "2027-03-22": {
+          "investigation_team": "probable"
+        },
+        "2027-04-14": {
+          "investigation_team": "probable"
+        },
+        "2027-05-15": {
+          "investigation_team": "disproven"
+        }
+      }
+    },
+    {
+      "claim_id": "C04",
+      "fact_id": "F05-004",
+      "claim": "A firmware v3.2 trip-threshold regression is causing the T-4 trips.",
+      "adversarial_subfamily": [
+        "05.3"
+      ],
+      "objective_status": "false",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E004_1",
+        "E004_2",
+        "E004_3",
+        "E004_6",
+        "E004_7",
+        "E004_8"
+      ],
+      "contradicting_evidence": [
+        "E004_4",
+        "E004_5",
+        "E004_9"
+      ],
+      "independent_evidence_roots": 2,
+      "independent_evidence_root_labels": [
+        "root_okafor_firmware_0325",
+        "root_recurrence_on_v31_0602"
+      ],
+      "memory_ids": [
+        "e05m_0025",
+        "e05m_0026",
+        "e05m_0027",
+        "e05m_0028",
+        "e05m_0029",
+        "e05m_0101",
+        "e05m_0102",
+        "e05m_0103",
+        "e05m_0144"
+      ],
+      "belief_states": {
+        "2027-03-26": {
+          "investigation_team": "probable",
+          "kelvinbridge_team": "probable"
+        },
+        "2027-06-03": {
+          "investigation_team": "unlikely",
+          "kelvinbridge_team": "unlikely"
+        },
+        "2027-07-01": {
+          "investigation_team": "disproven",
+          "kelvinbridge_team": "disproven"
+        }
+      }
+    },
+    {
+      "claim_id": "C05",
+      "fact_id": "F05-005",
+      "claim": "T-4's main shaft bearing is worn and degrading, causing the trips.",
+      "adversarial_subfamily": [
+        "05.3"
+      ],
+      "objective_status": "true",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E005_1",
+        "E005_2",
+        "E005_3",
+        "E005_4",
+        "E005_5",
+        "E005_6",
+        "E005_7"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 7,
+      "independent_evidence_root_labels": [
+        "e05m_0105",
+        "e05m_0145",
+        "root_bearing_inspection_0410",
+        "root_nandy_temp_drift_0318b",
+        "root_nandy_vibration_signature_0409",
+        "root_park_crosscheck_0411",
+        "root_teardown_0620"
+      ],
+      "memory_ids": [
+        "e05m_0030",
+        "e05m_0031",
+        "e05m_0032",
+        "e05m_0033",
+        "e05m_0034",
+        "e05m_0104",
+        "e05m_0105",
+        "e05m_0145"
+      ],
+      "belief_states": {
+        "2027-03-18": {
+          "investigation_team": "uncertain"
+        },
+        "2027-04-10": {
+          "investigation_team": "confirmed"
+        },
+        "2027-06-20": {
+          "investigation_team": "confirmed_but_incomplete"
+        }
+      }
+    },
+    {
+      "claim_id": "C06",
+      "fact_id": "F05-006",
+      "claim": "Harmonic resonance between the rotor and mooring line is the root cause of the T-4 trips.",
+      "adversarial_subfamily": [
+        "05.4",
+        "05.8"
+      ],
+      "objective_status": "unsupported",
+      "resolution_status": "disputed_downgraded",
+      "supporting_evidence": [
+        "E006_1",
+        "E006_2",
+        "E006_3",
+        "E006_4",
+        "E006_8",
+        "E006_9",
+        "E006_10"
+      ],
+      "contradicting_evidence": [
+        "E006_5",
+        "E006_6",
+        "E006_11"
+      ],
+      "independent_evidence_roots": 2,
+      "independent_evidence_root_labels": [
+        "root_hale_modal_analysis_0610",
+        "root_whiteboard_0401"
+      ],
+      "memory_ids": [
+        "e05m_0035",
+        "e05m_0036",
+        "e05m_0037",
+        "e05m_0038",
+        "e05m_0039",
+        "e05m_0040",
+        "e05m_0106",
+        "e05m_0107",
+        "e05m_0108",
+        "e05m_0146",
+        "e05m_0198"
+      ],
+      "belief_states": {
+        "2027-04-01": {
+          "investigation_team": "possible"
+        },
+        "2027-04-14": {
+          "investigation_team": "official_working_theory"
+        },
+        "2027-06-10": {
+          "investigation_team": "disputed"
+        },
+        "2027-07-01": {
+          "investigation_team": "unlikely"
+        }
+      }
+    },
+    {
+      "claim_id": "C07",
+      "fact_id": "F05-007",
+      "claim": "Visible sparks and smoke near the T-4 nacelle on 2027-03-15 indicated an electrical fire.",
+      "adversarial_subfamily": [
+        "05.5"
+      ],
+      "objective_status": "false",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E007_2",
+        "E007_4"
+      ],
+      "contradicting_evidence": [
+        "E007_1",
+        "E007_3"
+      ],
+      "independent_evidence_roots": 4,
+      "independent_evidence_root_labels": [
+        "e05m_0044",
+        "root_ferris_sighting_0315",
+        "root_glare_reconstruction_0317",
+        "root_temp_anomaly_0315"
+      ],
+      "memory_ids": [
+        "e05m_0041",
+        "e05m_0042",
+        "e05m_0043",
+        "e05m_0044",
+        "e05m_0109",
+        "e05m_0110"
+      ],
+      "belief_states": {
+        "2027-03-15": {
+          "investigation_team": "uncertain"
+        },
+        "2027-03-18": {
+          "investigation_team": "unlikely"
+        },
+        "2027-06-20": {
+          "investigation_team": "reframed_as_early_pcm_signal"
+        }
+      }
+    },
+    {
+      "claim_id": "C08",
+      "fact_id": "F05-008",
+      "claim": "T-4 trips correlate with tidal phase.",
+      "adversarial_subfamily": [
+        "control_D"
+      ],
+      "objective_status": "false",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E008_1"
+      ],
+      "contradicting_evidence": [
+        "E008_7",
+        "E008_8"
+      ],
+      "independent_evidence_roots": 7,
+      "independent_evidence_root_labels": [
+        "e05m_0147",
+        "root_singh_tidal_hunch_0415",
+        "root_trip_timestamp_0",
+        "root_trip_timestamp_1",
+        "root_trip_timestamp_2",
+        "root_trip_timestamp_3",
+        "root_trip_timestamp_4"
+      ],
+      "memory_ids": [
+        "e05m_0045",
+        "e05m_0046",
+        "e05m_0047",
+        "e05m_0048",
+        "e05m_0049",
+        "e05m_0050",
+        "e05m_0051",
+        "e05m_0147"
+      ],
+      "belief_states": {
+        "2027-04-15": {
+          "investigation_team": "possible"
+        },
+        "2027-07-10": {
+          "investigation_team": "disproven"
+        }
+      }
+    },
+    {
+      "claim_id": "C09",
+      "fact_id": "F05-009",
+      "claim": "Turbine Unit T-4's rated generator capacity is 2.4 MW.",
+      "adversarial_subfamily": [
+        "control_A"
+      ],
+      "objective_status": "true",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E009_1",
+        "E009_2",
+        "E009_3",
+        "E009_4"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 4,
+      "independent_evidence_root_labels": [
+        "e05m_0199",
+        "root_kelvinbridge_spec",
+        "root_mesb_commissioning",
+        "root_nameplate"
+      ],
+      "memory_ids": [
+        "e05m_0052",
+        "e05m_0053",
+        "e05m_0054",
+        "e05m_0199"
+      ],
+      "belief_states": {
+        "2026-11-01": {
+          "investigation_team": "confirmed",
+          "kelvinbridge_team": "confirmed",
+          "mesb_team": "confirmed"
+        }
+      }
+    },
+    {
+      "claim_id": "C10",
+      "fact_id": "F05-010",
+      "claim": "T-4's main gearbox is producing abnormal noise.",
+      "adversarial_subfamily": [
+        "control_B"
+      ],
+      "objective_status": "true",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E010_1",
+        "E010_2",
+        "E010_3",
+        "E010_4",
+        "E010_5",
+        "E010_6"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 4,
+      "independent_evidence_root_labels": [
+        "root_ahn_gearbox_noise",
+        "root_gearbox_acoustic_sensor",
+        "root_reyes_gearbox_confirm_0527",
+        "root_singh_gearbox_noise"
+      ],
+      "memory_ids": [
+        "e05m_0055",
+        "e05m_0056",
+        "e05m_0057",
+        "e05m_0058",
+        "e05m_0111",
+        "e05m_0148"
+      ],
+      "belief_states": {
+        "2027-05-25": {
+          "investigation_team": "possible"
+        },
+        "2027-05-28": {
+          "investigation_team": "confirmed"
+        }
+      }
+    },
+    {
+      "claim_id": "C11",
+      "fact_id": "F05-011",
+      "claim": "T-4's mooring line tension is within specification.",
+      "adversarial_subfamily": [
+        "control_C"
+      ],
+      "objective_status": "true",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E011_1",
+        "E011_2",
+        "E011_3"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "e05m_0112",
+        "root_lindqvist_mooring_review",
+        "root_mooring_load_cell"
+      ],
+      "memory_ids": [
+        "e05m_0059",
+        "e05m_0060",
+        "e05m_0112"
+      ],
+      "belief_states": {
+        "2027-06-08": {
+          "investigation_team": "unresolved"
+        },
+        "2027-06-12": {
+          "investigation_team": "confirmed",
+          "mesb_team": "confirmed"
+        }
+      }
+    },
+    {
+      "claim_id": "C12",
+      "fact_id": "F05-012",
+      "claim": "No electrical fault occurred in the PCM at the moment of the June 2 trip.",
+      "adversarial_subfamily": [
+        "05.9"
+      ],
+      "objective_status": "true",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E012_1",
+        "E012_2",
+        "E012_3"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "e05m_0113",
+        "e05m_0200",
+        "root_park_no_fault_0615"
+      ],
+      "memory_ids": [
+        "e05m_0061",
+        "e05m_0113",
+        "e05m_0200"
+      ],
+      "belief_states": {
+        "2027-06-15": {
+          "investigation_team": "confirmed"
+        }
+      }
+    },
+    {
+      "claim_id": "C13",
+      "fact_id": "F05-013",
+      "claim": "The electrical protection system caused the June 2 shutdown.",
+      "adversarial_subfamily": [
+        "05.9"
+      ],
+      "objective_status": "true",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E013_1",
+        "E013_3"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 2,
+      "independent_evidence_root_labels": [
+        "e05m_0114",
+        "root_costa_protection_caused_0616"
+      ],
+      "memory_ids": [
+        "e05m_0062",
+        "e05m_0063",
+        "e05m_0114"
+      ],
+      "belief_states": {
+        "2027-06-16": {
+          "investigation_team": "confirmed"
+        },
+        "2027-06-17": {
+          "investigation_team": "confirmed_scope_reconciled"
+        }
+      }
+    },
+    {
+      "claim_id": "C14",
+      "fact_id": "F05-014",
+      "claim": "VIB-4A and VIB-4B disagree on vibration amplitude; VIB-4A has a known calibration drift.",
+      "adversarial_subfamily": [
+        "05.10a"
+      ],
+      "objective_status": "true_with_known_bias",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E014_3",
+        "E014_5",
+        "E014_6"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 5,
+      "independent_evidence_root_labels": [
+        "e05m_0065",
+        "e05m_0115",
+        "e05m_0116",
+        "e05m_0149",
+        "root_vib4a_calibration_log_0420"
+      ],
+      "memory_ids": [
+        "e05m_0064",
+        "e05m_0065",
+        "e05m_0066",
+        "e05m_0115",
+        "e05m_0116",
+        "e05m_0149"
+      ],
+      "belief_states": {
+        "2027-06-05": {
+          "investigation_team": "uncertain"
+        },
+        "2027-06-22": {
+          "investigation_team": "confirmed_known_calibration_issue"
+        }
+      }
+    },
+    {
+      "claim_id": "C15",
+      "fact_id": "F05-015",
+      "claim": "TEMP-4A and TEMP-4B disagree on bearing temperature; TEMP-4A had an undiscovered calibration drift.",
+      "adversarial_subfamily": [
+        "05.10b"
+      ],
+      "objective_status": "true_with_undiscovered_bias_until_teardown",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E015_3",
+        "E015_5"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 4,
+      "independent_evidence_root_labels": [
+        "e05m_0067",
+        "e05m_0117",
+        "e05m_0150",
+        "root_teardown_temp4a_drift_0620"
+      ],
+      "memory_ids": [
+        "e05m_0067",
+        "e05m_0068",
+        "e05m_0069",
+        "e05m_0117",
+        "e05m_0150"
+      ],
+      "belief_states": {
+        "2027-05-30": {
+          "investigation_team": "uncertain"
+        },
+        "2027-06-08": {
+          "investigation_team": "uncertain"
+        },
+        "2027-06-20": {
+          "investigation_team": "confirmed_after_teardown"
+        }
+      }
+    },
+    {
+      "claim_id": "C16",
+      "fact_id": "F05-016",
+      "claim": "SCADA's hourly-average power reading and the technician's manual instantaneous reading appear to disagree on T-4's power output.",
+      "adversarial_subfamily": [
+        "05.10c"
+      ],
+      "objective_status": "true_apparent_conflict_resolved",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E016_3",
+        "E016_5"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "e05m_0070",
+        "e05m_0071",
+        "e05m_0118"
+      ],
+      "memory_ids": [
+        "e05m_0070",
+        "e05m_0071",
+        "e05m_0072",
+        "e05m_0118",
+        "e05m_0201"
+      ],
+      "belief_states": {
+        "2027-04-08": {
+          "investigation_team": "uncertain"
+        },
+        "2027-04-09": {
+          "investigation_team": "confirmed_sampling_artifact"
+        }
+      }
+    },
+    {
+      "claim_id": "C17",
+      "fact_id": "F05-017",
+      "claim": "Two mooring tension readings appear to disagree because they were taken at different tidal states.",
+      "adversarial_subfamily": [
+        "05.10d"
+      ],
+      "objective_status": "true_apparent_conflict_resolved",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E017_3",
+        "E017_4"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "e05m_0073",
+        "e05m_0074",
+        "e05m_0119"
+      ],
+      "memory_ids": [
+        "e05m_0073",
+        "e05m_0074",
+        "e05m_0075",
+        "e05m_0119"
+      ],
+      "belief_states": {
+        "2027-06-08": {
+          "investigation_team": "uncertain"
+        },
+        "2027-06-09": {
+          "investigation_team": "confirmed_tidal_state_artifact"
+        }
+      }
+    },
+    {
+      "claim_id": "C18",
+      "fact_id": "F05-018",
+      "claim": "Redundant SCADA nodes A and B disagree on T-4 power output by about 3%, with no identified cause.",
+      "adversarial_subfamily": [
+        "05.10e"
+      ],
+      "objective_status": "underdetermined",
+      "resolution_status": "unresolved",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 6,
+      "independent_evidence_root_labels": [
+        "e05m_0076",
+        "e05m_0077",
+        "e05m_0078",
+        "e05m_0120",
+        "e05m_0121",
+        "e05m_0151"
+      ],
+      "memory_ids": [
+        "e05m_0076",
+        "e05m_0077",
+        "e05m_0078",
+        "e05m_0079",
+        "e05m_0120",
+        "e05m_0121",
+        "e05m_0151"
+      ],
+      "belief_states": {
+        "2027-06-01": {
+          "investigation_team": "uncertain"
+        },
+        "2027-06-15": {
+          "investigation_team": "unresolved"
+        },
+        "2027-08-01": {
+          "investigation_team": "unresolved"
+        }
+      }
+    },
+    {
+      "claim_id": "C19",
+      "fact_id": "F05-019",
+      "claim": "The 2027-04-02 anomalous power spike was caused by a Solway Grid switching transient.",
+      "adversarial_subfamily": [
+        "control_E"
+      ],
+      "objective_status": "true",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E019_3",
+        "E019_5"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "e05m_0080",
+        "e05m_0122",
+        "root_gridco_switching_log_0520"
+      ],
+      "memory_ids": [
+        "e05m_0080",
+        "e05m_0081",
+        "e05m_0082",
+        "e05m_0122",
+        "e05m_0202"
+      ],
+      "belief_states": {
+        "2027-04-02": {
+          "investigation_team": "uncertain"
+        },
+        "2027-05-20": {
+          "investigation_team": "confirmed"
+        }
+      }
+    },
+    {
+      "claim_id": "C20",
+      "fact_id": "F05-020",
+      "claim": "The cause of the 2027-05-19 two-second voltage dip is undetermined between a passing vessel's wake and sensor noise.",
+      "adversarial_subfamily": [
+        "05.6",
+        "control_F"
+      ],
+      "objective_status": "underdetermined",
+      "resolution_status": "unresolved",
+      "supporting_evidence": [],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 5,
+      "independent_evidence_root_labels": [
+        "e05m_0083",
+        "e05m_0084",
+        "e05m_0085",
+        "e05m_0123",
+        "e05m_0152"
+      ],
+      "memory_ids": [
+        "e05m_0083",
+        "e05m_0084",
+        "e05m_0085",
+        "e05m_0086",
+        "e05m_0123",
+        "e05m_0152"
+      ],
+      "belief_states": {
+        "2027-05-19": {
+          "investigation_team": "uncertain"
+        },
+        "2027-08-01": {
+          "investigation_team": "unresolved"
+        }
+      }
+    },
+    {
+      "claim_id": "C21",
+      "fact_id": "F05-021",
+      "claim": "Kelvinbridge's public statement attributes the T-4 trips to installation error by the site contractor.",
+      "adversarial_subfamily": [
+        "05.3",
+        "05.8"
+      ],
+      "objective_status": "unsupported",
+      "resolution_status": "unresolved_officially_disputed_internally",
+      "supporting_evidence": [
+        "E021_2"
+      ],
+      "contradicting_evidence": [
+        "E021_1",
+        "E021_3",
+        "E021_4",
+        "E021_5"
+      ],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "e05m_0153",
+        "root_kelvinbridge_internal_0620",
+        "root_voss_public_statement_0625"
+      ],
+      "memory_ids": [
+        "e05m_0087",
+        "e05m_0088",
+        "e05m_0089",
+        "e05m_0124",
+        "e05m_0153"
+      ],
+      "belief_states": {
+        "2027-06-20": {
+          "kelvinbridge_team": "unlikely"
+        },
+        "2027-06-25": {
+          "kelvinbridge_spokesperson": "official_working_theory"
+        },
+        "2027-07-02": {
+          "investigation_team": "unlikely"
+        }
+      }
+    },
+    {
+      "claim_id": "C22",
+      "fact_id": "F05-022",
+      "claim": "Meridian Bay Array will be fully decommissioned by year end.",
+      "adversarial_subfamily": [
+        "rumor"
+      ],
+      "objective_status": "false",
+      "resolution_status": "resolved",
+      "supporting_evidence": [],
+      "contradicting_evidence": [
+        "E022_4"
+      ],
+      "independent_evidence_roots": 1,
+      "independent_evidence_root_labels": [
+        "root_ferris_rumor_0705"
+      ],
+      "memory_ids": [
+        "e05m_0090",
+        "e05m_0091",
+        "e05m_0092",
+        "e05m_0125"
+      ],
+      "belief_states": {
+        "2027-07-05": {
+          "public_rumor": "rumor"
+        },
+        "2027-07-15": {
+          "investigation_team": "false"
+        }
+      }
+    },
+    {
+      "claim_id": "C23",
+      "fact_id": "F05-023",
+      "claim": "T-4 root cause investigation: resolved (bearing wear) then reopened then resolved differently (combined bearing wear + intermittent PCM ground fault).",
+      "adversarial_subfamily": [
+        "05.7"
+      ],
+      "objective_status": "corrected",
+      "resolution_status": "resolved_differently",
+      "supporting_evidence": [
+        "E023_2",
+        "E023_4",
+        "E023_5",
+        "E023_7"
+      ],
+      "contradicting_evidence": [],
+      "independent_evidence_roots": 0,
+      "independent_evidence_root_labels": [],
+      "memory_ids": [
+        "e05m_0093",
+        "e05m_0094",
+        "e05m_0095",
+        "e05m_0096",
+        "e05m_0126",
+        "e05m_0127",
+        "e05m_0154"
+      ],
+      "belief_states": {
+        "2027-03-14": {
+          "investigation_team": "unresolved"
+        },
+        "2027-04-10": {
+          "investigation_team": "provisionally_resolved"
+        },
+        "2027-06-02": {
+          "investigation_team": "reopened"
+        },
+        "2027-07-01": {
+          "investigation_team": "resolved_differently"
+        }
+      }
+    },
+    {
+      "claim_id": "C24",
+      "fact_id": "F05-024",
+      "claim": "T-4's grid-tie transformer is overheating and contributing to the trips.",
+      "adversarial_subfamily": [
+        "05.2"
+      ],
+      "objective_status": "false",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E024_1",
+        "E024_2",
+        "E024_3",
+        "E024_4",
+        "E024_5",
+        "E024_6"
+      ],
+      "contradicting_evidence": [
+        "E024_7",
+        "E024_8",
+        "E024_9",
+        "E024_10"
+      ],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "root_singh_transformer_touch_0418",
+        "root_thermal_survey_0525",
+        "root_thermal_survey_0615"
+      ],
+      "memory_ids": [
+        "e05m_0128",
+        "e05m_0129",
+        "e05m_0130",
+        "e05m_0131",
+        "e05m_0132",
+        "e05m_0133",
+        "e05m_0134",
+        "e05m_0135",
+        "e05m_0136",
+        "e05m_0155"
+      ],
+      "belief_states": {
+        "2027-04-18": {
+          "investigation_team": "possible"
+        },
+        "2027-05-11": {
+          "investigation_team": "probable"
+        },
+        "2027-06-16": {
+          "investigation_team": "disproven"
+        }
+      }
+    },
+    {
+      "claim_id": "C25",
+      "fact_id": "F05-025",
+      "claim": "An external grid consultant's claim that the April 2 spike proves a turbine-side fault, versus a systems engineer's contemporaneous note that its timing matched known grid-switching patterns.",
+      "adversarial_subfamily": [
+        "05.3"
+      ],
+      "objective_status": "false",
+      "resolution_status": "resolved",
+      "supporting_evidence": [
+        "E025_1",
+        "E025_3"
+      ],
+      "contradicting_evidence": [
+        "E025_2",
+        "E025_4",
+        "E025_5"
+      ],
+      "independent_evidence_roots": 3,
+      "independent_evidence_root_labels": [
+        "e05m_0140",
+        "root_costa_grid_pattern_0404",
+        "root_external_consultant_0404"
+      ],
+      "memory_ids": [
+        "e05m_0137",
+        "e05m_0138",
+        "e05m_0139",
+        "e05m_0140",
+        "e05m_0156"
+      ],
+      "belief_states": {
+        "2027-04-04": {
+          "kelvinbridge_team": "probable",
+          "investigation_team": "uncertain"
+        },
+        "2027-05-21": {
+          "investigation_team": "disproven"
+        }
+      }
+    }
+  ]
+}

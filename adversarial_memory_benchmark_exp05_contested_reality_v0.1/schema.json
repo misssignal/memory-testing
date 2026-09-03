@@ -1,0 +1,125 @@
+{
+  "memory_record": {
+    "required": [
+      "memory_id",
+      "experiment",
+      "story_id",
+      "event_time",
+      "observation_time",
+      "ingestion_time",
+      "subject_text",
+      "subject_entity_id",
+      "predicate",
+      "object",
+      "text",
+      "memory_type",
+      "truth_role",
+      "scope",
+      "source_id",
+      "source_type",
+      "derived_from",
+      "supersedes",
+      "contradicts",
+      "aliases_used",
+      "tags"
+    ],
+    "scope_keys": [
+      "project",
+      "team",
+      "environment",
+      "platform",
+      "region",
+      "facility",
+      "version",
+      "customer_tier",
+      "employment_class",
+      "release_channel",
+      "authority"
+    ],
+    "truth_roles": [
+      "globally_true",
+      "scoped_true",
+      "partially_true",
+      "overgeneralized",
+      "underspecified",
+      "false",
+      "outdated",
+      "exception",
+      "unresolved",
+      "corrected"
+    ],
+    "exp05_oracle_extension": {
+      "path": "_oracle",
+      "fields": {
+        "fact_id": "canonical fact identifier, e.g. F05-003",
+        "claim_id": "cross-reference into claim_ledger.json claims[].claim_id, or null for narrative_continuity records",
+        "adversarial_subfamily": "list of spec subfamily tags this memory serves, e.g. ['05.2']",
+        "canonical_claim": "the claim text this memory is evidence for or against",
+        "is_distractor": "boolean",
+        "confidence_label": "the STATED confidence at time of writing (see truth_state.json confidence_label_scale) -- not necessarily justified by the evidence",
+        "evidence_role": "one of independent_primary | derivative_copy | synthesis | context",
+        "stance": "one of supports | contradicts | neutral_observation, relative to canonical_claim",
+        "source_name": "human-readable source name",
+        "source_org": "source's organization id",
+        "source_authority": "source's authority/role level, evidence metadata only (Invariant 05-C: not a truth signal)",
+        "evidence_root": "shared label across memories tracing to one underlying observation; null if this memory is itself an independent root or is pure narrative context. Used to compute claim_ledger.json's independent_evidence_roots.",
+        "evidence_id": "unique id (e.g. E003_2) referenced by claim_ledger.json supporting_evidence/contradicting_evidence"
+      }
+    },
+    "notes": {
+      "_oracle": "Development-only metadata; strip for blind-system runs.",
+      "null_scope": "Null means not normalized/unspecified in the exposed record, not necessarily global.",
+      "exp05_underdetermined": "objective_status (in claim_ledger.json) may be 'underdetermined' -- an intentional, permanent ground-truth state per Invariant 05-E, not a placeholder."
+    }
+  },
+  "query_record": {
+    "required": [
+      "query_id",
+      "query",
+      "category",
+      "target_entity_ids",
+      "forbidden_entity_ids",
+      "expected_claims",
+      "acceptable_claims",
+      "forbidden_claims",
+      "required_scope",
+      "relevant_memory_ids",
+      "distractor_memory_ids",
+      "must_disambiguate",
+      "must_preserve_scope",
+      "must_surface_multiple_states",
+      "should_abstain",
+      "notes"
+    ],
+    "exp05_extension_fields": {
+      "must_surface_uncertainty": "boolean; true when the correct answer requires explicitly flagging that the evidence does not justify a confident answer (spec section 9.6/section 7)",
+      "must_surface_conflict": "boolean; true when the correct answer requires surfacing that evidence conflicts (as opposed to being merely incomplete)"
+    },
+    "categories": [
+      "9.1_current_state",
+      "9.2_historical_epistemic_state",
+      "9.3_contention_retrieval",
+      "9.4_evidence_weighting",
+      "9.5_authority_traps",
+      "9.6_forced_choice",
+      "9.7_confidence_calibration"
+    ]
+  },
+  "claim_ledger_record": {
+    "path": "experiment_05_contested_reality/claim_ledger.json -> claims[]",
+    "required": [
+      "claim_id",
+      "fact_id",
+      "claim",
+      "adversarial_subfamily",
+      "objective_status",
+      "resolution_status",
+      "supporting_evidence",
+      "contradicting_evidence",
+      "independent_evidence_roots",
+      "belief_states"
+    ],
+    "objective_status_note": "May be 'underdetermined' (or a descriptive analogue like 'unsupported') where the story itself never supplies a decisive test. This is not a placeholder to be resolved in a future revision -- see Invariant 05-E.",
+    "belief_states_shape": "{ 'YYYY-MM-DD': { actor_id: confidence_label } }, spanning at least one snapshot per claim with a meaningful belief trajectory."
+  }
+}
