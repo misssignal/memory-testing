@@ -1,0 +1,44 @@
+[
+  {
+    "id": "q001",
+    "query": "What database does Morgan Vale currently prefer?",
+    "target_behavior": "Return the latest active preference, while noting earlier preferences if useful.",
+    "category": "temporal_latest"
+  },
+  {
+    "id": "q002",
+    "query": "How has Morgan Vale's preferred programming language changed over time?",
+    "target_behavior": "Return a chronological sequence rather than collapsing to one fact.",
+    "category": "temporal_history"
+  },
+  {
+    "id": "q003",
+    "query": "Which memories contain unresolved contradictions about a person's preference?",
+    "target_behavior": "Surface disputed claims without arbitrarily choosing one.",
+    "category": "conflict"
+  },
+  {
+    "id": "q004",
+    "query": "Find memories about Atlas even when it is referred to by an alias.",
+    "target_behavior": "Resolve Project Atlas, atlas-svc, atlas-core, and other aliases when supported.",
+    "category": "alias"
+  },
+  {
+    "id": "q005",
+    "query": "Show likely duplicate memories.",
+    "target_behavior": "Cluster exact duplicates and semantic paraphrases.",
+    "category": "dedup"
+  },
+  {
+    "id": "q006",
+    "query": "What architecture did Beacon use before its current communication approach?",
+    "target_behavior": "Use supersession and timestamps to recover prior state.",
+    "category": "supersession"
+  },
+  {
+    "id": "q007",
+    "query": "Which project risks were merely suspected and which were later resolved?",
+    "target_behavior": "Distinguish low-confidence observations from later evidence.",
+    "category": "uncertainty"
+  }
+]

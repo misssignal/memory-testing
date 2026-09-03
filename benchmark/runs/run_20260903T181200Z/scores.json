@@ -1,0 +1,50 @@
+[
+  {
+    "category": "abstention",
+    "total": 5,
+    "passed": 0,
+    "failed": 5,
+    "pass_rate": 0.0,
+    "metrics": {
+      "abstained": 0.0,
+      "result_count": 10.0
+    }
+  },
+  {
+    "category": "point_retrieval",
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "pass_rate": 0.0,
+    "metrics": {
+      "recall@5": 0.0,
+      "recall@10": 0.0,
+      "precision@5": 0.0,
+      "mrr": 0.0
+    }
+  },
+  {
+    "category": "supersession",
+    "total": 1,
+    "passed": 0,
+    "failed": 1,
+    "pass_rate": 0.0,
+    "metrics": {
+      "correct_current_fact": 0.0,
+      "stale_fact_error": 0.0,
+      "stale_in_top10": 0.0,
+      "top1_correct_object": 0.0
+    }
+  },
+  {
+    "category": "uncertainty",
+    "total": 2,
+    "passed": 2,
+    "failed": 0,
+    "pass_rate": 1.0,
+    "metrics": {
+      "relevant_found": 1.0,
+      "uncertainty_preserved": 1.0
+    }
+  }
+]

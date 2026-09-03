@@ -1,0 +1,231 @@
+[
+  {
+    "id": "4becdecd-ae3b-4eea-b303-dc422df3f954",
+    "timestamp": "2023-02-01T00:00:00",
+    "subject": "Morgan Vale",
+    "memory_type": "preference",
+    "predicate": "preferred_database",
+    "object": "SQLite",
+    "text": "Morgan Vale's preferred database is SQLite.",
+    "status": "superseded",
+    "confidence": 0.98,
+    "source_type": "synthetic_journal",
+    "source_id": "profile-preferred_database-0",
+    "supersedes": [],
+    "aliases": [
+      "Morgan",
+      "M. Vale"
+    ],
+    "tags": [
+      "synthetic",
+      "longitudinal",
+      "profile"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "latest_valid_fact_wins"
+  },
+  {
+    "id": "e13ad2e1-247c-4262-ab77-c7fb86ab9732",
+    "timestamp": "2024-06-15T00:00:00",
+    "subject": "Morgan Vale",
+    "memory_type": "preference",
+    "predicate": "preferred_database",
+    "object": "PostgreSQL",
+    "text": "Morgan Vale's preferred database is PostgreSQL.",
+    "status": "superseded",
+    "confidence": 0.98,
+    "source_type": "synthetic_journal",
+    "source_id": "profile-preferred_database-1",
+    "supersedes": [
+      "4becdecd-ae3b-4eea-b303-dc422df3f954"
+    ],
+    "aliases": [],
+    "tags": [
+      "synthetic",
+      "longitudinal",
+      "profile"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "latest_valid_fact_wins"
+  },
+  {
+    "id": "6768d0f7-3a50-42ca-9839-8f703ca5887e",
+    "timestamp": "2025-11-03T00:00:00",
+    "subject": "Morgan Vale",
+    "memory_type": "preference",
+    "predicate": "preferred_database",
+    "object": "PostgreSQL",
+    "text": "Morgan Vale's preferred database is PostgreSQL.",
+    "status": "active",
+    "confidence": 0.98,
+    "source_type": "synthetic_journal",
+    "source_id": "profile-preferred_database-2",
+    "supersedes": [
+      "e13ad2e1-247c-4262-ab77-c7fb86ab9732"
+    ],
+    "aliases": [],
+    "tags": [
+      "synthetic",
+      "longitudinal",
+      "profile"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "latest_valid_fact_wins"
+  },
+  {
+    "id": "3e8b39a5-256f-404e-95b3-03db7218bbeb",
+    "timestamp": "2025-01-14T00:00:00",
+    "subject": "Jamie Hart",
+    "memory_type": "claim",
+    "predicate": "meeting_preference",
+    "object": "early meetings",
+    "text": "Jamie Hart's meeting preference is early meetings.",
+    "status": "disputed",
+    "confidence": 0.61,
+    "source_type": "synthetic_chat",
+    "source_id": "conflict-a-18",
+    "supersedes": [],
+    "aliases": [],
+    "tags": [
+      "synthetic",
+      "conflict"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "surface_conflict"
+  },
+  {
+    "id": "f337e675-1b25-4381-a1b1-d63e3e1886d9",
+    "timestamp": "2024-01-27T02:00:00",
+    "subject": "Jamie Hart",
+    "memory_type": "claim",
+    "predicate": "meeting_preference",
+    "object": "late meetings",
+    "text": "Jamie Hart's meeting preference is late meetings.",
+    "status": "disputed",
+    "confidence": 0.69,
+    "source_type": "synthetic_email",
+    "source_id": "conflict-b-49",
+    "supersedes": [],
+    "aliases": [],
+    "tags": [
+      "synthetic",
+      "conflict"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "surface_conflict"
+  },
+  {
+    "id": "1f8de268-26f0-44d3-8a4b-0bb74488530d",
+    "timestamp": "2023-11-08T00:00:00",
+    "subject": "Atlas",
+    "memory_type": "project_event",
+    "predicate": "created",
+    "object": "Atlas was created at Acme Robotics",
+    "text": "Atlas was created at Acme Robotics.",
+    "status": "active",
+    "confidence": 1.0,
+    "source_type": "synthetic_commit_summary",
+    "source_id": "atlas-0-204",
+    "supersedes": [],
+    "aliases": [
+      "Project Atlas",
+      "atlas-svc"
+    ],
+    "tags": [
+      "synthetic",
+      "project",
+      "created"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "preserve_temporal_order"
+  },
+  {
+    "id": "b1b32ad0-7938-40e1-81c8-8380531384ab",
+    "timestamp": "2025-01-05T09:46:00",
+    "subject": "Atlas",
+    "memory_type": "decision",
+    "predicate": "decision",
+    "object": "Atlas standardized on Rust for the next release",
+    "text": "Atlas standardized on Rust for the next release.",
+    "status": "active",
+    "confidence": 0.73,
+    "source_type": "synthetic_calendar",
+    "source_id": "src-604",
+    "supersedes": [],
+    "aliases": [],
+    "tags": [
+      "synthetic",
+      "decision",
+      "atlas"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "retrieve_relevant"
+  },
+  {
+    "id": "e7ff1089-ea5a-4355-84ff-0e69e1f3e696",
+    "timestamp": "2023-09-23T08:22:00",
+    "subject": "Jamie Hart",
+    "memory_type": "personal_note",
+    "predicate": "personal_note",
+    "object": "Jamie Hart mentioned preferring aisle seat while working on Harbor",
+    "text": "Jamie Hart mentioned preferring aisle seat while working on Harbor.",
+    "status": "active",
+    "confidence": 0.85,
+    "source_type": "synthetic_note",
+    "source_id": "dup-src-261-29",
+    "supersedes": [],
+    "aliases": [],
+    "tags": [
+      "synthetic",
+      "duplicate",
+      "harbor",
+      "personal_note"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "deduplicate_or_cluster"
+  },
+  {
+    "id": "fedaacd0-53bf-4cdc-96fa-f10941b1504b",
+    "timestamp": "2023-09-23T03:35:00",
+    "subject": "Jamie Hart",
+    "memory_type": "personal_note",
+    "predicate": "personal_note",
+    "object": "Jamie Hart mentioned preferring aisle seat while working on Harbor",
+    "text": "Jamie Hart mentioned preferring aisle seat while working on Harbor.",
+    "status": "active",
+    "confidence": 0.85,
+    "source_type": "synthetic_note",
+    "source_id": "src-261",
+    "supersedes": [],
+    "aliases": [],
+    "tags": [
+      "synthetic",
+      "personal_note",
+      "harbor"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "retain_uncertainty"
+  },
+  {
+    "id": "0dd8f585-9e40-4205-bfb9-ebbe60c9c1dd",
+    "timestamp": "2025-03-16T01:42:00",
+    "subject": "Northstar",
+    "memory_type": "meeting",
+    "predicate": "meeting",
+    "object": "In a planning meeting, Alex Mercer argued that Northstar should use Elixir",
+    "text": "In a planning meeting, Alex Mercer argued that Northstar should use Elixir.",
+    "status": "uncertain",
+    "confidence": 0.45,
+    "source_type": "synthetic_note",
+    "source_id": "src-541",
+    "supersedes": [],
+    "aliases": [],
+    "tags": [
+      "synthetic",
+      "meeting",
+      "northstar"
+    ],
+    "sensitivity": "synthetic",
+    "expected_behavior": "entity_alias_resolution"
+  }
+]

@@ -1,0 +1,59 @@
+{
+  "story_id": "northstar_array",
+  "as_of": "2026-09-03",
+  "claims": {
+    "production_scheduler": [
+      {
+        "interval": [
+          "2026-01-08",
+          "2026-03-19"
+        ],
+        "value": "AURORA",
+        "scope": "all instruments"
+      },
+      {
+        "interval": [
+          "2026-03-20",
+          "2026-05-06"
+        ],
+        "value": "Kestrel pilot only",
+        "scope": "limited/informally expanded subset"
+      },
+      {
+        "interval": [
+          "2026-05-08",
+          null
+        ],
+        "value": "AURORA",
+        "scope": "all instruments"
+      }
+    ],
+    "march_outage_cause": {
+      "value": "Ground Loop G-17 instability; Marcus manually shut down Helios in response"
+    },
+    "site_name": [
+      {
+        "interval": [
+          null,
+          "2026-06-30"
+        ],
+        "value": "Echo Camp"
+      },
+      {
+        "interval": [
+          "2026-07-01",
+          null
+        ],
+        "value": "Nadir Station"
+      }
+    ],
+    "s2_power_exception": {
+      "interval": [
+        "2026-04-02",
+        "2026-07-09"
+      ],
+      "value": "generator-only overnight",
+      "scope": "Spectrograph S2 only"
+    }
+  }
+}

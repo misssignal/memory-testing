@@ -1,0 +1,33 @@
+{
+  "record_count": 5360,
+  "description": "Synthetic longitudinal memory corpus for MCP/memory retrieval testing. Contains no real user data.",
+  "fields": {
+    "id": "unique memory id",
+    "timestamp": "ISO-8601 event/memory timestamp",
+    "subject": "primary entity",
+    "memory_type": "type/category of memory",
+    "predicate": "relation/property/event label",
+    "object": "normalized-ish object/value",
+    "text": "natural-language memory text",
+    "status": "active/superseded/uncertain/disputed/archived",
+    "confidence": "synthetic confidence score",
+    "source_type": "synthetic provenance type",
+    "source_id": "synthetic source identifier",
+    "supersedes": "ids superseded by this memory",
+    "aliases": "known aliases attached to the memory/entity",
+    "tags": "retrieval/testing tags",
+    "sensitivity": "always synthetic",
+    "expected_behavior": "intended retrieval/reasoning behavior"
+  },
+  "stressors": [
+    "temporal supersession",
+    "conflicting claims",
+    "uncertainty",
+    "exact duplicates",
+    "semantic paraphrases",
+    "aliases",
+    "cross-entity references",
+    "stale facts",
+    "mixed provenance"
+  ]
+}

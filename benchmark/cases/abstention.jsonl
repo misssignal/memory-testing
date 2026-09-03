@@ -1,0 +1,5 @@
+{"id": "abstention_001", "category": "abstention", "query": "What is Morgan Vale's favorite color?", "expected": {"allow_unknown": true, "must_abstain": true, "note": "No memory records about favorite color exist"}}
+{"id": "abstention_002", "category": "abstention", "query": "When did Project Phoenix launch?", "expected": {"allow_unknown": true, "must_abstain": true, "note": "Project Phoenix does not exist in the corpus"}}
+{"id": "abstention_003", "category": "abstention", "query": "What is Riley Chen's salary?", "expected": {"allow_unknown": true, "must_abstain": true, "note": "No salary information exists in the corpus"}}
+{"id": "abstention_004", "category": "abstention", "query": "Who founded Acme Robotics?", "expected": {"allow_unknown": true, "must_abstain": true, "note": "Acme Robotics appears as a project host but no founding info exists"}}
+{"id": "abstention_false_premise_001", "category": "abstention", "query": "Why did Morgan Vale switch from Rust to Go?", "expected": {"allow_unknown": true, "must_abstain": true, "note": "Morgan's latest language is Rust \u2014 the premise (switched away) is false"}}

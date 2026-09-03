@@ -1,0 +1,8 @@
+category,total,passed,failed,pass_rate
+abstention,5,0,5,0.000
+alias,14,14,0,1.000
+exact_duplicate,10,10,0,1.000
+point_retrieval,1,0,1,0.000
+semantic_duplicate,2,0,2,0.000
+supersession,6,0,6,0.000
+uncertainty,2,0,2,0.000

@@ -1,0 +1,64 @@
+{
+  "edges": [
+    {
+      "from": "T004",
+      "to": "T005",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T006",
+      "to": "T007",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T011",
+      "to": "T012",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T015",
+      "to": "T016",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T013",
+      "to": "T014",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T014",
+      "to": "T028",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T009",
+      "to": "T032",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T029",
+      "to": "T030",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T029",
+      "to": "T031",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T029",
+      "to": "T034",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T010",
+      "to": "T034",
+      "relation": "derived_from"
+    },
+    {
+      "from": "T031",
+      "to": "T034",
+      "relation": "derived_from"
+    }
+  ]
+}

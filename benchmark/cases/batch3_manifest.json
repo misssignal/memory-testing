@@ -1,0 +1,702 @@
+[
+  {
+    "id": "1482fa20-dcb4-4286-9f0f-398cd3008ced",
+    "subject": "Juniper",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "Paraphrased recollection: In a planning meeting, Morgan Vale"
+  },
+  {
+    "id": "59c6becc-d809-4e15-8131-17cb48e7e3b5",
+    "subject": "Casey Monroe",
+    "status": "active",
+    "predicate": "purchase",
+    "text": "Paraphrased recollection: Casey Monroe bought a refurbished "
+  },
+  {
+    "id": "282e976a-910c-42b3-bdcd-6aef2fdd8b9a",
+    "subject": "Beacon",
+    "status": "uncertain",
+    "predicate": "personal_note",
+    "text": "Paraphrased recollection: Taylor Quinn said preferring early"
+  },
+  {
+    "id": "69df555d-a3e9-4838-8902-000aa0b0fc95",
+    "subject": "Lattice",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Paraphrased recollection: Lattice standardized on Kafka for "
+  },
+  {
+    "id": "55efabf1-d131-4fc3-ae81-587de8546468",
+    "subject": "Jamie Hart",
+    "status": "active",
+    "predicate": "travel",
+    "text": "Paraphrased recollection: Jamie Hart planned a trip from Col"
+  },
+  {
+    "id": "bf70a748-5891-4778-90c2-348b0c78aeed",
+    "subject": "Jamie Hart",
+    "status": "active",
+    "predicate": "task",
+    "text": "Paraphrased recollection: Jamie Hart should review the Harbo"
+  },
+  {
+    "id": "8f294c6e-68b0-41f4-a93c-ed69cbc00aa4",
+    "subject": "Juniper",
+    "status": "active",
+    "predicate": "observation",
+    "text": "Paraphrased recollection: Taylor Quinn appeared uncertain wh"
+  },
+  {
+    "id": "2b100df8-faf2-4013-94a0-c84911c36ba1",
+    "subject": "Beacon",
+    "status": "active",
+    "predicate": "purchase",
+    "text": "Paraphrased recollection: Jordan Patel bought a refurbished "
+  },
+  {
+    "id": "7d14fb78-0a47-4637-9839-ccad3de5310f",
+    "subject": "Avery Brooks",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "Paraphrased recollection: In a planning meeting, Avery Brook"
+  },
+  {
+    "id": "46b1e332-f980-406f-beb7-a26f908ba9bd",
+    "subject": "Casey Monroe",
+    "status": "active",
+    "predicate": "travel",
+    "text": "Paraphrased recollection: Casey Monroe planned a trip from P"
+  },
+  {
+    "id": "3409bf7d-eb27-4b5f-8c0b-891fe090de4e",
+    "subject": "Atlas",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Atlas standardized on Go for the next release."
+  },
+  {
+    "id": "3f3bb1eb-9dc0-4878-9e47-9f8f2830f8d1",
+    "subject": "Morgan Vale",
+    "status": "active",
+    "predicate": "personal_note",
+    "text": "Morgan Vale mentioned preferring light mode while working on"
+  },
+  {
+    "id": "a6be65df-1e80-4750-949a-efa1f3f2a309",
+    "subject": "Atlas",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Atlas standardized on SQLite for the next release."
+  },
+  {
+    "id": "d4d979ec-0ff9-44ba-95aa-e8e2d32af357",
+    "subject": "Morgan Vale",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Orchid standardized on PostgreSQL for the next release."
+  },
+  {
+    "id": "5b69a617-1a27-4cbc-b0d9-c7c8c0df3729",
+    "subject": "Morgan Vale",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Atlas standardized on Python for the next release."
+  },
+  {
+    "id": "9779bfdc-cbe0-4104-8eb2-6085ee01bd21",
+    "subject": "Morgan Vale",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Orchid standardized on Python for the next release."
+  },
+  {
+    "id": "20607cd0-da75-4244-a01c-f61871ab6dcd",
+    "subject": "Morgan Vale",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Beacon standardized on Podman for the next release."
+  },
+  {
+    "id": "9eff1680-8090-4df5-b15d-d1ab0e207555",
+    "subject": "Atlas",
+    "status": "active",
+    "predicate": "personal_note",
+    "text": "Jordan Patel mentioned preferring light mode while working o"
+  },
+  {
+    "id": "ee9b0523-3c32-441e-a537-54f88fc44456",
+    "subject": "Atlas",
+    "status": "active",
+    "predicate": "personal_note",
+    "text": "Taylor Quinn mentioned preferring late meetings while workin"
+  },
+  {
+    "id": "de049812-02cf-4f34-925a-8b2c814381a3",
+    "subject": "Jamie Hart",
+    "status": "superseded",
+    "predicate": "personal_note",
+    "text": "Jamie Hart mentioned preferring tea while working on Atlas."
+  },
+  {
+    "id": "72411d54-afa0-4b91-9fbb-af3bae10ec81",
+    "subject": "Atlas",
+    "status": "superseded",
+    "predicate": "personal_note",
+    "text": "Casey Monroe mentioned preferring late meetings while workin"
+  },
+  {
+    "id": "002c37b7-2803-4f11-8639-6d4e3437979a",
+    "subject": "Atlas",
+    "status": "active",
+    "predicate": "personal_note",
+    "text": "Taylor Quinn mentioned preferring music while coding while w"
+  },
+  {
+    "id": "a05a6c85-b99d-4bc5-b52f-8cef15a971ca",
+    "subject": "Morgan Vale",
+    "status": "active",
+    "predicate": "personal_note",
+    "text": "Morgan Vale mentioned preferring early meetings while workin"
+  },
+  {
+    "id": "202ca3d7-1f01-49fe-a0d1-221e3147cca9",
+    "subject": "Atlas",
+    "status": "active",
+    "predicate": "personal_note",
+    "text": "Riley Chen mentioned preferring light mode while working on "
+  },
+  {
+    "id": "c670e918-d8bf-4365-b70a-7bd5e8e54ea3",
+    "subject": "Jamie Hart",
+    "status": "disputed",
+    "predicate": "preferred_database",
+    "text": "Jamie Hart's preferred database is coffee."
+  },
+  {
+    "id": "00e27a16-f81f-47ce-a31d-035227c2a15a",
+    "subject": "Juniper",
+    "status": "uncertain",
+    "predicate": "purchase",
+    "text": "Riley Chen bought a refurbished laptop for testing Juniper."
+  },
+  {
+    "id": "fcd1c360-e19f-412b-8d82-c854bfe18691",
+    "subject": "Jordan Patel",
+    "status": "uncertain",
+    "predicate": "note",
+    "text": "A note referred to Northstar by the alias 'northstar'."
+  },
+  {
+    "id": "711f2fcc-28f8-4939-ad5d-d6a3f5cc1615",
+    "subject": "Avery Brooks",
+    "status": "disputed",
+    "predicate": "preferred_language",
+    "text": "Avery Brooks's preferred language is early meetings."
+  },
+  {
+    "id": "fc1c6f17-a1ac-43be-b8a7-12812a549c67",
+    "subject": "Casey Monroe",
+    "status": "uncertain",
+    "predicate": "travel",
+    "text": "Casey Monroe planned a trip from Detroit to Ann Arbor for a "
+  },
+  {
+    "id": "90bb65a0-e4a1-40f4-93f2-6f07eced3187",
+    "subject": "Casey Monroe",
+    "status": "disputed",
+    "predicate": "meeting_preference",
+    "text": "Casey Monroe's meeting preference is MongoDB."
+  },
+  {
+    "id": "e004defd-f6a7-4d6d-800d-5575d05b13b8",
+    "subject": "Casey Monroe",
+    "status": "disputed",
+    "predicate": "relationship",
+    "text": "Casey Monroe said they would ask Sam Rivera for feedback on "
+  },
+  {
+    "id": "dc138b06-dfe9-4d2d-92e8-0ed134a38929",
+    "subject": "Lattice",
+    "status": "disputed",
+    "predicate": "note",
+    "text": "A note referred to Lattice by the alias 'proj-lat'."
+  },
+  {
+    "id": "60f55f15-9cbf-4a1b-a4b0-0bf259cf6fa0",
+    "subject": "Casey Monroe",
+    "status": "disputed",
+    "predicate": "relationship",
+    "text": "Casey Monroe said they would ask Jamie Hart for feedback on "
+  },
+  {
+    "id": "f978c1a0-4b67-4a4b-b984-50f4d9c3f416",
+    "subject": "Harbor",
+    "status": "uncertain",
+    "predicate": "relationship",
+    "text": "Alex Mercer said they would ask Jordan Patel for feedback on"
+  },
+  {
+    "id": "8d76bba0-722b-4eab-a1fb-2bfd69c307ef",
+    "subject": "Avery Brooks",
+    "status": "uncertain",
+    "predicate": "bug",
+    "text": "Northstar intermittently dropped messages when using Elixir."
+  },
+  {
+    "id": "9a3e623c-15f6-4cd5-810c-3ad6fe709260",
+    "subject": "Avery Brooks",
+    "status": "disputed",
+    "predicate": "preferred_database",
+    "text": "Avery Brooks's preferred database is coffee."
+  },
+  {
+    "id": "392f6ad0-9a27-4f84-920d-e787c5797d17",
+    "subject": "Jamie Hart",
+    "status": "uncertain",
+    "predicate": "note",
+    "text": "A note referred to Harbor by the alias 'Harbor-core'."
+  },
+  {
+    "id": "49ffabda-4c53-4189-b84c-06ddc9dfd076",
+    "subject": "Avery Brooks",
+    "status": "disputed",
+    "predicate": "decision",
+    "text": "Kepler standardized on NATS for the next release."
+  },
+  {
+    "id": "61a3ab87-bbac-4652-aa07-21ffdf5bc7ed",
+    "subject": "Alex Mercer",
+    "status": "disputed",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Alex Mercer argued that Atlas should "
+  },
+  {
+    "id": "f08df0a2-7d87-4285-89b0-2bb9863adef7",
+    "subject": "Beacon",
+    "status": "uncertain",
+    "predicate": "observation",
+    "text": "Taylor Quinn appeared uncertain whether Beacon still depende"
+  },
+  {
+    "id": "45d23f36-5d53-4594-82a6-a686d41d0b55",
+    "subject": "Morgan Vale",
+    "status": "superseded",
+    "predicate": "task",
+    "text": "Morgan Vale needs to review the Juniper migration checklist "
+  },
+  {
+    "id": "c0e55be3-a255-4b83-b03a-34a110dccb82",
+    "subject": "Jamie Hart",
+    "status": "superseded",
+    "predicate": "bug",
+    "text": "Juniper intermittently dropped messages when using Podman."
+  },
+  {
+    "id": "2cf50441-1ead-46e7-a2d6-32d86608fabe",
+    "subject": "Lattice",
+    "status": "superseded",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Avery Brooks argued that Lattice shou"
+  },
+  {
+    "id": "1efde6c6-16ae-4c63-b719-1fb12a1ea658",
+    "subject": "Lattice",
+    "status": "superseded",
+    "predicate": "purchase",
+    "text": "Avery Brooks bought a refurbished laptop for testing Lattice"
+  },
+  {
+    "id": "10c5db10-ea88-4fbe-9b82-f1b72c2a12e1",
+    "subject": "Drew Lawson",
+    "status": "superseded",
+    "predicate": "purchase",
+    "text": "Drew Lawson bought a refurbished laptop for testing Northsta"
+  },
+  {
+    "id": "392d21a3-c4af-4d8c-9ee5-88de0440b9fa",
+    "subject": "Kepler",
+    "status": "superseded",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Avery Brooks argued that Kepler shoul"
+  },
+  {
+    "id": "3b900386-de7f-4c17-bbd3-3b2778a4a028",
+    "subject": "Taylor Quinn",
+    "status": "superseded",
+    "predicate": "purchase",
+    "text": "Taylor Quinn bought a refurbished laptop for testing Orchid."
+  },
+  {
+    "id": "e6b598b3-3ca4-46d3-9e37-4e819aa3be78",
+    "subject": "Kepler",
+    "status": "superseded",
+    "predicate": "purchase",
+    "text": "Sam Rivera bought a refurbished laptop for testing Kepler."
+  },
+  {
+    "id": "afe3b3d1-e5de-429d-a23b-f395df9de0df",
+    "subject": "Jordan Patel",
+    "status": "superseded",
+    "predicate": "task",
+    "text": "Jordan Patel needs to review the Orchid migration checklist "
+  },
+  {
+    "id": "05965832-8e0c-4673-92db-ea5dfefd176a",
+    "subject": "Kepler",
+    "status": "superseded",
+    "predicate": "decision",
+    "text": "Kepler standardized on Go for the next release."
+  },
+  {
+    "id": "b6a29379-1288-4f4d-9de3-58db6ae61bca",
+    "subject": "Drew Lawson",
+    "status": "disputed",
+    "predicate": "preferred_language",
+    "text": "Drew Lawson's preferred language is early meetings."
+  },
+  {
+    "id": "3d2efb2d-d525-44db-9ad9-19086295b385",
+    "subject": "Drew Lawson",
+    "status": "active",
+    "predicate": "travel",
+    "text": "Drew Lawson planned a trip from Pittsburgh to Ann Arbor for "
+  },
+  {
+    "id": "b4a53f9e-83b4-4e6d-8165-a4599ae9e168",
+    "subject": "Avery Brooks",
+    "status": "uncertain",
+    "predicate": "purchase",
+    "text": "Avery Brooks bought a refurbished laptop for testing Beacon."
+  },
+  {
+    "id": "4712a7b6-492d-45e4-9161-940704475869",
+    "subject": "Atlas",
+    "status": "active",
+    "predicate": "observation",
+    "text": "Jamie Hart appeared uncertain whether Atlas still depended o"
+  },
+  {
+    "id": "0f6f6245-a234-43b1-be3a-c3c35bab018e",
+    "subject": "Lattice",
+    "status": "active",
+    "predicate": "travel",
+    "text": "Drew Lawson planned a trip from Pittsburgh to Cleveland for "
+  },
+  {
+    "id": "c3dd2ff8-b30a-46bc-98e0-aa9d73ef5588",
+    "subject": "Jamie Hart",
+    "status": "disputed",
+    "predicate": "purchase",
+    "text": "Jamie Hart bought a refurbished laptop for testing Harbor."
+  },
+  {
+    "id": "b3c7e281-900e-4894-b231-376e3b069a4c",
+    "subject": "Jamie Hart",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Jamie Hart argued that Harbor should "
+  },
+  {
+    "id": "7acf87e5-ab34-4fd2-a057-6bf3cf0e5cc1",
+    "subject": "Jordan Patel",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Kepler standardized on Rust for the next release."
+  },
+  {
+    "id": "8c736bb6-4bf0-4ce2-bba3-e1a20b20bf30",
+    "subject": "Beacon",
+    "status": "active",
+    "predicate": "bug",
+    "text": "Beacon intermittently dropped messages when using NATS."
+  },
+  {
+    "id": "2460606c-8b1b-4ff3-9737-a9732b28da99",
+    "subject": "Harbor",
+    "status": "active",
+    "predicate": "purchase",
+    "text": "Alex Mercer bought a refurbished laptop for testing Harbor."
+  },
+  {
+    "id": "958b8ea0-11d0-4cb0-b591-1573f10942b1",
+    "subject": "Northstar",
+    "status": "active",
+    "predicate": "note",
+    "text": "A note referred to Northstar by the alias 'proj-nor'."
+  },
+  {
+    "id": "3d4f1455-9b88-4b23-b79e-514b3dcc82c7",
+    "subject": "Beacon",
+    "status": "active",
+    "predicate": "observation",
+    "text": "Alex Mercer appeared uncertain whether Beacon still depended"
+  },
+  {
+    "id": "d2558e1d-8744-443b-b53f-eff99e0be7d6",
+    "subject": "Casey Monroe",
+    "status": "active",
+    "predicate": "bug",
+    "text": "Juniper intermittently dropped messages when using Kafka."
+  },
+  {
+    "id": "71e82756-6fa1-4570-9c0e-8f8120f8dbbe",
+    "subject": "Jordan Patel",
+    "status": "archived",
+    "predicate": "purchase",
+    "text": "Jordan Patel bought a refurbished laptop for testing Orchid."
+  },
+  {
+    "id": "72792ee9-04fe-4d27-bf08-eff22914b61f",
+    "subject": "Northstar",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Drew Lawson argued that Northstar sho"
+  },
+  {
+    "id": "ebf834c6-84a5-418e-99a1-ca8bf2f876d5",
+    "subject": "Taylor Quinn",
+    "status": "active",
+    "predicate": "task",
+    "text": "Taylor Quinn needs to review the Kepler migration checklist "
+  },
+  {
+    "id": "e9f4526e-322e-4416-ba53-cfc68fa6febe",
+    "subject": "Sam Rivera",
+    "status": "active",
+    "predicate": "relationship",
+    "text": "Sam Rivera said they would ask Jordan Patel for feedback on "
+  },
+  {
+    "id": "78b286a3-a082-4e4c-b20d-ea7b8d2113bb",
+    "subject": "Casey Monroe",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Orchid standardized on Kafka for the next release."
+  },
+  {
+    "id": "37e14b8d-8388-4538-b9c6-3439c3cf0ae3",
+    "subject": "Atlas",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "Paraphrased recollection: In a planning meeting, Taylor Quin"
+  },
+  {
+    "id": "528d3e45-7182-4376-86f3-2091c8c785d9",
+    "subject": "Juniper",
+    "status": "active",
+    "predicate": "note",
+    "text": "A note referred to Juniper by the alias 'proj-jun'."
+  },
+  {
+    "id": "63bd77fd-7fff-4317-9a3a-ea7e996848e9",
+    "subject": "Taylor Quinn",
+    "status": "active",
+    "predicate": "purchase",
+    "text": "Taylor Quinn bought a refurbished laptop for testing Juniper"
+  },
+  {
+    "id": "c0e4846b-d0d3-4bc9-a660-ffd11e15e141",
+    "subject": "Beacon",
+    "status": "active",
+    "predicate": "relationship",
+    "text": "Jamie Hart said they would ask Alex Mercer for feedback on B"
+  },
+  {
+    "id": "4895bbf9-d297-4c0f-8997-1226ebffa926",
+    "subject": "Avery Brooks",
+    "status": "active",
+    "predicate": "bug",
+    "text": "Northstar intermittently dropped messages when using SQLite."
+  },
+  {
+    "id": "a8e5a1b5-cd7a-4612-beea-1ca3e06d4445",
+    "subject": "Avery Brooks",
+    "status": "disputed",
+    "predicate": "task",
+    "text": "Avery Brooks needs to review the Lattice migration checklist"
+  },
+  {
+    "id": "9b2be291-a487-40bf-80ff-81eaaaf33064",
+    "subject": "Sam Rivera",
+    "status": "active",
+    "predicate": "task",
+    "text": "Sam Rivera needs to review the Kepler migration checklist be"
+  },
+  {
+    "id": "f41feec5-d1ea-46e5-9d63-7f50944ad3ce",
+    "subject": "Northstar",
+    "status": "active",
+    "predicate": "bug",
+    "text": "Northstar intermittently dropped messages when using Kafka."
+  },
+  {
+    "id": "024ef3d6-81c2-45d9-aa32-6267d0b9ae03",
+    "subject": "Northstar",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Sam Rivera argued that Northstar shou"
+  },
+  {
+    "id": "d79bcce7-a0bb-40c8-bcbc-a24771a98e4b",
+    "subject": "Drew Lawson",
+    "status": "active",
+    "predicate": "relationship",
+    "text": "Drew Lawson said they would ask Taylor Quinn for feedback on"
+  },
+  {
+    "id": "3256aea3-c513-4556-aa8a-11acf8530f65",
+    "subject": "Alex Mercer",
+    "status": "uncertain",
+    "predicate": "purchase",
+    "text": "Alex Mercer bought a refurbished laptop for testing Northsta"
+  },
+  {
+    "id": "dace7824-d746-4884-bb61-8fef73837ad9",
+    "subject": "Jordan Patel",
+    "status": "active",
+    "predicate": "note",
+    "text": "A note referred to Juniper by the alias 'juniper'."
+  },
+  {
+    "id": "e50b720d-3a8a-4d9f-ba28-6dd0f6ee0438",
+    "subject": "Taylor Quinn",
+    "status": "disputed",
+    "predicate": "preferred_database",
+    "text": "Taylor Quinn's preferred database is late meetings."
+  },
+  {
+    "id": "98b198e0-377a-49a2-8609-21017ec6b535",
+    "subject": "Jamie Hart",
+    "status": "active",
+    "predicate": "bug",
+    "text": "Atlas intermittently dropped messages when using Redis."
+  },
+  {
+    "id": "ccf04952-65f1-4ad5-90b2-a8581070b5b5",
+    "subject": "Juniper",
+    "status": "superseded",
+    "predicate": "personal_note",
+    "text": "Jordan Patel mentioned preferring late meetings while workin"
+  },
+  {
+    "id": "b48b8255-37bc-4725-a91d-92c074080ca6",
+    "subject": "Riley Chen",
+    "status": "active",
+    "predicate": "relationship",
+    "text": "Riley Chen said they would ask Jordan Patel for feedback on "
+  },
+  {
+    "id": "4c6aafc0-5d61-4b82-be12-0e41f3ba19ef",
+    "subject": "Lattice",
+    "status": "active",
+    "predicate": "architecture_change",
+    "text": "Lattice migrated to MQTT for device communication."
+  },
+  {
+    "id": "61a618cd-0cb9-41ff-86d5-8fd6b1ea4642",
+    "subject": "Lattice",
+    "status": "superseded",
+    "predicate": "personal_note",
+    "text": "Drew Lawson mentioned preferring coffee while working on Lat"
+  },
+  {
+    "id": "7e57178c-8a89-4997-9bf1-57550591283a",
+    "subject": "Harbor",
+    "status": "active",
+    "predicate": "bug",
+    "text": "Harbor intermittently dropped messages when using Node.js."
+  },
+  {
+    "id": "5bb190fa-8370-4eb4-9570-80ab8c10c681",
+    "subject": "Jordan Patel",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Lattice standardized on Kafka for the next release."
+  },
+  {
+    "id": "4153994f-bfdf-4214-9d1c-599027eb025a",
+    "subject": "Casey Monroe",
+    "status": "disputed",
+    "predicate": "preferred_database",
+    "text": "Casey Monroe's preferred database is late meetings."
+  },
+  {
+    "id": "3a58380d-de98-4f4f-8943-7c760477fcc7",
+    "subject": "Jamie Hart",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Jamie Hart argued that Juniper should"
+  },
+  {
+    "id": "71e57985-a352-4798-8153-08095ecf7675",
+    "subject": "Orchid",
+    "status": "superseded",
+    "predicate": "bug",
+    "text": "Orchid intermittently dropped messages when using Python."
+  },
+  {
+    "id": "f3dd6773-d1ec-4f97-b5e6-f627fd5ea498",
+    "subject": "Jamie Hart",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Jamie Hart argued that Atlas should u"
+  },
+  {
+    "id": "fef9f0b5-3f88-48e1-8d10-1ceb19c7532e",
+    "subject": "Riley Chen",
+    "status": "active",
+    "predicate": "task",
+    "text": "Riley Chen needs to review the Harbor migration checklist be"
+  },
+  {
+    "id": "7e22b86f-3325-42b3-908c-a5f961d038b0",
+    "subject": "Beacon",
+    "status": "active",
+    "predicate": "meeting",
+    "text": "In a planning meeting, Avery Brooks argued that Beacon shoul"
+  },
+  {
+    "id": "7647fc02-4edb-4e14-99e7-94d13da4317a",
+    "subject": "Casey Monroe",
+    "status": "active",
+    "predicate": "observation",
+    "text": "Casey Monroe appeared uncertain whether Orchid still depende"
+  },
+  {
+    "id": "0fda1177-825a-4b4a-947c-4c1aca34efb7",
+    "subject": "Taylor Quinn",
+    "status": "active",
+    "predicate": "personal_note",
+    "text": "Taylor Quinn mentioned preferring quiet workspace while work"
+  },
+  {
+    "id": "873fe481-c077-4e61-806e-fc2f5fd010a0",
+    "subject": "Riley Chen",
+    "status": "active",
+    "predicate": "relationship",
+    "text": "Riley Chen said they would ask Jordan Patel for feedback on "
+  },
+  {
+    "id": "2d913e4d-8534-41ad-8bbb-1285c8bcd2f3",
+    "subject": "Avery Brooks",
+    "status": "active",
+    "predicate": "decision",
+    "text": "Beacon standardized on Kafka for the next release."
+  },
+  {
+    "id": "565b0247-0e3c-4f8b-b0dc-4c69a6a2ee78",
+    "subject": "Casey Monroe",
+    "status": "superseded",
+    "predicate": "relationship",
+    "text": "Casey Monroe said they would ask Sam Rivera for feedback on "
+  },
+  {
+    "id": "20627b81-a4f2-46d5-ac6a-416db68c471e",
+    "subject": "Harbor",
+    "status": "active",
+    "predicate": "observation",
+    "text": "Riley Chen appeared uncertain whether Harbor still depended "
+  }
+]

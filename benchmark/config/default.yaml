@@ -1,0 +1,36 @@
+# Memory MCP Benchmark — default configuration
+corpus: corpus/fake_becca
+cases_dir: cases
+namespace: bench-test
+top_k: 10
+seed: 42
+
+# Which categories to run (null = all)
+categories: null
+
+# Adapter settings
+adapter: piyapi
+
+# Scoring
+# Weights for aggregate score (if enabled). Explicit and configurable.
+# Set to null to disable aggregate scoring (scorecard-only mode).
+aggregate_weights: null
+#  point_retrieval: 1.0
+#  temporal_latest: 2.0
+#  temporal_history: 1.5
+#  supersession: 2.0
+#  contradiction: 2.0
+#  uncertainty: 1.5
+#  alias: 1.0
+#  exact_duplicate: 0.5
+#  semantic_duplicate: 0.5
+#  provenance: 1.5
+#  distractor: 1.5
+#  abstention: 1.0
+
+# LLM judge (optional)
+judge:
+  enabled: false
+  provider: anthropic
+  model: claude-sonnet-5
+  temperature: 0.0
