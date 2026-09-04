@@ -1,0 +1,998 @@
+{
+  "story_id": "meridian_station",
+  "claims": [
+    {
+      "claim_id": "C01",
+      "question": "Did Kenji Watanabe calibrate the CO2 analyzer in the Atmospheric Chemistry Lab before the Day 41 readings were taken?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "never_recorded",
+      "available_evidence": [
+        "e07m_0001",
+        "e07m_0002",
+        "e07m_0003"
+      ],
+      "missing_evidence": [
+        "chem_lab_calibration_log_entry"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "none",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C02",
+      "question": "Was the Ice-Core Prep Lab's centrifuge balance-checked before the Day 50 sample run?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "never_recorded",
+      "available_evidence": [
+        "e07m_0004",
+        "e07m_0005"
+      ],
+      "missing_evidence": [
+        "lab_b_balance_check_entry"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "none",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C03",
+      "question": "Did Ana Beliaeva log a control blank for the Day 70 biology sample batch?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "never_recorded",
+      "available_evidence": [
+        "e07m_0006"
+      ],
+      "missing_evidence": [
+        "biology_control_blank_entry"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "none",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C04",
+      "question": "Was the spare satellite modem antenna inspected before it was stowed on Day 20?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "never_recorded",
+      "available_evidence": [
+        "e07m_0007"
+      ],
+      "missing_evidence": [
+        "comms_room_antenna_inspection_entry"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "none",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C05",
+      "question": "Did anyone open valve V-3 during the Day 41 SCADA telemetry gap (02:06-02:40)?",
+      "status": "unknown",
+      "answerability": "unknown_underdetermined",
+      "missingness_type": "coverage_gap",
+      "available_evidence": [
+        "e07m_0008",
+        "e07m_0009",
+        "e07m_0010",
+        "e07m_0011",
+        "e07m_0012",
+        "e07m_0013"
+      ],
+      "missing_evidence": [
+        "scada_valve_v3_telemetry_0206_0240"
+      ],
+      "compatible_worlds": [
+        "Kenji Watanabe opened/bumped it",
+        "Diego Fuentes brushed it while passing through",
+        "The actuator drifted open on its own (documented vibration wear)"
+      ],
+      "negative_inference_valid": false,
+      "coverage": "incomplete",
+      "controls": [
+        "F"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C06",
+      "question": "What was the wind sensor reading at the Weather Mast at Day 38 22:00 (inside the anemometer-2 icing outage)?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "coverage_gap",
+      "available_evidence": [
+        "e07m_0014",
+        "e07m_0015",
+        "e07m_0016"
+      ],
+      "missing_evidence": [
+        "weather_mast_anemometer2_reading_day38_2200"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "incomplete",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C07",
+      "question": "Did the Generator 2 exhaust temperature exceed the caution threshold during the Day 71 firmware-crash telemetry gap (03:10-03:50)?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "coverage_gap",
+      "available_evidence": [
+        "e07m_0017",
+        "e07m_0018"
+      ],
+      "missing_evidence": [
+        "generator2_exhaust_telemetry_day71_0310_0350"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "incomplete",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C08",
+      "question": "What does Commander Kade's sealed personnel memo say about the interpersonal conflict she mentioned filing it about?",
+      "status": "unknown",
+      "answerability": "unknown_inaccessible",
+      "missingness_type": "inaccessible_source",
+      "available_evidence": [
+        "e07m_0019",
+        "e07m_0020"
+      ],
+      "missing_evidence": [
+        "sealed_personnel_memo_contents"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "existence_known_content_unavailable",
+      "controls": [
+        "invariantE"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C09",
+      "question": "What was the body of the Day 27 outgoing email from Priya Nandakumar to the Program Office that shows a 'sent' status?",
+      "status": "unknown",
+      "answerability": "unknown_inaccessible",
+      "missingness_type": "inaccessible_source",
+      "available_evidence": [
+        "e07m_0021",
+        "e07m_0022"
+      ],
+      "missing_evidence": [
+        "relay_body_archive_day27"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "existence_known_content_unavailable",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C10",
+      "question": "What is written in Diego Fuentes's personal notebook about the night of Day 41?",
+      "status": "unknown",
+      "answerability": "unknown_inaccessible",
+      "missingness_type": "inaccessible_source",
+      "available_evidence": [
+        "e07m_0023"
+      ],
+      "missing_evidence": [
+        "diego_personal_notebook"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "existence_known_content_unavailable",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C11",
+      "question": "What did the covering attachment on the Day 75 logistics note say about the replacement satellite-modem vendor?",
+      "status": "unknown",
+      "answerability": "unknown_inaccessible",
+      "missingness_type": "inaccessible_source",
+      "available_evidence": [
+        "e07m_0024",
+        "e07m_0025"
+      ],
+      "missing_evidence": [
+        "relay_attachment_archive_day75"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "existence_known_content_unavailable",
+      "controls": [
+        "09"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C12",
+      "question": "Did Morgan Castellano remain in the Biology Lab for the entire evening of Day 41, having been seen entering it at 01:50?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "partial_observation",
+      "available_evidence": [
+        "e07m_0026"
+      ],
+      "missing_evidence": [
+        "biology_lab_occupancy_sensor"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C13",
+      "question": "Did Kenji Watanabe stay in the Generator Shed continuously from 01:40 to 03:00 on Day 41, having been seen entering it at 01:40?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "partial_observation",
+      "available_evidence": [
+        "e07m_0027"
+      ],
+      "missing_evidence": [
+        "generator_shed_occupancy_sensor"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [
+        "F"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C14",
+      "question": "Did Diego Fuentes remain in the Vehicle Bay the entire time between when he was seen there (around 02:15) and when the spill was discovered, on Day 41?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "partial_observation",
+      "available_evidence": [
+        "e07m_0028"
+      ],
+      "missing_evidence": [
+        "covered_walkway_sensor"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [
+        "F"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C15",
+      "question": "Did Taylor Whitfield stay at the Weather Mast for the entire aurora-camera data download she started on Day 41 at 01:55?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "partial_observation",
+      "available_evidence": [
+        "e07m_0029"
+      ],
+      "missing_evidence": [
+        "weather_mast_occupancy_sensor"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C16",
+      "question": "Why did Alex Voss approve the emergency generator restart?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "premise_invalid",
+      "available_evidence": [
+        "e07m_0030"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": false
+    },
+    {
+      "claim_id": "C17",
+      "question": "When did Priya Nandakumar delete the corrupted email drafts?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "premise_invalid",
+      "available_evidence": [
+        "e07m_0031"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": false
+    },
+    {
+      "claim_id": "C18",
+      "question": "What caused the second generator fire at Meridian Station?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "premise_invalid",
+      "available_evidence": [
+        "e07m_0032"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": false
+    },
+    {
+      "claim_id": "C19",
+      "question": "Who approved Rowan Achebe's overtime for the tunnel inspection?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "premise_invalid",
+      "available_evidence": [
+        "e07m_0033"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": false
+    },
+    {
+      "claim_id": "C20",
+      "question": "Why did the second comms blackout at Field Camp Delta last longer than the first?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "premise_invalid",
+      "available_evidence": [
+        "e07m_0034"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": false
+    },
+    {
+      "claim_id": "C21",
+      "question": "When did Taylor Whitfield report the anemometer fire hazard?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "premise_invalid",
+      "available_evidence": [
+        "e07m_0035"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": false
+    },
+    {
+      "claim_id": "C22",
+      "question": "Why was Jordan Mbeki suspended from ice-core duties after the Day 50 sample run?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "premise_invalid",
+      "available_evidence": [
+        "e07m_0036"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": false
+    },
+    {
+      "claim_id": "C23",
+      "question": "What time did the station lose power during the Day 41 valve incident?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "premise_invalid",
+      "available_evidence": [
+        "e07m_0037"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": false
+    },
+    {
+      "claim_id": "C24",
+      "question": "Who or what caused fuel valve V-3 to open on Day 41?",
+      "status": "unknown",
+      "answerability": "unknown_underdetermined",
+      "missingness_type": "underdetermined_multi_world",
+      "available_evidence": [
+        "e07m_0038"
+      ],
+      "missing_evidence": [
+        "scada_valve_v3_telemetry_0206_0240"
+      ],
+      "compatible_worlds": [
+        "Kenji Watanabe opened/bumped it",
+        "Diego Fuentes brushed it while passing through",
+        "The actuator drifted open on its own (documented vibration wear)"
+      ],
+      "negative_inference_valid": false,
+      "coverage": null,
+      "controls": [
+        "F"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C25",
+      "question": "Did the Day 38 anemometer icing and the Day 41 valve telemetry gap share a common cause (a station-wide cold snap), or are they unrelated?",
+      "status": "unknown",
+      "answerability": "unknown_underdetermined",
+      "missingness_type": "underdetermined_multi_world",
+      "available_evidence": [
+        "e07m_0039"
+      ],
+      "missing_evidence": [
+        "cross-system_causal_analysis_record"
+      ],
+      "compatible_worlds": [
+        "Common cold-snap cause",
+        "Unrelated coincidence of timing"
+      ],
+      "negative_inference_valid": false,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C26",
+      "question": "Was the Day 27 email corruption caused by the satellite modem's known relay fault, or by local station network congestion during the same window?",
+      "status": "unknown",
+      "answerability": "unknown_underdetermined",
+      "missingness_type": "underdetermined_multi_world",
+      "available_evidence": [
+        "e07m_0040"
+      ],
+      "missing_evidence": [
+        "network_congestion_root_cause_record"
+      ],
+      "compatible_worlds": [
+        "Satellite relay fault",
+        "Local network congestion"
+      ],
+      "negative_inference_valid": false,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C27",
+      "question": "Did anyone cross Airlock A between 03:00 and 04:00 on Day 41?",
+      "status": "false",
+      "answerability": "known_false",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0041"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "C"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C28",
+      "question": "Did the Vehicle Bay overhead door open at all on Day 15?",
+      "status": "false",
+      "answerability": "known_false",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0042"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "C"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C29",
+      "question": "Was anyone other than the twelve main-station roster names present at the Day 41 20:00 roll call?",
+      "status": "false",
+      "answerability": "known_false",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0056"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "C",
+        "12"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C30",
+      "question": "Did the winter-over roster include a visiting pilot this season?",
+      "status": "false",
+      "answerability": "known_false",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0043"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "C"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C31",
+      "question": "Did Rowan enter Lab B between 02:00 and 03:00 on Day 41?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "coverage_gap",
+      "available_evidence": [
+        "e07m_0044"
+      ],
+      "missing_evidence": [
+        "airlockB_logbook_0200_0300",
+        "tunnel_door_log_pre_day63"
+      ],
+      "compatible_worlds": [
+        "Rowan entered",
+        "Rowan did not enter"
+      ],
+      "negative_inference_valid": false,
+      "coverage": "incomplete",
+      "controls": [
+        "D"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C32",
+      "question": "Did Rowan badge through Airlock A between 04:00 and 05:00 on Day 41?",
+      "status": "false",
+      "answerability": "known_false",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0045"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "D"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C33",
+      "question": "Did anyone cross Airlock B between 22:00 and 23:00 on Day 30?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "coverage_gap",
+      "available_evidence": [
+        "e07m_0046"
+      ],
+      "missing_evidence": [
+        "airlockB_logbook_2200_2300_day30"
+      ],
+      "compatible_worlds": [
+        "Someone crossed and did not sign",
+        "No one crossed"
+      ],
+      "negative_inference_valid": false,
+      "coverage": "incomplete",
+      "controls": [
+        "D"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C34",
+      "question": "Did anyone use the Tunnel Door between 03:00 and 04:00 on Day 20 (before the sign-in clipboard existed)?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "never_recorded",
+      "available_evidence": [
+        "e07m_0047"
+      ],
+      "missing_evidence": [
+        "tunnel_door_log_pre_day63"
+      ],
+      "compatible_worlds": [
+        "Someone used the tunnel",
+        "No one used the tunnel"
+      ],
+      "negative_inference_valid": false,
+      "coverage": "none",
+      "controls": [
+        "D"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C49",
+      "question": "Did anyone use the Tunnel Door between 03:00 and 04:00 on Day 80 (after the sign-in clipboard was installed)?",
+      "status": "false",
+      "answerability": "known_false",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0048"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "D"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C50",
+      "question": "Was Diego Fuentes absent from the Day 15 08:00 roll call, given the log phrasing 'Roll call included Kade, Achebe, Nandakumar, Voss, Watanabe, Ondo'?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "ambiguous_enumeration_language",
+      "available_evidence": [
+        "e07m_0049"
+      ],
+      "missing_evidence": [
+        "day15_rollcall_full_enumeration"
+      ],
+      "compatible_worlds": [
+        "Diego was present but unlisted",
+        "Diego was absent"
+      ],
+      "negative_inference_valid": false,
+      "coverage": null,
+      "controls": [
+        "D"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C35",
+      "question": "Which vendor was selected to supply the replacement satellite-modem part?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "known_unspecified_value",
+      "available_evidence": [
+        "e07m_0024",
+        "e07m_0025"
+      ],
+      "missing_evidence": [
+        "relay_attachment_archive_day75"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C36",
+      "question": "What was the exact wear measurement Kenji Watanabe recorded when he replaced the V-3 actuator on Day 88?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "known_unspecified_value",
+      "available_evidence": [
+        "e07m_0008",
+        "e07m_0009",
+        "e07m_0010",
+        "e07m_0011",
+        "e07m_0012",
+        "e07m_0013"
+      ],
+      "missing_evidence": [
+        "actuator_wear_quantitative_measurement"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C37",
+      "question": "What date was the Week-6 ice-core drilling performed on, given that drilling normally happens on Thursdays?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "default_value_trap",
+      "available_evidence": [
+        "e07m_0050",
+        "e07m_0051"
+      ],
+      "missing_evidence": [
+        "week6_icecore_logbook_date_field"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C38",
+      "question": "What time did Marcus Ondo start dinner prep on Day 55, given that dinner prep normally starts at 16:00?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "default_value_trap",
+      "available_evidence": [
+        "e07m_0052",
+        "e07m_0053"
+      ],
+      "missing_evidence": [
+        "day55_kitchen_log_start_time_field"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": null,
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C39",
+      "question": "Was Weather Mast anemometer #2 iced over continuously for the entire Day 38 18:00 - Day 44 09:00 window, or did it clear and re-ice at some point?",
+      "status": "unknown",
+      "answerability": "unknown_underdetermined",
+      "missingness_type": "continuity_gap",
+      "available_evidence": [
+        "e07m_0014",
+        "e07m_0015",
+        "e07m_0016"
+      ],
+      "missing_evidence": [
+        "weather_mast_anemometer2_reading_day38_2200"
+      ],
+      "compatible_worlds": [
+        "Iced continuously the whole window",
+        "Cleared and re-iced one or more times"
+      ],
+      "negative_inference_valid": false,
+      "coverage": "endpoints_only",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C40",
+      "question": "Did Airlock A's badge reader remain in its Day 1 firmware configuration continuously through Day 96, given it was only checked at season start and season end?",
+      "status": "unknown",
+      "answerability": "unknown_underdetermined",
+      "missingness_type": "continuity_gap",
+      "available_evidence": [
+        "e07m_0054",
+        "e07m_0055"
+      ],
+      "missing_evidence": [
+        "mid_season_firmware_audit"
+      ],
+      "compatible_worlds": [
+        "Configuration unchanged all season",
+        "Configuration was changed and changed back, or changed and never re-verified"
+      ],
+      "negative_inference_valid": false,
+      "coverage": "endpoints_only",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C41",
+      "question": "Who was present at Main Hab for the Day 41 20:00 roll call?",
+      "status": "known_value",
+      "answerability": "known_value",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0056"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "C"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C42",
+      "question": "Was Ana Beliaeva present at the Day 41 20:00 roll call?",
+      "status": "true",
+      "answerability": "known_true",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0056"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "C"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C43",
+      "question": "Was a person named 'Owens' present at the Day 41 20:00 roll call?",
+      "status": "false",
+      "answerability": "known_false",
+      "missingness_type": null,
+      "available_evidence": [
+        "e07m_0056"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "C"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C44",
+      "question": "What was the exact wind-speed reading at the Weather Mast at Day 60 14:00 (sub-minute resolution)?",
+      "status": "unknown",
+      "answerability": "unknown_inaccessible",
+      "missingness_type": "lost_evidence",
+      "available_evidence": [
+        "e07m_0057",
+        "e07m_0058"
+      ],
+      "missing_evidence": [
+        "weather_mast_raw_archive_wx_arc_2031"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "existence_known_content_unavailable",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C45",
+      "question": "Does Taylor Whitfield's season-end summary conclusion about Day 60 wind conditions match what the raw archive would have shown?",
+      "status": "unknown",
+      "answerability": "unknown_inaccessible",
+      "missingness_type": "lost_evidence",
+      "available_evidence": [
+        "e07m_0057",
+        "e07m_0058"
+      ],
+      "missing_evidence": [
+        "weather_mast_raw_archive_wx_arc_2031"
+      ],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "existence_known_content_unavailable",
+      "controls": [],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C46",
+      "question": "Did the ice-core transport sled pass through Airlock A on Day 50?",
+      "status": "inferable",
+      "answerability": "inferable",
+      "missingness_type": "deduction_licensed",
+      "available_evidence": [
+        "e07m_0059",
+        "e07m_0060",
+        "e07m_0061"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "complete",
+      "controls": [
+        "G"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C47",
+      "question": "Could the ice-core transport sled have been moved via the Tunnel Door on Day 50?",
+      "status": "false",
+      "answerability": "known_false",
+      "missingness_type": "deduction_licensed",
+      "available_evidence": [
+        "e07m_0059",
+        "e07m_0060",
+        "e07m_0061"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": true,
+      "coverage": "complete",
+      "controls": [
+        "G"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C48",
+      "question": "Did Field Camp Delta relocate to the lee shelter during the Days 58-61 comms blackout?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "coverage_gap",
+      "available_evidence": [
+        "e07m_0062",
+        "e07m_0063",
+        "e07m_0064"
+      ],
+      "missing_evidence": [
+        "field_camp_delta_radio_log_day58_61"
+      ],
+      "compatible_worlds": [
+        "Relocated per protocol",
+        "Did not relocate"
+      ],
+      "negative_inference_valid": false,
+      "coverage": "incomplete",
+      "controls": [
+        "E"
+      ],
+      "premise_valid": true
+    },
+    {
+      "claim_id": "C51",
+      "question": "What does the pre-shipment ice-core inspection certificate say about sample IC-19?",
+      "status": "unknown",
+      "answerability": "unknown_missing",
+      "missingness_type": "document_never_existed",
+      "available_evidence": [
+        "e07m_0065",
+        "e07m_0066"
+      ],
+      "missing_evidence": [],
+      "compatible_worlds": null,
+      "negative_inference_valid": null,
+      "coverage": "none",
+      "controls": [],
+      "premise_valid": false
+    }
+  ]
+}

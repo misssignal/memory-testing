@@ -1,0 +1,44 @@
+{
+  "benchmark": "adversarial_memory_corpus",
+  "version": "0.1",
+  "generated_at": "2026-09-03",
+  "experiments": {
+    "07": {
+      "story": "meridian_station",
+      "memories": 358,
+      "queries": 80,
+      "missingness_map_claims": 51,
+      "directory": "experiment_07_the_shape_of_what_is_not_known"
+    }
+  },
+  "total_memories": 358,
+  "total_queries": 80,
+  "blind_run_recommendation": {
+    "strip_fields": [
+      "_oracle"
+    ],
+    "optionally_strip": [
+      "subject_entity_id",
+      "truth_role",
+      "scope"
+    ],
+    "preserve": [
+      "event_time",
+      "observation_time",
+      "ingestion_time",
+      "text",
+      "source_id",
+      "source_type"
+    ]
+  },
+  "answerability_distribution": {
+    "unknown_missing": 28,
+    "known_false": 9,
+    "unknown_underdetermined": 6,
+    "unknown_inaccessible": 6,
+    "known_value": 1,
+    "known_true": 2,
+    "inferable": 1,
+    "note": "Counted across the 53 claim propositions in experimental_map.md (51 missingness claims + Control A/B anchors C52/C53, which are known_true/known_false respectively and are excluded from missingness_map.json but included in queries.jsonl)."
+  }
+}
