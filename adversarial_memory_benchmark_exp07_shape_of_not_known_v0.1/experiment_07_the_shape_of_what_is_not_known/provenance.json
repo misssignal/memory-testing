@@ -1,0 +1,334 @@
+{
+  "nodes": [
+    {
+      "memory_id": "e07m_0001",
+      "claim_id": "C01",
+      "source_id": "src_c01_1"
+    },
+    {
+      "memory_id": "e07m_0002",
+      "claim_id": "C01",
+      "source_id": "src_c01_2"
+    },
+    {
+      "memory_id": "e07m_0003",
+      "claim_id": "C01",
+      "source_id": "src_c01_3"
+    },
+    {
+      "memory_id": "e07m_0004",
+      "claim_id": "C02",
+      "source_id": "src_c02_1"
+    },
+    {
+      "memory_id": "e07m_0005",
+      "claim_id": "C02",
+      "source_id": "src_c02_2"
+    },
+    {
+      "memory_id": "e07m_0006",
+      "claim_id": "C03",
+      "source_id": "src_c03_1"
+    },
+    {
+      "memory_id": "e07m_0007",
+      "claim_id": "C04",
+      "source_id": "src_c04_1"
+    },
+    {
+      "memory_id": "e07m_0008",
+      "claim_id": "C05",
+      "source_id": "src_c05_1"
+    },
+    {
+      "memory_id": "e07m_0009",
+      "claim_id": "C05",
+      "source_id": "src_c05_2"
+    },
+    {
+      "memory_id": "e07m_0010",
+      "claim_id": "C05",
+      "source_id": "src_c05_3"
+    },
+    {
+      "memory_id": "e07m_0011",
+      "claim_id": "C05",
+      "source_id": "src_c05_4"
+    },
+    {
+      "memory_id": "e07m_0012",
+      "claim_id": "C05",
+      "source_id": "src_c05_5"
+    },
+    {
+      "memory_id": "e07m_0013",
+      "claim_id": "C05",
+      "source_id": "src_c05_6"
+    },
+    {
+      "memory_id": "e07m_0014",
+      "claim_id": "C06",
+      "source_id": "src_c06_1"
+    },
+    {
+      "memory_id": "e07m_0015",
+      "claim_id": "C06",
+      "source_id": "src_c06_2"
+    },
+    {
+      "memory_id": "e07m_0016",
+      "claim_id": "C06",
+      "source_id": "src_c06_3"
+    },
+    {
+      "memory_id": "e07m_0017",
+      "claim_id": "C07",
+      "source_id": "src_c07_1"
+    },
+    {
+      "memory_id": "e07m_0018",
+      "claim_id": "C07",
+      "source_id": "src_c07_2"
+    },
+    {
+      "memory_id": "e07m_0019",
+      "claim_id": "C08",
+      "source_id": "src_c08_1"
+    },
+    {
+      "memory_id": "e07m_0020",
+      "claim_id": "C08",
+      "source_id": "src_c08_2"
+    },
+    {
+      "memory_id": "e07m_0021",
+      "claim_id": "C09",
+      "source_id": "src_c09_1"
+    },
+    {
+      "memory_id": "e07m_0022",
+      "claim_id": "C09",
+      "source_id": "src_c09_2"
+    },
+    {
+      "memory_id": "e07m_0023",
+      "claim_id": "C10",
+      "source_id": "src_c10_1"
+    },
+    {
+      "memory_id": "e07m_0024",
+      "claim_id": "C11",
+      "source_id": "src_c11_1"
+    },
+    {
+      "memory_id": "e07m_0025",
+      "claim_id": "C11",
+      "source_id": "src_c11_2"
+    },
+    {
+      "memory_id": "e07m_0026",
+      "claim_id": "C12",
+      "source_id": "src_c12_1"
+    },
+    {
+      "memory_id": "e07m_0027",
+      "claim_id": "C13",
+      "source_id": "src_c13_1"
+    },
+    {
+      "memory_id": "e07m_0028",
+      "claim_id": "C14",
+      "source_id": "src_c14_1"
+    },
+    {
+      "memory_id": "e07m_0029",
+      "claim_id": "C15",
+      "source_id": "src_c15_1"
+    },
+    {
+      "memory_id": "e07m_0030",
+      "claim_id": "C16",
+      "source_id": "src_c16_1"
+    },
+    {
+      "memory_id": "e07m_0031",
+      "claim_id": "C17",
+      "source_id": "src_c17_1"
+    },
+    {
+      "memory_id": "e07m_0032",
+      "claim_id": "C18",
+      "source_id": "src_c18_1"
+    },
+    {
+      "memory_id": "e07m_0033",
+      "claim_id": "C19",
+      "source_id": "src_c19_1"
+    },
+    {
+      "memory_id": "e07m_0034",
+      "claim_id": "C20",
+      "source_id": "src_c20_1"
+    },
+    {
+      "memory_id": "e07m_0035",
+      "claim_id": "C21",
+      "source_id": "src_c21_1"
+    },
+    {
+      "memory_id": "e07m_0036",
+      "claim_id": "C22",
+      "source_id": "src_c22_1"
+    },
+    {
+      "memory_id": "e07m_0037",
+      "claim_id": "C23",
+      "source_id": "src_c23_1"
+    },
+    {
+      "memory_id": "e07m_0038",
+      "claim_id": "C24",
+      "source_id": "src_c24_1"
+    },
+    {
+      "memory_id": "e07m_0039",
+      "claim_id": "C25",
+      "source_id": "src_c25_1"
+    },
+    {
+      "memory_id": "e07m_0040",
+      "claim_id": "C26",
+      "source_id": "src_c26_1"
+    },
+    {
+      "memory_id": "e07m_0041",
+      "claim_id": "C27",
+      "source_id": "src_c27_1"
+    },
+    {
+      "memory_id": "e07m_0042",
+      "claim_id": "C28",
+      "source_id": "src_c28_1"
+    },
+    {
+      "memory_id": "e07m_0043",
+      "claim_id": "C30",
+      "source_id": "src_c30_1"
+    },
+    {
+      "memory_id": "e07m_0044",
+      "claim_id": "C31",
+      "source_id": "src_c31_1"
+    },
+    {
+      "memory_id": "e07m_0045",
+      "claim_id": "C32",
+      "source_id": "src_c32_1"
+    },
+    {
+      "memory_id": "e07m_0046",
+      "claim_id": "C33",
+      "source_id": "src_c33_1"
+    },
+    {
+      "memory_id": "e07m_0047",
+      "claim_id": "C34",
+      "source_id": "src_c34_1"
+    },
+    {
+      "memory_id": "e07m_0048",
+      "claim_id": "C49",
+      "source_id": "src_c49_1"
+    },
+    {
+      "memory_id": "e07m_0049",
+      "claim_id": "C50",
+      "source_id": "src_c50_1"
+    },
+    {
+      "memory_id": "e07m_0050",
+      "claim_id": "C37",
+      "source_id": "src_c37_1"
+    },
+    {
+      "memory_id": "e07m_0051",
+      "claim_id": "C37",
+      "source_id": "src_c37_2"
+    },
+    {
+      "memory_id": "e07m_0052",
+      "claim_id": "C38",
+      "source_id": "src_c38_1"
+    },
+    {
+      "memory_id": "e07m_0053",
+      "claim_id": "C38",
+      "source_id": "src_c38_2"
+    },
+    {
+      "memory_id": "e07m_0054",
+      "claim_id": "C40",
+      "source_id": "src_c40_1"
+    },
+    {
+      "memory_id": "e07m_0055",
+      "claim_id": "C40",
+      "source_id": "src_c40_2"
+    },
+    {
+      "memory_id": "e07m_0056",
+      "claim_id": "C41",
+      "source_id": "src_c41_1"
+    },
+    {
+      "memory_id": "e07m_0057",
+      "claim_id": "C44",
+      "source_id": "src_c44_1"
+    },
+    {
+      "memory_id": "e07m_0058",
+      "claim_id": "C44",
+      "source_id": "src_c44_2"
+    },
+    {
+      "memory_id": "e07m_0059",
+      "claim_id": "C46",
+      "source_id": "src_c46_1"
+    },
+    {
+      "memory_id": "e07m_0060",
+      "claim_id": "C46",
+      "source_id": "src_c46_2"
+    },
+    {
+      "memory_id": "e07m_0061",
+      "claim_id": "C46",
+      "source_id": "src_c46_3"
+    },
+    {
+      "memory_id": "e07m_0062",
+      "claim_id": "C48",
+      "source_id": "src_c48_1"
+    },
+    {
+      "memory_id": "e07m_0063",
+      "claim_id": "C48",
+      "source_id": "src_c48_2"
+    },
+    {
+      "memory_id": "e07m_0064",
+      "claim_id": "C48",
+      "source_id": "src_c48_3"
+    },
+    {
+      "memory_id": "e07m_0065",
+      "claim_id": "C51",
+      "source_id": "src_c51_1"
+    },
+    {
+      "memory_id": "e07m_0066",
+      "claim_id": "C51",
+      "source_id": "src_c51_2"
+    }
+  ]
+}

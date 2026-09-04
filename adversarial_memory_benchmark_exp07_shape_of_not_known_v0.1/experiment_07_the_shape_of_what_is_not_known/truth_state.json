@@ -1,0 +1,62 @@
+{
+  "story_id": "meridian_station",
+  "season": { "start": "2031-04-04", "end": "2031-08-07", "day_1_date": "2031-04-04", "total_days": 96 },
+  "roster": {
+    "main_station": [
+      "person_kade", "person_achebe", "person_nandakumar", "person_voss", "person_castellano",
+      "person_whitfield", "person_mbeki", "person_lindqvist", "person_watanabe", "person_beliaeva",
+      "person_fuentes", "person_ondo"
+    ],
+    "field_camp_delta": ["person_berger", "person_tanaka"],
+    "closed_world_guarantee": "This 14-person list is exhaustive for the entire winter-over season. No 15th person exists at either location. Any query asserting a person outside this list has a justified known_false answer."
+  },
+  "facilities": [
+    { "id": "loc_main_hab", "name": "Main Hab" },
+    { "id": "loc_generator_shed", "name": "Generator Shed" },
+    { "id": "loc_vehicle_bay", "name": "Vehicle Bay" },
+    { "id": "loc_science_wing", "name": "Science Wing" },
+    { "id": "loc_lab_b", "name": "Ice-Core Prep Lab (\"Lab B\")" },
+    { "id": "loc_bio_lab", "name": "Biology Lab" },
+    { "id": "loc_chem_lab", "name": "Atmospheric Chemistry Lab" },
+    { "id": "loc_airlock_a", "name": "Airlock A (primary, badge-logged, exhaustive)" },
+    { "id": "loc_airlock_b", "name": "Airlock B (secondary, manual logbook, incomplete)" },
+    { "id": "loc_tunnel", "name": "Tunnel Door (zero coverage pre-Day 63, near-complete after)" },
+    { "id": "loc_weather_mast", "name": "Weather Mast" },
+    { "id": "loc_field_camp_delta", "name": "Field Camp Delta (18km satellite camp)" }
+  ],
+  "sensors_and_logs": [
+    { "id": "sensor_airlockA_badge", "coverage": "exhaustive", "gaps": [] },
+    { "id": "loc_airlock_b", "coverage": "incomplete_manual", "gaps": ["unbounded — compliance not enforced"] },
+    { "id": "loc_tunnel", "coverage": "zero_then_near_complete", "gaps": ["Day 1 - Day 62: no artifact exists"], "changeover_day": 63 },
+    { "id": "sensor_vehicle_bay_door", "coverage": "exhaustive", "gaps": [] },
+    { "id": "sensor_valve_v3", "coverage": "exhaustive_except_one_gap", "gaps": ["Day 41 02:06-02:40 (power-bus transfer test)"] },
+    { "id": "roll_call", "coverage": "instant_samples_only", "gaps": ["everything between 08:00 and 20:00 samples, daily"] },
+    { "id": "sensor_weather_mast", "coverage": "continuous_with_two_gaps", "gaps": ["Day 38 18:00 - Day 44 09:00 (anemometer #2 icing)", "Day 71 03:10-03:50 (firmware crash)"] },
+    { "id": "field_camp_delta_radio", "coverage": "two_windows_daily", "gaps": ["between windows daily", "Day 58-61 total blackout"] },
+    { "id": "email_relay", "coverage": "status_exhaustive_content_lossy", "gaps": ["6 corrupted-body incidents this season, including Day 27 and Day 75"] }
+  ],
+  "central_incident": {
+    "id": "IR-2031-07",
+    "summary": "Fuel valve V-3 found open ~02:41 Day 41, contained diesel spill, no injury, no fire, cleaned within the hour.",
+    "author_ground_truth_DEV_ONLY": {
+      "note": "Development-only field. Never expose to a system under test; never derivable from the shipped corpus. Preserved here so the corpus stays internally consistent if extended.",
+      "true_cause": "Valve V-3's actuator drifted open on its own due to documented vibration wear (see Day 12 inspection log and Day 88 replacement finding). No person touched the valve that night.",
+      "why_never_fully_confirmable_in_corpus": "The Day 88 actuator-wear finding narrows but does not prove the absence of human contact; Kenji's and Diego's logged proximity remain compatible with either explanation. No perturbation in this bundle resolves it — see Control F."
+    }
+  },
+  "resolution_events": [
+    {
+      "claim_id": "C48",
+      "unknown_until": "2031-04-04 + 65 days (transcribed Day 65 radio window)",
+      "resolved_fact": "Field Camp Delta relocated to the lee shelter on Day 59, returned to the main tent site on Day 63."
+    }
+  ],
+  "permanently_unresolved": ["C05", "C24", "C08", "C09", "C10", "C44", "C45", "C35", "C36"],
+  "scope_dimensions": {
+    "facility": ["main_hab", "generator_shed", "vehicle_bay", "science_wing", "science_wing_lab_b",
+                 "science_wing_bio_lab", "science_wing_chem_lab", "weather_mast", "field_camp_delta",
+                 "main_hab_comms", "main_hab_kitchen", "tunnel", "vehicle_bay"],
+    "team": ["field_camp_delta"],
+    "note": "Most scope dimensions used by Experiments 03/04 (environment, platform, region, version, customer_tier, employment_class, release_channel, authority) are not narratively meaningful for a single physical station and are left null throughout this experiment's memory records, per the schema's null_scope note (null does not mean global)."
+  }
+}
