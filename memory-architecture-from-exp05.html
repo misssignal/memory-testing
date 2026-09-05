@@ -1,5 +1,5 @@
-<title>Memory Architecture from Contested Reality</title>
-<meta name="description" content="Reverse-engineering what a memory system needs from Experiment 05's adversarial benchmark">
+<title>Memory Architecture from Adversarial Benchmarks</title>
+<meta name="description" content="Reverse-engineering what a memory system needs from 20 adversarial benchmark families">
 
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zilla+Slab:ital,wght@0,400;0,600;0,700;1,400&family=Source+Sans+3:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Source+Code+Pro:wght@400;500&display=swap">
 
@@ -125,6 +125,7 @@
   .panel-warn { border-left: 3px solid var(--contradiction); }
   .panel-ok { border-left: 3px solid var(--confirmed); }
   .panel-unresolved { border-left: 3px solid var(--unresolved); }
+  .panel-projected { border-left: 3px solid var(--unresolved); border-style: dashed; border-left-style: dashed; }
 
   .panel p:last-child { margin-bottom: 0; }
 
@@ -299,6 +300,39 @@
 
   a { color: var(--accent); }
 
+  .projected-badge {
+    display: inline-block;
+    font-size: 0.68rem;
+    font-weight: 600;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 0.15rem 0.5rem;
+    border-radius: 3px;
+    background: var(--unresolved-light);
+    color: var(--unresolved);
+    margin-left: 0.5rem;
+    vertical-align: middle;
+  }
+
+  .section-break {
+    text-align: center;
+    margin: 3.5rem 0 1rem;
+    color: var(--text-secondary);
+    font-family: 'Zilla Slab', serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.04em;
+  }
+  .section-break::before,
+  .section-break::after {
+    content: '';
+    display: inline-block;
+    width: 3rem;
+    border-top: 1px dashed var(--border);
+    vertical-align: middle;
+    margin: 0 1rem;
+  }
+
   .two-col {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -367,9 +401,11 @@
 
 <hr>
 
-<h2>Nine Primitives the Datasets Demand</h2>
+<h2>Fourteen Primitives the Datasets Demand</h2>
 
-<p>Working backwards from the queries the benchmarks expect a system to answer, these are the structural primitives without which correctness is impossible. Not nice-to-haves &mdash; each one has a specific query that breaks without it. The first seven emerge from Exp 05 alone; the last two from Experiments 08 and 09.</p>
+<p>Working backwards from the queries the benchmarks expect a system to answer, these are the structural primitives without which correctness is impossible. Not nice-to-haves &mdash; each one has a specific query that breaks without it.</p>
+
+<p>The first nine are <strong>established</strong> &mdash; derived from actual generated datasets (Experiments 01&ndash;09) with concrete memories, claims, and ground-truth queries. The last five are <strong>projected</strong> <span class="projected-badge">pending datasets</span> &mdash; derived from the experiment descriptions for Experiments 10&ndash;20. Their general shape is clear; their precise structure will sharpen when the datasets are generated.</p>
 
 <h3>1. Triple-Timestamp Records</h3>
 
@@ -744,14 +780,130 @@
   </div>
 </div>
 
+<div class="section-break">Projected Primitives &mdash; Pending Dataset Generation</div>
+
+<h3>10. Tombstone &amp; Retraction Model <span class="projected-badge">projected</span></h3>
+
+<p>Experiment 11 (Forgetting / Retraction / Deletion Semantics) asks a question most memory systems don't have an answer for: what does it actually mean to forget something? The current architecture can track claims that change status, but it has no mechanism for memories that should <em>no longer exist</em>.</p>
+
+<p>The problem is that "delete" isn't one operation. It's at least four:</p>
+
+<div class="panel">
+  <div class="claim-row">
+    <span class="tag tag-accent" style="font-size:0.68rem">SUPERSEDED</span>
+    <span class="claim-text" style="font-size:0.9rem">No longer current, but historically valid. "We used to use AURORA" &mdash; true then, not true now.</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-false" style="font-size:0.68rem">RETRACTED</span>
+    <span class="claim-text" style="font-size:0.9rem">Was wrong when stated. The source explicitly retracts the claim. Historical queries should note the retraction.</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-false" style="font-size:0.68rem">EXPUNGED</span>
+    <span class="claim-text" style="font-size:0.9rem">Must not be retrievable. Privacy/legal deletion. System must not surface it, not even as "there used to be something here."</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-unresolved" style="font-size:0.68rem">SOURCE LOST</span>
+    <span class="claim-text" style="font-size:0.9rem">The upstream source was deleted. Derived memories exist but can't be re-verified. A different epistemic status than retraction.</span>
+    <span></span>
+  </div>
+</div>
+
+<p>The hardest part is the <strong>derivation-graph orphan problem</strong>: when a source memory is deleted, what happens to memories derived from it? A summary built from five sources, one of which is expunged, can't simply be deleted (it contains information from four legitimate sources) but also can't remain unchanged (it contains information that must not be surfaced). This is where the actual dataset will matter most &mdash; the edge cases around partial deletion of derivation chains are where the architectural shape will sharpen.</p>
+
+<div class="schema">
+<span class="key">Tombstone</span> {
+  <span class="key">memory_id</span>:         <span class="type">string</span>,          <span class="comment">// what was deleted</span>
+  <span class="key">deletion_type</span>:      <span class="type">enum</span>,            <span class="comment">// superseded | retracted | expunged | source_lost</span>
+  <span class="key">deleted_at</span>:         <span class="type">datetime</span>,
+  <span class="key">reason</span>:             <span class="type">string?</span>,
+  <span class="key">historical_access</span>:  <span class="type">enum</span>,            <span class="comment">// allowed | noted_as_retracted | forbidden</span>
+  <span class="key">orphaned_derivations</span>: <span class="type">[memory_id]</span>,   <span class="comment">// derived memories now missing a source</span>
+}
+</div>
+
+<h3>11. Namespace &amp; Visibility Layer <span class="projected-badge">projected</span></h3>
+
+<p>Experiment 12 (Privacy Boundaries / Namespace Isolation) tests whether memory from one context can leak into another. This is fundamentally an access-control layer over the entire memory model.</p>
+
+<p>The architectural issue isn't just "tag each memory with a tenant ID." It's that the system's <em>derived structures</em> &mdash; claims, summaries, belief timelines, episodes &mdash; can be built from memories spanning multiple visibility scopes. A summary built from Alice's private notes and Bob's private notes could leak information from both into a shared context where neither intended it.</p>
+
+<div class="schema">
+<span class="key">VisibilityScope</span> {
+  <span class="key">namespace</span>:          <span class="type">string</span>,          <span class="comment">// tenant, project, or user boundary</span>
+  <span class="key">access_level</span>:       <span class="type">enum</span>,            <span class="comment">// private | team | project | org | public</span>
+  <span class="key">granted_to</span>:         <span class="type">[principal_id]</span>,
+  <span class="key">revocable</span>:          <span class="type">bool</span>,            <span class="comment">// can access be withdrawn after grant?</span>
+}
+</div>
+
+<p>Key questions the dataset will need to answer: What happens when access is revoked <em>after</em> a derived memory was built from the now-restricted source? Does the derived memory inherit the strictest scope of its inputs? What about cross-tenant alias collisions &mdash; two tenants both have an entity called "Project Alpha"?</p>
+
+<h3>12. Compression Fidelity Tracking <span class="projected-badge">projected</span></h3>
+
+<p>Experiment 13 (Consolidation / Summarization Drift) tests what happens when raw memories are compressed into summaries, and those summaries are compressed again. Each pass can lose qualifiers ("probably" &rarr; "likely" &rarr; stated as fact), drop uncertainty, flatten time, and collapse distinct entities.</p>
+
+<p>The current derivation graph knows <em>that</em> a memory was derived from another. What it doesn't track is <em>what was lost in the derivation</em>. A summary that drops "in Q1 only" from a scoped claim is a semantic corruption, not just a compression.</p>
+
+<div class="schema">
+<span class="key">CompressionRecord</span> {
+  <span class="key">summary_id</span>:          <span class="type">memory_id</span>,
+  <span class="key">source_ids</span>:           <span class="type">[memory_id]</span>,
+  <span class="key">generation</span>:            <span class="type">int</span>,            <span class="comment">// 1 = summary of originals, 2 = summary of summaries, ...</span>
+  <span class="key">preserved_properties</span>: <span class="type">[string]</span>,       <span class="comment">// which semantic properties survived</span>
+  <span class="key">lost_properties</span>:      <span class="type">[string]</span>,       <span class="comment">// what was dropped or weakened</span>
+  <span class="key">qualifier_drift</span>:      <span class="type">[QualifierDelta]</span>,<span class="comment">// "probably" &rarr; "is", "Q1 only" &rarr; dropped</span>
+}
+</div>
+
+<p>The adversarial structure: a chain of 4&ndash;5 summarization generations where each step is locally reasonable but the final summary contradicts the original source. Controlled experiments where exactly one qualifier is dropped per generation, so you can measure where the semantic break occurs.</p>
+
+<h3>13. Metadata Confidence Model <span class="projected-badge">projected</span></h3>
+
+<p>Experiment 15 (Contradictory Metadata / Poisoned Metadata) breaks an assumption the entire current schema relies on: that structured metadata fields are trustworthy. What happens when a memory's <code>event_time</code> is wrong? When the <code>source_type</code> says "sensor_log" but the text is clearly a meeting note? When the entity ID points to the wrong entity?</p>
+
+<p>The current triple-timestamp model assumes timestamps are correct. But if the system ingests a memory with a wrong <code>event_time</code>, every temporal query that touches it returns wrong results &mdash; and the system has no way to detect the corruption because timestamps are trusted infrastructure, not claims subject to evidence.</p>
+
+<div class="schema">
+<span class="key">MetadataConfidence</span> {
+  <span class="key">field</span>:              <span class="type">string</span>,          <span class="comment">// which metadata field</span>
+  <span class="key">stated_value</span>:       <span class="type">any</span>,             <span class="comment">// what the metadata says</span>
+  <span class="key">confidence</span>:         <span class="type">enum</span>,            <span class="comment">// verified | inferred | stated | uncertain | contradicted</span>
+  <span class="key">text_agrees</span>:        <span class="type">bool?</span>,           <span class="comment">// does the text content agree with this field?</span>
+  <span class="key">corroborating_ids</span>:  <span class="type">[memory_id]</span>,    <span class="comment">// other memories that support this value</span>
+}
+</div>
+
+<p>The core invariant: when metadata and text disagree, the system must flag the disagreement rather than silently trusting either one. The dataset needs both directions: metadata correct / text misleading, and text correct / metadata wrong, with controls where both agree.</p>
+
+<h3>14. Negation &amp; Counterfactual Model <span class="projected-badge">projected</span></h3>
+
+<p>Experiment 18 (Counterfactual / Negative Evidence) tests whether the system can remember things that <em>didn't</em> happen without later converting them into things that did. "The team considered switching to Kestrel but decided against it" is a meaningful memory that a retrieval system easily corrupts into "the team switched to Kestrel."</p>
+
+<p>The current schema has no way to represent negation as a first-class structure. A memory's <code>predicate</code> field can say "rejected" but there's no structural guarantee that a retrieval query for "Kestrel adoption" won't surface the rejection memory as evidence <em>for</em> adoption.</p>
+
+<div class="schema">
+<span class="key">CounterfactualRecord</span> {
+  <span class="key">memory_id</span>:          <span class="type">string</span>,
+  <span class="key">assertion_polarity</span>: <span class="type">enum</span>,            <span class="comment">// positive | negative | counterfactual | abandoned</span>
+  <span class="key">considered_action</span>:  <span class="type">string?</span>,         <span class="comment">// what was proposed/predicted/planned</span>
+  <span class="key">actual_outcome</span>:     <span class="type">enum</span>,            <span class="comment">// enacted | rejected | prevented | never_occurred</span>
+  <span class="key">prevention_cause</span>:   <span class="type">string?</span>,         <span class="comment">// what stopped it, if anything</span>
+}
+</div>
+
+<p>The adversarial trick: abandoned plans, disproven hypotheses, and failed predictions are all <em>true memories about non-events</em>. The system must retrieve them when asked "what was considered?" without surfacing them when asked "what happened?" This is structurally different from a false claim &mdash; the memory itself is true, it's the <em>thing it describes</em> that didn't happen.</p>
+
 <hr>
 
 <h2>Proposed Data Model</h2>
 
-<p>Synthesizing the nine primitives into a layered schema. The inner layer is what's stored; the outer layer is what's computed.</p>
+<p>Synthesizing the fourteen primitives into a layered schema. The inner layer is what's stored; the outer layer is what's computed. Projected layers (from experiments not yet generated) are shown with dashed borders.</p>
 
 <figure>
-  <svg viewBox="0 0 600 400" role="img" aria-label="Six-layer data model: memory records at bottom, then claims, then belief timeline and provenance graph side by side, then episodes and causal graph side by side, then computed query operations at top">
+  <svg viewBox="0 0 600 530" role="img" aria-label="Eight-layer data model: memory records at bottom, then claims, belief timeline and provenance, episodes and causal graph, then projected layers for tombstones/namespaces/compression/metadata/negation, then computed query operations at top">
     <defs>
       <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
         <polygon points="0 0, 8 3, 0 6" fill="currentColor" opacity="0.5"/>
@@ -759,60 +911,80 @@
     </defs>
 
     <!-- Layer 1: Memory Records -->
-    <rect x="40" y="320" width="520" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="60" y="340" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Memory Records</text>
-    <text x="60" y="360" font-size="10" fill="currentColor" opacity="0.6">text, three timestamps, source_id, source_type, derived_from, supersedes, contradicts, scope, tags</text>
+    <rect x="40" y="450" width="520" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="60" y="470" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Memory Records</text>
+    <text x="60" y="490" font-size="10" fill="currentColor" opacity="0.6">text, three timestamps, source_id, source_type, derived_from, supersedes, contradicts, scope, tags</text>
 
     <!-- Layer 2: Claims -->
-    <rect x="40" y="240" width="520" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="60" y="260" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Claims</text>
-    <text x="60" y="280" font-size="10" fill="currentColor" opacity="0.6">claim_id, fact_id, resolution_status, evidence_roots[], root_count, memory_ids[]</text>
+    <rect x="40" y="370" width="520" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="60" y="390" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Claims</text>
+    <text x="60" y="410" font-size="10" fill="currentColor" opacity="0.6">claim_id, fact_id, resolution_status, evidence_roots[], root_count, memory_ids[]</text>
 
-    <!-- Layer 3: Belief Timeline -->
-    <rect x="40" y="160" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="60" y="180" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Belief Timeline</text>
-    <text x="60" y="198" font-size="10" fill="currentColor" opacity="0.6">actor &times; date &rarr; confidence_label</text>
+    <!-- Layer 3L: Belief Timeline -->
+    <rect x="40" y="290" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="60" y="310" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Belief Timeline</text>
+    <text x="60" y="328" font-size="10" fill="currentColor" opacity="0.6">actor &times; date &rarr; confidence_label</text>
 
-    <!-- Layer 3: Provenance Graph -->
-    <rect x="310" y="160" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="330" y="180" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Provenance Graph</text>
-    <text x="330" y="198" font-size="10" fill="currentColor" opacity="0.6">node_type, derived_from edges, root tracing</text>
+    <!-- Layer 3R: Provenance Graph -->
+    <rect x="310" y="290" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="330" y="310" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Provenance Graph</text>
+    <text x="330" y="328" font-size="10" fill="currentColor" opacity="0.6">node_type, derived_from edges, root tracing</text>
 
-    <!-- Layer 4: Episodes -->
-    <rect x="40" y="80" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="60" y="100" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Episodes</text>
-    <text x="60" y="118" font-size="10" fill="currentColor" opacity="0.6">boundaries, goals, participants, relationships</text>
+    <!-- Layer 4L: Episodes -->
+    <rect x="40" y="210" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="60" y="230" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Episodes</text>
+    <text x="60" y="248" font-size="10" fill="currentColor" opacity="0.6">boundaries, goals, participants, relationships</text>
 
-    <!-- Layer 4: Causal Graph -->
-    <rect x="310" y="80" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="330" y="100" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Causal Graph</text>
-    <text x="330" y="118" font-size="10" fill="currentColor" opacity="0.6">typed relations, status, confidence class</text>
+    <!-- Layer 4R: Causal Graph -->
+    <rect x="310" y="210" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="330" y="230" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Causal Graph</text>
+    <text x="330" y="248" font-size="10" fill="currentColor" opacity="0.6">typed relations, status, confidence class</text>
+
+    <!-- Projected divider -->
+    <line x1="40" y1="195" x2="560" y2="195" stroke="currentColor" stroke-width="1" stroke-dasharray="3,3" opacity="0.3"/>
+    <text x="300" y="188" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.4" font-style="italic">projected &mdash; pending dataset generation</text>
+
+    <!-- Layer 5L: Tombstones + Namespaces -->
+    <rect x="40" y="120" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+    <text x="60" y="140" font-family="Zilla Slab, serif" font-size="12" font-weight="600" fill="currentColor" opacity="0.7">Tombstones &amp; Namespaces</text>
+    <text x="60" y="158" font-size="9" fill="currentColor" opacity="0.5">deletion semantics, visibility scopes, access control</text>
+
+    <!-- Layer 5R: Compression + Metadata + Negation -->
+    <rect x="310" y="120" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3" opacity="0.7"/>
+    <text x="330" y="140" font-family="Zilla Slab, serif" font-size="12" font-weight="600" fill="currentColor" opacity="0.7">Fidelity &amp; Polarity</text>
+    <text x="330" y="158" font-size="9" fill="currentColor" opacity="0.5">compression tracking, metadata confidence, negation</text>
 
     <!-- Computed layer -->
-    <rect x="100" y="12" width="400" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3"/>
+    <rect x="100" y="12" width="400" height="80" rx="4" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3"/>
     <text x="300" y="32" text-anchor="middle" font-family="Zilla Slab, serif" font-size="12" font-weight="600" fill="currentColor" opacity="0.7">Query Operations (computed)</text>
-    <text x="300" y="46" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.5">point-in-time state, independence counting, scope comparison, episode retrieval, causal reasoning, abstention</text>
+    <text x="300" y="48" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.5">point-in-time state, independence counting, scope comparison, episode retrieval, causal reasoning,</text>
+    <text x="300" y="60" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.5">abstention, ingestion-order invariance, deletion compliance, namespace isolation,</text>
+    <text x="300" y="72" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.5">summarization fidelity audit, metadata cross-check, counterfactual retrieval, multi-hop traversal</text>
 
     <!-- Arrows up -->
-    <line x1="300" y1="320" x2="300" y2="305" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
-    <line x1="165" y1="240" x2="165" y2="225" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
-    <line x1="435" y1="240" x2="435" y2="225" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
-    <line x1="165" y1="160" x2="165" y2="145" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
-    <line x1="435" y1="160" x2="435" y2="145" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
-    <line x1="220" y1="80" x2="250" y2="63" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
-    <line x1="400" y1="80" x2="370" y2="63" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="300" y1="450" x2="300" y2="435" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="165" y1="370" x2="165" y2="355" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="435" y1="370" x2="435" y2="355" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="165" y1="290" x2="165" y2="275" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="435" y1="290" x2="435" y2="275" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="165" y1="210" x2="165" y2="185" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.35"/>
+    <line x1="435" y1="210" x2="435" y2="185" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.35"/>
+    <line x1="220" y1="120" x2="250" y2="97" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.3"/>
+    <line x1="400" y1="120" x2="370" y2="97" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.3"/>
 
     <!-- Labels on arrows -->
-    <text x="310" y="315" font-size="8" fill="currentColor" opacity="0.5">extracts</text>
-    <text x="175" y="235" font-size="8" fill="currentColor" opacity="0.5">tracks</text>
-    <text x="445" y="235" font-size="8" fill="currentColor" opacity="0.5">traces</text>
-    <text x="175" y="155" font-size="8" fill="currentColor" opacity="0.5">groups</text>
-    <text x="445" y="155" font-size="8" fill="currentColor" opacity="0.5">explains</text>
+    <text x="310" y="445" font-size="8" fill="currentColor" opacity="0.5">extracts</text>
+    <text x="175" y="365" font-size="8" fill="currentColor" opacity="0.5">tracks</text>
+    <text x="445" y="365" font-size="8" fill="currentColor" opacity="0.5">traces</text>
+    <text x="175" y="285" font-size="8" fill="currentColor" opacity="0.5">groups</text>
+    <text x="445" y="285" font-size="8" fill="currentColor" opacity="0.5">explains</text>
+    <text x="175" y="200" font-size="8" fill="currentColor" opacity="0.4">constrains</text>
+    <text x="445" y="200" font-size="8" fill="currentColor" opacity="0.4">audits</text>
   </svg>
-  <figcaption>Six-layer architecture: memory records are stored; claims, belief timelines, provenance, episodes, and causal graphs are derived from them; query operations compute across all layers.</figcaption>
+  <figcaption>Eight-layer architecture: established layers (solid) are derived from generated datasets; projected layers (dashed) represent primitives whose precise structure will sharpen when Experiments 10&ndash;20 are generated.</figcaption>
 </figure>
 
-<h3>Full Schema</h3>
+<h3>Full Schema (Established)</h3>
 
 <div class="schema">
 <span class="key">MemoryRecord</span> {
@@ -899,6 +1071,54 @@
 }
 </div>
 
+<h3>Projected Schema Types <span class="projected-badge">pending datasets</span></h3>
+
+<div class="schema">
+<span class="comment">// These types are projected from experiment descriptions.</span>
+<span class="comment">// Precise field sets will sharpen when datasets are generated.</span>
+
+<span class="key">Tombstone</span> {
+  <span class="key">memory_id</span>:              <span class="type">string</span>,
+  <span class="key">deletion_type</span>:           <span class="type">enum</span>,          <span class="comment">// superseded | retracted | expunged | source_lost</span>
+  <span class="key">deleted_at</span>:              <span class="type">datetime</span>,
+  <span class="key">reason</span>:                  <span class="type">string?</span>,
+  <span class="key">historical_access</span>:       <span class="type">enum</span>,          <span class="comment">// allowed | noted_as_retracted | forbidden</span>
+  <span class="key">orphaned_derivations</span>:    <span class="type">[memory_id]</span>,
+}
+
+<span class="key">VisibilityScope</span> {
+  <span class="key">namespace</span>:               <span class="type">string</span>,
+  <span class="key">access_level</span>:            <span class="type">enum</span>,          <span class="comment">// private | team | project | org | public</span>
+  <span class="key">granted_to</span>:              <span class="type">[principal_id]</span>,
+  <span class="key">revocable</span>:               <span class="type">bool</span>,
+}
+
+<span class="key">CompressionRecord</span> {
+  <span class="key">summary_id</span>:              <span class="type">memory_id</span>,
+  <span class="key">source_ids</span>:              <span class="type">[memory_id]</span>,
+  <span class="key">generation</span>:               <span class="type">int</span>,           <span class="comment">// 1 = summary of originals, 2 = summary of summaries</span>
+  <span class="key">preserved_properties</span>:    <span class="type">[string]</span>,
+  <span class="key">lost_properties</span>:         <span class="type">[string]</span>,
+  <span class="key">qualifier_drift</span>:         <span class="type">[QualifierDelta]</span>,
+}
+
+<span class="key">MetadataConfidence</span> {
+  <span class="key">field</span>:                   <span class="type">string</span>,
+  <span class="key">stated_value</span>:            <span class="type">any</span>,
+  <span class="key">confidence</span>:              <span class="type">enum</span>,          <span class="comment">// verified | inferred | stated | uncertain | contradicted</span>
+  <span class="key">text_agrees</span>:             <span class="type">bool?</span>,
+  <span class="key">corroborating_ids</span>:       <span class="type">[memory_id]</span>,
+}
+
+<span class="key">CounterfactualRecord</span> {
+  <span class="key">memory_id</span>:               <span class="type">string</span>,
+  <span class="key">assertion_polarity</span>:      <span class="type">enum</span>,          <span class="comment">// positive | negative | counterfactual | abandoned</span>
+  <span class="key">considered_action</span>:       <span class="type">string?</span>,
+  <span class="key">actual_outcome</span>:          <span class="type">enum</span>,          <span class="comment">// enacted | rejected | prevented | never_occurred</span>
+  <span class="key">prevention_cause</span>:        <span class="type">string?</span>,
+}
+</div>
+
 <hr>
 
 <h2>Required Query Operations</h2>
@@ -958,6 +1178,56 @@
       <td><strong>Causal attribution</strong></td>
       <td>Causal graph, typed relations</td>
       <td><em>"Did the software deployment cause the actuator lag?"</em> (e09) &mdash; correct answer: no, it merely preceded it; bus resistance is the mechanistic cause</td>
+    </tr>
+    <tr>
+      <td><strong>Ingestion-order invariance</strong></td>
+      <td>Triple timestamps, idempotent operations</td>
+      <td><em>"Does shuffling ingestion order change the system's answer?"</em> (e10) &mdash; final state must be identical regardless of arrival sequence</td>
+    </tr>
+    <tr>
+      <td><strong>Deletion compliance</strong></td>
+      <td>Tombstone model, derivation graph</td>
+      <td><em>"After retracting source X, does any derived memory still surface claims from X?"</em> (e11) &mdash; expunged content must not leak through derivatives</td>
+    </tr>
+    <tr>
+      <td><strong>Namespace isolation</strong></td>
+      <td>Visibility scopes</td>
+      <td><em>"Can a query in Tenant A's context retrieve memories from Tenant B?"</em> (e12) &mdash; must return empty, not cross-tenant results</td>
+    </tr>
+    <tr>
+      <td><strong>Summarization fidelity audit</strong></td>
+      <td>Compression fidelity tracking</td>
+      <td><em>"Does a third-generation summary still preserve the 'Q1 only' qualifier from the original?"</em> (e13) &mdash; must detect qualifier loss</td>
+    </tr>
+    <tr>
+      <td><strong>Distractor resistance</strong></td>
+      <td>Evidence quality &gt; embedding similarity</td>
+      <td><em>"Retrieve evidence for the June incident"</em> (e14) &mdash; must not substitute a lexically similar but temporally wrong memory</td>
+    </tr>
+    <tr>
+      <td><strong>Metadata cross-check</strong></td>
+      <td>Metadata confidence model</td>
+      <td><em>"Memory M42 has event_time March but text says 'during the August review' &mdash; which is correct?"</em> (e15) &mdash; must flag the disagreement</td>
+    </tr>
+    <tr>
+      <td><strong>Multi-hop traversal</strong></td>
+      <td>Derivation graph + claim graph + temporal joins</td>
+      <td><em>"Connecting identity mapping from 2024 + scope change from 2025 + status update from 2026 to answer a current-state question"</em> (e16)</td>
+    </tr>
+    <tr>
+      <td><strong>Belief/world separation</strong></td>
+      <td>Epistemic timeline, actor-level belief tracking</td>
+      <td><em>"What did the team believe vs what actually happened?"</em> (e17) &mdash; uses existing Primitive 3 but with deeper actor stratification</td>
+    </tr>
+    <tr>
+      <td><strong>Counterfactual retrieval</strong></td>
+      <td>Negation model, assertion polarity</td>
+      <td><em>"What alternatives were considered for the scheduler?"</em> (e18) &mdash; must surface rejected options without implying they were adopted</td>
+    </tr>
+    <tr>
+      <td><strong>Self-amplification resistance</strong></td>
+      <td>Independence tracking, derivation graph</td>
+      <td><em>"Has confidence in this claim increased due to new evidence, or just retrieval-and-reinsertion?"</em> (e19) &mdash; must distinguish genuine corroboration from echo</td>
     </tr>
   </tbody>
 </table>
@@ -1019,6 +1289,31 @@
     <p>Temporal proximity becomes causal attribution: the software deployment "caused" the lag because it happened first. Correlated effects get linked as cause&rarr;effect. The trigger gets blamed instead of the root cause.</p>
     <div class="breaks">Breaks: T09_01 through T09_11</div>
   </div>
+  <div class="failure-card" style="border-style:dashed">
+    <h4>Without tombstone model <span class="projected-badge" style="font-size:0.6rem">projected</span></h4>
+    <p>A retracted memory's claims persist in derived summaries. An expunged memory still surfaces through memories that quote it. "Deletion" means invisible but not gone.</p>
+    <div class="breaks">Breaks: Exp 11 deletion compliance</div>
+  </div>
+  <div class="failure-card" style="border-style:dashed">
+    <h4>Without namespace layer <span class="projected-badge" style="font-size:0.6rem">projected</span></h4>
+    <p>A shared summary built from private sources leaks information across tenant boundaries. "Project Alpha" in Tenant A collides with "Project Alpha" in Tenant B.</p>
+    <div class="breaks">Breaks: Exp 12 namespace isolation</div>
+  </div>
+  <div class="failure-card" style="border-style:dashed">
+    <h4>Without compression tracking <span class="projected-badge" style="font-size:0.6rem">projected</span></h4>
+    <p>A fourth-generation summary states as fact what the original qualified with "probably, in Q1 only." No mechanism detects the qualifier drift.</p>
+    <div class="breaks">Breaks: Exp 13 fidelity audit</div>
+  </div>
+  <div class="failure-card" style="border-style:dashed">
+    <h4>Without metadata confidence <span class="projected-badge" style="font-size:0.6rem">projected</span></h4>
+    <p>A memory with a wrong event_time silently corrupts every temporal query it participates in. The system can't flag that the text says "August" while the timestamp says "March."</p>
+    <div class="breaks">Breaks: Exp 15 metadata cross-check</div>
+  </div>
+  <div class="failure-card" style="border-style:dashed">
+    <h4>Without negation model <span class="projected-badge" style="font-size:0.6rem">projected</span></h4>
+    <p>"The team considered switching to Kestrel but decided against it" gets retrieved as evidence for a Kestrel adoption. Abandoned plans, rejected proposals, and disproven hypotheses become false positives.</p>
+    <div class="breaks">Breaks: Exp 18 counterfactual retrieval</div>
+  </div>
 </div>
 
 <hr>
@@ -1057,6 +1352,63 @@
   <p style="font-size:0.9rem">The causal graph (typed relations, status, confidence class) handles the 10 causal cases and 23 causal claims. The key insight is the <strong>relation vocabulary</strong> &mdash; distinguishing CAUSES from TRIGGERS from PRECEDES from CORRELATES_WITH is exactly what the 11 adversarial traps test. Joint causes (A+B) need compound entity representation. The <strong>status field</strong> (established, unresolved, noncausal_sequence, association_only) prevents the system from collapsing "temporal precedence" into "causation."</p>
 </div>
 
+<div class="section-break">Experiments 10&ndash;20 &mdash; Projected Coverage</div>
+
+<div class="panel panel-accent">
+  <h4 style="margin-top:0">Exp 10 (Ingestion Order / Late Arrival) &mdash; covered by existing primitives</h4>
+  <p style="font-size:0.9rem">Triple timestamps already separate event_time from ingestion_time. The test is whether the system's <strong>operations</strong> are order-independent &mdash; do you get the same derived state regardless of whether memories arrive chronologically, shuffled, or with late arrivals? This is an operational invariant on the existing data model, not a new primitive. Exp 05 already ships three ingestion orderings (chronological, shuffled, late-arrival) as a partial test.</p>
+</div>
+
+<div class="panel panel-projected">
+  <h4 style="margin-top:0">Exp 11 (Forgetting / Retraction / Deletion) &mdash; needs Primitive 10 <span class="projected-badge">projected</span></h4>
+  <p style="font-size:0.9rem">Requires the <strong>tombstone &amp; retraction model</strong>. The current architecture has no mechanism for memories that should cease to exist, especially the derivation-graph orphan problem: derived memories whose sources have been deleted, retracted, or expunged. The four deletion types (superseded, retracted, expunged, source_lost) each have different semantics for historical queries, derivation chains, and claim status. This is the experiment most likely to reveal architectural surprises.</p>
+</div>
+
+<div class="panel panel-projected">
+  <h4 style="margin-top:0">Exp 12 (Privacy Boundaries / Namespace Isolation) &mdash; needs Primitive 11 <span class="projected-badge">projected</span></h4>
+  <p style="font-size:0.9rem">Requires the <strong>namespace &amp; visibility layer</strong>. Every layer in the current architecture &mdash; claims, belief timelines, derivation graphs, episodes, causal graphs &mdash; operates without access control. The experiment tests whether derived structures leak information across boundaries, particularly when a summary or claim was built from sources spanning multiple scopes.</p>
+</div>
+
+<div class="panel panel-projected">
+  <h4 style="margin-top:0">Exp 13 (Consolidation / Summarization Drift) &mdash; needs Primitive 12 <span class="projected-badge">projected</span></h4>
+  <p style="font-size:0.9rem">Requires <strong>compression fidelity tracking</strong>. The derivation graph already records that one memory derives from another, but it doesn't track <em>what was lost</em> in the derivation. Multi-generation summarization chains where each step is locally reasonable but the final summary contradicts the original are the core adversarial structure.</p>
+</div>
+
+<div class="panel panel-accent">
+  <h4 style="margin-top:0">Exp 14 (Semantic Near-Miss / Distractor Resistance) &mdash; retrieval-layer concern</h4>
+  <p style="font-size:0.9rem">Primarily tests the <strong>retrieval layer</strong>, not the data model. Whether a system over-relies on embedding similarity vs. evidence quality is important but doesn't demand a new schema primitive. The existing scope qualifiers and triple timestamps provide the structured fields a retrieval system would need to distinguish lexically similar but semantically different memories.</p>
+</div>
+
+<div class="panel panel-projected">
+  <h4 style="margin-top:0">Exp 15 (Contradictory Metadata / Poisoned Metadata) &mdash; needs Primitive 13 <span class="projected-badge">projected</span></h4>
+  <p style="font-size:0.9rem">Requires a <strong>metadata confidence model</strong>. The current schema treats structured fields (timestamps, source_type, entity IDs) as trusted infrastructure. This experiment tests what happens when they're wrong, and whether the system can detect disagreement between metadata and text content.</p>
+</div>
+
+<div class="panel panel-accent">
+  <h4 style="margin-top:0">Exp 16 (Multi-hop / Long-range Dependency) &mdash; covered by existing primitives</h4>
+  <p style="font-size:0.9rem">Tests <strong>traversal depth</strong> on the derivation graph, claim graph, and temporal joins. The primitives are already in the schema; the test is whether the system can reconstruct facts that span multiple memories, entities, and time periods without hallucinating the missing links. No new primitive needed, but the existing graph structures must support efficient multi-hop queries.</p>
+</div>
+
+<div class="panel panel-accent">
+  <h4 style="margin-top:0">Exp 17 (Belief State vs Objective State) &mdash; covered by Primitive 3</h4>
+  <p style="font-size:0.9rem">The <strong>epistemic timeline</strong> (Primitive 3) was built for exactly this. The experiment pushes it deeper into individual vs. team vs. organizational vs. publicly-reported belief layers &mdash; the current schema supports this via the <code>actor</code> key in <code>belief_states</code>, but the dataset will test whether the system can maintain five or more parallel belief tracks without collapsing them.</p>
+</div>
+
+<div class="panel panel-projected">
+  <h4 style="margin-top:0">Exp 18 (Counterfactual / Negative Evidence) &mdash; needs Primitive 14 <span class="projected-badge">projected</span></h4>
+  <p style="font-size:0.9rem">Requires a <strong>negation &amp; counterfactual model</strong>. Abandoned plans, disproven hypotheses, and prevented outcomes are true memories about non-events. The system must retrieve them when asked "what was considered?" without surfacing them when asked "what happened?" &mdash; a structural distinction the current schema doesn't make.</p>
+</div>
+
+<div class="panel panel-accent">
+  <h4 style="margin-top:0">Exp 19 (Repeated Exposure / Confidence Inflation) &mdash; covered by Primitives 4 &amp; 5</h4>
+  <p style="font-size:0.9rem">Tests <strong>independence tracking and derivation graph</strong> at the system-operation level. The adversarial structure is retrieve-and-resave loops where the system's own outputs are reingested as source memories. The derivation graph should tag these as <code>reingested</code> or <code>model_generated</code> (Exp 06's provenance node types), and independence counting should refuse to count them as new roots.</p>
+</div>
+
+<div class="panel panel-unresolved">
+  <h4 style="margin-top:0">Exp 20 (Benchmark Crossover / Compound Failure) &mdash; meta-experiment</h4>
+  <p style="font-size:0.9rem">Not a primitive test but a <strong>composition test</strong>. Designed to run after the individual families have been characterized. Tests whether mechanisms that handle each adversarial family individually fail under composition &mdash; e.g., temporal traps + false consensus, or privacy namespaces + alias collisions. The architecture should be designed so primitives compose without interference, but that's exactly what this experiment verifies.</p>
+</div>
+
 <hr>
 
 <h2>The Core Insight</h2>
@@ -1066,5 +1418,7 @@
 
   <p style="font-size:0.95rem; max-width:40rem">The architecture these datasets demand is fundamentally different: it's a system that stores <em>claims with provenance and confidence trajectories</em>, not text with timestamps. It can say "I don't know," "I can't know," "I used to think X but now think Y," and "these two things look contradictory but they're answering different questions." It groups scattered traces into goal-directed episodes without confusing proximity for membership. It attributes causation through mechanism, not through temporal coincidence or narrative authority.</p>
 
-  <p style="font-size:0.95rem; max-width:40rem; margin-bottom:0">Retrieval is necessary but not sufficient. The hard problems are all post-retrieval: independence counting, scope comparison, belief-state reconstruction, episode boundary detection, causal reasoning, and the discipline to abstain when the evidence doesn't support a conclusion.</p>
+  <p style="font-size:0.95rem; max-width:40rem">Retrieval is necessary but not sufficient. The hard problems are all post-retrieval: independence counting, scope comparison, belief-state reconstruction, episode boundary detection, causal reasoning, and the discipline to abstain when the evidence doesn't support a conclusion.</p>
+
+  <p style="font-size:0.95rem; max-width:40rem; margin-bottom:0">The projected primitives push the architecture further: a memory system must also know how to <em>forget</em> (without orphaning derivatives), how to <em>isolate</em> (without leaking through shared summaries), how to <em>compress</em> (without silently dropping qualifiers), how to <em>doubt its own metadata</em>, and how to <em>remember things that didn't happen</em> as structurally distinct from things that did. The nine established primitives give the system a truthful memory. The five projected primitives give it a responsible one.</p>
 </div>
