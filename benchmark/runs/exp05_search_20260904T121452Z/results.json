@@ -1,0 +1,26 @@
+[
+  {
+    "query_id": "e05q_025",
+    "category": "9.1_current_state",
+    "endpoint": "search",
+    "http_status": 200,
+    "latency_ms": 12013,
+    "recall_at_k": 0.5,
+    "first_relevant_rank": 3,
+    "distractors_at_k": 0,
+    "should_abstain": false,
+    "api_abstain": null,
+    "returned_corpus_ids": [
+      "e05m_0195",
+      "e05m_0182",
+      "e05m_0052",
+      "e05m_0054",
+      "e05m_0149",
+      "e05m_0150",
+      "e05m_0011",
+      "e05m_0013",
+      "e05m_0021",
+      "e05m_0020"
+    ]
+  }
+]
