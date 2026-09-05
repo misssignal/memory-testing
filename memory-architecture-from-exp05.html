@@ -311,8 +311,8 @@
 </style>
 
 <p class="eyebrow">Backwards Design Exercise</p>
-<h1>What Memory Architecture Does Contested Reality Demand?</h1>
-<p class="subtitle">Taking Experiment 05's adversarial benchmark &mdash; 202 memories, 25 claims, 5 months of evolving investigation &mdash; and reverse-engineering the memory system that would need to exist to answer its queries correctly.</p>
+<h1>What Memory Architecture Do These Benchmarks Demand?</h1>
+<p class="subtitle">Taking the adversarial memory benchmarks &mdash; contested claims, citation cascades, episode reconstruction, causal attribution &mdash; and reverse-engineering the memory system that would need to exist to answer their queries correctly.</p>
 
 <h2>The Dataset in Miniature</h2>
 
@@ -367,9 +367,9 @@
 
 <hr>
 
-<h2>Seven Primitives the Dataset Demands</h2>
+<h2>Nine Primitives the Datasets Demand</h2>
 
-<p>Working backwards from the queries Exp 05 expects a system to answer, these are the structural primitives without which correctness is impossible. Not nice-to-haves &mdash; each one has a specific query that breaks without it.</p>
+<p>Working backwards from the queries the benchmarks expect a system to answer, these are the structural primitives without which correctness is impossible. Not nice-to-haves &mdash; each one has a specific query that breaks without it. The first seven emerge from Exp 05 alone; the last two from Experiments 08 and 09.</p>
 
 <h3>1. Triple-Timestamp Records</h3>
 
@@ -556,14 +556,202 @@
 
 <p>Both are confirmed true. A system without scope qualifiers would flag them as contradictory.</p>
 
+<h3>8. Episode Model</h3>
+
+<p>Experiment 08 introduces a requirement the Exp 05 architecture doesn't have at all: grouping scattered traces &mdash; commits, chat messages, CI runs, issue comments &mdash; into coherent <strong>episodes</strong> with defined boundaries, goals, participants, and inter-episode relationships.</p>
+
+<p>An episode isn't a document or a time window. It's a goal-directed arc: "the team investigated the scheduler lease-expiry bug from January 8 to January 12." Traces from different systems (git, chat, CI, JIRA) belong to the same episode even when they're interleaved with unrelated work.</p>
+
+<div class="schema">
+<span class="key">Episode</span> {
+  <span class="key">episode_id</span>:            <span class="type">string</span>,
+  <span class="key">label</span>:                 <span class="type">string</span>,
+  <span class="key">type</span>:                  <span class="type">enum</span>,          <span class="comment">// incident_investigation | maintenance | feature</span>
+                                      <span class="comment">// | migration | performance | security | planning</span>
+  <span class="key">goals</span>:                 <span class="type">[string]</span>,
+  <span class="key">start</span>:                 <span class="type">datetime</span>,
+  <span class="key">end</span>:                   <span class="type">datetime</span>,
+  <span class="key">participants</span>:           <span class="type">[actor_id]</span>,
+  <span class="key">entities</span>:               <span class="type">[string]</span>,      <span class="comment">// systems, components involved</span>
+  <span class="key">memory_ids</span>:             <span class="type">[memory_id]</span>,
+  <span class="key">boundary_confidence</span>:   <span class="type">enum</span>,          <span class="comment">// high | medium | low</span>
+}
+</div>
+
+<p>The critical part is the <strong>relationship ontology</strong> between episodes. Two episodes that involve the same system aren't the same episode. Two episodes that happen months apart might be:</p>
+
+<div class="panel">
+  <div class="claim-row">
+    <span class="tag tag-accent" style="font-size:0.68rem">SIMILAR_TO</span>
+    <span class="claim-text" style="font-size:0.9rem">Same type of problem, different root cause or trigger (EP04/EP05: both touch leases, but distinct goals)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-true" style="font-size:0.68rem">OVERLAPS</span>
+    <span class="claim-text" style="font-size:0.9rem">Concurrent in time, sharing resources or attention (EP02 and EP01: same week, different problems)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-unresolved" style="font-size:0.68rem">TRIGGERS</span>
+    <span class="claim-text" style="font-size:0.9rem">One episode's outcome directly starts another (EP10 triggers EP11: discovery causes a response)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-accent" style="font-size:0.68rem">FOLLOWED_BY</span>
+    <span class="claim-text" style="font-size:0.9rem">Sequential continuation of a broader arc (EP06 followed by EP10: pause then resumption)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-accent" style="font-size:0.68rem">CONTRIBUTES_CONTEXT_TO</span>
+    <span class="claim-text" style="font-size:0.9rem">Earlier work provides knowledge used later (EP06 contributes context to EP11)</span>
+    <span></span>
+  </div>
+</div>
+
+<p>Exp 08's adversarial traps test six invariants that a naive system violates:</p>
+
+<div class="failure-grid">
+  <div class="failure-card">
+    <h4>Temporal proximity &ne; same episode</h4>
+    <p>EP01 and EP02 overlap in time but are completely unrelated. A time-window heuristic merges them.</p>
+  </div>
+  <div class="failure-card">
+    <h4>Temporal separation &ne; different episode</h4>
+    <p>EP06 pauses for months then resumes with the same goal, participants, and context. A timeout heuristic splits it.</p>
+  </div>
+  <div class="failure-card">
+    <h4>Shared project &ne; same episode</h4>
+    <p>EP04 and EP05 live in the same issue tracker and touch the same component. They have different goals.</p>
+  </div>
+  <div class="failure-card">
+    <h4>Lexical similarity &ne; membership</h4>
+    <p>EP03 and EP07 both involve auth token failures and use similar vocabulary. They're months apart with different causes.</p>
+  </div>
+  <div class="failure-card">
+    <h4>Consequences &ne; members</h4>
+    <p>An episode's consequences (a post-incident review, a triggered migration) are related episodes, not part of the original.</p>
+  </div>
+  <div class="failure-card">
+    <h4>Missing evidence &rarr; ambiguity, not splitting</h4>
+    <p>Removing one connective trace should degrade from confident membership to uncertain, not trigger an automatic split.</p>
+  </div>
+</div>
+
+<h3>9. Causal Graph</h3>
+
+<p>Experiment 09 demands what may be the hardest primitive: <strong>typed causal relations</strong> with the discipline to resist post hoc reasoning, correlation-as-causation, and narrative pressure.</p>
+
+<p>The causal relation vocabulary isn't binary (causes/doesn't). Exp 09 defines a spectrum:</p>
+
+<div class="panel">
+  <div class="claim-row">
+    <span class="tag tag-true" style="font-size:0.68rem">CAUSES</span>
+    <span class="claim-text" style="font-size:0.9rem">Mechanistically established direct cause (bus resistance &rarr; retries &rarr; lag)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-true" style="font-size:0.68rem">CONTRIBUTES_TO</span>
+    <span class="claim-text" style="font-size:0.9rem">Necessary but not sufficient alone (thermal load + firmware race together cause resets)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-unresolved" style="font-size:0.68rem">TRIGGERS</span>
+    <span class="claim-text" style="font-size:0.9rem">Proximate initiator, not root cause (cert renewal triggers restart, but dependency cycle is the root cause)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-accent" style="font-size:0.68rem">ROOT_CAUSE_OF</span>
+    <span class="claim-text" style="font-size:0.9rem">Distal structural cause (dependency cycle is root cause of stall; cert renewal merely triggers it)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-false" style="font-size:0.68rem">PRECEDES</span>
+    <span class="claim-text" style="font-size:0.9rem">Temporal sequence without causation (software deploy precedes lag but doesn't cause it)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-false" style="font-size:0.68rem">CORRELATES_WITH</span>
+    <span class="claim-text" style="font-size:0.9rem">Co-occurrence driven by a common cause (cooling demand correlates with sensor drift; both caused by ambient heat)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-accent" style="font-size:0.68rem">HYPOTHESIZED</span>
+    <span class="claim-text" style="font-size:0.9rem">Candidate explanation with competing alternatives (two hypotheses for intermittent brownouts, neither confirmed)</span>
+    <span></span>
+  </div>
+  <div class="claim-row">
+    <span class="tag tag-true" style="font-size:0.68rem">PREVENTS</span>
+    <span class="claim-text" style="font-size:0.9rem">Counterfactual: this mechanism stopped an outcome from happening (overcurrent protection prevents actuator damage)</span>
+    <span></span>
+  </div>
+</div>
+
+<div class="schema">
+<span class="key">CausalClaim</span> {
+  <span class="key">causal_claim_id</span>:   <span class="type">string</span>,
+  <span class="key">case_id</span>:            <span class="type">string</span>,
+  <span class="key">cause</span>:              <span class="type">string</span>,        <span class="comment">// entity or compound (A+B for joint causes)</span>
+  <span class="key">effect</span>:             <span class="type">string</span>,
+  <span class="key">relation</span>:           <span class="type">enum</span>,          <span class="comment">// CAUSES | CONTRIBUTES_TO | TRIGGERS</span>
+                                      <span class="comment">// | ROOT_CAUSE_OF | CORRELATES_WITH | PRECEDES</span>
+                                      <span class="comment">// | HYPOTHESIZED_CAUSE_OF | PREVENTS | SYMPTOM_OF</span>
+  <span class="key">status</span>:             <span class="type">enum</span>,          <span class="comment">// established | unresolved | noncausal_sequence</span>
+                                      <span class="comment">// | association_only</span>
+  <span class="key">confidence_class</span>:   <span class="type">enum</span>,          <span class="comment">// high | medium | low</span>
+  <span class="key">evidence_ids</span>:       <span class="type">[memory_id]</span>,
+}
+
+<span class="key">CausalGraph</span> {
+  <span class="key">case_id</span>:            <span class="type">string</span>,
+  <span class="key">edges</span>: [
+    { <span class="key">source</span>: <span class="type">string</span>, <span class="key">relation</span>: <span class="type">enum</span>, <span class="key">target</span>: <span class="type">string</span> }
+  ],
+}
+</div>
+
+<p>Exp 09's traps test specific causal reasoning failures:</p>
+
+<div class="failure-grid">
+  <div class="failure-card">
+    <h4>Post hoc blame</h4>
+    <p>A software deployment preceded the lag, so it "caused" it. But closer timing doesn't increase causal certainty when the mechanism is absent.</p>
+    <div class="breaks">Traps: T09_01, T09_03</div>
+  </div>
+  <div class="failure-card">
+    <h4>Correlation &ne; causation</h4>
+    <p>Cooling demand and sensor drift co-occur. More co-occurrences shouldn't increase a direct causal claim when both are driven by ambient heat.</p>
+    <div class="breaks">Traps: T09_02, T09_05</div>
+  </div>
+  <div class="failure-card">
+    <h4>Trigger vs root cause</h4>
+    <p>The cert renewal triggered the restart, but the dependency cycle is the root cause. An authoritative statement blaming the cert shouldn't change this.</p>
+    <div class="breaks">Traps: T09_08, T09_11</div>
+  </div>
+  <div class="failure-card">
+    <h4>Joint causes &amp; confounded intervention</h4>
+    <p>Two factors together cause resets; neither alone is sufficient. A fix that changes both simultaneously doesn't tell you which mattered.</p>
+    <div class="breaks">Traps: T09_04, T09_10</div>
+  </div>
+  <div class="failure-card">
+    <h4>Feedback loops</h4>
+    <p>Network degradation causes retries; retries worsen degradation. The system must represent bidirectional causation without collapsing to "they cause each other."</p>
+    <div class="breaks">Trap: T09_06</div>
+  </div>
+  <div class="failure-card">
+    <h4>Retrospective reinterpretation</h4>
+    <p>A later confident reinterpretation shouldn't rewrite the historical evidence state. What was uncertain then stays uncertain then.</p>
+    <div class="breaks">Trap: T09_09</div>
+  </div>
+</div>
+
 <hr>
 
 <h2>Proposed Data Model</h2>
 
-<p>Synthesizing the seven primitives into a layered schema. The inner layer is what's stored; the outer layer is what's computed.</p>
+<p>Synthesizing the nine primitives into a layered schema. The inner layer is what's stored; the outer layer is what's computed.</p>
 
 <figure>
-  <svg viewBox="0 0 600 320" role="img" aria-label="Layered data model: memory records at bottom, claims extracted from them, belief timeline tracking changes over time, and provenance graph connecting it all">
+  <svg viewBox="0 0 600 400" role="img" aria-label="Six-layer data model: memory records at bottom, then claims, then belief timeline and provenance graph side by side, then episodes and causal graph side by side, then computed query operations at top">
     <defs>
       <marker id="arr" markerWidth="8" markerHeight="6" refX="8" refY="3" orient="auto">
         <polygon points="0 0, 8 3, 0 6" fill="currentColor" opacity="0.5"/>
@@ -571,43 +759,57 @@
     </defs>
 
     <!-- Layer 1: Memory Records -->
-    <rect x="40" y="240" width="520" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="60" y="260" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Memory Records</text>
-    <text x="60" y="280" font-size="10" fill="currentColor" opacity="0.6">text, three timestamps, source_id, source_type, derived_from, supersedes, contradicts, scope, tags</text>
+    <rect x="40" y="320" width="520" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="60" y="340" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Memory Records</text>
+    <text x="60" y="360" font-size="10" fill="currentColor" opacity="0.6">text, three timestamps, source_id, source_type, derived_from, supersedes, contradicts, scope, tags</text>
 
     <!-- Layer 2: Claims -->
-    <rect x="40" y="160" width="520" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="60" y="180" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Claims</text>
-    <text x="60" y="200" font-size="10" fill="currentColor" opacity="0.6">claim_id, fact_id, resolution_status, evidence_roots[], root_count, memory_ids[]</text>
+    <rect x="40" y="240" width="520" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="60" y="260" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Claims</text>
+    <text x="60" y="280" font-size="10" fill="currentColor" opacity="0.6">claim_id, fact_id, resolution_status, evidence_roots[], root_count, memory_ids[]</text>
 
     <!-- Layer 3: Belief Timeline -->
-    <rect x="40" y="80" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="60" y="100" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Belief Timeline</text>
-    <text x="60" y="118" font-size="10" fill="currentColor" opacity="0.6">actor &times; date &rarr; confidence_label</text>
+    <rect x="40" y="160" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="60" y="180" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Belief Timeline</text>
+    <text x="60" y="198" font-size="10" fill="currentColor" opacity="0.6">actor &times; date &rarr; confidence_label</text>
 
-    <!-- Layer 4: Provenance Graph -->
+    <!-- Layer 3: Provenance Graph -->
+    <rect x="310" y="160" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="330" y="180" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Provenance Graph</text>
+    <text x="330" y="198" font-size="10" fill="currentColor" opacity="0.6">node_type, derived_from edges, root tracing</text>
+
+    <!-- Layer 4: Episodes -->
+    <rect x="40" y="80" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
+    <text x="60" y="100" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Episodes</text>
+    <text x="60" y="118" font-size="10" fill="currentColor" opacity="0.6">boundaries, goals, participants, relationships</text>
+
+    <!-- Layer 4: Causal Graph -->
     <rect x="310" y="80" width="250" height="60" rx="4" fill="none" stroke="currentColor" stroke-width="1.5"/>
-    <text x="330" y="100" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Provenance Graph</text>
-    <text x="330" y="118" font-size="10" fill="currentColor" opacity="0.6">node_type, derived_from edges, root tracing</text>
+    <text x="330" y="100" font-family="Zilla Slab, serif" font-size="13" font-weight="600" fill="currentColor">Causal Graph</text>
+    <text x="330" y="118" font-size="10" fill="currentColor" opacity="0.6">typed relations, status, confidence class</text>
 
     <!-- Computed layer -->
-    <rect x="140" y="12" width="320" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3"/>
+    <rect x="100" y="12" width="400" height="46" rx="4" fill="none" stroke="currentColor" stroke-width="1" stroke-dasharray="5,3"/>
     <text x="300" y="32" text-anchor="middle" font-family="Zilla Slab, serif" font-size="12" font-weight="600" fill="currentColor" opacity="0.7">Query Operations (computed)</text>
-    <text x="300" y="46" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.5">point-in-time state, independence counting, scope comparison, abstention decisions</text>
+    <text x="300" y="46" text-anchor="middle" font-size="9" fill="currentColor" opacity="0.5">point-in-time state, independence counting, scope comparison, episode retrieval, causal reasoning, abstention</text>
 
     <!-- Arrows up -->
-    <line x1="300" y1="240" x2="300" y2="225" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="300" y1="320" x2="300" y2="305" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="165" y1="240" x2="165" y2="225" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="435" y1="240" x2="435" y2="225" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
     <line x1="165" y1="160" x2="165" y2="145" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
     <line x1="435" y1="160" x2="435" y2="145" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
-    <line x1="240" y1="80" x2="260" y2="63" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
-    <line x1="380" y1="80" x2="360" y2="63" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="220" y1="80" x2="250" y2="63" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
+    <line x1="400" y1="80" x2="370" y2="63" stroke="currentColor" stroke-width="1" marker-end="url(#arr)" opacity="0.4"/>
 
     <!-- Labels on arrows -->
-    <text x="310" y="236" font-size="8" fill="currentColor" opacity="0.5">extracts</text>
-    <text x="175" y="155" font-size="8" fill="currentColor" opacity="0.5">tracks</text>
-    <text x="445" y="155" font-size="8" fill="currentColor" opacity="0.5">traces</text>
+    <text x="310" y="315" font-size="8" fill="currentColor" opacity="0.5">extracts</text>
+    <text x="175" y="235" font-size="8" fill="currentColor" opacity="0.5">tracks</text>
+    <text x="445" y="235" font-size="8" fill="currentColor" opacity="0.5">traces</text>
+    <text x="175" y="155" font-size="8" fill="currentColor" opacity="0.5">groups</text>
+    <text x="445" y="155" font-size="8" fill="currentColor" opacity="0.5">explains</text>
   </svg>
-  <figcaption>Four-layer architecture: memory records are stored; claims, belief timelines, and provenance are derived from them; query operations compute across all layers.</figcaption>
+  <figcaption>Six-layer architecture: memory records are stored; claims, belief timelines, provenance, episodes, and causal graphs are derived from them; query operations compute across all layers.</figcaption>
 </figure>
 
 <h3>Full Schema</h3>
@@ -658,6 +860,42 @@
 
   <span class="key">memory_ids</span>:                  <span class="type">[memory_id]</span>,
   <span class="key">belief_states</span>:               <span class="type">Map&lt;date, Map&lt;actor, label&gt;&gt;</span>,
+}
+
+<span class="key">Episode</span> {
+  <span class="key">episode_id</span>:             <span class="type">string</span>,
+  <span class="key">label</span>:                  <span class="type">string</span>,
+  <span class="key">type</span>:                   <span class="type">enum</span>,          <span class="comment">// incident_investigation | maintenance | feature</span>
+                                       <span class="comment">// | migration | performance | security | planning</span>
+  <span class="key">goals</span>:                  <span class="type">[string]</span>,
+  <span class="key">start</span>:                  <span class="type">datetime</span>,
+  <span class="key">end</span>:                    <span class="type">datetime</span>,
+  <span class="key">participants</span>:            <span class="type">[actor_id]</span>,
+  <span class="key">entities</span>:                <span class="type">[string]</span>,
+  <span class="key">memory_ids</span>:              <span class="type">[memory_id]</span>,
+  <span class="key">boundary_confidence</span>:    <span class="type">enum</span>,          <span class="comment">// high | medium | low</span>
+  <span class="key">relationships</span>:           <span class="type">[EpisodeRelation]</span>,
+}
+
+<span class="key">EpisodeRelation</span> {
+  <span class="key">source</span>:                 <span class="type">episode_id</span>,
+  <span class="key">relation</span>:               <span class="type">enum</span>,          <span class="comment">// SIMILAR_TO | OVERLAPS | TRIGGERS</span>
+                                       <span class="comment">// | FOLLOWED_BY | CONTRIBUTES_CONTEXT_TO</span>
+  <span class="key">target</span>:                 <span class="type">episode_id</span>,
+}
+
+<span class="key">CausalClaim</span> {
+  <span class="key">causal_claim_id</span>:        <span class="type">string</span>,
+  <span class="key">case_id</span>:                 <span class="type">string</span>,
+  <span class="key">cause</span>:                   <span class="type">string</span>,       <span class="comment">// entity or compound (A+B for joint causes)</span>
+  <span class="key">effect</span>:                  <span class="type">string</span>,
+  <span class="key">relation</span>:                <span class="type">enum</span>,          <span class="comment">// CAUSES | CONTRIBUTES_TO | TRIGGERS</span>
+                                       <span class="comment">// | ROOT_CAUSE_OF | CORRELATES_WITH | PRECEDES</span>
+                                       <span class="comment">// | HYPOTHESIZED_CAUSE_OF | PREVENTS | SYMPTOM_OF</span>
+  <span class="key">status</span>:                  <span class="type">enum</span>,          <span class="comment">// established | unresolved | noncausal_sequence</span>
+                                       <span class="comment">// | association_only</span>
+  <span class="key">confidence_class</span>:        <span class="type">enum</span>,          <span class="comment">// high | medium | low</span>
+  <span class="key">evidence_ids</span>:            <span class="type">[memory_id]</span>,
 }
 </div>
 
@@ -711,6 +949,16 @@
       <td>Independence count + belief state</td>
       <td><em>"As of 2027-04-14, how certain should we have been about biofouling?"</em> (e05q_009) &mdash; stated confidence was "probable" but only 1 root, so: not well-justified</td>
     </tr>
+    <tr>
+      <td><strong>Episode reconstruction</strong></td>
+      <td>Episode model, relationship ontology</td>
+      <td><em>"What was the January scheduler investigation? Which traces belong to it?"</em> (e08) &mdash; must group across git, chat, and CI without merging concurrent unrelated work</td>
+    </tr>
+    <tr>
+      <td><strong>Causal attribution</strong></td>
+      <td>Causal graph, typed relations</td>
+      <td><em>"Did the software deployment cause the actuator lag?"</em> (e09) &mdash; correct answer: no, it merely preceded it; bus resistance is the mechanistic cause</td>
+    </tr>
   </tbody>
 </table>
 
@@ -761,13 +1009,23 @@
     <p>Forced-choice query e05q_001 gets a confident wrong answer instead of the correct "evidence doesn't justify choosing either." The system hallucinates certainty.</p>
     <div class="breaks">Breaks: e05q_001, e05q_003</div>
   </div>
+  <div class="failure-card">
+    <h4>Without episode model</h4>
+    <p>Concurrent but unrelated work gets merged into one blob (EP01+EP02). A long pause in an ongoing investigation causes a false split (EP06). Lexically similar incidents get conflated (EP03/EP07).</p>
+    <div class="breaks">Breaks: T08_01 through T08_10</div>
+  </div>
+  <div class="failure-card">
+    <h4>Without causal graph</h4>
+    <p>Temporal proximity becomes causal attribution: the software deployment "caused" the lag because it happened first. Correlated effects get linked as cause&rarr;effect. The trigger gets blamed instead of the root cause.</p>
+    <div class="breaks">Breaks: T09_01 through T09_11</div>
+  </div>
 </div>
 
 <hr>
 
 <h2>Cross-Experiment Coverage</h2>
 
-<p>Does this architecture handle the other experiments? Mostly yes, with two additions.</p>
+<p>Does this nine-primitive architecture handle all the experiments? Here's the breakdown.</p>
 
 <div class="panel panel-accent">
   <h4 style="margin-top:0">Exp 01 (Temporal Traps) &mdash; covered</h4>
@@ -789,14 +1047,24 @@
   <p style="font-size:0.9rem">Requires a <strong>missingness model</strong>: structured representation of <em>why</em> something is unknown (never_recorded, observation_gap, inaccessible_source, partial_observation, misleading_premise, lost_evidence). Also needs <strong>premise validation</strong> &mdash; the ability to reject a question's framing rather than answering it ("When did the second generator fire?" &rarr; "There was no second generator fire").</p>
 </div>
 
+<div class="panel panel-ok">
+  <h4 style="margin-top:0">Exp 08 (Episode Reconstruction) &mdash; covered by Primitive 8</h4>
+  <p style="font-size:0.9rem">The episode model (boundaries, goals, participants, relationship ontology) is purpose-built for this experiment. The five relationship types (SIMILAR_TO, OVERLAPS, TRIGGERS, FOLLOWED_BY, CONTRIBUTES_CONTEXT_TO) and the six invariants it tests are directly addressable with this structure. The 170 background distractors and 10 perturbation variants test whether the episode model is robust against lexical, temporal, and artifact-level cues.</p>
+</div>
+
+<div class="panel panel-ok">
+  <h4 style="margin-top:0">Exp 09 (Causal Attribution) &mdash; covered by Primitive 9</h4>
+  <p style="font-size:0.9rem">The causal graph (typed relations, status, confidence class) handles the 10 causal cases and 23 causal claims. The key insight is the <strong>relation vocabulary</strong> &mdash; distinguishing CAUSES from TRIGGERS from PRECEDES from CORRELATES_WITH is exactly what the 11 adversarial traps test. Joint causes (A+B) need compound entity representation. The <strong>status field</strong> (established, unresolved, noncausal_sequence, association_only) prevents the system from collapsing "temporal precedence" into "causation."</p>
+</div>
+
 <hr>
 
 <h2>The Core Insight</h2>
 
 <div class="panel panel-accent" style="border-left-width:4px">
-  <p style="font-size:1.05rem; max-width:40rem"><strong>Most memory systems are retrieval systems with a truth assumption:</strong> store text, retrieve text, and assume retrieved text is true. Exp 05 shows that this assumption is the failure mode, not a simplification.</p>
+  <p style="font-size:1.05rem; max-width:40rem"><strong>Most memory systems are retrieval systems with a truth assumption:</strong> store text, retrieve text, and assume retrieved text is true. These benchmarks show that this assumption is the failure mode, not a simplification.</p>
 
-  <p style="font-size:0.95rem; max-width:40rem">The architecture this dataset demands is fundamentally different: it's a system that stores <em>claims with provenance and confidence trajectories</em>, not text with timestamps. It can say "I don't know," "I can't know," "I used to think X but now think Y," and "these two things look contradictory but they're answering different questions." </p>
+  <p style="font-size:0.95rem; max-width:40rem">The architecture these datasets demand is fundamentally different: it's a system that stores <em>claims with provenance and confidence trajectories</em>, not text with timestamps. It can say "I don't know," "I can't know," "I used to think X but now think Y," and "these two things look contradictory but they're answering different questions." It groups scattered traces into goal-directed episodes without confusing proximity for membership. It attributes causation through mechanism, not through temporal coincidence or narrative authority.</p>
 
-  <p style="font-size:0.95rem; max-width:40rem; margin-bottom:0">Retrieval is necessary but not sufficient. The hard problems are all post-retrieval: independence counting, scope comparison, belief-state reconstruction, and the discipline to abstain when the evidence doesn't support a conclusion.</p>
+  <p style="font-size:0.95rem; max-width:40rem; margin-bottom:0">Retrieval is necessary but not sufficient. The hard problems are all post-retrieval: independence counting, scope comparison, belief-state reconstruction, episode boundary detection, causal reasoning, and the discipline to abstain when the evidence doesn't support a conclusion.</p>
 </div>

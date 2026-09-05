@@ -1,0 +1,209 @@
+[
+  {
+    "causal_claim_id": "CC001",
+    "case_id": "C01",
+    "cause": "bus-termination-resistance",
+    "effect": "actuator-command-retries",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC002",
+    "case_id": "C01",
+    "cause": "actuator-command-retries",
+    "effect": "actuator-lag",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC003",
+    "case_id": "C01",
+    "cause": "software-deployment",
+    "effect": "actuator-lag",
+    "relation": "PRECEDES",
+    "status": "noncausal_sequence",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC004",
+    "case_id": "C02",
+    "cause": "high-thermal-load",
+    "effect": "sensor-reset",
+    "relation": "CONTRIBUTES_TO",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC005",
+    "case_id": "C02",
+    "cause": "firmware-race",
+    "effect": "sensor-reset",
+    "relation": "CONTRIBUTES_TO",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC006",
+    "case_id": "C02",
+    "cause": "high-thermal-load+firmware-race",
+    "effect": "sensor-reset",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC007",
+    "case_id": "C03",
+    "cause": "network-degradation",
+    "effect": "retry-volume-rise",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC008",
+    "case_id": "C03",
+    "cause": "retry-volume-rise",
+    "effect": "further-network-degradation",
+    "relation": "CONTRIBUTES_TO",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC009",
+    "case_id": "C04",
+    "cause": "certificate-renewal",
+    "effect": "service-restart",
+    "relation": "TRIGGERS",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC010",
+    "case_id": "C04",
+    "cause": "startup-dependency-cycle",
+    "effect": "startup-stall",
+    "relation": "ROOT_CAUSE_OF",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC011",
+    "case_id": "C04",
+    "cause": "service-restart",
+    "effect": "startup-stall",
+    "relation": "TRIGGERS",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC012",
+    "case_id": "C05",
+    "cause": "power-module-defect",
+    "effect": "power-reset",
+    "relation": "HYPOTHESIZED_CAUSE_OF",
+    "status": "unresolved",
+    "confidence_class": "medium"
+  },
+  {
+    "causal_claim_id": "CC013",
+    "case_id": "C05",
+    "cause": "harness-contact",
+    "effect": "power-reset",
+    "relation": "HYPOTHESIZED_CAUSE_OF",
+    "status": "unresolved",
+    "confidence_class": "medium"
+  },
+  {
+    "causal_claim_id": "CC014",
+    "case_id": "C06",
+    "cause": "ambient-heat",
+    "effect": "cooling-demand",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC015",
+    "case_id": "C06",
+    "cause": "ambient-heat",
+    "effect": "sensor-drift",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC016",
+    "case_id": "C06",
+    "cause": "cooling-demand",
+    "effect": "sensor-drift",
+    "relation": "CORRELATES_WITH",
+    "status": "association_only",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC017",
+    "case_id": "C07",
+    "cause": "schema-mismatch",
+    "effect": "rollback-evaluation-failure",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC018",
+    "case_id": "C07",
+    "cause": "rollback-evaluation-failure",
+    "effect": "rollback-loop",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC019",
+    "case_id": "C08",
+    "cause": "connector-resistance",
+    "effect": "brownout",
+    "relation": "HYPOTHESIZED_CAUSE_OF",
+    "status": "unresolved",
+    "confidence_class": "medium"
+  },
+  {
+    "causal_claim_id": "CC020",
+    "case_id": "C08",
+    "cause": "regulator-instability",
+    "effect": "brownout",
+    "relation": "HYPOTHESIZED_CAUSE_OF",
+    "status": "unresolved",
+    "confidence_class": "medium"
+  },
+  {
+    "causal_claim_id": "CC021",
+    "case_id": "C09",
+    "cause": "control-loop-misses",
+    "effect": "diagnostic-log-storm",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC022",
+    "case_id": "C09",
+    "cause": "diagnostic-log-storm",
+    "effect": "cpu-spike",
+    "relation": "CAUSES",
+    "status": "established",
+    "confidence_class": "high"
+  },
+  {
+    "causal_claim_id": "CC023",
+    "case_id": "C10",
+    "cause": "overcurrent-protection",
+    "effect": "actuator-damage",
+    "relation": "PREVENTS",
+    "status": "established",
+    "confidence_class": "high"
+  }
+]

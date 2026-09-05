@@ -1,0 +1,9 @@
+{
+  "memory_count": 525,
+  "query_count": 133,
+  "case_count": 10,
+  "causal_claim_count": 23,
+  "background_memory_count": 180,
+  "perturbation_count": 11,
+  "unresolved_case_count": 2
+}

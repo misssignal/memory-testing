@@ -1,0 +1,167 @@
+[
+  {
+    "case_id": "C01",
+    "edges": [
+      {
+        "source": "bus-termination-resistance",
+        "relation": "CAUSES",
+        "target": "actuator-command-retries"
+      },
+      {
+        "source": "actuator-command-retries",
+        "relation": "CAUSES",
+        "target": "actuator-lag"
+      },
+      {
+        "source": "software-deployment",
+        "relation": "PRECEDES",
+        "target": "actuator-lag"
+      }
+    ]
+  },
+  {
+    "case_id": "C02",
+    "edges": [
+      {
+        "source": "high-thermal-load",
+        "relation": "CONTRIBUTES_TO",
+        "target": "sensor-reset"
+      },
+      {
+        "source": "firmware-race",
+        "relation": "CONTRIBUTES_TO",
+        "target": "sensor-reset"
+      },
+      {
+        "source": "high-thermal-load+firmware-race",
+        "relation": "CAUSES",
+        "target": "sensor-reset"
+      }
+    ]
+  },
+  {
+    "case_id": "C03",
+    "edges": [
+      {
+        "source": "network-degradation",
+        "relation": "CAUSES",
+        "target": "retry-volume-rise"
+      },
+      {
+        "source": "retry-volume-rise",
+        "relation": "CONTRIBUTES_TO",
+        "target": "further-network-degradation"
+      }
+    ]
+  },
+  {
+    "case_id": "C04",
+    "edges": [
+      {
+        "source": "certificate-renewal",
+        "relation": "TRIGGERS",
+        "target": "service-restart"
+      },
+      {
+        "source": "startup-dependency-cycle",
+        "relation": "ROOT_CAUSE_OF",
+        "target": "startup-stall"
+      },
+      {
+        "source": "service-restart",
+        "relation": "TRIGGERS",
+        "target": "startup-stall"
+      }
+    ]
+  },
+  {
+    "case_id": "C05",
+    "edges": [
+      {
+        "source": "power-module-defect",
+        "relation": "HYPOTHESIZED_CAUSE_OF",
+        "target": "power-reset"
+      },
+      {
+        "source": "harness-contact",
+        "relation": "HYPOTHESIZED_CAUSE_OF",
+        "target": "power-reset"
+      }
+    ]
+  },
+  {
+    "case_id": "C06",
+    "edges": [
+      {
+        "source": "ambient-heat",
+        "relation": "CAUSES",
+        "target": "cooling-demand"
+      },
+      {
+        "source": "ambient-heat",
+        "relation": "CAUSES",
+        "target": "sensor-drift"
+      },
+      {
+        "source": "cooling-demand",
+        "relation": "CORRELATES_WITH",
+        "target": "sensor-drift"
+      }
+    ]
+  },
+  {
+    "case_id": "C07",
+    "edges": [
+      {
+        "source": "schema-mismatch",
+        "relation": "CAUSES",
+        "target": "rollback-evaluation-failure"
+      },
+      {
+        "source": "rollback-evaluation-failure",
+        "relation": "CAUSES",
+        "target": "rollback-loop"
+      }
+    ]
+  },
+  {
+    "case_id": "C08",
+    "edges": [
+      {
+        "source": "connector-resistance",
+        "relation": "HYPOTHESIZED_CAUSE_OF",
+        "target": "brownout"
+      },
+      {
+        "source": "regulator-instability",
+        "relation": "HYPOTHESIZED_CAUSE_OF",
+        "target": "brownout"
+      }
+    ]
+  },
+  {
+    "case_id": "C09",
+    "edges": [
+      {
+        "source": "control-loop-misses",
+        "relation": "CAUSES",
+        "target": "diagnostic-log-storm"
+      },
+      {
+        "source": "diagnostic-log-storm",
+        "relation": "CAUSES",
+        "target": "cpu-spike"
+      }
+    ]
+  },
+  {
+    "case_id": "C10",
+    "edges": [
+      {
+        "source": "overcurrent-protection",
+        "relation": "PREVENTS",
+        "target": "actuator-damage"
+      }
+    ]
+  }
+]

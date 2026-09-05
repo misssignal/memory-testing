@@ -1,0 +1,300 @@
+[
+  {
+    "causal_claim_id": "CC001",
+    "supporting_evidence": [],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC002",
+    "supporting_evidence": [
+      "M0343",
+      "M0001",
+      "M0008",
+      "M0015",
+      "M0022",
+      "M0029"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC003",
+    "supporting_evidence": [
+      "M0343",
+      "M0001",
+      "M0008",
+      "M0015",
+      "M0022",
+      "M0029"
+    ],
+    "contradicting_evidence": [
+      "M0003",
+      "M0004",
+      "M0008",
+      "M0011",
+      "M0013"
+    ]
+  },
+  {
+    "causal_claim_id": "CC004",
+    "supporting_evidence": [],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC005",
+    "supporting_evidence": [
+      "M0037",
+      "M0044",
+      "M0051",
+      "M0058",
+      "M0065"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC006",
+    "supporting_evidence": [],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC007",
+    "supporting_evidence": [
+      "M0074",
+      "M0080",
+      "M0086",
+      "M0092",
+      "M0098"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC008",
+    "supporting_evidence": [],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC009",
+    "supporting_evidence": [
+      "M0344",
+      "M0099",
+      "M0101",
+      "M0107",
+      "M0109",
+      "M0115",
+      "M0117",
+      "M0123"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC010",
+    "supporting_evidence": [
+      "M0100",
+      "M0108",
+      "M0116",
+      "M0124",
+      "M0132"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC011",
+    "supporting_evidence": [
+      "M0099",
+      "M0100",
+      "M0107",
+      "M0108",
+      "M0115",
+      "M0116",
+      "M0123",
+      "M0124"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC012",
+    "supporting_evidence": [
+      "M0137",
+      "M0143",
+      "M0149",
+      "M0155",
+      "M0161",
+      "M0167",
+      "M0173"
+    ],
+    "contradicting_evidence": [
+      "M0139",
+      "M0142",
+      "M0144",
+      "M0148",
+      "M0149"
+    ]
+  },
+  {
+    "causal_claim_id": "CC013",
+    "supporting_evidence": [
+      "M0137",
+      "M0141",
+      "M0143",
+      "M0147",
+      "M0149",
+      "M0153",
+      "M0155",
+      "M0159"
+    ],
+    "contradicting_evidence": [
+      "M0139",
+      "M0142",
+      "M0144",
+      "M0148",
+      "M0149"
+    ]
+  },
+  {
+    "causal_claim_id": "CC014",
+    "supporting_evidence": [
+      "M0175",
+      "M0178",
+      "M0180",
+      "M0181",
+      "M0184",
+      "M0186",
+      "M0187",
+      "M0190"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC015",
+    "supporting_evidence": [
+      "M0175",
+      "M0178",
+      "M0180",
+      "M0181",
+      "M0184",
+      "M0186",
+      "M0187",
+      "M0190"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC016",
+    "supporting_evidence": [
+      "M0175",
+      "M0178",
+      "M0180",
+      "M0181",
+      "M0184",
+      "M0186",
+      "M0187",
+      "M0190"
+    ],
+    "contradicting_evidence": [
+      "M0177",
+      "M0178",
+      "M0182",
+      "M0184",
+      "M0187"
+    ]
+  },
+  {
+    "causal_claim_id": "CC017",
+    "supporting_evidence": [
+      "M0206",
+      "M0211",
+      "M0213",
+      "M0218",
+      "M0220",
+      "M0225",
+      "M0227",
+      "M0232"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC018",
+    "supporting_evidence": [
+      "M0205",
+      "M0206",
+      "M0212",
+      "M0213",
+      "M0219",
+      "M0220",
+      "M0226",
+      "M0227"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC019",
+    "supporting_evidence": [
+      "M0243",
+      "M0244",
+      "M0248",
+      "M0249",
+      "M0250",
+      "M0254",
+      "M0255",
+      "M0256"
+    ],
+    "contradicting_evidence": [
+      "M0245",
+      "M0250",
+      "M0255",
+      "M0260",
+      "M0265"
+    ]
+  },
+  {
+    "causal_claim_id": "CC020",
+    "supporting_evidence": [
+      "M0243",
+      "M0248",
+      "M0249",
+      "M0254",
+      "M0255",
+      "M0260",
+      "M0261",
+      "M0266"
+    ],
+    "contradicting_evidence": [
+      "M0245",
+      "M0250",
+      "M0255",
+      "M0260",
+      "M0265"
+    ]
+  },
+  {
+    "causal_claim_id": "CC021",
+    "supporting_evidence": [],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC022",
+    "supporting_evidence": [
+      "M0285",
+      "M0286",
+      "M0291",
+      "M0292",
+      "M0297",
+      "M0298",
+      "M0303",
+      "M0304"
+    ],
+    "contradicting_evidence": []
+  },
+  {
+    "causal_claim_id": "CC023",
+    "supporting_evidence": [
+      "M0313",
+      "M0317",
+      "M0321",
+      "M0325",
+      "M0329",
+      "M0333",
+      "M0337"
+    ],
+    "contradicting_evidence": []
+  }
+]

@@ -1,0 +1,206 @@
+[
+  {
+    "perturbation_id": "P08_A_GAP_SWEEP_EP06",
+    "base_episode": "EP06",
+    "manipulated_variable": "inactivity interval between pause and resumption",
+    "controlled_variables": [
+      "participants",
+      "goal",
+      "hardware dependency",
+      "resumption wording",
+      "artifact identities"
+    ],
+    "variants": [
+      {
+        "name": "gap_10m",
+        "set_resumption_offset": "PT10M"
+      },
+      {
+        "name": "gap_6h",
+        "set_resumption_offset": "PT6H"
+      },
+      {
+        "name": "gap_2d",
+        "set_resumption_offset": "P2D"
+      },
+      {
+        "name": "gap_2w",
+        "set_resumption_offset": "P14D"
+      }
+    ],
+    "expected_behavior": "Episode partition remains one EP06 in all variants.",
+    "naive_failure": "Fixed timeout splits long-gap variants."
+  },
+  {
+    "perturbation_id": "P08_B_NEW_TRIGGER_EP06",
+    "base_episode": "EP06",
+    "manipulated_variable": "presence of independent new trigger before later work",
+    "variants": [
+      {
+        "name": "resume_same",
+        "new_trigger": false,
+        "expected_episode_count": 1
+      },
+      {
+        "name": "new_incident",
+        "new_trigger": true,
+        "expected_episode_count": 2
+      }
+    ],
+    "expected_behavior": "New independent trigger converts later cluster into a related but distinct episode."
+  },
+  {
+    "perturbation_id": "P08_C_ARTIFACT_SPLIT_EP08",
+    "base_episode": "EP08",
+    "manipulated_variable": "artifact fragmentation",
+    "variants": [
+      {
+        "name": "single_ticket",
+        "artifact_groups": 1
+      },
+      {
+        "name": "issue_pr_chat_ops_release",
+        "artifact_groups": 5
+      }
+    ],
+    "expected_behavior": "Episode membership unchanged."
+  },
+  {
+    "perturbation_id": "P08_D_ARTIFACT_MERGE_ISSUE73",
+    "base_episodes": [
+      "EP04",
+      "EP05"
+    ],
+    "manipulated_variable": "shared work-item container",
+    "variants": [
+      {
+        "name": "separate_issues",
+        "shared_issue": false
+      },
+      {
+        "name": "single_long_lived_issue_73",
+        "shared_issue": true
+      }
+    ],
+    "expected_behavior": "Two episodes remain distinct."
+  },
+  {
+    "perturbation_id": "P08_E_SEMANTIC_SIMILARITY_EP03_EP07",
+    "base_episodes": [
+      "EP03",
+      "EP07"
+    ],
+    "manipulated_variable": "lexical overlap",
+    "variants": [
+      {
+        "name": "low_overlap",
+        "token_overlap_target": 0.25
+      },
+      {
+        "name": "medium_overlap",
+        "token_overlap_target": 0.55
+      },
+      {
+        "name": "high_overlap",
+        "token_overlap_target": 0.85
+      }
+    ],
+    "expected_behavior": "Do not merge EP03 and EP07."
+  },
+  {
+    "perturbation_id": "P08_F_LEXICAL_DIVERGENCE_EP06",
+    "base_episode": "EP06",
+    "manipulated_variable": "terminology shift",
+    "variants": [
+      {
+        "name": "stable_terms",
+        "terms": [
+          "startup freeze"
+        ]
+      },
+      {
+        "name": "drift_terms",
+        "terms": [
+          "boot freeze",
+          "startup stall",
+          "dependency cycle",
+          "startup deadlock"
+        ]
+      }
+    ],
+    "expected_behavior": "One episode in both."
+  },
+  {
+    "perturbation_id": "P08_G_INTERRUPTION_INSERTION_EP01",
+    "base_episode": "EP01",
+    "manipulated_variable": "amount of unrelated interleaved work",
+    "variants": [
+      {
+        "name": "none",
+        "background_insertions": 0
+      },
+      {
+        "name": "light",
+        "background_insertions": 5
+      },
+      {
+        "name": "heavy",
+        "background_insertions": 20
+      }
+    ],
+    "expected_behavior": "EP01 membership unchanged."
+  },
+  {
+    "perturbation_id": "P08_H_FOLLOWUP_TRANSFORM_EP10",
+    "base_episode": "EP10",
+    "manipulated_variable": "purpose of late activity",
+    "variants": [
+      {
+        "name": "immediate_verification",
+        "relationship": "MEMBER_OF"
+      },
+      {
+        "name": "architecture_hardening",
+        "relationship": "FOLLOW_UP_TO"
+      }
+    ],
+    "expected_behavior": "Relationship type changes while topical similarity remains high."
+  },
+  {
+    "perturbation_id": "P08_I_RECURRING_CLONE_EP06_EP10",
+    "base_episodes": [
+      "EP06",
+      "EP10"
+    ],
+    "manipulated_variable": "instance identity",
+    "variants": [
+      {
+        "name": "same_instance_resumption",
+        "new_trigger": false
+      },
+      {
+        "name": "new_recurrence",
+        "new_trigger": true
+      }
+    ],
+    "expected_behavior": "Only new-trigger variant should split into a separate episode."
+  },
+  {
+    "perturbation_id": "P08_J_MISSING_BRIDGE_EP08",
+    "base_episode": "EP08",
+    "manipulated_variable": "one connective trace removed",
+    "variants": [
+      {
+        "name": "bridge_present",
+        "remove_memory_role": null,
+        "expected": "member"
+      },
+      {
+        "name": "bridge_removed",
+        "remove_memory_role": "release_chat_coordinate_pair",
+        "expected": "ambiguous"
+      }
+    ],
+    "expected_behavior": "Graceful degradation from confident membership to ambiguity, not automatic split."
+  }
+]

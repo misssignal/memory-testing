@@ -1,0 +1,145 @@
+[
+  {
+    "trap_id": "T09_01",
+    "case_ids": [
+      "C01"
+    ],
+    "manipulated_variable": "time between deployment and actuator lag",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Causal status remains noncausal sequence; timing alone must not increase causal certainty.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_02",
+    "case_ids": [
+      "C06"
+    ],
+    "manipulated_variable": "number of cooling-demand/sensor-drift co-occurrences",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Association strength may rise, but direct causal claim cooling-demand\u2192sensor-drift remains false.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_03",
+    "case_ids": [
+      "C01"
+    ],
+    "manipulated_variable": "mechanistic connector-resistance evidence",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Support for bus-resistance causal explanation increases only when mechanism evidence appears.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_04",
+    "case_ids": [
+      "C05"
+    ],
+    "manipulated_variable": "intervention cleanliness",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Causal certainty differs sharply despite same successful outcome.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_05",
+    "case_ids": [
+      "C06"
+    ],
+    "manipulated_variable": "presence of common ambient-heat driver",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "System must distinguish direct causation from common-cause correlation.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_06",
+    "case_ids": [
+      "C03"
+    ],
+    "manipulated_variable": "mechanistic temporal direction",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Correlation remains similar; mechanism/timestamps determine direction.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_07",
+    "case_ids": [
+      "C08"
+    ],
+    "manipulated_variable": "presence of discriminating regulator test",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Confidence changes only when discriminating evidence arrives.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_08",
+    "case_ids": [
+      "C04"
+    ],
+    "manipulated_variable": "authoritative statement strength",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Objective root-cause status does not change.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_09",
+    "case_ids": [
+      "C04"
+    ],
+    "manipulated_variable": "later confident reinterpretation",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Historical evidence state remains unchanged.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_10",
+    "case_ids": [
+      "C02"
+    ],
+    "manipulated_variable": "joint contributing factors",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Supports joint contribution and lack of single-factor sufficiency in tested conditions.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  },
+  {
+    "trap_id": "T09_11",
+    "case_ids": [
+      "C04"
+    ],
+    "manipulated_variable": "temporal distance of dependency-cycle introduction",
+    "controlled_variables": [
+      "story outcome and all non-manipulated evidence"
+    ],
+    "expected_behavior": "Causal relevance persists when mechanistic lineage is preserved.",
+    "naive_failure": "Narrative, temporal, authority, or correlation cue overwhelms causal evidence.",
+    "metric": "causal attribution robustness"
+  }
+]

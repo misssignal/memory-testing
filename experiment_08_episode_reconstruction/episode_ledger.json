@@ -1,0 +1,262 @@
+[
+  {
+    "id": "EP01",
+    "label": "January scheduler lease-expiry investigation",
+    "start": "2028-01-08T09:12:00",
+    "end": "2028-01-12T16:40:00",
+    "type": "incident_investigation",
+    "goals": [
+      "reproduce stuck leases",
+      "identify renewal race",
+      "ship mitigation"
+    ],
+    "participants": [
+      "P01",
+      "P02",
+      "P05"
+    ],
+    "entities": [
+      "scheduler",
+      "lease-manager"
+    ],
+    "notes": "Distributed across issue, chat, commits, CI, and release. Includes a two-day wait for a stress rig.",
+    "boundary_confidence": "high"
+  },
+  {
+    "id": "EP02",
+    "label": "January docs navigation cleanup",
+    "start": "2028-01-08T09:25:00",
+    "end": "2028-01-08T11:20:00",
+    "type": "maintenance",
+    "goals": [
+      "repair broken docs navigation"
+    ],
+    "participants": [
+      "P04"
+    ],
+    "entities": [
+      "docs-site"
+    ],
+    "notes": "Temporally interleaved with EP01 but unrelated.",
+    "boundary_confidence": "high"
+  },
+  {
+    "id": "EP03",
+    "label": "February auth token refresh regression",
+    "start": "2028-02-14T13:05:00",
+    "end": "2028-02-15T17:10:00",
+    "type": "incident_investigation",
+    "goals": [
+      "diagnose 401 spike",
+      "fix token refresh regression"
+    ],
+    "participants": [
+      "P01",
+      "P03",
+      "P04"
+    ],
+    "entities": [
+      "auth-gateway",
+      "node-agent"
+    ],
+    "notes": "Semantically resembles EP07 but is distinct.",
+    "boundary_confidence": "high"
+  },
+  {
+    "id": "EP04",
+    "label": "March long-lived issue 73 minor lease telemetry patch",
+    "start": "2028-03-04T10:00:00",
+    "end": "2028-03-05T14:30:00",
+    "type": "maintenance",
+    "goals": [
+      "add lease telemetry"
+    ],
+    "participants": [
+      "P07",
+      "P02"
+    ],
+    "entities": [
+      "lease-manager",
+      "telemetry-pipeline"
+    ],
+    "notes": "First distinct burst inside long-lived Issue #73.",
+    "boundary_confidence": "high"
+  },
+  {
+    "id": "EP05",
+    "label": "June long-lived issue 73 lease protocol redesign",
+    "start": "2028-06-10T08:45:00",
+    "end": "2028-06-21T18:20:00",
+    "type": "redesign",
+    "goals": [
+      "replace renewal handshake",
+      "validate new lease protocol"
+    ],
+    "participants": [
+      "P01",
+      "P02",
+      "P05",
+      "P06"
+    ],
+    "entities": [
+      "scheduler",
+      "lease-manager"
+    ],
+    "notes": "Second, much larger burst in Issue #73; must not merge with EP04.",
+    "boundary_confidence": "high",
+    "boundary_notes": "Contains nearby traces that may be ambiguous or related without being members."
+  },
+  {
+    "id": "EP06",
+    "label": "June startup deadlock investigation",
+    "start": "2028-06-12T09:10:00",
+    "end": "2028-06-19T16:22:00",
+    "type": "incident_investigation",
+    "goals": [
+      "reproduce startup freeze",
+      "identify dependency cycle",
+      "ship mitigation"
+    ],
+    "participants": [
+      "P02",
+      "P04",
+      "P05"
+    ],
+    "entities": [
+      "node-agent",
+      "config-service",
+      "worker-runtime"
+    ],
+    "notes": "Interrupted for hardware availability, resumed after several days; vocabulary evolves from freeze to deadlock.",
+    "boundary_confidence": "high",
+    "boundary_notes": "Contains nearby traces that may be ambiguous or related without being members."
+  },
+  {
+    "id": "EP07",
+    "label": "August service-to-service token expiry incident",
+    "start": "2028-08-06T07:50:00",
+    "end": "2028-08-08T19:15:00",
+    "type": "incident_investigation",
+    "goals": [
+      "diagnose service token expiry",
+      "restore auth stability"
+    ],
+    "participants": [
+      "P01",
+      "P03",
+      "P04"
+    ],
+    "entities": [
+      "auth-gateway",
+      "config-service"
+    ],
+    "notes": "Highly similar terminology to EP03 but different identity and mechanism.",
+    "boundary_confidence": "high"
+  },
+  {
+    "id": "EP08",
+    "label": "September deployment rollback loop",
+    "start": "2028-09-17T14:05:00",
+    "end": "2028-09-18T22:10:00",
+    "type": "incident_investigation",
+    "goals": [
+      "stop rollback loop",
+      "repair deployment state"
+    ],
+    "participants": [
+      "P01",
+      "P03",
+      "P05"
+    ],
+    "entities": [
+      "deployment-controller",
+      "scheduler"
+    ],
+    "notes": "One episode spans incident ticket, release chat, ops repo, and control-plane repo.",
+    "boundary_confidence": "high"
+  },
+  {
+    "id": "EP09",
+    "label": "October scheduler latency recurrence",
+    "start": "2028-10-03T11:30:00",
+    "end": "2028-10-04T20:00:00",
+    "type": "incident_investigation",
+    "goals": [
+      "diagnose scheduler latency recurrence"
+    ],
+    "participants": [
+      "P01",
+      "P02",
+      "P07"
+    ],
+    "entities": [
+      "scheduler",
+      "telemetry-pipeline"
+    ],
+    "notes": "Looks superficially like EP01/EP05 but is a new occurrence.",
+    "boundary_confidence": "high"
+  },
+  {
+    "id": "EP10",
+    "label": "November startup freeze recurrence",
+    "start": "2028-11-11T08:15:00",
+    "end": "2028-11-12T15:45:00",
+    "type": "incident_investigation",
+    "goals": [
+      "diagnose new startup freeze instance"
+    ],
+    "participants": [
+      "P02",
+      "P04",
+      "P05"
+    ],
+    "entities": [
+      "node-agent",
+      "worker-runtime"
+    ],
+    "notes": "Same symptom family as EP06 but new trigger and new episode.",
+    "boundary_confidence": "high",
+    "boundary_notes": "Contains nearby traces that may be ambiguous or related without being members."
+  },
+  {
+    "id": "EP11",
+    "label": "December architecture hardening after startup incidents",
+    "start": "2028-12-02T09:00:00",
+    "end": "2028-12-13T17:00:00",
+    "type": "follow_up",
+    "goals": [
+      "remove startup ordering hazard class",
+      "add dependency graph checks"
+    ],
+    "participants": [
+      "P02",
+      "P04",
+      "P06"
+    ],
+    "entities": [
+      "node-agent",
+      "config-service",
+      "worker-runtime"
+    ],
+    "notes": "Consequence/follow-up to EP06 and EP10, not member of either.",
+    "boundary_confidence": "high"
+  },
+  {
+    "id": "EP12",
+    "label": "December unrelated config cache cleanup",
+    "start": "2028-12-04T10:20:00",
+    "end": "2028-12-04T15:00:00",
+    "type": "maintenance",
+    "goals": [
+      "remove stale cache warnings"
+    ],
+    "participants": [
+      "P04"
+    ],
+    "entities": [
+      "config-service"
+    ],
+    "notes": "Semantically adjacent to EP11 and intentionally distracts.",
+    "boundary_confidence": "high"
+  }
+]
