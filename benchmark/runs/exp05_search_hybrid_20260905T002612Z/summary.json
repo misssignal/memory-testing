@@ -1,0 +1,29 @@
+{
+  "9.1_current_state": {
+    "queries": 1,
+    "mean_recall_at_k": 0.5,
+    "queries_with_any_relevant": 1,
+    "distractors_returned": 0,
+    "http_statuses": {
+      "200": 1
+    }
+  },
+  "9.5_authority_traps": {
+    "queries": 1,
+    "mean_recall_at_k": 0.4,
+    "queries_with_any_relevant": 1,
+    "distractors_returned": 0,
+    "http_statuses": {
+      "200": 1
+    }
+  },
+  "9.6_forced_choice": {
+    "queries": 1,
+    "mean_recall_at_k": 0.25,
+    "queries_with_any_relevant": 1,
+    "distractors_returned": 0,
+    "http_statuses": {
+      "200": 1
+    }
+  }
+}

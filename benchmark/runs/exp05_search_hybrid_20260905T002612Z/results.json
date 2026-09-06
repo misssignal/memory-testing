@@ -1,0 +1,74 @@
+[
+  {
+    "query_id": "e05q_001",
+    "category": "9.6_forced_choice",
+    "endpoint": "search/hybrid",
+    "http_status": 200,
+    "latency_ms": 11810,
+    "recall_at_k": 0.25,
+    "first_relevant_rank": 1,
+    "distractors_at_k": 0,
+    "should_abstain": true,
+    "api_abstain": false,
+    "returned_corpus_ids": [
+      "e05m_0010",
+      "e05m_0038",
+      "e05m_0003",
+      "e05m_0097",
+      "e05m_0062",
+      "e05m_0086",
+      "e05m_0042",
+      "e05m_0002",
+      "e05m_0047",
+      "e05m_0109"
+    ]
+  },
+  {
+    "query_id": "e05q_025",
+    "category": "9.1_current_state",
+    "endpoint": "search/hybrid",
+    "http_status": 200,
+    "latency_ms": 11597,
+    "recall_at_k": 0.5,
+    "first_relevant_rank": 1,
+    "distractors_at_k": 0,
+    "should_abstain": false,
+    "api_abstain": false,
+    "returned_corpus_ids": [
+      "e05m_0052",
+      "e05m_0054",
+      "e05m_0060",
+      "e05m_0195",
+      "e05m_0011",
+      "e05m_0149",
+      "e05m_0150",
+      "e05m_0021",
+      "e05m_0020",
+      "e05m_0166"
+    ]
+  },
+  {
+    "query_id": "e05q_055",
+    "category": "9.5_authority_traps",
+    "endpoint": "search/hybrid",
+    "http_status": 200,
+    "latency_ms": 11651,
+    "recall_at_k": 0.4,
+    "first_relevant_rank": 6,
+    "distractors_at_k": 0,
+    "should_abstain": false,
+    "api_abstain": false,
+    "returned_corpus_ids": [
+      "e05m_0202",
+      "e05m_0163",
+      "e05m_0105",
+      "e05m_0200",
+      "e05m_0040",
+      "e05m_0137",
+      "e05m_0062",
+      "e05m_0140",
+      "e05m_0003",
+      "e05m_0182"
+    ]
+  }
+]

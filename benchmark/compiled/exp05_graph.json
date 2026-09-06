@@ -1,0 +1,2303 @@
+{
+  "schema_version": "0.1.0",
+  "counts": {
+    "memories": 202,
+    "claims": 61,
+    "edges": 122,
+    "derivation_cycles": 0
+  },
+  "claims": [
+    {
+      "claim_id": "claim_024cab5f1be20eefe328",
+      "subject": "org_meridian",
+      "predicate": "communication",
+      "object": "internal circulation of july 1 combined finding",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0178"
+      ],
+      "evidence_root_ids": [
+        "e05m_0178"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_05a7409ee56a657b911f",
+      "subject": "subsystem_bearing",
+      "predicate": "condition",
+      "object": "worn/degraded",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0030",
+        "e05m_0031",
+        "e05m_0032",
+        "e05m_0033",
+        "e05m_0034",
+        "e05m_0104",
+        "e05m_0105",
+        "e05m_0145"
+      ],
+      "evidence_root_ids": [
+        "e05m_0030",
+        "e05m_0031",
+        "e05m_0104"
+      ],
+      "independent_root_count": 3
+    },
+    {
+      "claim_id": "claim_1523fdc1ba349276e766",
+      "subject": "system_t4",
+      "predicate": "maintenance_event",
+      "object": "annual mooring line inspection",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0185"
+      ],
+      "evidence_root_ids": [
+        "e05m_0185"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_161537fe9a1dfdd6454d",
+      "subject": "system_t4",
+      "predicate": "proves",
+      "object": "turbine-side fault (external consultant claim)",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0137",
+        "e05m_0138",
+        "e05m_0139",
+        "e05m_0140",
+        "e05m_0156"
+      ],
+      "evidence_root_ids": [
+        "e05m_0137",
+        "e05m_0138",
+        "e05m_0156"
+      ],
+      "independent_root_count": 3
+    },
+    {
+      "claim_id": "claim_17cb173a1757388eebb7",
+      "subject": "subsystem_pcm",
+      "predicate": "condition",
+      "object": "overheating",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0128",
+        "e05m_0129",
+        "e05m_0130",
+        "e05m_0131",
+        "e05m_0132",
+        "e05m_0133",
+        "e05m_0134",
+        "e05m_0135",
+        "e05m_0136",
+        "e05m_0155"
+      ],
+      "evidence_root_ids": [
+        "e05m_0128",
+        "e05m_0134",
+        "e05m_0135",
+        "e05m_0136"
+      ],
+      "independent_root_count": 4
+    },
+    {
+      "claim_id": "claim_194208ad4749632490ac",
+      "subject": "subsystem_mooring",
+      "predicate": "tension_status",
+      "object": "within specification",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0059",
+        "e05m_0060",
+        "e05m_0112"
+      ],
+      "evidence_root_ids": [
+        "e05m_0059"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_1d5f6e14c9c6620cc743",
+      "subject": "subsystem_pcm",
+      "predicate": "caused",
+      "object": "june 2 shutdown",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0062",
+        "e05m_0063",
+        "e05m_0114"
+      ],
+      "evidence_root_ids": [
+        "e05m_0062",
+        "e05m_0063"
+      ],
+      "independent_root_count": 2
+    },
+    {
+      "claim_id": "claim_26b9c6fd434669bd49ef",
+      "subject": "org_mesb",
+      "predicate": "routine_review",
+      "object": "q1 site inspection",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0161"
+      ],
+      "evidence_root_ids": [
+        "e05m_0161"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_2a16808d82fb02fea3a6",
+      "subject": "org_kelvinbridge",
+      "predicate": "contract_status",
+      "object": "warranty and service agreement renewed",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0186"
+      ],
+      "evidence_root_ids": [
+        "e05m_0186"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_2e5faaae355882b26ba0",
+      "subject": "org_mesb",
+      "predicate": "routine_review",
+      "object": "q3 preliminary site visit",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0167"
+      ],
+      "evidence_root_ids": [
+        "e05m_0167"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_37075280ff61db0216e0",
+      "subject": "person_hale",
+      "predicate": "engagement_status",
+      "object": "formally engaged as independent consultant",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0174"
+      ],
+      "evidence_root_ids": [
+        "e05m_0174"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_393d35e282cf6503cebe",
+      "subject": "org_meridian",
+      "predicate": "communication",
+      "object": "internal notice of mesb inquiry and consultant engagement",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0177"
+      ],
+      "evidence_root_ids": [
+        "e05m_0177"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_46ed2ec49858862adeb7",
+      "subject": "system_t6",
+      "predicate": "status",
+      "object": "normal operation",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0187"
+      ],
+      "evidence_root_ids": [
+        "e05m_0187"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_49fe5bfc9154344c69d3",
+      "subject": "system_t4",
+      "predicate": "status",
+      "object": "in service, monitored",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0182"
+      ],
+      "evidence_root_ids": [
+        "e05m_0182"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_4c688b89295c1a573d06",
+      "subject": "system_t4",
+      "predicate": "caused_by",
+      "object": "firmware v3.2 trip-threshold regression",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0025",
+        "e05m_0026",
+        "e05m_0027",
+        "e05m_0028",
+        "e05m_0029",
+        "e05m_0101",
+        "e05m_0102",
+        "e05m_0103",
+        "e05m_0144"
+      ],
+      "evidence_root_ids": [
+        "e05m_0025",
+        "e05m_0028",
+        "e05m_0029",
+        "e05m_0144"
+      ],
+      "independent_root_count": 4
+    },
+    {
+      "claim_id": "claim_4d77a874f86ef2f653b4",
+      "subject": "system_t2",
+      "predicate": "maintenance_event",
+      "object": "routine annual inspection",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0193"
+      ],
+      "evidence_root_ids": [
+        "e05m_0193"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_50ac2d210b08cd4ee5d9",
+      "subject": "subsystem_mooring",
+      "predicate": "disagree_on",
+      "object": "tension value",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0073",
+        "e05m_0074",
+        "e05m_0075",
+        "e05m_0119"
+      ],
+      "evidence_root_ids": [
+        "e05m_0073",
+        "e05m_0074"
+      ],
+      "independent_root_count": 2
+    },
+    {
+      "claim_id": "claim_5a6340fb891a78c70a41",
+      "subject": "org_mesb",
+      "predicate": "administrative_action",
+      "object": "formal inquiry docket opened",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0176"
+      ],
+      "evidence_root_ids": [
+        "e05m_0176"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_5eaa08dc9b1fc441dce3",
+      "subject": "system_t4",
+      "predicate": "maintenance_event",
+      "object": "scheduled quarterly service",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0160"
+      ],
+      "evidence_root_ids": [
+        "e05m_0160"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_62636cfe9c71a28eb14f",
+      "subject": "system_t4",
+      "predicate": "caused_by",
+      "object": "vessel wake or sensor noise (undetermined)",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0083",
+        "e05m_0084",
+        "e05m_0085",
+        "e05m_0086",
+        "e05m_0123",
+        "e05m_0152"
+      ],
+      "evidence_root_ids": [
+        "e05m_0083",
+        "e05m_0084",
+        "e05m_0085",
+        "e05m_0086"
+      ],
+      "independent_root_count": 4
+    },
+    {
+      "claim_id": "claim_633fce4de10548a0d102",
+      "subject": "org_meridian",
+      "predicate": "follow_up_action",
+      "object": "strain gauge installation proposed for subsea connector",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0168"
+      ],
+      "evidence_root_ids": [
+        "e05m_0168"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_6a5d2ec4fa30213655db",
+      "subject": "system_t4",
+      "predicate": "maintenance_event",
+      "object": "gearbox inspection completed",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0175"
+      ],
+      "evidence_root_ids": [
+        "e05m_0175"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_6c59827d21dd31496660",
+      "subject": "system_t4",
+      "predicate": "maintenance_event",
+      "object": "dive-team follow-up cleaning (routine, unrelated to biofouling theory)",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0191"
+      ],
+      "evidence_root_ids": [
+        "e05m_0191"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_6f009a4e1b5aa74f4e4b",
+      "subject": "system_t4",
+      "predicate": "production_report",
+      "object": "downtime accounting for june trip and repair",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0195"
+      ],
+      "evidence_root_ids": [
+        "e05m_0195"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_6f3abf58c1a56ffd1a2e",
+      "subject": "system_t4",
+      "predicate": "disagree_on",
+      "object": "power output (~3%)",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0076",
+        "e05m_0077",
+        "e05m_0078",
+        "e05m_0079",
+        "e05m_0120",
+        "e05m_0121",
+        "e05m_0151"
+      ],
+      "evidence_root_ids": [
+        "e05m_0076",
+        "e05m_0077",
+        "e05m_0078",
+        "e05m_0079",
+        "e05m_0120",
+        "e05m_0121"
+      ],
+      "independent_root_count": 6
+    },
+    {
+      "claim_id": "claim_708544488aeb8b4cfb02",
+      "subject": "org_meridian",
+      "predicate": "staffing_change",
+      "object": "dr. sam hale engaged as consultant (initial contact)",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0164"
+      ],
+      "evidence_root_ids": [
+        "e05m_0164"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_72c23ad64ed3eee7bfec",
+      "subject": "facility_meridian_bay",
+      "predicate": "visitor_log",
+      "object": "regulatory site visit, unrelated permitting matter",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0190"
+      ],
+      "evidence_root_ids": [
+        "e05m_0190"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_738cbc9e0cf6c74c3871",
+      "subject": "system_t4",
+      "predicate": "correlated_with",
+      "object": "tidal phase",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0045",
+        "e05m_0046",
+        "e05m_0047",
+        "e05m_0048",
+        "e05m_0049",
+        "e05m_0050",
+        "e05m_0051",
+        "e05m_0147"
+      ],
+      "evidence_root_ids": [
+        "e05m_0045",
+        "e05m_0046",
+        "e05m_0047",
+        "e05m_0048",
+        "e05m_0049",
+        "e05m_0050",
+        "e05m_0051",
+        "e05m_0147"
+      ],
+      "independent_root_count": 8
+    },
+    {
+      "claim_id": "claim_7772488ab9d22728442a",
+      "subject": "org_meridian",
+      "predicate": "budget_event",
+      "object": "q2 investigation budget approved",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0173"
+      ],
+      "evidence_root_ids": [
+        "e05m_0173"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_7bdf0781de83b87544e2",
+      "subject": "subsystem_gearbox",
+      "predicate": "observed_as",
+      "object": "abnormal noise",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0055",
+        "e05m_0056",
+        "e05m_0057",
+        "e05m_0058",
+        "e05m_0111",
+        "e05m_0148"
+      ],
+      "evidence_root_ids": [
+        "e05m_0055",
+        "e05m_0056",
+        "e05m_0057",
+        "e05m_0111"
+      ],
+      "independent_root_count": 4
+    },
+    {
+      "claim_id": "claim_7cd3c89362288ff4a134",
+      "subject": "org_kelvinbridge",
+      "predicate": "product_notice",
+      "object": "firmware v3.3 general release",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0172"
+      ],
+      "evidence_root_ids": [
+        "e05m_0172"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_804dbf39d028809c7a92",
+      "subject": "org_meridian",
+      "predicate": "staffing_change",
+      "object": "grace park joins as electrical engineer",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0183"
+      ],
+      "evidence_root_ids": [
+        "e05m_0183"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_83114d11c39b357a5fd8",
+      "subject": "facility_meridian_bay",
+      "predicate": "commissioned_on",
+      "object": "2026-10-01",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0157"
+      ],
+      "evidence_root_ids": [
+        "e05m_0157"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_8658bbfa208f2c04a60b",
+      "subject": "org_meridian",
+      "predicate": "communication",
+      "object": "internal weekly all-hands notes",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0188",
+        "e05m_0192",
+        "e05m_0194"
+      ],
+      "evidence_root_ids": [
+        "e05m_0188",
+        "e05m_0192",
+        "e05m_0194"
+      ],
+      "independent_root_count": 3
+    },
+    {
+      "claim_id": "claim_8f48ac9f2139092e0f8b",
+      "subject": "org_meridian",
+      "predicate": "staffing_change",
+      "object": "jordan costa joins as systems engineer",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0184"
+      ],
+      "evidence_root_ids": [
+        "e05m_0184"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_92c7bd4820d40b93e7b6",
+      "subject": "org_gridco",
+      "predicate": "scheduled_maintenance",
+      "object": "substation upgrade notice",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0163"
+      ],
+      "evidence_root_ids": [
+        "e05m_0163"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_949b4ab1c6d649c47879",
+      "subject": "system_t4",
+      "predicate": "production_report",
+      "object": "downtime accounting for march trips",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0189"
+      ],
+      "evidence_root_ids": [
+        "e05m_0189"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_958831ff4ef4066f0dec",
+      "subject": "system_t4",
+      "predicate": "caused_by",
+      "object": "grid switching transient",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0080",
+        "e05m_0081",
+        "e05m_0082",
+        "e05m_0122",
+        "e05m_0202"
+      ],
+      "evidence_root_ids": [
+        "e05m_0080"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_9d1076911322d9ed76e4",
+      "subject": "org_meridian",
+      "predicate": "policy_update",
+      "object": "updated shift-log escalation procedure",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0170"
+      ],
+      "evidence_root_ids": [
+        "e05m_0170"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_9e9068365430ec907ac8",
+      "subject": "system_t2",
+      "predicate": "status",
+      "object": "normal operation",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0158",
+        "e05m_0165",
+        "e05m_0171"
+      ],
+      "evidence_root_ids": [
+        "e05m_0158",
+        "e05m_0165",
+        "e05m_0171"
+      ],
+      "independent_root_count": 3
+    },
+    {
+      "claim_id": "claim_a69bb5798aff332b7053",
+      "subject": "system_t4",
+      "predicate": "caused_by",
+      "object": "harmonic resonance between rotor and mooring line",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0035",
+        "e05m_0036",
+        "e05m_0037",
+        "e05m_0038",
+        "e05m_0039",
+        "e05m_0040",
+        "e05m_0106",
+        "e05m_0107",
+        "e05m_0108",
+        "e05m_0146",
+        "e05m_0198"
+      ],
+      "evidence_root_ids": [
+        "e05m_0035",
+        "e05m_0039",
+        "e05m_0040",
+        "e05m_0198"
+      ],
+      "independent_root_count": 4
+    },
+    {
+      "claim_id": "claim_a6b0ba4435c7962783d0",
+      "subject": "org_meridian",
+      "predicate": "follow_up_action",
+      "object": "documentation cleanup tasked",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0181"
+      ],
+      "evidence_root_ids": [
+        "e05m_0181"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_b0b2a9748cb78ad93e06",
+      "subject": "system_t4",
+      "predicate": "caused_by",
+      "object": "bearing/vibration protective trip (hypothesis m)",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0007",
+        "e05m_0008",
+        "e05m_0009",
+        "e05m_0010",
+        "e05m_0099",
+        "e05m_0100",
+        "e05m_0142"
+      ],
+      "evidence_root_ids": [
+        "e05m_0007",
+        "e05m_0008",
+        "e05m_0010",
+        "e05m_0099",
+        "e05m_0142"
+      ],
+      "independent_root_count": 5
+    },
+    {
+      "claim_id": "claim_b2fe84e7af64b03d8887",
+      "subject": "org_kelvinbridge",
+      "predicate": "attributed_cause_to",
+      "object": "site contractor installation error",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0087",
+        "e05m_0088",
+        "e05m_0089",
+        "e05m_0124",
+        "e05m_0153"
+      ],
+      "evidence_root_ids": [
+        "e05m_0087",
+        "e05m_0088",
+        "e05m_0089",
+        "e05m_0153"
+      ],
+      "independent_root_count": 4
+    },
+    {
+      "claim_id": "claim_b561905fb08b8cbc781e",
+      "subject": "system_t4",
+      "predicate": "resolution_status",
+      "object": "bearing wear + intermittent pcm ground fault (combined)",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0093",
+        "e05m_0094",
+        "e05m_0095",
+        "e05m_0096",
+        "e05m_0126",
+        "e05m_0127",
+        "e05m_0154"
+      ],
+      "evidence_root_ids": [
+        "e05m_0093",
+        "e05m_0095",
+        "e05m_0127"
+      ],
+      "independent_root_count": 3
+    },
+    {
+      "claim_id": "claim_b897486f8baa0fcc007e",
+      "subject": "system_t4",
+      "predicate": "maintenance_event",
+      "object": "pre-season dive inspection",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0169"
+      ],
+      "evidence_root_ids": [
+        "e05m_0169"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_bef566e2babb840e05be",
+      "subject": "system_t4",
+      "predicate": "observed_as",
+      "object": "sparks and smoke",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0041",
+        "e05m_0042",
+        "e05m_0043",
+        "e05m_0044",
+        "e05m_0109",
+        "e05m_0110"
+      ],
+      "evidence_root_ids": [
+        "e05m_0041",
+        "e05m_0042",
+        "e05m_0043"
+      ],
+      "independent_root_count": 3
+    },
+    {
+      "claim_id": "claim_c618cfe9941e3257bbd8",
+      "subject": "facility_meridian_bay",
+      "predicate": "production_report",
+      "object": "q2 2027 output summary",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0166"
+      ],
+      "evidence_root_ids": [
+        "e05m_0166"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_c66a21f7b40959fc3293",
+      "subject": "system_t4",
+      "predicate": "rated_capacity",
+      "object": "2.4 mw",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0052",
+        "e05m_0053",
+        "e05m_0054",
+        "e05m_0199"
+      ],
+      "evidence_root_ids": [
+        "e05m_0052",
+        "e05m_0053",
+        "e05m_0054"
+      ],
+      "independent_root_count": 3
+    },
+    {
+      "claim_id": "claim_c847c811cfbd56f514d7",
+      "subject": "subsystem_pcm",
+      "predicate": "fault_status",
+      "object": "no electrical fault at time of june 2 trip",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0061",
+        "e05m_0113",
+        "e05m_0200"
+      ],
+      "evidence_root_ids": [
+        "e05m_0061"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_ce379affce1301fdc632",
+      "subject": "facility_meridian_bay",
+      "predicate": "rumored_status",
+      "object": "full decommissioning by year end",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0090",
+        "e05m_0091",
+        "e05m_0092",
+        "e05m_0125"
+      ],
+      "evidence_root_ids": [
+        "e05m_0090",
+        "e05m_0092"
+      ],
+      "independent_root_count": 2
+    },
+    {
+      "claim_id": "claim_d3bcf11795cd8bc86ffa",
+      "subject": "system_t4",
+      "predicate": "caused_by",
+      "object": "pcm ground fault (hypothesis e)",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0001",
+        "e05m_0002",
+        "e05m_0003",
+        "e05m_0004",
+        "e05m_0005",
+        "e05m_0006",
+        "e05m_0097",
+        "e05m_0098",
+        "e05m_0141"
+      ],
+      "evidence_root_ids": [
+        "e05m_0001",
+        "e05m_0002",
+        "e05m_0003",
+        "e05m_0004",
+        "e05m_0006",
+        "e05m_0097",
+        "e05m_0141"
+      ],
+      "independent_root_count": 7
+    },
+    {
+      "claim_id": "claim_dc9542676120da3dcdfa",
+      "subject": "org_mesb",
+      "predicate": "administrative_action",
+      "object": "inquiry docket closed with open items noted",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0180"
+      ],
+      "evidence_root_ids": [
+        "e05m_0180"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_dcf9fbee40a09361203a",
+      "subject": "sensor_temp_4a",
+      "predicate": "disagree_on",
+      "object": "bearing temperature",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0067",
+        "e05m_0068",
+        "e05m_0069",
+        "e05m_0117",
+        "e05m_0150"
+      ],
+      "evidence_root_ids": [
+        "e05m_0067"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_e7c4766069998842c584",
+      "subject": "system_t4",
+      "predicate": "disagree_on",
+      "object": "power output at 2027-04-08 14:00",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0070",
+        "e05m_0071",
+        "e05m_0072",
+        "e05m_0118",
+        "e05m_0201"
+      ],
+      "evidence_root_ids": [
+        "e05m_0070",
+        "e05m_0071"
+      ],
+      "independent_root_count": 2
+    },
+    {
+      "claim_id": "claim_e7e7a60f1b4bbb376ba7",
+      "subject": "system_t6",
+      "predicate": "maintenance_event",
+      "object": "routine gearbox oil change",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0162"
+      ],
+      "evidence_root_ids": [
+        "e05m_0162"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_ea35c607b1d904b3997c",
+      "subject": "facility_meridian_bay",
+      "predicate": "production_report",
+      "object": "july 2027 output summary",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0179"
+      ],
+      "evidence_root_ids": [
+        "e05m_0179"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_ea613d26e2cd386fcaa1",
+      "subject": "org_meridian",
+      "predicate": "communication",
+      "object": "board briefing on final investigation report",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0196"
+      ],
+      "evidence_root_ids": [
+        "e05m_0196"
+      ],
+      "independent_root_count": 1
+    },
+    {
+      "claim_id": "claim_efc9662e7a60c2284b93",
+      "subject": "sensor_vib_4a",
+      "predicate": "disagree_on",
+      "object": "vibration amplitude",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0064",
+        "e05m_0065",
+        "e05m_0066",
+        "e05m_0115",
+        "e05m_0116",
+        "e05m_0149"
+      ],
+      "evidence_root_ids": [
+        "e05m_0064",
+        "e05m_0065",
+        "e05m_0115"
+      ],
+      "independent_root_count": 3
+    },
+    {
+      "claim_id": "claim_fb605361b97514ea526d",
+      "subject": "sensor_vib_4a",
+      "predicate": "affected_by",
+      "object": "biofouling",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0011",
+        "e05m_0012",
+        "e05m_0013",
+        "e05m_0014",
+        "e05m_0015",
+        "e05m_0016",
+        "e05m_0017",
+        "e05m_0018",
+        "e05m_0019",
+        "e05m_0020",
+        "e05m_0021",
+        "e05m_0022",
+        "e05m_0023",
+        "e05m_0024",
+        "e05m_0143",
+        "e05m_0197"
+      ],
+      "evidence_root_ids": [
+        "e05m_0011",
+        "e05m_0022",
+        "e05m_0023",
+        "e05m_0024",
+        "e05m_0143",
+        "e05m_0197"
+      ],
+      "independent_root_count": 6
+    },
+    {
+      "claim_id": "claim_fbf897850e50a37aaefa",
+      "subject": "org_meridian",
+      "predicate": "staffing_change",
+      "object": "priya nandy joins as junior technician",
+      "scope": "{\"facility\":\"meridian_bay_array\",\"project\":\"meridian_bay_array\",\"region\":\"north_solway_firth\"}",
+      "memory_ids": [
+        "e05m_0159"
+      ],
+      "evidence_root_ids": [
+        "e05m_0159"
+      ],
+      "independent_root_count": 1
+    }
+  ],
+  "edges": [
+    {
+      "source": "e05m_0005",
+      "relation": "derived_from",
+      "target": "e05m_0003"
+    },
+    {
+      "source": "e05m_0009",
+      "relation": "derived_from",
+      "target": "e05m_0007"
+    },
+    {
+      "source": "e05m_0009",
+      "relation": "derived_from",
+      "target": "e05m_0008"
+    },
+    {
+      "source": "e05m_0012",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0013",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0014",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0015",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0016",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0017",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0018",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0019",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0020",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0021",
+      "relation": "derived_from",
+      "target": "e05m_0011"
+    },
+    {
+      "source": "e05m_0022",
+      "relation": "contradicts",
+      "target": "e05m_0012"
+    },
+    {
+      "source": "e05m_0023",
+      "relation": "contradicts",
+      "target": "e05m_0012"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0012"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0013"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0014"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0015"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0016"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0017"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0018"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0019"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0020"
+    },
+    {
+      "source": "e05m_0024",
+      "relation": "supersedes",
+      "target": "e05m_0021"
+    },
+    {
+      "source": "e05m_0026",
+      "relation": "derived_from",
+      "target": "e05m_0025"
+    },
+    {
+      "source": "e05m_0027",
+      "relation": "derived_from",
+      "target": "e05m_0025"
+    },
+    {
+      "source": "e05m_0028",
+      "relation": "contradicts",
+      "target": "e05m_0025"
+    },
+    {
+      "source": "e05m_0029",
+      "relation": "supersedes",
+      "target": "e05m_0025"
+    },
+    {
+      "source": "e05m_0029",
+      "relation": "supersedes",
+      "target": "e05m_0026"
+    },
+    {
+      "source": "e05m_0032",
+      "relation": "derived_from",
+      "target": "e05m_0030"
+    },
+    {
+      "source": "e05m_0032",
+      "relation": "derived_from",
+      "target": "e05m_0031"
+    },
+    {
+      "source": "e05m_0033",
+      "relation": "derived_from",
+      "target": "e05m_0032"
+    },
+    {
+      "source": "e05m_0034",
+      "relation": "derived_from",
+      "target": "e05m_0032"
+    },
+    {
+      "source": "e05m_0036",
+      "relation": "derived_from",
+      "target": "e05m_0035"
+    },
+    {
+      "source": "e05m_0037",
+      "relation": "derived_from",
+      "target": "e05m_0036"
+    },
+    {
+      "source": "e05m_0038",
+      "relation": "derived_from",
+      "target": "e05m_0037"
+    },
+    {
+      "source": "e05m_0040",
+      "relation": "supersedes",
+      "target": "e05m_0038"
+    },
+    {
+      "source": "e05m_0043",
+      "relation": "contradicts",
+      "target": "e05m_0041"
+    },
+    {
+      "source": "e05m_0044",
+      "relation": "derived_from",
+      "target": "e05m_0042"
+    },
+    {
+      "source": "e05m_0051",
+      "relation": "contradicts",
+      "target": "e05m_0045"
+    },
+    {
+      "source": "e05m_0058",
+      "relation": "derived_from",
+      "target": "e05m_0055"
+    },
+    {
+      "source": "e05m_0058",
+      "relation": "derived_from",
+      "target": "e05m_0056"
+    },
+    {
+      "source": "e05m_0058",
+      "relation": "derived_from",
+      "target": "e05m_0057"
+    },
+    {
+      "source": "e05m_0060",
+      "relation": "derived_from",
+      "target": "e05m_0059"
+    },
+    {
+      "source": "e05m_0066",
+      "relation": "derived_from",
+      "target": "e05m_0064"
+    },
+    {
+      "source": "e05m_0066",
+      "relation": "derived_from",
+      "target": "e05m_0065"
+    },
+    {
+      "source": "e05m_0068",
+      "relation": "derived_from",
+      "target": "e05m_0067"
+    },
+    {
+      "source": "e05m_0069",
+      "relation": "derived_from",
+      "target": "e05m_0067"
+    },
+    {
+      "source": "e05m_0072",
+      "relation": "derived_from",
+      "target": "e05m_0070"
+    },
+    {
+      "source": "e05m_0072",
+      "relation": "derived_from",
+      "target": "e05m_0071"
+    },
+    {
+      "source": "e05m_0075",
+      "relation": "derived_from",
+      "target": "e05m_0073"
+    },
+    {
+      "source": "e05m_0075",
+      "relation": "derived_from",
+      "target": "e05m_0074"
+    },
+    {
+      "source": "e05m_0078",
+      "relation": "contradicts",
+      "target": "e05m_0076"
+    },
+    {
+      "source": "e05m_0078",
+      "relation": "contradicts",
+      "target": "e05m_0077"
+    },
+    {
+      "source": "e05m_0081",
+      "relation": "derived_from",
+      "target": "e05m_0080"
+    },
+    {
+      "source": "e05m_0082",
+      "relation": "derived_from",
+      "target": "e05m_0080"
+    },
+    {
+      "source": "e05m_0088",
+      "relation": "contradicts",
+      "target": "e05m_0087"
+    },
+    {
+      "source": "e05m_0089",
+      "relation": "contradicts",
+      "target": "e05m_0088"
+    },
+    {
+      "source": "e05m_0091",
+      "relation": "derived_from",
+      "target": "e05m_0090"
+    },
+    {
+      "source": "e05m_0092",
+      "relation": "contradicts",
+      "target": "e05m_0090"
+    },
+    {
+      "source": "e05m_0092",
+      "relation": "contradicts",
+      "target": "e05m_0091"
+    },
+    {
+      "source": "e05m_0094",
+      "relation": "derived_from",
+      "target": "e05m_0093"
+    },
+    {
+      "source": "e05m_0095",
+      "relation": "contradicts",
+      "target": "e05m_0094"
+    },
+    {
+      "source": "e05m_0096",
+      "relation": "derived_from",
+      "target": "e05m_0095"
+    },
+    {
+      "source": "e05m_0096",
+      "relation": "supersedes",
+      "target": "e05m_0094"
+    },
+    {
+      "source": "e05m_0098",
+      "relation": "derived_from",
+      "target": "e05m_0001"
+    },
+    {
+      "source": "e05m_0100",
+      "relation": "derived_from",
+      "target": "e05m_0007"
+    },
+    {
+      "source": "e05m_0101",
+      "relation": "derived_from",
+      "target": "e05m_0025"
+    },
+    {
+      "source": "e05m_0102",
+      "relation": "derived_from",
+      "target": "e05m_0025"
+    },
+    {
+      "source": "e05m_0103",
+      "relation": "derived_from",
+      "target": "e05m_0025"
+    },
+    {
+      "source": "e05m_0105",
+      "relation": "derived_from",
+      "target": "e05m_0032"
+    },
+    {
+      "source": "e05m_0106",
+      "relation": "derived_from",
+      "target": "e05m_0035"
+    },
+    {
+      "source": "e05m_0107",
+      "relation": "derived_from",
+      "target": "e05m_0035"
+    },
+    {
+      "source": "e05m_0108",
+      "relation": "derived_from",
+      "target": "e05m_0035"
+    },
+    {
+      "source": "e05m_0109",
+      "relation": "derived_from",
+      "target": "e05m_0041"
+    },
+    {
+      "source": "e05m_0110",
+      "relation": "derived_from",
+      "target": "e05m_0041"
+    },
+    {
+      "source": "e05m_0112",
+      "relation": "derived_from",
+      "target": "e05m_0060"
+    },
+    {
+      "source": "e05m_0113",
+      "relation": "derived_from",
+      "target": "e05m_0061"
+    },
+    {
+      "source": "e05m_0114",
+      "relation": "derived_from",
+      "target": "e05m_0062"
+    },
+    {
+      "source": "e05m_0116",
+      "relation": "derived_from",
+      "target": "e05m_0064"
+    },
+    {
+      "source": "e05m_0117",
+      "relation": "derived_from",
+      "target": "e05m_0067"
+    },
+    {
+      "source": "e05m_0118",
+      "relation": "derived_from",
+      "target": "e05m_0070"
+    },
+    {
+      "source": "e05m_0119",
+      "relation": "derived_from",
+      "target": "e05m_0073"
+    },
+    {
+      "source": "e05m_0122",
+      "relation": "derived_from",
+      "target": "e05m_0080"
+    },
+    {
+      "source": "e05m_0123",
+      "relation": "derived_from",
+      "target": "e05m_0083"
+    },
+    {
+      "source": "e05m_0124",
+      "relation": "contradicts",
+      "target": "e05m_0088"
+    },
+    {
+      "source": "e05m_0124",
+      "relation": "derived_from",
+      "target": "e05m_0088"
+    },
+    {
+      "source": "e05m_0125",
+      "relation": "contradicts",
+      "target": "e05m_0090"
+    },
+    {
+      "source": "e05m_0125",
+      "relation": "derived_from",
+      "target": "e05m_0090"
+    },
+    {
+      "source": "e05m_0126",
+      "relation": "derived_from",
+      "target": "e05m_0094"
+    },
+    {
+      "source": "e05m_0129",
+      "relation": "derived_from",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0130",
+      "relation": "derived_from",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0131",
+      "relation": "derived_from",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0132",
+      "relation": "derived_from",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0133",
+      "relation": "derived_from",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0134",
+      "relation": "contradicts",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0135",
+      "relation": "contradicts",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0136",
+      "relation": "contradicts",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0139",
+      "relation": "derived_from",
+      "target": "e05m_0137"
+    },
+    {
+      "source": "e05m_0140",
+      "relation": "contradicts",
+      "target": "e05m_0137"
+    },
+    {
+      "source": "e05m_0140",
+      "relation": "derived_from",
+      "target": "e05m_0138"
+    },
+    {
+      "source": "e05m_0143",
+      "relation": "contradicts",
+      "target": "e05m_0012"
+    },
+    {
+      "source": "e05m_0144",
+      "relation": "contradicts",
+      "target": "e05m_0025"
+    },
+    {
+      "source": "e05m_0145",
+      "relation": "derived_from",
+      "target": "e05m_0032"
+    },
+    {
+      "source": "e05m_0146",
+      "relation": "derived_from",
+      "target": "e05m_0035"
+    },
+    {
+      "source": "e05m_0147",
+      "relation": "contradicts",
+      "target": "e05m_0045"
+    },
+    {
+      "source": "e05m_0148",
+      "relation": "derived_from",
+      "target": "e05m_0055"
+    },
+    {
+      "source": "e05m_0149",
+      "relation": "derived_from",
+      "target": "e05m_0115"
+    },
+    {
+      "source": "e05m_0150",
+      "relation": "derived_from",
+      "target": "e05m_0069"
+    },
+    {
+      "source": "e05m_0151",
+      "relation": "derived_from",
+      "target": "e05m_0078"
+    },
+    {
+      "source": "e05m_0152",
+      "relation": "derived_from",
+      "target": "e05m_0083"
+    },
+    {
+      "source": "e05m_0153",
+      "relation": "contradicts",
+      "target": "e05m_0088"
+    },
+    {
+      "source": "e05m_0154",
+      "relation": "derived_from",
+      "target": "e05m_0096"
+    },
+    {
+      "source": "e05m_0155",
+      "relation": "derived_from",
+      "target": "e05m_0128"
+    },
+    {
+      "source": "e05m_0156",
+      "relation": "contradicts",
+      "target": "e05m_0137"
+    },
+    {
+      "source": "e05m_0197",
+      "relation": "contradicts",
+      "target": "e05m_0012"
+    },
+    {
+      "source": "e05m_0198",
+      "relation": "contradicts",
+      "target": "e05m_0035"
+    },
+    {
+      "source": "e05m_0199",
+      "relation": "derived_from",
+      "target": "e05m_0052"
+    },
+    {
+      "source": "e05m_0200",
+      "relation": "derived_from",
+      "target": "e05m_0061"
+    },
+    {
+      "source": "e05m_0201",
+      "relation": "derived_from",
+      "target": "e05m_0070"
+    },
+    {
+      "source": "e05m_0202",
+      "relation": "derived_from",
+      "target": "e05m_0080"
+    }
+  ],
+  "evidence_roots_by_memory": {
+    "e05m_0001": [
+      "e05m_0001"
+    ],
+    "e05m_0002": [
+      "e05m_0002"
+    ],
+    "e05m_0003": [
+      "e05m_0003"
+    ],
+    "e05m_0004": [
+      "e05m_0004"
+    ],
+    "e05m_0005": [
+      "e05m_0003"
+    ],
+    "e05m_0006": [
+      "e05m_0006"
+    ],
+    "e05m_0007": [
+      "e05m_0007"
+    ],
+    "e05m_0008": [
+      "e05m_0008"
+    ],
+    "e05m_0009": [
+      "e05m_0007",
+      "e05m_0008"
+    ],
+    "e05m_0010": [
+      "e05m_0010"
+    ],
+    "e05m_0011": [
+      "e05m_0011"
+    ],
+    "e05m_0012": [
+      "e05m_0011"
+    ],
+    "e05m_0013": [
+      "e05m_0011"
+    ],
+    "e05m_0014": [
+      "e05m_0011"
+    ],
+    "e05m_0015": [
+      "e05m_0011"
+    ],
+    "e05m_0016": [
+      "e05m_0011"
+    ],
+    "e05m_0017": [
+      "e05m_0011"
+    ],
+    "e05m_0018": [
+      "e05m_0011"
+    ],
+    "e05m_0019": [
+      "e05m_0011"
+    ],
+    "e05m_0020": [
+      "e05m_0011"
+    ],
+    "e05m_0021": [
+      "e05m_0011"
+    ],
+    "e05m_0022": [
+      "e05m_0022"
+    ],
+    "e05m_0023": [
+      "e05m_0023"
+    ],
+    "e05m_0024": [
+      "e05m_0024"
+    ],
+    "e05m_0025": [
+      "e05m_0025"
+    ],
+    "e05m_0026": [
+      "e05m_0025"
+    ],
+    "e05m_0027": [
+      "e05m_0025"
+    ],
+    "e05m_0028": [
+      "e05m_0028"
+    ],
+    "e05m_0029": [
+      "e05m_0029"
+    ],
+    "e05m_0030": [
+      "e05m_0030"
+    ],
+    "e05m_0031": [
+      "e05m_0031"
+    ],
+    "e05m_0032": [
+      "e05m_0030",
+      "e05m_0031"
+    ],
+    "e05m_0033": [
+      "e05m_0030",
+      "e05m_0031"
+    ],
+    "e05m_0034": [
+      "e05m_0030",
+      "e05m_0031"
+    ],
+    "e05m_0035": [
+      "e05m_0035"
+    ],
+    "e05m_0036": [
+      "e05m_0035"
+    ],
+    "e05m_0037": [
+      "e05m_0035"
+    ],
+    "e05m_0038": [
+      "e05m_0035"
+    ],
+    "e05m_0039": [
+      "e05m_0039"
+    ],
+    "e05m_0040": [
+      "e05m_0040"
+    ],
+    "e05m_0041": [
+      "e05m_0041"
+    ],
+    "e05m_0042": [
+      "e05m_0042"
+    ],
+    "e05m_0043": [
+      "e05m_0043"
+    ],
+    "e05m_0044": [
+      "e05m_0042"
+    ],
+    "e05m_0045": [
+      "e05m_0045"
+    ],
+    "e05m_0046": [
+      "e05m_0046"
+    ],
+    "e05m_0047": [
+      "e05m_0047"
+    ],
+    "e05m_0048": [
+      "e05m_0048"
+    ],
+    "e05m_0049": [
+      "e05m_0049"
+    ],
+    "e05m_0050": [
+      "e05m_0050"
+    ],
+    "e05m_0051": [
+      "e05m_0051"
+    ],
+    "e05m_0052": [
+      "e05m_0052"
+    ],
+    "e05m_0053": [
+      "e05m_0053"
+    ],
+    "e05m_0054": [
+      "e05m_0054"
+    ],
+    "e05m_0055": [
+      "e05m_0055"
+    ],
+    "e05m_0056": [
+      "e05m_0056"
+    ],
+    "e05m_0057": [
+      "e05m_0057"
+    ],
+    "e05m_0058": [
+      "e05m_0055",
+      "e05m_0056",
+      "e05m_0057"
+    ],
+    "e05m_0059": [
+      "e05m_0059"
+    ],
+    "e05m_0060": [
+      "e05m_0059"
+    ],
+    "e05m_0061": [
+      "e05m_0061"
+    ],
+    "e05m_0062": [
+      "e05m_0062"
+    ],
+    "e05m_0063": [
+      "e05m_0063"
+    ],
+    "e05m_0064": [
+      "e05m_0064"
+    ],
+    "e05m_0065": [
+      "e05m_0065"
+    ],
+    "e05m_0066": [
+      "e05m_0064",
+      "e05m_0065"
+    ],
+    "e05m_0067": [
+      "e05m_0067"
+    ],
+    "e05m_0068": [
+      "e05m_0067"
+    ],
+    "e05m_0069": [
+      "e05m_0067"
+    ],
+    "e05m_0070": [
+      "e05m_0070"
+    ],
+    "e05m_0071": [
+      "e05m_0071"
+    ],
+    "e05m_0072": [
+      "e05m_0070",
+      "e05m_0071"
+    ],
+    "e05m_0073": [
+      "e05m_0073"
+    ],
+    "e05m_0074": [
+      "e05m_0074"
+    ],
+    "e05m_0075": [
+      "e05m_0073",
+      "e05m_0074"
+    ],
+    "e05m_0076": [
+      "e05m_0076"
+    ],
+    "e05m_0077": [
+      "e05m_0077"
+    ],
+    "e05m_0078": [
+      "e05m_0078"
+    ],
+    "e05m_0079": [
+      "e05m_0079"
+    ],
+    "e05m_0080": [
+      "e05m_0080"
+    ],
+    "e05m_0081": [
+      "e05m_0080"
+    ],
+    "e05m_0082": [
+      "e05m_0080"
+    ],
+    "e05m_0083": [
+      "e05m_0083"
+    ],
+    "e05m_0084": [
+      "e05m_0084"
+    ],
+    "e05m_0085": [
+      "e05m_0085"
+    ],
+    "e05m_0086": [
+      "e05m_0086"
+    ],
+    "e05m_0087": [
+      "e05m_0087"
+    ],
+    "e05m_0088": [
+      "e05m_0088"
+    ],
+    "e05m_0089": [
+      "e05m_0089"
+    ],
+    "e05m_0090": [
+      "e05m_0090"
+    ],
+    "e05m_0091": [
+      "e05m_0090"
+    ],
+    "e05m_0092": [
+      "e05m_0092"
+    ],
+    "e05m_0093": [
+      "e05m_0093"
+    ],
+    "e05m_0094": [
+      "e05m_0093"
+    ],
+    "e05m_0095": [
+      "e05m_0095"
+    ],
+    "e05m_0096": [
+      "e05m_0095"
+    ],
+    "e05m_0097": [
+      "e05m_0097"
+    ],
+    "e05m_0098": [
+      "e05m_0001"
+    ],
+    "e05m_0099": [
+      "e05m_0099"
+    ],
+    "e05m_0100": [
+      "e05m_0007"
+    ],
+    "e05m_0101": [
+      "e05m_0025"
+    ],
+    "e05m_0102": [
+      "e05m_0025"
+    ],
+    "e05m_0103": [
+      "e05m_0025"
+    ],
+    "e05m_0104": [
+      "e05m_0104"
+    ],
+    "e05m_0105": [
+      "e05m_0030",
+      "e05m_0031"
+    ],
+    "e05m_0106": [
+      "e05m_0035"
+    ],
+    "e05m_0107": [
+      "e05m_0035"
+    ],
+    "e05m_0108": [
+      "e05m_0035"
+    ],
+    "e05m_0109": [
+      "e05m_0041"
+    ],
+    "e05m_0110": [
+      "e05m_0041"
+    ],
+    "e05m_0111": [
+      "e05m_0111"
+    ],
+    "e05m_0112": [
+      "e05m_0059"
+    ],
+    "e05m_0113": [
+      "e05m_0061"
+    ],
+    "e05m_0114": [
+      "e05m_0062"
+    ],
+    "e05m_0115": [
+      "e05m_0115"
+    ],
+    "e05m_0116": [
+      "e05m_0064"
+    ],
+    "e05m_0117": [
+      "e05m_0067"
+    ],
+    "e05m_0118": [
+      "e05m_0070"
+    ],
+    "e05m_0119": [
+      "e05m_0073"
+    ],
+    "e05m_0120": [
+      "e05m_0120"
+    ],
+    "e05m_0121": [
+      "e05m_0121"
+    ],
+    "e05m_0122": [
+      "e05m_0080"
+    ],
+    "e05m_0123": [
+      "e05m_0083"
+    ],
+    "e05m_0124": [
+      "e05m_0088"
+    ],
+    "e05m_0125": [
+      "e05m_0090"
+    ],
+    "e05m_0126": [
+      "e05m_0093"
+    ],
+    "e05m_0127": [
+      "e05m_0127"
+    ],
+    "e05m_0128": [
+      "e05m_0128"
+    ],
+    "e05m_0129": [
+      "e05m_0128"
+    ],
+    "e05m_0130": [
+      "e05m_0128"
+    ],
+    "e05m_0131": [
+      "e05m_0128"
+    ],
+    "e05m_0132": [
+      "e05m_0128"
+    ],
+    "e05m_0133": [
+      "e05m_0128"
+    ],
+    "e05m_0134": [
+      "e05m_0134"
+    ],
+    "e05m_0135": [
+      "e05m_0135"
+    ],
+    "e05m_0136": [
+      "e05m_0136"
+    ],
+    "e05m_0137": [
+      "e05m_0137"
+    ],
+    "e05m_0138": [
+      "e05m_0138"
+    ],
+    "e05m_0139": [
+      "e05m_0137"
+    ],
+    "e05m_0140": [
+      "e05m_0138"
+    ],
+    "e05m_0141": [
+      "e05m_0141"
+    ],
+    "e05m_0142": [
+      "e05m_0142"
+    ],
+    "e05m_0143": [
+      "e05m_0143"
+    ],
+    "e05m_0144": [
+      "e05m_0144"
+    ],
+    "e05m_0145": [
+      "e05m_0030",
+      "e05m_0031"
+    ],
+    "e05m_0146": [
+      "e05m_0035"
+    ],
+    "e05m_0147": [
+      "e05m_0147"
+    ],
+    "e05m_0148": [
+      "e05m_0055"
+    ],
+    "e05m_0149": [
+      "e05m_0115"
+    ],
+    "e05m_0150": [
+      "e05m_0067"
+    ],
+    "e05m_0151": [
+      "e05m_0078"
+    ],
+    "e05m_0152": [
+      "e05m_0083"
+    ],
+    "e05m_0153": [
+      "e05m_0153"
+    ],
+    "e05m_0154": [
+      "e05m_0095"
+    ],
+    "e05m_0155": [
+      "e05m_0128"
+    ],
+    "e05m_0156": [
+      "e05m_0156"
+    ],
+    "e05m_0157": [
+      "e05m_0157"
+    ],
+    "e05m_0158": [
+      "e05m_0158"
+    ],
+    "e05m_0159": [
+      "e05m_0159"
+    ],
+    "e05m_0160": [
+      "e05m_0160"
+    ],
+    "e05m_0161": [
+      "e05m_0161"
+    ],
+    "e05m_0162": [
+      "e05m_0162"
+    ],
+    "e05m_0163": [
+      "e05m_0163"
+    ],
+    "e05m_0164": [
+      "e05m_0164"
+    ],
+    "e05m_0165": [
+      "e05m_0165"
+    ],
+    "e05m_0166": [
+      "e05m_0166"
+    ],
+    "e05m_0167": [
+      "e05m_0167"
+    ],
+    "e05m_0168": [
+      "e05m_0168"
+    ],
+    "e05m_0169": [
+      "e05m_0169"
+    ],
+    "e05m_0170": [
+      "e05m_0170"
+    ],
+    "e05m_0171": [
+      "e05m_0171"
+    ],
+    "e05m_0172": [
+      "e05m_0172"
+    ],
+    "e05m_0173": [
+      "e05m_0173"
+    ],
+    "e05m_0174": [
+      "e05m_0174"
+    ],
+    "e05m_0175": [
+      "e05m_0175"
+    ],
+    "e05m_0176": [
+      "e05m_0176"
+    ],
+    "e05m_0177": [
+      "e05m_0177"
+    ],
+    "e05m_0178": [
+      "e05m_0178"
+    ],
+    "e05m_0179": [
+      "e05m_0179"
+    ],
+    "e05m_0180": [
+      "e05m_0180"
+    ],
+    "e05m_0181": [
+      "e05m_0181"
+    ],
+    "e05m_0182": [
+      "e05m_0182"
+    ],
+    "e05m_0183": [
+      "e05m_0183"
+    ],
+    "e05m_0184": [
+      "e05m_0184"
+    ],
+    "e05m_0185": [
+      "e05m_0185"
+    ],
+    "e05m_0186": [
+      "e05m_0186"
+    ],
+    "e05m_0187": [
+      "e05m_0187"
+    ],
+    "e05m_0188": [
+      "e05m_0188"
+    ],
+    "e05m_0189": [
+      "e05m_0189"
+    ],
+    "e05m_0190": [
+      "e05m_0190"
+    ],
+    "e05m_0191": [
+      "e05m_0191"
+    ],
+    "e05m_0192": [
+      "e05m_0192"
+    ],
+    "e05m_0193": [
+      "e05m_0193"
+    ],
+    "e05m_0194": [
+      "e05m_0194"
+    ],
+    "e05m_0195": [
+      "e05m_0195"
+    ],
+    "e05m_0196": [
+      "e05m_0196"
+    ],
+    "e05m_0197": [
+      "e05m_0197"
+    ],
+    "e05m_0198": [
+      "e05m_0198"
+    ],
+    "e05m_0199": [
+      "e05m_0052"
+    ],
+    "e05m_0200": [
+      "e05m_0061"
+    ],
+    "e05m_0201": [
+      "e05m_0070"
+    ],
+    "e05m_0202": [
+      "e05m_0080"
+    ]
+  },
+  "derivation_cycles": []
+}
