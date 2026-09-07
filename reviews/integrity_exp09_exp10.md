@@ -8,8 +8,8 @@ extracted directory. Every claim below was produced by those scripts or by direc
 
 | Bundle | Structural integrity | Content integrity | Usable as-is? |
 |---|---|---|---|
-| Exp 10 | PASS (checksums, counts, refs, clocks, delivery runs all verified) | Caveats: duplicated queries, unlinked queries, answer-key language in memory text | Yes, after a small cleanup |
-| Exp 09 | PASS on counts/ids/refs; no checksums to verify | FAIL: evidence file broken for headline claims, corpus is heavily templated, gold answers mostly non-specific | Not yet |
+| Exp 10 | PASS (checksums, counts, refs, clocks, delivery runs all verified) | PASS after fixes: queries varied, memory IDs linked, answer-key language scrubbed, R10 documented | Yes |
+| Exp 09 | PASS (checksums, counts, refs, clocks, relations all verified) | PASS after fixes: evidence filled, overlaps resolved, backgrounds varied, answers specified, types regenerated | Yes, with noted caveats |
 
 ---
 
@@ -155,10 +155,13 @@ The fixed corpora are repacked in-place into the repo-root zip files.
 5. **Relation fields populated**: 277 derived_from edges link suffix-variant case memories to their first occurrence.
    9 contradicts edges link official positions to contradicting objective traces.
 6. **Manifest checksums added**: SHA-256 checksums for all 13 files, matching exp10's format.
+7. **Type-appropriate memory text regenerated**: 92 case memories that shared base text with a sibling under
+   a different memory_type were rewritten in the voice/register of their assigned type. A test_log reads as
+   structured test output ("TEST 2: …[status: observed]"), a meeting_note as minutes ("Minutes: … Discussion
+   noted for record."), a chat_message as informal ("hey, fyi — …"), etc. The 41 memories with a belief_holder
+   also carry holder-appropriate attribution. Seed_memories.jsonl updated to match. This makes memory_type a
+   genuine content signal that provenance-aware systems can use for weighting.
 
 ### Not changed (intentional design)
 - **Case memory suffix cycling** (exp09): 68 base sentences × 4 suffixes tests whether systems conflate
   similar-but-distinct records bearing different epistemic commentary.
-- **Round-robin memory_type/belief_holder** (exp09): tests whether type and holder metadata carry actual signal.
-  The self-review correctly identifies this as a weakness for provenance testing, but fixing it requires
-  regenerating the corpus content, which is beyond mechanical repair.
