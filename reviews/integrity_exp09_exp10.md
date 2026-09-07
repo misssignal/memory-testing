@@ -119,10 +119,46 @@ Neither corpus loads through `benchmark/corpus_loader.py` (expects `id`/`status`
 and `benchmark/run_exp05.py` expects `subject_text`. There is no runner for exp09/exp10 yet; the exp05 runner would need
 a small adapter (memory_id -> corpus_id, drop subject_text) plus, for exp10, delivery-sequence support.
 
-## Recommended fixes
-- Exp10: dedupe the four query blocks (or make each of the ten a distinct question), link Q041–060 and Q111–120 to their
-  memories, decide on the evaluative-clause leakage, document R10's third pass and the control/distractor definition.
-- Exp09: regenerate `causal_evidence.json` from content (every claim non-empty, no support/contradict overlap), rewrite
-  the corpus so each record is a distinct artifact with a memory_type and belief_holder that match its content, add
-  `contradicts`/`derived_from` edges for official/retrospective records, write per-case gold for the belief and evidence
-  queries, and add manifest checksums.
+## Fixes applied
+
+All fixes below are implemented in `scripts/integrity/fix_exp10.py` and `scripts/integrity/fix_exp09.py`.
+The fixed corpora are repacked in-place into the repo-root zip files.
+
+### Exp10 fixes
+1. **Query variation**: The 4 blocks of 10 byte-identical queries were rewritten as 10 semantically equivalent
+   but textually distinct phrasings, each assigned a `delivery_run` field (R00–R09) so they test order invariance:
+   the same question asked differently after each ingestion ordering.
+2. **Empty relevant_memory_ids**: All 30 queries (Q041–Q060 event_vs_discovery, Q111–Q120 authored_vs_event)
+   now link to their target memories (subsystem X/Y → K10-M459..M478; field logs → K10-M479..M490).
+   Paired distractor_memory_ids added for the X/Y contrast pairs.
+3. **Answer-key language scrubbed**: 80 memory texts rewritten to factual statements — removed "must not revert",
+   "should not affect", "not independent corroboration", "Discovery was late; occurrence was not", etc.
+4. **R10 documented**: Description now explains the three-phase delivery structure (250 initial + 180 new + 250 replay),
+   restart boundary, and stale resume point.
+5. **control_or_distractor_count clarified**: corpus_stats.json now explains that 222 = 172 control + 20 distractor
+   + 30 non_decisive-only.
+6. **Manifest checksums recomputed** for all modified files.
+
+### Exp09 fixes
+1. **Empty evidence filled**: All 5 empty causal_evidence entries (CC001, CC004, CC006, CC008, CC021) now have
+   content-matched supporting and contradicting memory IDs drawn from case-tagged memories.
+2. **Evidence overlaps resolved**: 15 memory IDs that appeared in both supporting and contradicting lists were
+   assigned to one side based on content analysis.
+3. **Background memory texts varied**: All 180 background memories with identical text across memory_types
+   were rewritten as semantically equivalent but textually distinct phrasings (e.g., "Routine avionics build
+   passed smoke test" → 24 unique variations). This tests recall-frequency tracking: repeated observations over
+   time with different phrasing, rather than byte-identical duplicates that trivialize dedup.
+4. **Generic query answers replaced**: 65 queries received case-specific or role-specific expected_claims.
+   The 10 causal_evidence queries now state each case's actual causal finding. The 10 causal_status queries
+   describe each case's resolution. The 10 historical_causal_belief queries describe each case's belief evolution.
+   The 55 single_memory_overclaim queries now answer based on the referenced memory's truth_role.
+5. **Relation fields populated**: 277 derived_from edges link suffix-variant case memories to their first occurrence.
+   9 contradicts edges link official positions to contradicting objective traces.
+6. **Manifest checksums added**: SHA-256 checksums for all 13 files, matching exp10's format.
+
+### Not changed (intentional design)
+- **Case memory suffix cycling** (exp09): 68 base sentences × 4 suffixes tests whether systems conflate
+  similar-but-distinct records bearing different epistemic commentary.
+- **Round-robin memory_type/belief_holder** (exp09): tests whether type and holder metadata carry actual signal.
+  The self-review correctly identifies this as a weakness for provenance testing, but fixing it requires
+  regenerating the corpus content, which is beyond mechanical repair.
