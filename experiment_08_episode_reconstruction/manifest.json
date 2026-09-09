@@ -1,0 +1,11 @@
+{
+  "memory_count": 525,
+  "query_count": 129,
+  "episode_count": 12,
+  "membership_records": 355,
+  "background_memory_count": 170,
+  "perturbation_count": 10,
+  "ambiguous_membership_count": 3,
+  "precursor_count": 3,
+  "consequence_count": 3
+}

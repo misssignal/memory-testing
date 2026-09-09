@@ -1,0 +1,3209 @@
+[
+  {
+    "memory_id": "M0001",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0002",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0003",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0004",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0005",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0006",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0007",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0008",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0009",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0010",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0011",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0012",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0013",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0014",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0015",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0016",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0017",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0018",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0019",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0020",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0021",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0022",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0023",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0024",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0025",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0026",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0027",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0028",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0029",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0030",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0031",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0032",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0033",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0034",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0035",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0036",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0037",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0038",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0039",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0040",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0041",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0042",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0043",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0044",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0045",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0046",
+    "episode_id": "EP02",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0047",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0048",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0049",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0050",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0051",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0052",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0053",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0054",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0055",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0056",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0057",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0058",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0059",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0060",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0061",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0062",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0063",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0064",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0065",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0066",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0067",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0068",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0069",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0070",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0071",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0072",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0073",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0074",
+    "episode_id": "EP03",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0075",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0076",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0077",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0078",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0079",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0080",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0081",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0082",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0083",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0084",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0085",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0086",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0087",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0088",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0089",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0090",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0091",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0092",
+    "episode_id": "EP04",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0093",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0094",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0095",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0096",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0097",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0098",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0099",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0100",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0101",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0102",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0103",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0104",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0105",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0106",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0107",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0108",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0109",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0110",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0111",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0112",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0113",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0114",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0115",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0116",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0117",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0118",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0119",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0120",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0121",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0122",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0123",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0124",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0125",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0126",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0127",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0128",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0129",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0130",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0131",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0132",
+    "episode_id": "EP05",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0133",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0134",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0135",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0136",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0137",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0138",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0139",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0140",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0141",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0142",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0143",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0144",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0145",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0146",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0147",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0148",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0149",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0150",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0151",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0152",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0153",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0154",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0155",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0156",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0157",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0158",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0159",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0160",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0161",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0162",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0163",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0164",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0165",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0166",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0167",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0168",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0169",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0170",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0171",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0172",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0173",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0174",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0175",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0176",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0177",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0178",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0179",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0180",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0181",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0182",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0183",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0184",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0185",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0186",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0187",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0188",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0189",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0190",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0191",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0192",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0193",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0194",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0195",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0196",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0197",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0198",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0199",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0200",
+    "episode_id": "EP07",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0201",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0202",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0203",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0204",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0205",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0206",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0207",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0208",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0209",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0210",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0211",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0212",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0213",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0214",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0215",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0216",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0217",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0218",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0219",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0220",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0221",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0222",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0223",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0224",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0225",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0226",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0227",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0228",
+    "episode_id": "EP08",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0229",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0230",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0231",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0232",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0233",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0234",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0235",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0236",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0237",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0238",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0239",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0240",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0241",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0242",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0243",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0244",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0245",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0246",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0247",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0248",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0249",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0250",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0251",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0252",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0253",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0254",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0255",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0256",
+    "episode_id": "EP09",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0257",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0258",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0259",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0260",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0261",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0262",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0263",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0264",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0265",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0266",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0267",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0268",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0269",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0270",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0271",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0272",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0273",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0274",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0275",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0276",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0277",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0278",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0279",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0280",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0281",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0282",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0283",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0284",
+    "episode_id": "EP10",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0285",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0286",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0287",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0288",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0289",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0290",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0291",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0292",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0293",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0294",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0295",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0296",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0297",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0298",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0299",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0300",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0301",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0302",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0303",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0304",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0305",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0306",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0307",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0308",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0309",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0310",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0311",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0312",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0313",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0314",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0315",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0316",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0317",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0318",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0319",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0320",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0321",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0322",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0323",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0324",
+    "episode_id": "EP11",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0325",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0326",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0327",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0328",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0329",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0330",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0331",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0332",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0333",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0334",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0335",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0336",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0337",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0338",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0339",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0340",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0341",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0342",
+    "episode_id": "EP12",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0343",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0344",
+    "episode_id": "EP01",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0345",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0346",
+    "episode_id": "EP06",
+    "membership": "member",
+    "relationship": "MEMBER_OF",
+    "membership_basis": [
+      "canonical_story_design"
+    ]
+  },
+  {
+    "memory_id": "M0347",
+    "episode_id": "EP01",
+    "membership": "precursor",
+    "relationship": "PRECURSOR_TO",
+    "membership_basis": [
+      "precursor"
+    ]
+  },
+  {
+    "memory_id": "M0348",
+    "episode_id": "EP01",
+    "membership": "consequence",
+    "relationship": "CONSEQUENCE_OF",
+    "membership_basis": [
+      "consequence"
+    ]
+  },
+  {
+    "memory_id": "M0349",
+    "episode_id": "EP06",
+    "membership": "precursor",
+    "relationship": "PRECURSOR_TO",
+    "membership_basis": [
+      "precursor"
+    ]
+  },
+  {
+    "memory_id": "M0350",
+    "episode_id": "EP06",
+    "membership": "consequence",
+    "relationship": "CONSEQUENCE_OF",
+    "membership_basis": [
+      "consequence"
+    ]
+  },
+  {
+    "memory_id": "M0351",
+    "episode_id": "EP08",
+    "membership": "precursor",
+    "relationship": "PRECURSOR_TO",
+    "membership_basis": [
+      "precursor"
+    ]
+  },
+  {
+    "memory_id": "M0352",
+    "episode_id": "EP08",
+    "membership": "consequence",
+    "relationship": "CONSEQUENCE_OF",
+    "membership_basis": [
+      "consequence"
+    ]
+  },
+  {
+    "memory_id": "M0353",
+    "episode_id": "EP05",
+    "membership": "ambiguous",
+    "relationship": "AMBIGUOUS_BOUNDARY",
+    "membership_basis": [
+      "ambiguous"
+    ],
+    "candidate_episodes": [
+      "EP05",
+      "EP05"
+    ]
+  },
+  {
+    "memory_id": "M0354",
+    "episode_id": "EP06",
+    "membership": "ambiguous",
+    "relationship": "AMBIGUOUS_BOUNDARY",
+    "membership_basis": [
+      "ambiguous"
+    ],
+    "candidate_episodes": [
+      "EP06",
+      "EP11"
+    ]
+  },
+  {
+    "memory_id": "M0355",
+    "episode_id": "EP10",
+    "membership": "ambiguous",
+    "relationship": "AMBIGUOUS_BOUNDARY",
+    "membership_basis": [
+      "ambiguous"
+    ],
+    "candidate_episodes": [
+      "EP10",
+      "EP11"
+    ]
+  }
+]

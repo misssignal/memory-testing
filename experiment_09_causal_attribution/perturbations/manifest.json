@@ -1,0 +1,224 @@
+[
+  {
+    "perturbation_id": "P09_A_TEMPORAL_ADJACENCY_C01",
+    "base_case": "C01",
+    "manipulated_variable": "time between deployment and actuator lag",
+    "variants": [
+      {
+        "name": "30d",
+        "gap": "P30D"
+      },
+      {
+        "name": "2d",
+        "gap": "P2D"
+      },
+      {
+        "name": "10m",
+        "gap": "PT10M"
+      },
+      {
+        "name": "immediate",
+        "gap": "PT0M"
+      }
+    ],
+    "expected_behavior": "Causal status remains noncausal sequence; timing alone must not increase causal certainty."
+  },
+  {
+    "perturbation_id": "P09_B_CORRELATION_AMPLIFICATION_C06",
+    "base_case": "C06",
+    "manipulated_variable": "number of cooling-demand/sensor-drift co-occurrences",
+    "variants": [
+      {
+        "name": "5_pairs",
+        "pairs": 5
+      },
+      {
+        "name": "25_pairs",
+        "pairs": 25
+      },
+      {
+        "name": "100_pairs",
+        "pairs": 100
+      }
+    ],
+    "expected_behavior": "Association strength may rise, but direct causal claim cooling-demand\u2192sensor-drift remains false."
+  },
+  {
+    "perturbation_id": "P09_C_MECHANISM_ADDITION_C01",
+    "base_case": "C01",
+    "manipulated_variable": "mechanistic connector-resistance evidence",
+    "variants": [
+      {
+        "name": "absent",
+        "mechanism_trace": false
+      },
+      {
+        "name": "present",
+        "mechanism_trace": true
+      }
+    ],
+    "expected_behavior": "Support for bus-resistance causal explanation increases only when mechanism evidence appears."
+  },
+  {
+    "perturbation_id": "P09_D_CLEAN_VS_CONFOUNDED_C05",
+    "base_case": "C05",
+    "manipulated_variable": "intervention cleanliness",
+    "variants": [
+      {
+        "name": "clean_module_only",
+        "changes": [
+          "power-module"
+        ],
+        "expected": "module cause strongly supported"
+      },
+      {
+        "name": "confounded",
+        "changes": [
+          "power-module",
+          "harness reseat",
+          "controller reset",
+          "power-cycle"
+        ],
+        "expected": "mechanism unresolved"
+      }
+    ],
+    "expected_behavior": "Causal certainty differs sharply despite same successful outcome."
+  },
+  {
+    "perturbation_id": "P09_E_COMMON_CAUSE_C06",
+    "base_case": "C06",
+    "manipulated_variable": "presence of common ambient-heat driver",
+    "variants": [
+      {
+        "name": "direct_model",
+        "graph": [
+          "cooling-demand\u2192sensor-drift"
+        ]
+      },
+      {
+        "name": "common_cause_model",
+        "graph": [
+          "ambient-heat\u2192cooling-demand",
+          "ambient-heat\u2192sensor-drift"
+        ]
+      }
+    ],
+    "expected_behavior": "System must distinguish direct causation from common-cause correlation."
+  },
+  {
+    "perturbation_id": "P09_F_DIRECTION_REVERSAL_C03",
+    "base_case": "C03",
+    "manipulated_variable": "mechanistic temporal direction",
+    "variants": [
+      {
+        "name": "retry_causes_network",
+        "direction": "retry\u2192network"
+      },
+      {
+        "name": "network_causes_retry",
+        "direction": "network\u2192retry"
+      }
+    ],
+    "expected_behavior": "Correlation remains similar; mechanism/timestamps determine direction."
+  },
+  {
+    "perturbation_id": "P09_G_COUNTEREVIDENCE_C08",
+    "base_case": "C08",
+    "manipulated_variable": "presence of discriminating regulator test",
+    "variants": [
+      {
+        "name": "no_test",
+        "result": "unresolved"
+      },
+      {
+        "name": "regulator_ruled_out",
+        "result": "connector resistance favored"
+      }
+    ],
+    "expected_behavior": "Confidence changes only when discriminating evidence arrives."
+  },
+  {
+    "perturbation_id": "P09_H_AUTHORITY_NARRATIVE_C04",
+    "base_case": "C04",
+    "manipulated_variable": "authoritative statement strength",
+    "variants": [
+      {
+        "name": "no_official_claim",
+        "statement": null
+      },
+      {
+        "name": "strong_official_claim",
+        "statement": "certificate renewal caused outage"
+      }
+    ],
+    "expected_behavior": "Objective root-cause status does not change."
+  },
+  {
+    "perturbation_id": "P09_I_RETROSPECTIVE_C04",
+    "base_case": "C04",
+    "manipulated_variable": "later confident reinterpretation",
+    "variants": [
+      {
+        "name": "absent",
+        "later_claim": false
+      },
+      {
+        "name": "present",
+        "later_claim": true
+      }
+    ],
+    "expected_behavior": "Historical evidence state remains unchanged."
+  },
+  {
+    "perturbation_id": "P09_J_FACTOR_REMOVAL_C02",
+    "base_case": "C02",
+    "manipulated_variable": "joint contributing factors",
+    "variants": [
+      {
+        "name": "thermal_plus_race",
+        "thermal": true,
+        "race": true,
+        "reset": true
+      },
+      {
+        "name": "thermal_only",
+        "thermal": true,
+        "race": false,
+        "reset": false
+      },
+      {
+        "name": "race_only",
+        "thermal": false,
+        "race": true,
+        "reset": false
+      },
+      {
+        "name": "neither",
+        "thermal": false,
+        "race": false,
+        "reset": false
+      }
+    ],
+    "expected_behavior": "Supports joint contribution and lack of single-factor sufficiency in tested conditions."
+  },
+  {
+    "perturbation_id": "P09_K_LONG_RANGE_PRECURSOR_C04",
+    "base_case": "C04",
+    "manipulated_variable": "temporal distance of dependency-cycle introduction",
+    "variants": [
+      {
+        "name": "1d_before",
+        "offset": "P1D"
+      },
+      {
+        "name": "30d_before",
+        "offset": "P30D"
+      },
+      {
+        "name": "150d_before",
+        "offset": "P150D"
+      }
+    ],
+    "expected_behavior": "Causal relevance persists when mechanistic lineage is preserved."
+  }
+]

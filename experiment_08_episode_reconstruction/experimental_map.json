@@ -1,0 +1,149 @@
+[
+  {
+    "trap_id": "T08_01",
+    "episode_ids": [
+      "EP06"
+    ],
+    "manipulated_variable": "inactivity interval between pause and resumption",
+    "controlled_variables": [
+      "participants",
+      "goal",
+      "hardware dependency",
+      "resumption wording",
+      "artifact identities"
+    ],
+    "expected_partition": "Episode partition remains one EP06 in all variants.",
+    "expected_relationships": [],
+    "naive_failure": "Fixed timeout splits long-gap variants.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_02",
+    "episode_ids": [
+      "EP06"
+    ],
+    "manipulated_variable": "presence of independent new trigger before later work",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "New independent trigger converts later cluster into a related but distinct episode.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_03",
+    "episode_ids": [
+      "EP08"
+    ],
+    "manipulated_variable": "artifact fragmentation",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "Episode membership unchanged.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_04",
+    "episode_ids": [
+      "EP04",
+      "EP05"
+    ],
+    "manipulated_variable": "shared work-item container",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "Two episodes remain distinct.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_05",
+    "episode_ids": [
+      "EP03",
+      "EP07"
+    ],
+    "manipulated_variable": "lexical overlap",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "Do not merge EP03 and EP07.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_06",
+    "episode_ids": [
+      "EP06"
+    ],
+    "manipulated_variable": "terminology shift",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "One episode in both.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_07",
+    "episode_ids": [
+      "EP01"
+    ],
+    "manipulated_variable": "amount of unrelated interleaved work",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "EP01 membership unchanged.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_08",
+    "episode_ids": [
+      "EP10"
+    ],
+    "manipulated_variable": "purpose of late activity",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "Relationship type changes while topical similarity remains high.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_09",
+    "episode_ids": [
+      "EP06",
+      "EP10"
+    ],
+    "manipulated_variable": "instance identity",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "Only new-trigger variant should split into a separate episode.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  },
+  {
+    "trap_id": "T08_10",
+    "episode_ids": [
+      "EP08"
+    ],
+    "manipulated_variable": "one connective trace removed",
+    "controlled_variables": [
+      "all story facts except manipulated variable"
+    ],
+    "expected_partition": "Graceful degradation from confident membership to ambiguity, not automatic split.",
+    "expected_relationships": [],
+    "naive_failure": "Overfit to temporal, lexical, or artifact-level cues.",
+    "metric": "merge/split/membership robustness"
+  }
+]
