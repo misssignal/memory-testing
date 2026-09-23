@@ -4,7 +4,7 @@
     {
       "path": "id_mapping.json",
       "bytes": 1163,
-      "sha256": "0b0426c543dcfe78350766da009c2d67d7b3cc4f06ddc277abb7f0d164d587a4"
+      "sha256": "ae26b54e68e63b9011e68fa8b72c3f2909beeaa0ee0ebf6cfe6479105509254c"
     },
     {
       "path": "ingestion_chronological.jsonl",
@@ -22,9 +22,14 @@
       "sha256": "d3a8a762f2d65116c4a93be952b7da799a963bfd312bdc6ca9395e5f777d9459"
     },
     {
+      "path": "manifest.json",
+      "bytes": 1447,
+      "sha256": "b4b56d1b540e18e04e4117445b59a517ee7f8ea054b5b6053991fbadb7e97479"
+    },
+    {
       "path": "memories.jsonl",
-      "bytes": 29464,
-      "sha256": "03e4a8e57d7e76feef6b6d0997e40a03ec8b68a3334ce1a3b9f639667286975e"
+      "bytes": 170073,
+      "sha256": "6fb429c0990370d755800bca52d47f85d10c31ed81d03bea93a726c29fc6c9ad"
     },
     {
       "path": "provenance.json",
@@ -33,8 +38,8 @@
     },
     {
       "path": "queries.jsonl",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "bytes": 50020,
+      "sha256": "b2b4f6cb560a3164fc0b3eb6a324d29b28d3768332110190bfb40eafb67f2189"
     },
     {
       "path": "truth_state.json",

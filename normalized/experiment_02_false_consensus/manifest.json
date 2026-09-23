@@ -3,8 +3,8 @@
   "files": [
     {
       "path": "extensions.jsonl",
-      "bytes": 3358,
-      "sha256": "25c3301de73ca90f445c1ea79d327a9a0a7ee43b810deda2032e6f8e326c1059"
+      "bytes": 12933,
+      "sha256": "98bd0bc85934a1addebfc8a141f65da10ac44e3ac8dde4fbdced81e4f41dc01e"
     },
     {
       "path": "id_mapping.json",
@@ -12,9 +12,14 @@
       "sha256": "8be498a5a8eb324e2ef1b06cb6aa92d59e647f60d0b52bf516e9b46620cb6d30"
     },
     {
+      "path": "manifest.json",
+      "bytes": 1110,
+      "sha256": "7a5f0cec2b0b3f97686115ea40f3873ee842999bfefc050953312af1a9bb146d"
+    },
+    {
       "path": "memories.jsonl",
-      "bytes": 28805,
-      "sha256": "33cd739c25896bb3fd4e21cd69371e4d6c21704f8f92b32af86f647d5160383e"
+      "bytes": 166787,
+      "sha256": "5211948858a1738ec4f25c5e8e01f6546715ab509ec260bde3d000ea56fdf001"
     },
     {
       "path": "provenance.json",
@@ -23,8 +28,8 @@
     },
     {
       "path": "queries.jsonl",
-      "bytes": 0,
-      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      "bytes": 52934,
+      "sha256": "346d5e91b8a61f86cfce2ada21a541d3431f5b765c896c6b1b5de68443b11056"
     },
     {
       "path": "truth_state.json",
