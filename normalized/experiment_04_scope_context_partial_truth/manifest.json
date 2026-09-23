@@ -1,0 +1,55 @@
+{
+  "experiment": "exp04_scope_context_partial_truth",
+  "files": [
+    {
+      "path": "extensions.jsonl",
+      "bytes": 118439,
+      "sha256": "9450eeabff1797b3f6a7bec35b9c72e7ca259b18c8af7e7bf1329eaa83b593b5"
+    },
+    {
+      "path": "id_mapping.json",
+      "bytes": 8595,
+      "sha256": "fe24b79a7c7674a7bc695d81a66145fb462941ec88a3c7d8d2b066fed062479b"
+    },
+    {
+      "path": "ingestion_chronological.jsonl",
+      "bytes": 271436,
+      "sha256": "f77641390aa62d1a2d94323d3a683dc02048983f101256beb0c6bf398fe2a9ce"
+    },
+    {
+      "path": "ingestion_late_arrival.jsonl",
+      "bytes": 271436,
+      "sha256": "b2877a114882292651d955bd5042f8dc2bc0343155603ce8c24f320d12255813"
+    },
+    {
+      "path": "ingestion_shuffled.jsonl",
+      "bytes": 271436,
+      "sha256": "0a31c1a478f0893f2ea48d599d8013e5d24e60601a1b78b0f0a02c3b1eb176ff"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 185597,
+      "sha256": "3c49998ae81e252c9af71ca4041bc6697f40ed13878d9e500a69aa516dd8b9ab"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 35711,
+      "sha256": "03fc14ea264cb2682d2702a0859580182fede9dc7a66536774ceab111c3f4d6b"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 57999,
+      "sha256": "f45325249273f2e938cee33e3fcf0fcfb9e71e4c50f6576f3e524cd035f828dc"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 30705,
+      "sha256": "68ce6e67d509f108d3db118e254005aef31818d285990dcf04b743780ccfc6e8"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 27986,
+      "sha256": "fdb5c19d35568001e4accb709549fbfbac56300ea300808d77d1655a1123bcd5"
+    }
+  ]
+}

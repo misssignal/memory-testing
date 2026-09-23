@@ -1,0 +1,40 @@
+{
+  "story_id": "nightglass_festival",
+  "as_of": "2026-09-03",
+  "claims": {
+    "south_yard_permitted_occupancy": {
+      "value": 12400,
+      "root": "ROOT-12400"
+    },
+    "18000_claim": {
+      "value": "false as current/permitted capacity",
+      "lineage": "ROOT-18000"
+    },
+    "vendor_ingress": [
+      {
+        "interval": [
+          null,
+          "2026-07-30"
+        ],
+        "value": "Gate C"
+      },
+      {
+        "interval": [
+          "2026-07-31",
+          null
+        ],
+        "value": "Gate F"
+      }
+    ],
+    "east_hydrant_low_pressure": {
+      "value": "confirmed on 2026-08-11",
+      "independent_roots": [
+        "ROOT-W1",
+        "ROOT-W2",
+        "ROOT-W3",
+        "ROOT-W4",
+        "ROOT-W5"
+      ]
+    }
+  }
+}

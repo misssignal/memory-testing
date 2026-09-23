@@ -1,0 +1,1431 @@
+{
+  "story_id": "two_harbors",
+  "identity_resolution_states": [
+    "resolved",
+    "ambiguous",
+    "corrected",
+    "historically_named",
+    "temporally_reused"
+  ],
+  "entities": [
+    {
+      "canonical_id": "person_0017",
+      "canonical_name": "Alex Chen",
+      "entity_type": "person",
+      "aliases": [
+        "Alex Chen",
+        "Alex",
+        "A. Chen",
+        "alexchen",
+        "achen",
+        "alex@breakwater.dev",
+        "alex@harborproject.org"
+      ],
+      "valid_alias_intervals": {
+        "achen": [
+          "2022-01-01",
+          "2025-12-31"
+        ],
+        "alexchen": [
+          "2022-01-01",
+          null
+        ]
+      },
+      "parent_entity": null,
+      "related_entities": [
+        "org_0001",
+        "project_0001",
+        "project_0003"
+      ],
+      "created_at": "1989-04-14",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0032",
+      "canonical_name": "Alexander Chen",
+      "entity_type": "person",
+      "aliases": [
+        "Alexander Chen",
+        "Alex Chen",
+        "Alex",
+        "A. Chen",
+        "achen",
+        "alex-c",
+        "alexander.chen@breakwater.dev",
+        "alexander.chen@northline.example"
+      ],
+      "valid_alias_intervals": {
+        "achen": [
+          "2023-02-01",
+          "2025-08-31"
+        ],
+        "alex-c": [
+          "2024-01-01",
+          null
+        ]
+      },
+      "parent_entity": null,
+      "related_entities": [
+        "org_0001",
+        "org_0002",
+        "project_0001",
+        "project_0002"
+      ],
+      "created_at": "1991-09-02",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0064",
+      "canonical_name": "Alexandra Chen",
+      "entity_type": "person",
+      "aliases": [
+        "Alexandra Chen",
+        "Alex Chen",
+        "Alex",
+        "A. Chen",
+        "achen",
+        "alexc",
+        "alexandra.chen@northline.example"
+      ],
+      "valid_alias_intervals": {
+        "achen": [
+          "2026-03-01",
+          null
+        ]
+      },
+      "parent_entity": null,
+      "related_entities": [
+        "org_0002",
+        "project_0002"
+      ],
+      "created_at": "1994-06-22",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0081",
+      "canonical_name": "Jordan Lee",
+      "entity_type": "person",
+      "aliases": [
+        "Jordan Lee",
+        "J. Lee",
+        "jlee",
+        "leej"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [
+        "project_0001"
+      ],
+      "created_at": "1990-02-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0082",
+      "canonical_name": "Jordan Leigh",
+      "entity_type": "person",
+      "aliases": [
+        "Jordan Leigh",
+        "J. Leigh",
+        "jleigh",
+        "J. Lee (typo)"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [
+        "project_0001"
+      ],
+      "created_at": "1988-11-19",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0103",
+      "canonical_name": "Priya Natarajan",
+      "entity_type": "person",
+      "aliases": [
+        "Priya",
+        "Priya Natarajan",
+        "pnatarajan"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [
+        "project_0001"
+      ],
+      "created_at": "1987-05-08",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0108",
+      "canonical_name": "Mateo Ruiz",
+      "entity_type": "person",
+      "aliases": [
+        "Mateo",
+        "Mateo Ruiz",
+        "mruiz",
+        "the maintainer"
+      ],
+      "valid_alias_intervals": {
+        "the maintainer": [
+          "2027-02-01",
+          null
+        ]
+      },
+      "parent_entity": null,
+      "related_entities": [
+        "project_0003"
+      ],
+      "created_at": "1992-03-13",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0110",
+      "canonical_name": "Dana Okafor",
+      "entity_type": "person",
+      "aliases": [
+        "Dana",
+        "D. Okafor",
+        "VP Platform"
+      ],
+      "valid_alias_intervals": {
+        "VP Platform": [
+          "2025-01-01",
+          null
+        ]
+      },
+      "parent_entity": null,
+      "related_entities": [
+        "org_0002"
+      ],
+      "created_at": "1979-07-11",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0115",
+      "canonical_name": "Sam Rivera",
+      "entity_type": "person",
+      "aliases": [
+        "Sam Rivera",
+        "Sam",
+        "S. Rivera",
+        "srivera"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [
+        "project_0002"
+      ],
+      "created_at": "1990-08-24",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "person_0116",
+      "canonical_name": "Samuel Rivera",
+      "entity_type": "person",
+      "aliases": [
+        "Samuel Rivera",
+        "Sam Rivera",
+        "Sam",
+        "S. Rivera",
+        "samr"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [
+        "project_0003"
+      ],
+      "created_at": "1986-01-17",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "org_0001",
+      "canonical_name": "Breakwater Labs",
+      "entity_type": "organization",
+      "aliases": [
+        "Breakwater",
+        "Breakwater Labs"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [
+        "org_0002",
+        "project_0001"
+      ],
+      "created_at": "2021-03-01",
+      "retired_at": "2026-01-31"
+    },
+    {
+      "canonical_id": "org_0002",
+      "canonical_name": "Northline Systems",
+      "entity_type": "organization",
+      "aliases": [
+        "Northline",
+        "Northline Systems"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [
+        "org_0001",
+        "project_0002"
+      ],
+      "created_at": "2014-01-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "org_0003",
+      "canonical_name": "Harbor Foundation",
+      "entity_type": "organization",
+      "aliases": [
+        "Harbor Foundation",
+        "the Foundation"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [
+        "project_0003"
+      ],
+      "created_at": "2026-02-15",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "project_0001",
+      "canonical_name": "Harbor",
+      "entity_type": "project",
+      "aliases": [
+        "Harbor",
+        "Harbor Project",
+        "harbor",
+        "Anchor"
+      ],
+      "valid_alias_intervals": {
+        "Anchor": [
+          "2022-03-01",
+          "2023-06-30"
+        ]
+      },
+      "parent_entity": null,
+      "related_entities": [
+        "project_0002",
+        "project_0003"
+      ],
+      "created_at": "2022-02-01",
+      "retired_at": "2025-10-01"
+    },
+    {
+      "canonical_id": "project_0002",
+      "canonical_name": "Northstar",
+      "entity_type": "project",
+      "aliases": [
+        "Northstar",
+        "Northstar Platform",
+        "Harbor Enterprise",
+        "Harbor"
+      ],
+      "valid_alias_intervals": {
+        "Harbor Enterprise": [
+          "2025-04-01",
+          "2025-06-30"
+        ],
+        "Harbor": [
+          "2025-04-01",
+          "2026-03-31"
+        ]
+      },
+      "parent_entity": "project_0001",
+      "related_entities": [
+        "project_0004",
+        "project_0005"
+      ],
+      "created_at": "2025-04-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "project_0003",
+      "canonical_name": "Harbor Community",
+      "entity_type": "project",
+      "aliases": [
+        "Harbor Community",
+        "Community Harbor",
+        "Harbor CE",
+        "Harbor"
+      ],
+      "valid_alias_intervals": {
+        "Harbor": [
+          "2025-10-01",
+          null
+        ]
+      },
+      "parent_entity": "project_0001",
+      "related_entities": [
+        "org_0003"
+      ],
+      "created_at": "2025-10-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "project_0004",
+      "canonical_name": "Northstar Next",
+      "entity_type": "project",
+      "aliases": [
+        "Northstar Next",
+        "Northstar 2",
+        "NS2",
+        "N2",
+        "Harbor 2"
+      ],
+      "valid_alias_intervals": {
+        "Harbor 2": [
+          "2026-03-01",
+          "2027-06-30"
+        ]
+      },
+      "parent_entity": "project_0002",
+      "related_entities": [
+        "project_0005"
+      ],
+      "created_at": "2026-03-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "project_0005",
+      "canonical_name": "Northstar Classic",
+      "entity_type": "project_generation",
+      "aliases": [
+        "Northstar Classic",
+        "Classic"
+      ],
+      "valid_alias_intervals": {
+        "Northstar Classic": [
+          "2026-07-01",
+          null
+        ]
+      },
+      "parent_entity": "project_0002",
+      "related_entities": [
+        "project_0004"
+      ],
+      "created_at": "2026-07-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "service_0021",
+      "canonical_name": "Harbor Deploy Service",
+      "entity_type": "service",
+      "aliases": [
+        "Harbor Deploy",
+        "Deploy Service",
+        "Dock"
+      ],
+      "valid_alias_intervals": {
+        "Dock": [
+          "2023-05-01",
+          "2026-12-31"
+        ]
+      },
+      "parent_entity": "project_0001",
+      "related_entities": [
+        "project_0002",
+        "project_0003"
+      ],
+      "created_at": "2023-05-01",
+      "retired_at": "2027-01-15"
+    },
+    {
+      "canonical_id": "service_0079",
+      "canonical_name": "Northline Artifact Gateway",
+      "entity_type": "service",
+      "aliases": [
+        "Artifact Gateway",
+        "Package Gateway",
+        "Dock"
+      ],
+      "valid_alias_intervals": {
+        "Dock": [
+          "2027-04-01",
+          null
+        ]
+      },
+      "parent_entity": "org_0002",
+      "related_entities": [
+        "project_0002"
+      ],
+      "created_at": "2027-03-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "project_0201",
+      "canonical_name": "Harbour",
+      "entity_type": "project",
+      "aliases": [
+        "Harbour"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [],
+      "created_at": "2020-01-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "project_0202",
+      "canonical_name": "NorthStar HR",
+      "entity_type": "project",
+      "aliases": [
+        "NorthStar",
+        "NorthStar HR"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": "org_0002",
+      "related_entities": [],
+      "created_at": "2024-01-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "org_0203",
+      "canonical_name": "Northstar Labs",
+      "entity_type": "organization",
+      "aliases": [
+        "Northstar Labs"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [],
+      "created_at": "2022-01-01",
+      "retired_at": null
+    },
+    {
+      "canonical_id": "protocol_0204",
+      "canonical_name": "HARBOR protocol",
+      "entity_type": "protocol",
+      "aliases": [
+        "HARBOR",
+        "HARBOR protocol"
+      ],
+      "valid_alias_intervals": {},
+      "parent_entity": null,
+      "related_entities": [],
+      "created_at": "2023-09-01",
+      "retired_at": null
+    }
+  ],
+  "timeline": [
+    {
+      "event_id": "E03-01",
+      "date": "2022-02-01",
+      "title": "Harbor begins",
+      "ground_truth": "Breakwater publishes Harbor; person_0017 is a founding contributor."
+    },
+    {
+      "event_id": "E03-02",
+      "date": "2022-05-01",
+      "title": "Anchor nickname",
+      "ground_truth": "Internal staff briefly call Harbor 'Anchor'."
+    },
+    {
+      "event_id": "E03-03",
+      "date": "2023-02-01",
+      "title": "Alexander joins",
+      "ground_truth": "person_0032 joins Harbor, creating same-name overlap."
+    },
+    {
+      "event_id": "E03-04",
+      "date": "2023-05-01",
+      "title": "Dock created",
+      "ground_truth": "Harbor Deploy Service gains nickname Dock."
+    },
+    {
+      "event_id": "E03-05",
+      "date": "2023-09-18",
+      "title": "A. Chen ambiguity",
+      "ground_truth": "Architecture proposal signed A. Chen cannot be resolved between person_0017 and person_0032."
+    },
+    {
+      "event_id": "E03-06",
+      "date": "2024-01-15",
+      "title": "Release lead",
+      "ground_truth": "person_0017 becomes Harbor release lead."
+    },
+    {
+      "event_id": "E03-07",
+      "date": "2024-03-10",
+      "title": "Storage redesign",
+      "ground_truth": "person_0032 leads storage redesign."
+    },
+    {
+      "event_id": "E03-08",
+      "date": "2024-06-20",
+      "title": "Jordan typo",
+      "ground_truth": "Release notes misattribute security review to Jordan Lee."
+    },
+    {
+      "event_id": "E03-09",
+      "date": "2024-06-22",
+      "title": "Jordan correction",
+      "ground_truth": "Audit correction names Jordan Leigh."
+    },
+    {
+      "event_id": "E03-10",
+      "date": "2025-03-15",
+      "title": "Acquisition",
+      "ground_truth": "Northline announces acquisition of Breakwater."
+    },
+    {
+      "event_id": "E03-11",
+      "date": "2025-04-10",
+      "title": "Harbor Enterprise",
+      "ground_truth": "Commercial continuation temporarily named Harbor Enterprise."
+    },
+    {
+      "event_id": "E03-12",
+      "date": "2025-07-01",
+      "title": "Northstar rename",
+      "ground_truth": "Harbor Enterprise renamed Northstar."
+    },
+    {
+      "event_id": "E03-13",
+      "date": "2025-08-15",
+      "title": "Governance dispute",
+      "ground_truth": "Licensing and governance dispute escalates."
+    },
+    {
+      "event_id": "E03-14",
+      "date": "2025-10-01",
+      "title": "Fork point",
+      "ground_truth": "Northstar and Harbor Community diverge from common Harbor ancestry."
+    },
+    {
+      "event_id": "E03-15",
+      "date": "2025-10-20",
+      "title": "Original Alex leaves",
+      "ground_truth": "person_0017 leaves Northline."
+    },
+    {
+      "event_id": "E03-16",
+      "date": "2025-11-01",
+      "title": "Alexander maintainer",
+      "ground_truth": "person_0032 becomes Northstar maintainer."
+    },
+    {
+      "event_id": "E03-17",
+      "date": "2026-02-15",
+      "title": "Foundation formed",
+      "ground_truth": "Harbor Foundation formed."
+    },
+    {
+      "event_id": "E03-18",
+      "date": "2026-02-20",
+      "title": "Original Alex returns",
+      "ground_truth": "person_0017 joins Harbor Community."
+    },
+    {
+      "event_id": "E03-19",
+      "date": "2026-03-01",
+      "title": "Alexandra joins",
+      "ground_truth": "person_0064 joins Northline and receives recycled achen username."
+    },
+    {
+      "event_id": "E03-20",
+      "date": "2026-03-15",
+      "title": "Northstar Next",
+      "ground_truth": "Northstar Next begins; some staff call it Harbor 2."
+    },
+    {
+      "event_id": "E03-21",
+      "date": "2027-01-15",
+      "title": "Old Dock retired",
+      "ground_truth": "Harbor Deploy Service retired from supported Northstar."
+    },
+    {
+      "event_id": "E03-22",
+      "date": "2027-04-01",
+      "title": "Dock reused",
+      "ground_truth": "Northline Artifact Gateway takes nickname Dock."
+    },
+    {
+      "event_id": "E03-23",
+      "date": "2027-07-08",
+      "title": "Wrong Dock outage",
+      "ground_truth": "Old Harbor Dock runbook is applied to the new Dock during an incident."
+    },
+    {
+      "event_id": "E03-24",
+      "date": "2028-02-01",
+      "title": "Interop agreement",
+      "ground_truth": "Northstar and Harbor Community share deployment protocol work without merging projects."
+    }
+  ],
+  "facts": [
+    {
+      "fid": "F03-001",
+      "date": "2022-02-01",
+      "subj": "person_0017",
+      "subject": "Alex Chen",
+      "pred": "founded",
+      "obj": "Harbor",
+      "truth": "globally_true",
+      "scope": {
+        "project": "project_0001",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "A",
+      "canonical": "Alex Chen, the founding Harbor contributor was a founding Harbor contributor.",
+      "aliases": [
+        "Alex Chen"
+      ],
+      "forbidden_generalization": "Alexander Chen founded Harbor."
+    },
+    {
+      "fid": "F03-002",
+      "date": "2023-02-01",
+      "subj": "person_0032",
+      "subject": "Alexander Chen",
+      "pred": "joined",
+      "obj": "Harbor",
+      "truth": "globally_true",
+      "scope": {
+        "project": "project_0001",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "A",
+      "canonical": "Alexander Chen, the later Harbor storage lead joined Harbor in 2023.",
+      "aliases": [
+        "Alexander Chen",
+        "Alex Chen"
+      ],
+      "forbidden_generalization": "The original Alex Chen joined Harbor in 2023."
+    },
+    {
+      "fid": "F03-003",
+      "date": "2024-01-15",
+      "subj": "person_0017",
+      "subject": "Alex Chen",
+      "pred": "held_role",
+      "obj": "release lead",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0001",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "F",
+      "canonical": "Alex Chen, the founding Harbor contributor was Harbor release lead in 2024.",
+      "aliases": [
+        "Alex Chen",
+        "release lead"
+      ],
+      "forbidden_generalization": "Alexander Chen was Harbor release lead in 2024."
+    },
+    {
+      "fid": "F03-004",
+      "date": "2024-03-10",
+      "subj": "person_0032",
+      "subject": "Alexander Chen",
+      "pred": "led",
+      "obj": "storage redesign",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0001",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "A",
+      "canonical": "Alexander Chen, the later Harbor storage lead led Harbor's 2024 storage redesign.",
+      "aliases": [
+        "Alexander Chen",
+        "Alex Chen"
+      ],
+      "forbidden_generalization": "Alex Chen, the founding Harbor contributor led the 2024 storage redesign."
+    },
+    {
+      "fid": "F03-005",
+      "date": "2023-09-18",
+      "subj": null,
+      "subject": "A. Chen",
+      "pred": "authored",
+      "obj": "2023 architecture proposal",
+      "truth": "unresolved",
+      "scope": {
+        "project": "project_0001",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "I",
+      "canonical": "Authorship is unresolved between Alex Chen, the founding Harbor contributor and Alexander Chen, the later Harbor storage lead.",
+      "aliases": [
+        "A. Chen"
+      ],
+      "forbidden_generalization": "The proposal was definitely authored by Alex Chen, the founding Harbor contributor."
+    },
+    {
+      "fid": "F03-006",
+      "date": "2024-06-20",
+      "subj": "person_0082",
+      "subject": "Jordan Leigh",
+      "pred": "performed",
+      "obj": "security review",
+      "truth": "corrected",
+      "scope": {
+        "project": "project_0001",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "I",
+      "canonical": "Jordan Leigh performed the 2024 security review; Jordan Lee was a corrected misattribution.",
+      "aliases": [
+        "Jordan Leigh",
+        "J. Lee"
+      ],
+      "forbidden_generalization": "Jordan Lee performed the review."
+    },
+    {
+      "fid": "F03-007",
+      "date": "2025-07-01",
+      "subj": "project_0002",
+      "subject": "Northstar",
+      "pred": "renamed_from",
+      "obj": "Harbor Enterprise",
+      "truth": "globally_true",
+      "scope": {
+        "project": "project_0002",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "B",
+      "canonical": "Harbor Enterprise was renamed Northstar in July 2025.",
+      "aliases": [
+        "Northstar",
+        "Harbor Enterprise"
+      ],
+      "forbidden_generalization": "Northstar and Harbor Enterprise were separate products."
+    },
+    {
+      "fid": "F03-008",
+      "date": "2025-10-01",
+      "subj": "project_0003",
+      "subject": "Harbor Community",
+      "pred": "forked_from",
+      "obj": "Harbor",
+      "truth": "globally_true",
+      "scope": {
+        "project": "project_0003",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "C",
+      "canonical": "Harbor Community forked from the common Harbor lineage in October 2025.",
+      "aliases": [
+        "Harbor Community",
+        "Harbor"
+      ],
+      "forbidden_generalization": "Harbor Community is simply another name for Northstar."
+    },
+    {
+      "fid": "F03-009",
+      "date": "2025-10-01",
+      "subj": "project_0002",
+      "subject": "Northstar",
+      "pred": "continued_from",
+      "obj": "Harbor",
+      "truth": "globally_true",
+      "scope": {
+        "project": "project_0002",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "C",
+      "canonical": "Northstar is the corporate continuation of Harbor after the split.",
+      "aliases": [
+        "Northstar",
+        "Harbor"
+      ],
+      "forbidden_generalization": "All post-2025 Harbor Community facts also apply to Northstar."
+    },
+    {
+      "fid": "F03-010",
+      "date": "2025-11-01",
+      "subj": "person_0032",
+      "subject": "Alexander Chen",
+      "pred": "held_role",
+      "obj": "Northstar maintainer",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0002",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "F",
+      "canonical": "Alexander Chen, the later Harbor storage lead became Northstar maintainer in November 2025.",
+      "aliases": [
+        "Alexander Chen",
+        "the maintainer"
+      ],
+      "forbidden_generalization": "Alex Chen, the founding Harbor contributor became Northstar maintainer."
+    },
+    {
+      "fid": "F03-011",
+      "date": "2026-02-20",
+      "subj": "person_0017",
+      "subject": "Alex Chen",
+      "pred": "joined",
+      "obj": "Harbor Community",
+      "truth": "globally_true",
+      "scope": {
+        "project": "project_0003",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "A",
+      "canonical": "Alex Chen, the founding Harbor contributor joined Harbor Community in 2026.",
+      "aliases": [
+        "Alex Chen"
+      ],
+      "forbidden_generalization": "Alexander Chen joined Harbor Community in 2026."
+    },
+    {
+      "fid": "F03-012",
+      "date": "2026-03-01",
+      "subj": "person_0064",
+      "subject": "Alexandra Chen",
+      "pred": "uses_identifier",
+      "obj": "achen",
+      "truth": "scoped_true",
+      "scope": {
+        "project": null,
+        "team": "Northline identity",
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "E",
+      "canonical": "The Northline achen account refers to Alexandra Chen from March 2026 onward.",
+      "aliases": [
+        "Alexandra Chen",
+        "achen"
+      ],
+      "forbidden_generalization": "achen always refers to Alex Chen, the founding Harbor contributor."
+    },
+    {
+      "fid": "F03-013",
+      "date": "2023-05-01",
+      "subj": "service_0021",
+      "subject": "Harbor Deploy Service",
+      "pred": "has_alias",
+      "obj": "Dock",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0001",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "E",
+      "canonical": "Dock referred to Harbor Deploy Service during 2023-2026.",
+      "aliases": [
+        "Dock"
+      ],
+      "forbidden_generalization": "Dock always refers to the Northline Artifact Gateway."
+    },
+    {
+      "fid": "F03-014",
+      "date": "2027-04-01",
+      "subj": "service_0079",
+      "subject": "Northline Artifact Gateway",
+      "pred": "has_alias",
+      "obj": "Dock",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0002",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "E",
+      "canonical": "Dock refers to Northline Artifact Gateway from 2027 onward in Northline operational context.",
+      "aliases": [
+        "Dock"
+      ],
+      "forbidden_generalization": "Dock in 2027 still necessarily means Harbor Deploy Service."
+    },
+    {
+      "fid": "F03-015",
+      "date": "2027-07-08",
+      "subj": "service_0079",
+      "subject": "Dock",
+      "pred": "incident_target",
+      "obj": "artifact gateway outage",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0002",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "E",
+      "canonical": "The 2027 Dock outage involved the Northline Artifact Gateway, not the retired Harbor Deploy Service.",
+      "aliases": [
+        "Dock"
+      ],
+      "forbidden_generalization": "The 2027 Dock outage was a Harbor Deploy Service failure."
+    },
+    {
+      "fid": "F03-016",
+      "date": "2026-03-15",
+      "subj": "project_0004",
+      "subject": "Northstar Next",
+      "pred": "related_to",
+      "obj": "Northstar",
+      "truth": "globally_true",
+      "scope": {
+        "project": "project_0004",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "G",
+      "canonical": "Northstar Next is a related redesign/successor effort, not simply the same codebase as Northstar Classic.",
+      "aliases": [
+        "Northstar Next",
+        "Northstar 2",
+        "NS2",
+        "Harbor 2"
+      ],
+      "forbidden_generalization": "Northstar Next is merely a version number of Northstar Classic."
+    },
+    {
+      "fid": "F03-017",
+      "date": "2026-07-01",
+      "subj": "project_0005",
+      "subject": "Northstar Classic",
+      "pred": "retrospective_name_for",
+      "obj": "Northstar legacy line",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0002",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "B",
+      "canonical": "Northstar Classic is a retrospective name introduced in 2026 for the earlier Northstar line.",
+      "aliases": [
+        "Northstar Classic",
+        "Classic"
+      ],
+      "forbidden_generalization": "Contemporary 2025 documents called the product Northstar Classic."
+    },
+    {
+      "fid": "F03-018",
+      "date": "2028-02-01",
+      "subj": "project_0002",
+      "subject": "Northstar",
+      "pred": "shares",
+      "obj": "deployment protocol governance with Harbor Community",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "deployment protocol",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "D",
+      "canonical": "Northstar and Harbor Community share governance of selected deployment protocol work after 2028; the projects did not merge.",
+      "aliases": [
+        "Northstar",
+        "Harbor Community",
+        "Harbor"
+      ],
+      "forbidden_generalization": "Northstar and Harbor Community merged into one project."
+    },
+    {
+      "fid": "F03-019",
+      "date": "2024-01-01",
+      "subj": "project_0202",
+      "subject": "NorthStar HR",
+      "pred": "is_unrelated_to",
+      "obj": "Northstar Platform",
+      "truth": "globally_true",
+      "scope": {
+        "project": null,
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "H",
+      "canonical": "NorthStar HR is unrelated to the Northstar infrastructure platform despite the similar name.",
+      "aliases": [
+        "NorthStar"
+      ],
+      "forbidden_generalization": "NorthStar HR is a Northstar Platform subsystem."
+    },
+    {
+      "fid": "F03-020",
+      "date": "2023-09-01",
+      "subj": "protocol_0204",
+      "subject": "HARBOR protocol",
+      "pred": "is_unrelated_to",
+      "obj": "Harbor project",
+      "truth": "globally_true",
+      "scope": {
+        "project": null,
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "H",
+      "canonical": "The HARBOR protocol is unrelated to the Harbor software project.",
+      "aliases": [
+        "HARBOR",
+        "Harbor"
+      ],
+      "forbidden_generalization": "HARBOR protocol belongs to the Harbor project."
+    },
+    {
+      "fid": "F03-021",
+      "date": "2020-01-01",
+      "subj": "project_0201",
+      "subject": "Harbour",
+      "pred": "is_unrelated_to",
+      "obj": "Harbor",
+      "truth": "globally_true",
+      "scope": {
+        "project": null,
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "H",
+      "canonical": "Harbour is an unrelated maritime scheduling project.",
+      "aliases": [
+        "Harbour",
+        "Harbor"
+      ],
+      "forbidden_generalization": "Harbour is an alternate spelling or fork of Harbor."
+    },
+    {
+      "fid": "F03-022",
+      "date": "2027-02-01",
+      "subj": "person_0108",
+      "subject": "Mateo Ruiz",
+      "pred": "held_role",
+      "obj": "Harbor Community maintainer",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0003",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "F",
+      "canonical": "Mateo Ruiz is Harbor Community's maintainer from 2027 onward.",
+      "aliases": [
+        "Mateo Ruiz",
+        "the maintainer"
+      ],
+      "forbidden_generalization": "A reference to 'the maintainer' always means Alexander Chen."
+    },
+    {
+      "fid": "F03-023",
+      "date": "2027-06-01",
+      "subj": "person_0115",
+      "subject": "Sam Rivera",
+      "pred": "worked_on",
+      "obj": "Northstar reliability",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0002",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "A",
+      "canonical": "Sam Rivera worked on Northstar reliability.",
+      "aliases": [
+        "Sam Rivera",
+        "S. Rivera"
+      ],
+      "forbidden_generalization": "Samuel Rivera's Harbor Community work belongs to Sam Rivera."
+    },
+    {
+      "fid": "F03-024",
+      "date": "2027-06-01",
+      "subj": "person_0116",
+      "subject": "Samuel Rivera",
+      "pred": "worked_on",
+      "obj": "Harbor Community interoperability",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "project_0003",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "A",
+      "canonical": "Samuel Rivera worked on Harbor Community interoperability.",
+      "aliases": [
+        "Samuel Rivera",
+        "Sam Rivera",
+        "S. Rivera"
+      ],
+      "forbidden_generalization": "Sam Rivera's Northstar reliability incidents belong to Samuel Rivera."
+    },
+    {
+      "fid": "F03-025",
+      "date": "2024-04-01",
+      "subj": "person_0103",
+      "subject": "Priya Natarajan",
+      "pred": "authored",
+      "obj": "dependency audit",
+      "truth": "globally_true",
+      "scope": {
+        "project": "project_0001",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "CONTROL",
+      "canonical": "Priya Natarajan authored the 2024 dependency audit.",
+      "aliases": [
+        "Priya Natarajan",
+        "pnatarajan"
+      ],
+      "forbidden_generalization": "Someone else authored the dependency audit."
+    }
+  ],
+  "identity_relationships": [
+    {
+      "from": "project_0001",
+      "to": "project_0002",
+      "type": "corporate_continuation_after_split",
+      "valid_from": "2025-10-01"
+    },
+    {
+      "from": "project_0001",
+      "to": "project_0003",
+      "type": "community_fork",
+      "valid_from": "2025-10-01"
+    },
+    {
+      "from": "project_0002",
+      "to": "project_0005",
+      "type": "retrospective_generation_label",
+      "valid_from": "2026-07-01"
+    },
+    {
+      "from": "project_0002",
+      "to": "project_0004",
+      "type": "successor_redesign",
+      "valid_from": "2026-03-15"
+    },
+    {
+      "from": "service_0021",
+      "alias": "Dock",
+      "type": "alias",
+      "valid_from": "2023-05-01",
+      "valid_until": "2026-12-31"
+    },
+    {
+      "from": "service_0079",
+      "alias": "Dock",
+      "type": "alias",
+      "valid_from": "2027-04-01",
+      "valid_until": null
+    },
+    {
+      "alias": "achen",
+      "entity": "person_0017",
+      "type": "identifier",
+      "valid_until": "2025-12-31"
+    },
+    {
+      "alias": "achen",
+      "entity": "person_0064",
+      "type": "identifier",
+      "valid_from": "2026-03-01"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "experiment": "exp10_kestrel_full_corpus",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 19186,
+      "sha256": "abf2f756d7b0108b15f3364b2a2e60add5effcb9029cd13de562e77b5ac3417b"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 406581,
+      "sha256": "f5d6dc6359da591aef71cb296a9b4244f4cdef1db096785de6311a087b517f35"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 1138,
+      "sha256": "2e1299047f960cece6bafdeddf38ebf50c52131ae73ca2162c74e3424c9d2bd0"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 67840,
+      "sha256": "a7625dbbb582488955b68b47a60c98fdb2a947de0c612eab90481ccfe1af4989"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 16903,
+      "sha256": "1f88df45d606d128138e5d2b13408c49578f25f0921d6568d5ba31439b1bbc57"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 1802,
+      "sha256": "7d7139c86ffa816a94d5eb2a5765db322baa1495fde4fcd0992b4fdc69c35fa6"
+    }
+  ]
+}

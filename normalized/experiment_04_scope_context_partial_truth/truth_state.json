@@ -1,0 +1,989 @@
+{
+  "story_id": "aurora_global",
+  "scope_dimensions": {
+    "organization": [
+      "aurora_global",
+      "industrial_systems",
+      "platform_engineering",
+      "edge_systems",
+      "data_operations",
+      "site_reliability",
+      "compliance"
+    ],
+    "system": [
+      "relay",
+      "telemetry",
+      "command",
+      "scheduler",
+      "reporting",
+      "beacon",
+      "edge_agent"
+    ],
+    "environment": [
+      "local",
+      "development",
+      "integration",
+      "staging",
+      "production",
+      "offline_rig"
+    ],
+    "platform": [
+      "linux_x86",
+      "linux_arm",
+      "windows_x86",
+      "windows_arm",
+      "embedded_rtos"
+    ],
+    "region": [
+      "north_america",
+      "europe",
+      "asia_pacific"
+    ],
+    "facility": [
+      "detroit",
+      "monterrey",
+      "austin",
+      "stuttgart",
+      "turin",
+      "gothenburg",
+      "nagoya",
+      "seoul",
+      "melbourne"
+    ],
+    "customer_tier": [
+      "trial",
+      "standard",
+      "enterprise",
+      "internal"
+    ],
+    "employment_class": [
+      "employee",
+      "contractor",
+      "vendor"
+    ],
+    "release_channel": [
+      "experimental",
+      "beta",
+      "stable",
+      "lts"
+    ],
+    "authority": [
+      "user",
+      "operator",
+      "administrator",
+      "site_admin",
+      "global_admin"
+    ],
+    "version": "semantic/range"
+  },
+  "scope_state_semantics": [
+    "specified",
+    "global",
+    "unknown",
+    "omitted",
+    "not_applicable"
+  ],
+  "scope_inheritance_semantics": [
+    "exact",
+    "inherited_downward",
+    "exception",
+    "override"
+  ],
+  "entities": [
+    {
+      "canonical_id": "org_1001",
+      "canonical_name": "Aurora Dynamics",
+      "entity_type": "organization"
+    },
+    {
+      "canonical_id": "division_1010",
+      "canonical_name": "Industrial Systems Division",
+      "entity_type": "division"
+    },
+    {
+      "canonical_id": "team_1020",
+      "canonical_name": "Platform Engineering",
+      "entity_type": "team"
+    },
+    {
+      "canonical_id": "team_1021",
+      "canonical_name": "Edge Systems",
+      "entity_type": "team"
+    },
+    {
+      "canonical_id": "team_1022",
+      "canonical_name": "Data Operations",
+      "entity_type": "team"
+    },
+    {
+      "canonical_id": "team_1023",
+      "canonical_name": "Site Reliability",
+      "entity_type": "team"
+    },
+    {
+      "canonical_id": "team_1024",
+      "canonical_name": "Compliance Engineering",
+      "entity_type": "team"
+    },
+    {
+      "canonical_id": "system_1100",
+      "canonical_name": "Relay",
+      "entity_type": "system"
+    },
+    {
+      "canonical_id": "subsystem_1101",
+      "canonical_name": "Relay Telemetry",
+      "entity_type": "subsystem"
+    },
+    {
+      "canonical_id": "subsystem_1102",
+      "canonical_name": "Relay Command",
+      "entity_type": "subsystem"
+    },
+    {
+      "canonical_id": "subsystem_1103",
+      "canonical_name": "Relay Scheduler",
+      "entity_type": "subsystem"
+    },
+    {
+      "canonical_id": "subsystem_1104",
+      "canonical_name": "Relay Reporting",
+      "entity_type": "subsystem"
+    },
+    {
+      "canonical_id": "feature_1110",
+      "canonical_name": "Beacon",
+      "entity_type": "feature"
+    },
+    {
+      "canonical_id": "feature_1111",
+      "canonical_name": "Remote Snapshot",
+      "entity_type": "feature"
+    },
+    {
+      "canonical_id": "component_1120",
+      "canonical_name": "Relay Edge Agent",
+      "entity_type": "component"
+    },
+    {
+      "canonical_id": "person_1201",
+      "canonical_name": "Riley Morgan",
+      "entity_type": "person"
+    },
+    {
+      "canonical_id": "person_1202",
+      "canonical_name": "Maya Patel",
+      "entity_type": "person"
+    },
+    {
+      "canonical_id": "person_1203",
+      "canonical_name": "Jonas Weber",
+      "entity_type": "person"
+    },
+    {
+      "canonical_id": "person_1204",
+      "canonical_name": "Elena Rossi",
+      "entity_type": "person"
+    },
+    {
+      "canonical_id": "person_1205",
+      "canonical_name": "Marcus Hall",
+      "entity_type": "person"
+    },
+    {
+      "canonical_id": "person_1206",
+      "canonical_name": "Yuki Tanaka",
+      "entity_type": "person"
+    },
+    {
+      "canonical_id": "person_1207",
+      "canonical_name": "Claire Dubois",
+      "entity_type": "person"
+    }
+  ],
+  "timeline": [
+    {
+      "event_id": "E04-01",
+      "date": "2025-01-15",
+      "title": "Modernization begins",
+      "ground_truth": "Aurora announces global Relay standardization."
+    },
+    {
+      "event_id": "E04-02",
+      "date": "2025-03-01",
+      "title": "Kafka pilot",
+      "ground_truth": "EU staging Telemetry begins Kafka pilot."
+    },
+    {
+      "event_id": "E04-03",
+      "date": "2025-03-05",
+      "title": "Shorthand",
+      "ground_truth": "Engineer says 'Relay is on Kafka now.'"
+    },
+    {
+      "event_id": "E04-04",
+      "date": "2025-04-01",
+      "title": "SQLite development",
+      "ground_truth": "Selected local development uses SQLite."
+    },
+    {
+      "event_id": "E04-05",
+      "date": "2026-01-10",
+      "title": "EU telemetry production",
+      "ground_truth": "EU production Telemetry moves to Kafka."
+    },
+    {
+      "event_id": "E04-06",
+      "date": "2026-01-10",
+      "title": "NA remains RabbitMQ",
+      "ground_truth": "NA production Telemetry remains RabbitMQ."
+    },
+    {
+      "event_id": "E04-07",
+      "date": "2026-02-01",
+      "title": "Command unchanged",
+      "ground_truth": "Relay Command remains RabbitMQ globally."
+    },
+    {
+      "event_id": "E04-08",
+      "date": "2026-03-15",
+      "title": "APAC NATS bridge",
+      "ground_truth": "Nagoya temporarily uses NATS bridge."
+    },
+    {
+      "event_id": "E04-09",
+      "date": "2026-05-01",
+      "title": "Beacon pilot",
+      "ground_truth": "Beacon launches for enterprise beta users."
+    },
+    {
+      "event_id": "E04-10",
+      "date": "2026-05-15",
+      "title": "Beacon permissions",
+      "ground_truth": "Contractors may diagnose but not administer devices."
+    },
+    {
+      "event_id": "E04-11",
+      "date": "2026-07-01",
+      "title": "EU approvals",
+      "ground_truth": "EU ordinary production deployments require two approvals."
+    },
+    {
+      "event_id": "E04-12",
+      "date": "2026-09-01",
+      "title": "Stuttgart exception",
+      "ground_truth": "Stuttgart gets pre-approved migration window."
+    },
+    {
+      "event_id": "E04-13",
+      "date": "2026-10-15",
+      "title": "Emergency policy",
+      "ground_truth": "Severity-1 hotfixes may receive post-hoc approval."
+    },
+    {
+      "event_id": "E04-14",
+      "date": "2027-02-01",
+      "title": "Relay 4.1",
+      "ground_truth": "Relay 4.1 released."
+    },
+    {
+      "event_id": "E04-15",
+      "date": "2027-02-10",
+      "title": "Windows ARM defect",
+      "ground_truth": "Beacon fails on Windows ARM 4.1 stable."
+    },
+    {
+      "event_id": "E04-16",
+      "date": "2027-02-12",
+      "title": "Folklore",
+      "ground_truth": "Chat condenses issue to 'Beacon is broken on Windows.'"
+    },
+    {
+      "event_id": "E04-17",
+      "date": "2027-02-13",
+      "title": "Workaround",
+      "ground_truth": "Disable Beacon on Windows ARM 4.1."
+    },
+    {
+      "event_id": "E04-18",
+      "date": "2027-03-01",
+      "title": "Overbroad wiki",
+      "ground_truth": "Wiki says 'Disable Beacon on Windows.'"
+    },
+    {
+      "event_id": "E04-19",
+      "date": "2027-04-15",
+      "title": "4.2 fix",
+      "ground_truth": "Relay 4.2 fixes Windows ARM issue."
+    },
+    {
+      "event_id": "E04-20",
+      "date": "2027-06-01",
+      "title": "Vendor EU restriction",
+      "ground_truth": "EU external vendors lose one Beacon admin mode."
+    },
+    {
+      "event_id": "E04-21",
+      "date": "2028-01-10",
+      "title": "NA Kafka",
+      "ground_truth": "NA production Telemetry moves to Kafka."
+    },
+    {
+      "event_id": "E04-22",
+      "date": "2028-01-15",
+      "title": "Migration complete",
+      "ground_truth": "Executive says telemetry Kafka migration is complete."
+    },
+    {
+      "event_id": "E04-23",
+      "date": "2028-03-20",
+      "title": "Turin outage",
+      "ground_truth": "Old Windows workaround is applied to Linux incident."
+    },
+    {
+      "event_id": "E04-24",
+      "date": "2028-03-25",
+      "title": "Postmortem",
+      "ground_truth": "Original workaround found correct only in original scope."
+    },
+    {
+      "event_id": "E04-25",
+      "date": "2028-05-01",
+      "title": "Applicability sections",
+      "ground_truth": "Aurora adds structured applicability fields."
+    },
+    {
+      "event_id": "E04-26",
+      "date": "2028-08-01",
+      "title": "Folklore persists",
+      "ground_truth": "Old unqualified claims remain common."
+    }
+  ],
+  "facts": [
+    {
+      "fid": "F04-001",
+      "date": "2025-03-01",
+      "subj": "subsystem_1101",
+      "subject": "Relay Telemetry",
+      "pred": "uses",
+      "obj": "Kafka",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": "staging",
+        "platform": null,
+        "region": "europe",
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "A",
+      "canonical": "Relay Telemetry uses Kafka in EU staging from March 2025.",
+      "forbidden_generalization": "Relay globally uses Kafka."
+    },
+    {
+      "fid": "F04-002",
+      "date": "2025-04-01",
+      "subj": "system_1100",
+      "subject": "Relay",
+      "pred": "uses",
+      "obj": "SQLite",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": "development",
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "B",
+      "canonical": "Selected Relay development/local configurations use SQLite.",
+      "forbidden_generalization": "Relay production uses SQLite."
+    },
+    {
+      "fid": "F04-003",
+      "date": "2026-01-10",
+      "subj": "subsystem_1101",
+      "subject": "Relay Telemetry",
+      "pred": "uses",
+      "obj": "Kafka",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": "production",
+        "platform": null,
+        "region": "europe",
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "D",
+      "canonical": "EU production Relay Telemetry uses Kafka from January 2026.",
+      "forbidden_generalization": "All global Relay production uses Kafka in January 2026."
+    },
+    {
+      "fid": "F04-004",
+      "date": "2026-01-10",
+      "subj": "subsystem_1101",
+      "subject": "Relay Telemetry",
+      "pred": "uses",
+      "obj": "RabbitMQ",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": "production",
+        "platform": null,
+        "region": "north_america",
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "D",
+      "canonical": "North American production Relay Telemetry still uses RabbitMQ in early 2026.",
+      "forbidden_generalization": "North American production already uses Kafka in early 2026."
+    },
+    {
+      "fid": "F04-005",
+      "date": "2026-02-01",
+      "subj": "subsystem_1102",
+      "subject": "Relay Command",
+      "pred": "uses",
+      "obj": "RabbitMQ",
+      "truth": "globally_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "A",
+      "canonical": "Relay Command remains on RabbitMQ throughout the core migration arc.",
+      "forbidden_generalization": "Relay Command migrated to Kafka with Telemetry."
+    },
+    {
+      "fid": "F04-006",
+      "date": "2026-03-15",
+      "subj": "subsystem_1101",
+      "subject": "Relay Telemetry",
+      "pred": "uses",
+      "obj": "NATS bridge",
+      "truth": "exception",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": "production",
+        "platform": null,
+        "region": "asia_pacific",
+        "facility": "nagoya",
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "G",
+      "canonical": "Nagoya temporarily uses a NATS bridge for Relay Telemetry in 2026.",
+      "forbidden_generalization": "APAC permanently standardized Relay on NATS."
+    },
+    {
+      "fid": "F04-007",
+      "date": "2026-05-01",
+      "subj": "feature_1110",
+      "subject": "Beacon",
+      "pred": "available_to",
+      "obj": "enterprise beta customers",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": "enterprise",
+        "employment_class": null,
+        "release_channel": "beta",
+        "authority": null
+      },
+      "family": "I",
+      "canonical": "Beacon initially launches to enterprise customers on the beta channel.",
+      "forbidden_generalization": "Beacon is immediately available to all Relay customers."
+    },
+    {
+      "fid": "F04-008",
+      "date": "2026-05-15",
+      "subj": "feature_1110",
+      "subject": "Beacon",
+      "pred": "permission",
+      "obj": "contractors may diagnose but not administer",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": "contractor",
+        "release_channel": null,
+        "authority": "operator"
+      },
+      "family": "F",
+      "canonical": "Contractors may use Beacon diagnostics but lack device-administration permission in this policy state.",
+      "forbidden_generalization": "Contractors cannot use Beacon at all."
+    },
+    {
+      "fid": "F04-009",
+      "date": "2026-07-01",
+      "subj": "org_1001",
+      "subject": "EU production deployments",
+      "pred": "require",
+      "obj": "two approvals",
+      "truth": "scoped_true",
+      "scope": {
+        "project": null,
+        "team": null,
+        "environment": "production",
+        "platform": null,
+        "region": "europe",
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "K",
+      "canonical": "Ordinary EU production deployments require two approvals from July 2026.",
+      "forbidden_generalization": "Every Aurora deployment everywhere always requires two approvals."
+    },
+    {
+      "fid": "F04-010",
+      "date": "2026-09-01",
+      "subj": "org_1001",
+      "subject": "Stuttgart migration deployments",
+      "pred": "use",
+      "obj": "pre-approved window",
+      "truth": "exception",
+      "scope": {
+        "project": null,
+        "team": null,
+        "environment": "production",
+        "platform": null,
+        "region": "europe",
+        "facility": "stuttgart",
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "G",
+      "canonical": "Stuttgart has a temporary pre-approved migration window that is an exception to the normal EU approval process.",
+      "forbidden_generalization": "Stuttgart permanently does not require deployment approval."
+    },
+    {
+      "fid": "F04-011",
+      "date": "2026-10-15",
+      "subj": "org_1001",
+      "subject": "severity-1 hotfix",
+      "pred": "may_use",
+      "obj": "post-hoc approval",
+      "truth": "exception",
+      "scope": {
+        "project": null,
+        "team": null,
+        "environment": "production",
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "K",
+      "canonical": "Severity-1 emergency hotfixes may use post-hoc approval; this does not remove the ordinary prior-approval rule.",
+      "forbidden_generalization": "Production deployments no longer need prior approval."
+    },
+    {
+      "fid": "F04-012",
+      "date": "2027-02-10",
+      "subj": "feature_1110",
+      "subject": "Beacon",
+      "pred": "fails_on",
+      "obj": "Windows ARM",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": "windows_arm",
+        "region": null,
+        "facility": null,
+        "version": "4.1",
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": "stable",
+        "authority": null
+      },
+      "family": "C",
+      "canonical": "Beacon handshake failure affects Windows ARM on Relay 4.1 stable.",
+      "forbidden_generalization": "Beacon is broken on all Windows platforms."
+    },
+    {
+      "fid": "F04-013",
+      "date": "2027-02-10",
+      "subj": "feature_1110",
+      "subject": "Beacon",
+      "pred": "works_on",
+      "obj": "Windows x86",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": "windows_x86",
+        "region": null,
+        "facility": null,
+        "version": "4.1",
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": "stable",
+        "authority": null
+      },
+      "family": "C",
+      "canonical": "Beacon continues to work on Windows x86 in Relay 4.1 stable.",
+      "forbidden_generalization": "All Windows clients fail in 4.1."
+    },
+    {
+      "fid": "F04-014",
+      "date": "2027-02-10",
+      "subj": "feature_1110",
+      "subject": "Beacon",
+      "pred": "works_on",
+      "obj": "Linux",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": "linux_x86",
+        "region": null,
+        "facility": null,
+        "version": "4.1",
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": "stable",
+        "authority": null
+      },
+      "family": "C",
+      "canonical": "Beacon works on Linux x86 in Relay 4.1 stable.",
+      "forbidden_generalization": "Beacon 4.1 is globally unreliable."
+    },
+    {
+      "fid": "F04-015",
+      "date": "2027-02-13",
+      "subj": "feature_1110",
+      "subject": "Beacon",
+      "pred": "workaround",
+      "obj": "disable Beacon",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": "windows_arm",
+        "region": null,
+        "facility": null,
+        "version": "4.1",
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": "stable",
+        "authority": null
+      },
+      "family": "M",
+      "canonical": "Disabling Beacon is a temporary workaround only for the Windows ARM Relay 4.1 stable handshake defect.",
+      "forbidden_generalization": "Disable Beacon whenever any Relay connection fails."
+    },
+    {
+      "fid": "F04-016",
+      "date": "2027-04-15",
+      "subj": "feature_1110",
+      "subject": "Beacon",
+      "pred": "bug_status",
+      "obj": "fixed",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": "windows_arm",
+        "region": null,
+        "facility": null,
+        "version": "4.2",
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "H",
+      "canonical": "Relay 4.2 fixes the Beacon Windows ARM handshake defect.",
+      "forbidden_generalization": "Beacon remains broken on Windows ARM after 4.2."
+    },
+    {
+      "fid": "F04-017",
+      "date": "2027-06-01",
+      "subj": "feature_1110",
+      "subject": "Beacon administration",
+      "pred": "unavailable_to",
+      "obj": "external vendors",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": "europe",
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": "vendor",
+        "release_channel": null,
+        "authority": "administrator"
+      },
+      "family": "L",
+      "canonical": "External vendors in Europe cannot use one Beacon administrative mode; this is not a blanket Beacon ban.",
+      "forbidden_generalization": "Beacon is unavailable in Europe."
+    },
+    {
+      "fid": "F04-018",
+      "date": "2028-01-10",
+      "subj": "subsystem_1101",
+      "subject": "Relay Telemetry",
+      "pred": "uses",
+      "obj": "Kafka",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": "production",
+        "platform": null,
+        "region": "north_america",
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "D",
+      "canonical": "North American production Relay Telemetry moves to Kafka in January 2028.",
+      "forbidden_generalization": "Relay Command also moved to Kafka."
+    },
+    {
+      "fid": "F04-019",
+      "date": "2028-01-15",
+      "subj": "subsystem_1101",
+      "subject": "Telemetry migration",
+      "pred": "status",
+      "obj": "complete",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "subsystem_1101",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "E",
+      "canonical": "The Kafka migration project for Relay Telemetry is complete; this does not mean every Relay messaging subsystem uses Kafka.",
+      "forbidden_generalization": "All Relay messaging migrated to Kafka."
+    },
+    {
+      "fid": "F04-020",
+      "date": "2028-03-20",
+      "subj": "feature_1110",
+      "subject": "Beacon workaround",
+      "pred": "misapplied_to",
+      "obj": "Turin Linux incident",
+      "truth": "false",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": "linux_x86",
+        "region": "europe",
+        "facility": "turin",
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "X",
+      "canonical": "The Windows ARM 4.1 Beacon workaround was incorrectly applied to a Turin Linux incident and worsened recovery.",
+      "forbidden_generalization": "The workaround was valid for the Turin Linux incident."
+    },
+    {
+      "fid": "F04-021",
+      "date": "2028-03-25",
+      "subj": "feature_1110",
+      "subject": "Beacon workaround",
+      "pred": "valid_only_for",
+      "obj": "Windows ARM 4.1 stable",
+      "truth": "corrected",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": "windows_arm",
+        "region": null,
+        "facility": null,
+        "version": "4.1",
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": "stable",
+        "authority": null
+      },
+      "family": "X",
+      "canonical": "Postmortem confirms the original Beacon workaround was correct only for Windows ARM 4.1 stable.",
+      "forbidden_generalization": "The postmortem says the workaround was universally wrong."
+    },
+    {
+      "fid": "F04-022",
+      "date": "2027-01-01",
+      "subj": "person_1201",
+      "subject": "Riley Morgan",
+      "pred": "prefers",
+      "obj": "Python",
+      "truth": "scoped_true",
+      "scope": {
+        "project": null,
+        "team": "analysis work",
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "J",
+      "canonical": "Riley prefers Python for analysis work.",
+      "forbidden_generalization": "Riley universally prefers Python for all software."
+    },
+    {
+      "fid": "F04-023",
+      "date": "2027-01-02",
+      "subj": "person_1201",
+      "subject": "Riley Morgan",
+      "pred": "prefers",
+      "obj": "Rust",
+      "truth": "scoped_true",
+      "scope": {
+        "project": null,
+        "team": "embedded work",
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "J",
+      "canonical": "Riley prefers Rust for embedded work.",
+      "forbidden_generalization": "Riley universally prefers Rust for all software."
+    },
+    {
+      "fid": "F04-024",
+      "date": "2027-01-03",
+      "subj": "person_1201",
+      "subject": "Riley Morgan",
+      "pred": "prefers",
+      "obj": "C#",
+      "truth": "scoped_true",
+      "scope": {
+        "project": null,
+        "team": "desktop tooling",
+        "environment": null,
+        "platform": null,
+        "region": null,
+        "facility": null,
+        "version": null,
+        "customer_tier": null,
+        "employment_class": null,
+        "release_channel": null,
+        "authority": null
+      },
+      "family": "J",
+      "canonical": "Riley prefers C# for desktop support tooling.",
+      "forbidden_generalization": "Riley universally prefers C# for all software."
+    },
+    {
+      "fid": "F04-025",
+      "date": "2027-09-01",
+      "subj": "feature_1111",
+      "subject": "Remote Snapshot",
+      "pred": "available_to",
+      "obj": "European enterprise stable users on 4.2+, except vendor-operated accounts",
+      "truth": "scoped_true",
+      "scope": {
+        "project": "system_1100",
+        "team": null,
+        "environment": null,
+        "platform": null,
+        "region": "europe",
+        "facility": null,
+        "version": ">=4.2",
+        "customer_tier": "enterprise",
+        "employment_class": "employee",
+        "release_channel": "stable",
+        "authority": null
+      },
+      "family": "M",
+      "canonical": "Remote Snapshot is available to European enterprise stable users on Relay 4.2+ except vendor-operated accounts.",
+      "forbidden_generalization": "Remote Snapshot is available to anyone who satisfies any one of those conditions."
+    }
+  ]
+}

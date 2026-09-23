@@ -1,0 +1,35 @@
+{
+  "experiment": "exp09_causal_attribution",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 18230,
+      "sha256": "9fb5fa481951eff6054a0e5f0b959c35ef3f8f629011138ae235ff0a32e80818"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 416098,
+      "sha256": "430fc472a9e5e7c8921868a31685bad2e26599f23568a6988ebd1d8890fd5f2f"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 88341,
+      "sha256": "400f61fb4933f9b78bc9299aeb7651ba6d1e6f9b897ddf8126e4aa311b4a6fa8"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 14132,
+      "sha256": "5c58a93afb522735ccb5a6e095ef48efb2ed5d59edba26ca496bde1e2ed1b180"
+    },
+    {
+      "path": "seed_memories.jsonl",
+      "bytes": 45069,
+      "sha256": "ff3f0f8b1d12d0e9b9dfc58eeb4aa648873845a25757a73d0fd65a9f064bc850"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 3667,
+      "sha256": "1b47f642cda0611d7147bfdde8200d6f97cbb4b27122dcb6d9bb8ffe5e1bd8fa"
+    }
+  ]
+}

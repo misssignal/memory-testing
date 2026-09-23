@@ -1,0 +1,45 @@
+{
+  "experiment": "exp01_temporal_traps",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 1163,
+      "sha256": "0b0426c543dcfe78350766da009c2d67d7b3cc4f06ddc277abb7f0d164d587a4"
+    },
+    {
+      "path": "ingestion_chronological.jsonl",
+      "bytes": 28215,
+      "sha256": "2058e23182089be92c7bf31b9d814fcc27ffb6c037bb9c7eab327757c1f4879c"
+    },
+    {
+      "path": "ingestion_late_arrival.jsonl",
+      "bytes": 28215,
+      "sha256": "300dacd06c59360237564887d1ead4e1891a3ffb231f92ef6ae9239c11d2d10a"
+    },
+    {
+      "path": "ingestion_shuffled.jsonl",
+      "bytes": 28215,
+      "sha256": "d3a8a762f2d65116c4a93be952b7da799a963bfd312bdc6ca9395e5f777d9459"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 29464,
+      "sha256": "03e4a8e57d7e76feef6b6d0997e40a03ec8b68a3334ce1a3b9f639667286975e"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 1075,
+      "sha256": "1a19ec6f0c8783a7f8c126f8526abec5ccfc9f3c51d9f71590c995e62848a991"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 1194,
+      "sha256": "331291fb86a96f9ac00f784244b2b6c1ab33067b902ab10da995f499732bf5f1"
+    }
+  ]
+}

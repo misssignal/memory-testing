@@ -1,0 +1,20 @@
+{
+  "experiment": "exp15_contradictory_metadata",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 9507,
+      "sha256": "27dce0329ced8ea6cf001eaf3d6d1fe51043bbcd3a4ed6da74239b5ef995d991"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 181055,
+      "sha256": "f540956c0f22386727737042f887b63584e1640cae71e5a54e4a1f23f3bf3ff1"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 49685,
+      "sha256": "f752e9bf641da4520c7799d3f6e06f64a45f9bd35147b5788740eee0b79ef809"
+    }
+  ]
+}

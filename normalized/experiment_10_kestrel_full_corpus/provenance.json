@@ -1,0 +1,52 @@
+{
+  "canonical_roots": {
+    "R7-F17": {
+      "independent": true,
+      "primary_memories": [
+        "K10-M017",
+        "K10-M018"
+      ],
+      "derived": [
+        "K10-M033",
+        "K10-M034",
+        "K10-M035",
+        "K10-M045",
+        "K10-M046"
+      ]
+    },
+    "DT3-DEP-771-B": {
+      "independent": true,
+      "primary_memories": [
+        "K10-M008",
+        "K10-M009",
+        "K10-M010"
+      ],
+      "derived": [
+        "K10-M037"
+      ]
+    },
+    "NOV-PRELIM-17": {
+      "independent": true,
+      "primary_memories": [
+        "K10-M030"
+      ],
+      "derived": [
+        "K10-M029"
+      ]
+    }
+  },
+  "expected_independent_root_count_for_flight17_mismatch": 2,
+  "correction_edges": [
+    {
+      "from": "K10-M020",
+      "to": "K10-M021",
+      "type": "superseded_by"
+    }
+  ],
+  "expanded_rules": [
+    "Transport envelopes are not evidence roots.",
+    "R7 normalized/exported/analytical/transport representations remain one R7 lineage.",
+    "Theo supplier summaries inherit Novalyn lineage.",
+    "Late secondary references do not become independent merely because they arrive later."
+  ]
+}

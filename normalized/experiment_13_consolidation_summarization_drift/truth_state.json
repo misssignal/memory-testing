@@ -1,0 +1,59 @@
+{
+  "experiment": "exp13_consolidation_summarization_drift",
+  "summarization_layers": {
+    "0": "Raw observations \u2014 instrument readings, field notes, specimen counts",
+    "1": "Monthly data summaries \u2014 aggregated by researcher",
+    "2": "Quarterly research reports \u2014 written by lead scientists",
+    "3": "Annual synthesis reports \u2014 compiled by director",
+    "4": "Multi-year meta-analyses \u2014 peer-reviewed publications",
+    "5": "Policy briefs \u2014 distilled for legislators"
+  },
+  "ground_truth_invariants": [
+    "Raw data (layer 0) is the authoritative source for all factual claims",
+    "Higher layers are progressively less precise but summarization should not introduce falsehoods",
+    "The annual synthesis claim 'pH above 8.0 at all stations' is factually wrong (C07)",
+    "Qualifier 'marginally significant' is NOT equivalent to 'significant' (C01)",
+    "A range (15-45cm) is NOT equivalent to its midpoint stated as certain (C02)",
+    "A merged conclusion from three studies is NOT attributable to any single study (C03)",
+    "An average does NOT imply stability or health (C04)",
+    "Generic 'corals' does NOT capture species-specific resilience differences (C05)",
+    "Progressive summarization monotonically amplified a non-significant finding (C06)"
+  ],
+  "cases": {
+    "C01": {
+      "name": "Qualifier Loss",
+      "drift": "marginally significant \u2192 significant \u2192 confirmed \u2192 dramatic",
+      "ground_truth": "p=0.04, marginally significant given multiple comparisons"
+    },
+    "C02": {
+      "name": "Uncertainty Loss",
+      "drift": "15-45cm (median 28) \u2192 ~28cm \u2192 ~30cm \u2192 30cm expected \u2192 30cm will occur",
+      "ground_truth": "Range 15-45cm with significant uncertainty in ice sheet dynamics"
+    },
+    "C03": {
+      "name": "Provenance Loss",
+      "drift": "Three separate studies \u2192 merged editorial conclusion \u2192 single causal claim",
+      "ground_truth": "No single study proved acidification causes kelp collapse"
+    },
+    "C04": {
+      "name": "Temporal Flattening",
+      "drift": "Variable counts (12.4k-23.8k) \u2192 average 18.5k \u2192 stable \u2192 healthy",
+      "ground_truth": "Significant variability, methodology change in 2033"
+    },
+    "C05": {
+      "name": "Identity Collapse",
+      "drift": "Three species (85%/45%/5% bleaching) \u2192 sensitive species \u2192 corals \u2192 dying",
+      "ground_truth": "3x difference in bleaching rates; Porites thriving"
+    },
+    "C06": {
+      "name": "Summary-of-Summary Drift",
+      "drift": "0.8\u00b0C within normal variability \u2192 anomaly \u2192 anomalies \u2192 widespread \u2192 pervasive \u2192 dramatic",
+      "ground_truth": "0.8\u00b0C, p=0.16, not significant, within normal variability"
+    },
+    "C07": {
+      "name": "Lossy Numeric Compression",
+      "drift": "6 precise readings \u2192 range \u2192 mean \u2192 'above 8.0' (false) \u2192 'stable'",
+      "ground_truth": "Two stations below 8.0; annual synthesis is factually wrong"
+    }
+  }
+}

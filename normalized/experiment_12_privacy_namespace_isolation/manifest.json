@@ -1,0 +1,35 @@
+{
+  "experiment": "exp12_privacy_namespace_isolation",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 7953,
+      "sha256": "9af7a5633e9da2b083b5ef34da04b3c54c6a2ecb05de790e83370ef5e25d64e7"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 184148,
+      "sha256": "36d79ca458fff6a14305acba68dd99c743579f06a6bacbfabd722a8b1c66dc1e"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 50336,
+      "sha256": "622fb41eefb1f400d4166c9b46da11c17aa8b72e28b980022ead358887887acf"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 14337,
+      "sha256": "fbbc876a2da32b87a5470861170d1651514a3f7bfe6260bb1ad5585c98df2e74"
+    },
+    {
+      "path": "seed_memories.jsonl",
+      "bytes": 25475,
+      "sha256": "c0e03cfdc538d103d12c462b5b6783572f4f6fdb61d72eeec31ea29c7e54d74f"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 3789,
+      "sha256": "f28a0a5b15b6206b9b61cf5ddb0e199e41da5aeae6da1aa0fdad526b704eb255"
+    }
+  ]
+}

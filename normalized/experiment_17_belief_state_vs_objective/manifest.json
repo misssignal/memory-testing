@@ -1,0 +1,20 @@
+{
+  "experiment": "exp17_belief_state_vs_objective",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 9261,
+      "sha256": "1ff15d28e2167c37ab689d6a143230b47685756a8a572160158c71512b86e635"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 172697,
+      "sha256": "ad85e3f7d8fe288d5710faeefc15cba0ebf3946ea93bd42b896958a5d64e5bff"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 62466,
+      "sha256": "a6a83dea207e055bc1e6bae5520ef6cc2f802173d637cebb3061c1c731c235b6"
+    }
+  ]
+}

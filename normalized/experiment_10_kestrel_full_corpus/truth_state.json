@@ -1,0 +1,46 @@
+{
+  "experiment": "10_ingestion_order",
+  "story_id": "kestrel",
+  "locked_truths": {
+    "deployment_2031_05_17": {
+      "FCC-A": "FC-4.8.2",
+      "FCC-B": "FC-4.8.1"
+    },
+    "flight_17": {
+      "FCC-A": "FC-4.8.2",
+      "FCC-B": "FC-4.8.1"
+    },
+    "initial_central_belief": {
+      "FCC-A": "FC-4.8.2",
+      "FCC-B": "FC-4.8.2"
+    },
+    "post_correction_2031_05_21": {
+      "FCC-B": "FC-4.8.3"
+    },
+    "independent_mismatch_evidence_roots": [
+      "R7-F17",
+      "DT3-DEP-771-B"
+    ],
+    "jonah_initial_record": "both FCC indicators normal",
+    "jonah_corrected_observation": "FCC-B indicator amber",
+    "causality": "Seed does not establish configuration mismatch as sole cause of Flight 17 oscillation."
+  },
+  "invariants": [
+    "Equivalent completed delivery runs must converge semantically.",
+    "Event time must not be replaced by ingestion time.",
+    "Replay must not create independent evidence or inflate confidence.",
+    "Correction semantics must survive reversed delivery.",
+    "Historical actor beliefs must not be retroactively rewritten by later evidence.",
+    "FCC-B Flight 17 state remains FC-4.8.1 even after later FC-4.8.3 deployment.",
+    "R7-derived representations remain one evidence root."
+  ],
+  "expanded_world_truths": {
+    "TW19_calibration": "in tolerance; late certificate is non-impacting",
+    "ACT_RSP_2_quality": "intermittent saturation reduces amplitude precision but not R7 handshake truth",
+    "Novalyn_N42": "lot-specific actuator fault not supported",
+    "R4_clock_offset": "+1.7 seconds",
+    "same_second_ordering": "selected S-bank pairs genuinely unresolved within one-second resolution",
+    "post_remediation": "FCC-B remains FC-4.8.3",
+    "late_archive_controls": "multiple late arrivals intentionally irrelevant"
+  }
+}

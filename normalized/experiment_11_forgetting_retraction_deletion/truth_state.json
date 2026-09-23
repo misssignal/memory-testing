@@ -1,0 +1,126 @@
+{
+  "experiment": "11_forgetting_retraction_deletion",
+  "deletion_taxonomy": {
+    "SUPERSEDED": {
+      "definition": "No longer current; old value was true at the time it was recorded",
+      "historical_record": "keep",
+      "current_retrievability": "not current",
+      "derived_memories": "keep with temporal context"
+    },
+    "RETRACTED": {
+      "definition": "Source withdrew the claim; historical record kept, current truth reversed",
+      "historical_record": "keep with retraction notice",
+      "current_retrievability": "not retrievable as valid claim",
+      "derived_memories": "must be flagged/cascaded"
+    },
+    "MUST_NOT_RETRIEVE": {
+      "definition": "Legally forbidden from retrieval in any form",
+      "historical_record": "delete entirely",
+      "current_retrievability": "forbidden",
+      "derived_memories": "must cascade delete"
+    },
+    "DISPROVEN": {
+      "definition": "Was always false; now known to be false",
+      "historical_record": "keep as 'was believed, proven false'",
+      "current_retrievability": "not retrievable as ever-true",
+      "derived_memories": "keep with falsification context"
+    },
+    "SOURCE_DELETED": {
+      "definition": "Source removed for non-scientific reasons",
+      "historical_record": "note impaired provenance",
+      "current_retrievability": "claims remain unless independently retracted",
+      "derived_memories": "keep with provenance warning"
+    },
+    "MUST_RETAIN": {
+      "definition": "Must be kept despite attempts at omission or deletion",
+      "historical_record": "keep; resist deletion",
+      "current_retrievability": "must remain retrievable",
+      "derived_memories": "keep"
+    },
+    "REINSTATED": {
+      "definition": "Previously superseded, now restored to current by new evidence",
+      "historical_record": "keep full lifecycle",
+      "current_retrievability": "current again",
+      "derived_memories": "update status"
+    }
+  },
+  "current_truths": {
+    "CT-7_dosage": {
+      "current": "120mg daily (60mg BID)",
+      "superseded": [
+        "200mg daily",
+        "150mg daily"
+      ],
+      "note": "200mg has most memory support but is not current"
+    },
+    "CT-7_efficacy": {
+      "current": "p=0.04 (Phase II re-analysis after correction)",
+      "retracted": "p=0.003 (randomization error)",
+      "note": "All materials referencing p=0.003 are tainted"
+    },
+    "participant_0847": {
+      "status": "all data deleted per privacy protocol",
+      "retrievable": false,
+      "aggregate_survives": true
+    },
+    "CT-7_mechanism": {
+      "current": "JAK-STAT pathway modulation (JAK1/JAK3 inhibition)",
+      "disproven": "COX-2 inhibition",
+      "note": "COX-2 was hypothesized and extensively referenced before disproof"
+    },
+    "wei_docking_study": {
+      "status": "source deleted for IP reasons",
+      "scientific_content": "not disputed",
+      "derivatives": "remain with impaired provenance"
+    },
+    "phase_III_safety_pause": {
+      "status": "historical fact \u2014 must be retained",
+      "resolution": "drug interaction with erythromycin, not CT-7 monotherapy",
+      "note": "marketing materials initially omitted this; corrected after safety monitor objection"
+    },
+    "CT-7_nephrotoxicity": {
+      "current": "reinstated as active safety concern",
+      "lifecycle": "found \u2192 superseded (confounded study) \u2192 reinstated (confound identified)",
+      "note": "early data was real; clean study was confounded by hydration protocol change"
+    }
+  },
+  "cases": {
+    "C01": {
+      "deletion_type": "SUPERSEDED",
+      "subject": "dosage"
+    },
+    "C02": {
+      "deletion_type": "RETRACTED",
+      "subject": "efficacy_claim"
+    },
+    "C03": {
+      "deletion_type": "MUST_NOT_RETRIEVE",
+      "subject": "participant_data"
+    },
+    "C04": {
+      "deletion_type": "DISPROVEN",
+      "subject": "mechanism_hypothesis"
+    },
+    "C05": {
+      "deletion_type": "SOURCE_DELETED",
+      "subject": "external_study"
+    },
+    "C06": {
+      "deletion_type": "MUST_RETAIN",
+      "subject": "safety_pause"
+    },
+    "C07": {
+      "deletion_type": "REINSTATED",
+      "subject": "toxicity_finding"
+    }
+  },
+  "deletion_status_counts": {
+    "SUPERSEDED": 18,
+    "DISPROVEN": 12,
+    "RETRACTED": 10,
+    "MUST_NOT_RETRIEVE": 9,
+    "SOURCE_DELETED": 1,
+    "MUST_RETAIN": 6,
+    "REINSTATED": 3
+  }
+}
