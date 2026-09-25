@@ -1,0 +1,40 @@
+{
+  "experiment": "exp02_false_consensus",
+  "files": [
+    {
+      "path": "extensions.jsonl",
+      "bytes": 12933,
+      "sha256": "98bd0bc85934a1addebfc8a141f65da10ac44e3ac8dde4fbdced81e4f41dc01e"
+    },
+    {
+      "path": "id_mapping.json",
+      "bytes": 1163,
+      "sha256": "8be498a5a8eb324e2ef1b06cb6aa92d59e647f60d0b52bf516e9b46620cb6d30"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 1110,
+      "sha256": "7a5f0cec2b0b3f97686115ea40f3873ee842999bfefc050953312af1a9bb146d"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 166787,
+      "sha256": "5211948858a1738ec4f25c5e8e01f6546715ab509ec260bde3d000ea56fdf001"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 4737,
+      "sha256": "6193295b8d4e4278a65316330be996a5d2f5dbbb21d22141d918c08959f8f894"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 52934,
+      "sha256": "346d5e91b8a61f86cfce2ada21a541d3431f5b765c896c6b1b5de68443b11056"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 765,
+      "sha256": "8665b592bd750cafa50bb4e50f69cf5978c2c38a02423a0e0bd2098e4a5b355c"
+    }
+  ]
+}

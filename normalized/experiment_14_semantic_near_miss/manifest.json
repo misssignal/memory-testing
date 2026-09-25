@@ -1,0 +1,35 @@
+{
+  "experiment": "exp14_semantic_near_miss",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 8303,
+      "sha256": "c79b3fb54fe953d8b072d1d2d9cdfc0cdc720867861e255b9e9f093e283a089a"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 201323,
+      "sha256": "55f7653989cbb265fcf5cb5c1aee80af42440951d50ee4c5800eb2a5ff8246f4"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 49417,
+      "sha256": "9a2b4757fafbf6fbba3cc45dd1ac276ecc27dcab6fbf7e99fb8e11c60da94713"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 6254,
+      "sha256": "483790fc3968cf23e66b97e7ff4d7dbb317cb557ff41466aaf1391ff619efb6d"
+    },
+    {
+      "path": "seed_memories.jsonl",
+      "bytes": 29735,
+      "sha256": "f1c31a9d8f795383edfc910f781ddfdbe75f6b58f30782f39169c64f201e6310"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 1615,
+      "sha256": "cc7a94b5a0ae015f9fade4f5febb7805788bde3b3c6de71bffd65560706b1afb"
+    }
+  ]
+}

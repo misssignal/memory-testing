@@ -1,0 +1,20 @@
+{
+  "experiment": "exp18_counterfactual_negative",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 9321,
+      "sha256": "9f7b23491d3df8d45b2792a2365396d677abd269502e846c10dd8f670e282e91"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 160306,
+      "sha256": "1729a394f69584dac26e50b3bd9d2fd190f2c5c2e984e22b731bae106fb61069"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 57583,
+      "sha256": "89fce27eb4e5f48a70fcaee02540840a3fc3d075ca9a75108bf198178b428855"
+    }
+  ]
+}

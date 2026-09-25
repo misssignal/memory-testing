@@ -1,0 +1,18 @@
+{
+  "experiment": "exp18",
+  "title": "Counterfactual / Negative Evidence",
+  "description": "Tests whether memory systems correctly handle things that did NOT happen, plans that were cancelled, and conditions that failed to materialize.",
+  "files": [
+    {
+      "path": "memories.jsonl",
+      "bytes": 160306,
+      "sha256": "01ef525909d8a0ec399008b9655d0778231937178efba0558a60a140c92d6207"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 57583,
+      "sha256": "8b82c83a23b210fd1674f3e1296c1acd1fb6e918556cd7cecaddedd35de7355c"
+    }
+  ],
+  "generated": "2026-09-08T04:50:33.596101+00:00"
+}

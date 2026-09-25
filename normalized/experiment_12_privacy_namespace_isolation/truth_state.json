@@ -1,0 +1,137 @@
+{
+  "experiment": "12_privacy_namespace_isolation",
+  "namespace_rules": {
+    "R1": "Memory with tenant T-XX is visible only to T-XX members and facility_admin (for ops metadata only)",
+    "R2": "Memory with tenant 'shared' is visible to all access levels >= guest",
+    "R3": "access_level restricts within a tenant: member < tenant_admin < facility_admin",
+    "R4": "shared_with overrides tenant isolation for specific cross-tenant collaboration",
+    "R5": "Access revocation: departed member's past tenant memories are inaccessible from new context",
+    "R6": "Derived documents inherit the MOST RESTRICTIVE scope of their sources",
+    "R7": "Shared-space logistics (bookings) are shared; meeting content inherits the tenant's scope"
+  },
+  "access_hierarchy": {
+    "facility_admin": "Sees shared + all tenant ops metadata (not IP). Highest level.",
+    "tenant_admin": "Sees own tenant everything + shared. Cannot see other tenants or facility_admin-only.",
+    "member": "Sees own tenant non-admin data + shared. Cannot see tenant_admin-only within own tenant.",
+    "guest": "Sees only curated shared/public data. Cannot see any tenant data or admin data."
+  },
+  "tenants": {
+    "T-PR": {
+      "name": "Prism Analytics",
+      "projects": [
+        "phoenix_dashboard",
+        "lens"
+      ]
+    },
+    "T-VB": {
+      "name": "Verdant Bio",
+      "projects": [
+        "canopy",
+        "bloom"
+      ]
+    },
+    "T-HE": {
+      "name": "Helios Energy",
+      "projects": [
+        "phoenix_solar",
+        "beacon"
+      ]
+    },
+    "T-CL": {
+      "name": "Cirrus Labs",
+      "projects": [
+        "nimbus",
+        "stratus"
+      ]
+    }
+  },
+  "alias_collisions": {
+    "Phoenix": {
+      "T-PR": "Real-time analytics dashboard (Apache Flink + ClickHouse)",
+      "T-HE": "Solar panel efficiency optimization algorithm (ML-based)"
+    }
+  },
+  "cross_tenant_sharing": {
+    "AgroViz": {
+      "participants": [
+        "T-PR",
+        "T-VB"
+      ],
+      "excluded": [
+        "T-HE",
+        "T-CL"
+      ],
+      "note": "Prism provides Phoenix rendering; Verdant provides crop science. Gene sequences NOT shared."
+    }
+  },
+  "access_changes": {
+    "jordan_kim": {
+      "before_q3": {
+        "tenant": "T-PR",
+        "access_level": "member"
+      },
+      "after_q3": {
+        "tenant": "T-CL",
+        "access_level": "member"
+      },
+      "revoked": "All T-PR access revoked July 15, 2032",
+      "public_contributions_remain": true
+    }
+  },
+  "cases": {
+    "C01": {
+      "type": "namespace_isolation",
+      "description": "Basic tenant data isolation"
+    },
+    "C02": {
+      "type": "alias_collision",
+      "description": "Same project name, different tenants"
+    },
+    "C03": {
+      "type": "access_hierarchy",
+      "description": "Hierarchical access levels"
+    },
+    "C04": {
+      "type": "access_revocation",
+      "description": "Employee moves between tenants"
+    },
+    "C05": {
+      "type": "mixed_scope_summary",
+      "description": "Newsletter leaking private details"
+    },
+    "C06": {
+      "type": "cross_tenant_sharing",
+      "description": "Authorized data sharing (AgroViz)"
+    },
+    "C07": {
+      "type": "shared_space",
+      "description": "Private meetings in shared rooms"
+    },
+    "C08": {
+      "type": "cascading_scope",
+      "description": "Derived docs crossing scope boundaries"
+    }
+  },
+  "scope_model": {
+    "description": "Privacy namespace isolation with multi-tenant access control",
+    "tenants": [
+      "T-PR",
+      "T-VB",
+      "T-HE",
+      "T-CL",
+      "shared"
+    ],
+    "access_levels": [
+      "facility_admin",
+      "tenant_admin",
+      "member",
+      "guest"
+    ],
+    "cross_tenant_shares": {
+      "AgroViz": [
+        "T-PR",
+        "T-VB"
+      ]
+    }
+  }
+}

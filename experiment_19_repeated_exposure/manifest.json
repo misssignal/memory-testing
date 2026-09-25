@@ -1,0 +1,20 @@
+{
+  "experiment": "exp19",
+  "title": "Repeated Exposure / Confidence Inflation",
+  "description": "Tests whether memory systems inflate confidence from repeated exposure when multiple sources trace to a single origin.",
+  "files": [
+    {
+      "path": "memories.jsonl",
+      "bytes": 170732,
+      "sha256": "375cfb4cd004ec776eb95e8e1243dced10b7d98b887910fac02c502bd9b46e04"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 65196,
+      "sha256": "7a120e7d0b8a8625ead19f861905833ddb7ab8a5e720e07692c985d9b2db1682"
+    }
+  ],
+  "generated": "2026-09-22T21:40:49.750866+00:00",
+  "total_memories": 201,
+  "total_queries": 78
+}

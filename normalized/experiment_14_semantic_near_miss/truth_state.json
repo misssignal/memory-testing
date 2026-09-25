@@ -1,0 +1,43 @@
+{
+  "experiment": "exp14_semantic_near_miss_distractor_resistance",
+  "ground_truth_invariants": {
+    "albatross_ne_petrel": "Albatross and Petrel are distinct boats with distinct performance profiles",
+    "campaign_2032_ne_2036": "2032 and 2036 campaigns are distinct events despite similar structure",
+    "obrien_ne_obrien_sato": "Liam O'Brien (P07) and Liam O'Brien-Sato (P08) are different people",
+    "routine_ne_post_incident": "2031 routine inspection cleared; 2033 post-incident found fatigue crack",
+    "each_inventory_distinct": "Five sail inventories are distinct events with different numbers",
+    "terminology_resolves": "HRAA = hydraulic ram actuator assembly = keel mechanism = keel jack = the ram",
+    "embedding_similarity_ne_relevance": "Semantic similarity does not equal factual relevance",
+    "part_suffix_determines_boat": "Part suffix -A = Albatross, -P = Petrel"
+  },
+  "cases": {
+    "C01": {
+      "name": "Wrong Entity, Right Description",
+      "boat_distinction": true
+    },
+    "C02": {
+      "name": "Wrong Time, Right Entity",
+      "temporal_distinction": true
+    },
+    "C03": {
+      "name": "Near-Identical Events",
+      "outcome_distinction": true
+    },
+    "C04": {
+      "name": "Reused Phrases / Template Language",
+      "numeric_distinction": true
+    },
+    "C05": {
+      "name": "Correct Answer Uses Different Terminology",
+      "synonym_resolution": true
+    },
+    "C06": {
+      "name": "Name Collision",
+      "entity_disambiguation": true
+    },
+    "C07": {
+      "name": "Misleading Embedding Proximity",
+      "polysemy_resolution": true
+    }
+  }
+}

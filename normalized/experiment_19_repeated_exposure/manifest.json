@@ -1,0 +1,20 @@
+{
+  "experiment": "exp19_repeated_exposure",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 9153,
+      "sha256": "4a2c92ea3e98784dc9b5004d4c2fb327880dd1dd5be9194e627fc28c07f4b214"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 170732,
+      "sha256": "580582d9ae106ab6e4a10dc8d82e81b1cd787dadfa2d61877e2253c8501350a3"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 65196,
+      "sha256": "9cd0e28c088e572b0cdbd30d510836045db6c3de3c7de23bfaae1fd2b66fec16"
+    }
+  ]
+}

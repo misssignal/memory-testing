@@ -1,0 +1,15 @@
+{
+  "experiment": "exp20_scope_boundary",
+  "files": [
+    {
+      "path": "memories.jsonl",
+      "bytes": 185768,
+      "sha256": "d4f2bbdf10f8b16a419914709b82881694f0a002e982deb3622fa0afe3bf8f03"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 60391,
+      "sha256": "4ba7e11fceb27a5083f1ad1812dcb0a9faf26e8a104a0b5ea618d05f5f34c92c"
+    }
+  ]
+}

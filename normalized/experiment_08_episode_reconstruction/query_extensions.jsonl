@@ -1,0 +1,129 @@
+{"query_id": "Q08-01", "original_id": "Q001", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-02", "original_id": "Q002", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-03", "original_id": "Q003", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-04", "original_id": "Q004", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP02"]}
+{"query_id": "Q08-05", "original_id": "Q005", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP02"]}
+{"query_id": "Q08-06", "original_id": "Q006", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP02"]}
+{"query_id": "Q08-07", "original_id": "Q007", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-08", "original_id": "Q008", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-09", "original_id": "Q009", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-10", "original_id": "Q010", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04"]}
+{"query_id": "Q08-11", "original_id": "Q011", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04"]}
+{"query_id": "Q08-12", "original_id": "Q012", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04"]}
+{"query_id": "Q08-13", "original_id": "Q013", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-14", "original_id": "Q014", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-15", "original_id": "Q015", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-16", "original_id": "Q016", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-17", "original_id": "Q017", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-18", "original_id": "Q018", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-19", "original_id": "Q019", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP07"]}
+{"query_id": "Q08-20", "original_id": "Q020", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP07"]}
+{"query_id": "Q08-21", "original_id": "Q021", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP07"]}
+{"query_id": "Q08-22", "original_id": "Q022", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-23", "original_id": "Q023", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-24", "original_id": "Q024", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-25", "original_id": "Q025", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP09"]}
+{"query_id": "Q08-26", "original_id": "Q026", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP09"]}
+{"query_id": "Q08-27", "original_id": "Q027", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP09"]}
+{"query_id": "Q08-28", "original_id": "Q028", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-29", "original_id": "Q029", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-30", "original_id": "Q030", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-31", "original_id": "Q031", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-32", "original_id": "Q032", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-33", "original_id": "Q033", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-34", "original_id": "Q034", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-35", "original_id": "Q035", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-36", "original_id": "Q036", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-37", "original_id": "Q037", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01", "EP02"]}
+{"query_id": "Q08-38", "original_id": "Q038", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-39", "original_id": "Q039", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-40", "original_id": "Q040", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03", "EP07"]}
+{"query_id": "Q08-41", "original_id": "Q041", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04", "EP05"]}
+{"query_id": "Q08-42", "original_id": "Q042", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05", "EP06"]}
+{"query_id": "Q08-43", "original_id": "Q043", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10", "EP11"]}
+{"query_id": "Q08-44", "original_id": "Q044", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-45", "original_id": "Q045", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-46", "original_id": "Q046", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01", "EP09"]}
+{"query_id": "Q08-47", "original_id": "Q047", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06", "EP10"]}
+{"query_id": "Q08-48", "original_id": "Q048", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03", "EP07"]}
+{"query_id": "Q08-49", "original_id": "Q049", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04", "EP05"]}
+{"query_id": "Q08-50", "original_id": "Q050", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-51", "original_id": "Q051", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-52", "original_id": "Q052", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-53", "original_id": "Q053", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-54", "original_id": "Q054", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-55", "original_id": "Q055", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-56", "original_id": "Q056", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-57", "original_id": "Q057", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-58", "original_id": "Q058", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-59", "original_id": "Q059", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-60", "original_id": "Q060", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP09"]}
+{"query_id": "Q08-61", "original_id": "Q061", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-62", "original_id": "Q062", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-63", "original_id": "Q063", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-64", "original_id": "Q064", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP02"]}
+{"query_id": "Q08-65", "original_id": "Q065", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP09"]}
+{"query_id": "Q08-66", "original_id": "Q066", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-67", "original_id": "Q067", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04"]}
+{"query_id": "Q08-68", "original_id": "Q068", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04"]}
+{"query_id": "Q08-69", "original_id": "Q069", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-70", "original_id": "Q070", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-71", "original_id": "Q071", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-72", "original_id": "Q072", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-73", "original_id": "Q073", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-74", "original_id": "Q074", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-75", "original_id": "Q075", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-76", "original_id": "Q076", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04"]}
+{"query_id": "Q08-77", "original_id": "Q077", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP02"]}
+{"query_id": "Q08-78", "original_id": "Q078", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-79", "original_id": "Q079", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP02"]}
+{"query_id": "Q08-80", "original_id": "Q080", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-81", "original_id": "Q081", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-82", "original_id": "Q082", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-83", "original_id": "Q083", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP07"]}
+{"query_id": "Q08-84", "original_id": "Q084", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP02"]}
+{"query_id": "Q08-85", "original_id": "Q085", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-86", "original_id": "Q086", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-87", "original_id": "Q087", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-88", "original_id": "Q088", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-89", "original_id": "Q089", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-90", "original_id": "Q090", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-91", "original_id": "Q091", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-92", "original_id": "Q092", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-93", "original_id": "Q093", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-94", "original_id": "Q094", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP07"]}
+{"query_id": "Q08-95", "original_id": "Q095", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-96", "original_id": "Q096", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-97", "original_id": "Q097", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-98", "original_id": "Q098", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-99", "original_id": "Q099", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-100", "original_id": "Q100", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-101", "original_id": "Q101", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05"]}
+{"query_id": "Q08-102", "original_id": "Q102", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-103", "original_id": "Q103", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-104", "original_id": "Q104", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-105", "original_id": "Q105", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-106", "original_id": "Q106", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-107", "original_id": "Q107", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-108", "original_id": "Q108", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-109", "original_id": "Q109", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP01"]}
+{"query_id": "Q08-110", "original_id": "Q110", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-111", "original_id": "Q111", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10"]}
+{"query_id": "Q08-112", "original_id": "Q112", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-113", "original_id": "Q113", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP04"]}
+{"query_id": "Q08-114", "original_id": "Q114", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP12"]}
+{"query_id": "Q08-115", "original_id": "Q115", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-116", "original_id": "Q116", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP03"]}
+{"query_id": "Q08-117", "original_id": "Q117", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP07"]}
+{"query_id": "Q08-118", "original_id": "Q118", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-119", "original_id": "Q119", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-120", "original_id": "Q120", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP11"]}
+{"query_id": "Q08-121", "original_id": "Q121", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-122", "original_id": "Q122", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP08"]}
+{"query_id": "Q08-123", "original_id": "Q123", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP02"]}
+{"query_id": "Q08-124", "original_id": "Q124", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP09"]}
+{"query_id": "Q08-125", "original_id": "Q125", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-126", "original_id": "Q126", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06"]}
+{"query_id": "Q08-127", "original_id": "Q127", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP05", "EP05"]}
+{"query_id": "Q08-128", "original_id": "Q128", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP06", "EP11"]}
+{"query_id": "Q08-129", "original_id": "Q129", "required_source_roots": [], "expected_temporal_order": [], "expected_episode_ids": ["EP10", "EP11"]}

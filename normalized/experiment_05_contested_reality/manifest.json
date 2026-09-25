@@ -1,0 +1,55 @@
+{
+  "experiment": "exp05_contested_reality",
+  "files": [
+    {
+      "path": "extensions.jsonl",
+      "bytes": 122599,
+      "sha256": "8041ec2457ccb936f9e85cbe0c7ebb7853b0eb6a22e57acc73958a4c2de513fd"
+    },
+    {
+      "path": "id_mapping.json",
+      "bytes": 10743,
+      "sha256": "44a73f3f0f71e01ffd3ba0fe4d9eff4bfb852bbabcb7eb7998ff174e5ba95e68"
+    },
+    {
+      "path": "ingestion_chronological.jsonl",
+      "bytes": 310767,
+      "sha256": "be96fddbb30ac5c41c77f14d1f50abf63384de02adcecd47ef496bfa243b0a81"
+    },
+    {
+      "path": "ingestion_late_arrival.jsonl",
+      "bytes": 310767,
+      "sha256": "c8a46e2646a93693cffce2890e76564a1dc55b07288c018ed7fc3233e5ff471d"
+    },
+    {
+      "path": "ingestion_shuffled.jsonl",
+      "bytes": 310767,
+      "sha256": "d06dfa7f3a724bd5966d6199bb8273492ef5fc50b7250e8dcfead0d4e3021467"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 221094,
+      "sha256": "79517d9982e2d161d4b9ee227d7d3f4074356ab4832f2e5d2f8a6acca156e8c5"
+    },
+    {
+      "path": "provenance.json",
+      "bytes": 47494,
+      "sha256": "285c6a56d01288031de5e20ad4672a62a9c5b839d47d57bb24eb237989a3a491"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 122335,
+      "sha256": "28e82ce7f8e470abd7b9cfc9c2269566ed780c83cc895c0fd25fdf65ceead061"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 67065,
+      "sha256": "0515d4765a9945bcc564354c4be8819ab10f958fa2b2244b173ae9f5b22a8ab2"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 65570,
+      "sha256": "6c86f040021f32fcc36ee28f7a4a24de2b998f804e5376e0800c3373ec37eb38"
+    }
+  ]
+}

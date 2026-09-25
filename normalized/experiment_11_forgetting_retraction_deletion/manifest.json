@@ -1,0 +1,40 @@
+{
+  "experiment": "exp11_forgetting_retraction_deletion",
+  "files": [
+    {
+      "path": "extensions.jsonl",
+      "bytes": 10285,
+      "sha256": "208fa592317143bcaa3830874e7144a6f2a2d6ca2e591303a06adaea067f1c94"
+    },
+    {
+      "path": "id_mapping.json",
+      "bytes": 7742,
+      "sha256": "e18ca03880008c5cf27191df0a122fc8ad59918f1875e6afa0b65051062b846d"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 172059,
+      "sha256": "5354d18bab0702cd19d7806d36bcca9390922a7c995005764783dbd84e95a953"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 51149,
+      "sha256": "3dea373d76b46b6ec0311e8203eb2d1126a41dadba3f2e3293cc36bc8b72f4b4"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 9553,
+      "sha256": "0b7dcadb99074e5ad2ececabec4e079421f231b0ae473c3311c7f1f4ff2b458d"
+    },
+    {
+      "path": "seed_memories.jsonl",
+      "bytes": 34243,
+      "sha256": "a1066b43cffc5be0931734a44d19a1744eff971970c04c2a4fd82ff8303816e6"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 4381,
+      "sha256": "516490457e3dcdd0da2a9087bde4da1bdc407599aed66776b4d91726f6c774d8"
+    }
+  ]
+}

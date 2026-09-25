@@ -1,0 +1,264 @@
+{
+  "evidence_roots": {
+    "ROOT-18000": {
+      "kind": "single_root",
+      "origin": "F001",
+      "objective_status": "obsolete historical concept value"
+    },
+    "ROOT-12400": {
+      "kind": "single_root",
+      "origin": "F017",
+      "objective_status": "controlling permit value"
+    },
+    "ROOT-W1": {
+      "kind": "independent",
+      "origin": "F032"
+    },
+    "ROOT-W2": {
+      "kind": "independent",
+      "origin": "F033"
+    },
+    "ROOT-W3": {
+      "kind": "independent",
+      "origin": "F034"
+    },
+    "ROOT-W4": {
+      "kind": "independent",
+      "origin": "F035"
+    },
+    "ROOT-W5": {
+      "kind": "independent",
+      "origin": "F036"
+    },
+    "ROOT-GATE-C": {
+      "kind": "historical_root",
+      "origin": "F026"
+    },
+    "ROOT-GATE-F": {
+      "kind": "current_root",
+      "origin": "F029"
+    }
+  },
+  "edges": [
+    {
+      "from": "F001",
+      "to": "F002",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F002",
+      "to": "F003",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F002",
+      "to": "F004",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F003",
+      "to": "F005",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F003",
+      "to": "F006",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F004",
+      "to": "F007",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F006",
+      "to": "F007",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F007",
+      "to": "F008",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F008",
+      "to": "F009",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F007",
+      "to": "F010",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F002",
+      "to": "F011",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F011",
+      "to": "F012",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F012",
+      "to": "F013",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F011",
+      "to": "F014",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F011",
+      "to": "F015",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F011",
+      "to": "F016",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F017",
+      "to": "F018",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F011",
+      "to": "F019",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F009",
+      "to": "F020",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F017",
+      "to": "F021",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F013",
+      "to": "F022",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F017",
+      "to": "F023",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F010",
+      "to": "F024",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F017",
+      "to": "F025",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F026",
+      "to": "F027",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F026",
+      "to": "F028",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F027",
+      "to": "F030",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F029",
+      "to": "F031",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F032",
+      "to": "F037",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F033",
+      "to": "F037",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F034",
+      "to": "F037",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F035",
+      "to": "F037",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F036",
+      "to": "F037",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F005",
+      "to": "F038",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F010",
+      "to": "F038",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F011",
+      "to": "F038",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F019",
+      "to": "F038",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F022",
+      "to": "F038",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F017",
+      "to": "F039",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F021",
+      "to": "F039",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F023",
+      "to": "F039",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F025",
+      "to": "F039",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F029",
+      "to": "F040",
+      "relation": "derived_from"
+    },
+    {
+      "from": "F031",
+      "to": "F040",
+      "relation": "derived_from"
+    }
+  ]
+}

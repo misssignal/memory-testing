@@ -1,0 +1,105 @@
+{
+  "story_id": "helix_flight_controls_2031",
+  "cases": [
+    {
+      "case_id": "C01",
+      "label": "January actuator lag after software deployment",
+      "truth": "Deployment was temporally adjacent but not causal; actuator lag came from intermittent bus termination resistance.",
+      "motifs": [
+        "post_hoc",
+        "symptom_vs_cause"
+      ]
+    },
+    {
+      "case_id": "C02",
+      "label": "February sensor reset under thermal stress",
+      "truth": "High thermal load and a firmware race jointly caused resets; neither alone was sufficient in tested conditions.",
+      "motifs": [
+        "multiple_causes",
+        "necessary_insufficient",
+        "clean_intervention"
+      ]
+    },
+    {
+      "case_id": "C03",
+      "label": "March retry storm and network degradation",
+      "truth": "Network degradation triggered retries; retry volume then amplified the degradation. Initial belief reversed direction.",
+      "motifs": [
+        "reverse_causality",
+        "feedback_loop"
+      ]
+    },
+    {
+      "case_id": "C04",
+      "label": "April startup stall after certificate renewal",
+      "truth": "Certificate renewal triggered restart; root cause was a startup dependency cycle exposed by restart timing.",
+      "motifs": [
+        "trigger_vs_root",
+        "long_range_precursor"
+      ]
+    },
+    {
+      "case_id": "C05",
+      "label": "May power reset fixed after module replacement",
+      "truth": "Replacement coincided with reseating harness, controller reset, and power-cycle; causal attribution to module alone remained unresolved.",
+      "motifs": [
+        "confounded_intervention",
+        "repair_success_overreach",
+        "unresolved"
+      ]
+    },
+    {
+      "case_id": "C06",
+      "label": "June telemetry spike during cooling demand",
+      "truth": "Ambient heat caused both cooling demand and sensor drift; cooling demand did not cause the drift.",
+      "motifs": [
+        "common_cause",
+        "correlation"
+      ]
+    },
+    {
+      "case_id": "C07",
+      "label": "August rollback loop after configuration migration",
+      "truth": "A configuration schema mismatch directly caused rollback evaluation failure; controlled replay reproduced and isolated it.",
+      "motifs": [
+        "clean_causal_control",
+        "reproduction"
+      ]
+    },
+    {
+      "case_id": "C08",
+      "label": "September intermittent sensor-hub brownout",
+      "truth": "Two mechanisms remained viable: transient connector resistance or regulator instability. No discriminating test was completed.",
+      "motifs": [
+        "unresolved_competing_mechanisms"
+      ]
+    },
+    {
+      "case_id": "C09",
+      "label": "October CPU spike during control-loop misses",
+      "truth": "CPU spike was a symptom of runaway diagnostic logging caused by control-loop misses, not the primary cause of misses.",
+      "motifs": [
+        "symptom_mistaken_for_cause",
+        "reverse_direction"
+      ]
+    },
+    {
+      "case_id": "C10",
+      "label": "November no-failure protection event",
+      "truth": "Overcurrent protection prevented actuator damage; damage did not occur.",
+      "motifs": [
+        "prevented_outcome",
+        "negative_event"
+      ]
+    }
+  ],
+  "key_invariants": [
+    "Temporal precedence alone does not establish causation.",
+    "Correlation alone does not establish mechanism.",
+    "Successful repair is not proof when intervention changes multiple variables.",
+    "Trigger and root cause are distinct.",
+    "Multiple contributing causes may coexist.",
+    "Retrospective narrative is not objective causal truth.",
+    "Unresolved causal mechanisms remain unresolved."
+  ]
+}

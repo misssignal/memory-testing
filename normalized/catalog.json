@@ -1,0 +1,1234 @@
+{
+  "version": "1.0",
+  "generated_by": "build_catalog.py",
+  "schema": {
+    "memory_keys": 24,
+    "query_keys": 15,
+    "min_memories": 200,
+    "min_queries": 75
+  },
+  "experiments": [
+    {
+      "directory": "experiment_01_temporal_traps",
+      "experiment_number": 1,
+      "theme": "Temporal Traps",
+      "story_world": "Northstar Array Observatory",
+      "description": "Objective event chronology, contemporaneous belief, later reconstruction, and current operating state frequently differ.",
+      "adversarial_patterns": [
+        "stale references",
+        "belief vs fact",
+        "retroactive correction",
+        "temporal ordering",
+        "scoped exceptions"
+      ],
+      "counts": {
+        "memories": 205,
+        "queries": 80,
+        "truth_roles": 9,
+        "query_categories": 9,
+        "memory_types": 44
+      },
+      "truth_roles": {
+        "historical_truth": 103,
+        "current_truth": 24,
+        "correction": 19,
+        "false_claim": 16,
+        "stale_truth": 14,
+        "misleading_distractor": 10,
+        "scoped_truth": 8,
+        "disputed_claim": 7,
+        "proposal": 4
+      },
+      "query_categories": {
+        "causal_reasoning": 12,
+        "belief_vs_fact": 12,
+        "temporal_ordering": 12,
+        "historical_reconstruction": 9,
+        "current_state": 8,
+        "entity_resolution": 8,
+        "stale_reference": 8,
+        "scope_boundary": 7,
+        "factual_recall": 4
+      },
+      "difficulty_distribution": {
+        "medium": 38,
+        "hard": 32,
+        "easy": 10
+      },
+      "files": [
+        "id_mapping.json",
+        "ingestion_chronological.jsonl",
+        "ingestion_late_arrival.jsonl",
+        "ingestion_shuffled.jsonl",
+        "manifest.json",
+        "memories.jsonl",
+        "provenance.json",
+        "queries.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": false,
+      "has_ingestion_variants": true,
+      "has_seed_memories": false,
+      "has_truth_state": true,
+      "has_provenance": true
+    },
+    {
+      "directory": "experiment_02_false_consensus",
+      "experiment_number": 2,
+      "theme": "False Consensus",
+      "story_world": "Nightglass Festival",
+      "description": "One obsolete number propagates through derivative documents to create the illusion of consensus; contrasted with genuine independent consensus.",
+      "adversarial_patterns": [
+        "citation cascade",
+        "duplicate volume",
+        "rumor propagation",
+        "retrieval amplification",
+        "source authority"
+      ],
+      "counts": {
+        "memories": 202,
+        "queries": 81,
+        "truth_roles": 10,
+        "query_categories": 9,
+        "memory_types": 104
+      },
+      "truth_roles": {
+        "derived_claim": 40,
+        "current_truth": 38,
+        "stale_truth": 34,
+        "historical_truth": 33,
+        "independent_support": 16,
+        "correction": 16,
+        "false_claim": 11,
+        "duplicate": 8,
+        "rumor": 4,
+        "paraphrase": 2
+      },
+      "query_categories": {
+        "factual_recall": 24,
+        "stale_reference": 14,
+        "provenance_tracking": 11,
+        "temporal_reasoning": 8,
+        "confidence_calibration": 8,
+        "deduplication": 5,
+        "rumor_detection": 5,
+        "source_authority": 4,
+        "belief_vs_fact": 2
+      },
+      "difficulty_distribution": {
+        "medium": 35,
+        "hard": 23,
+        "easy": 23
+      },
+      "files": [
+        "extensions.jsonl",
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "provenance.json",
+        "queries.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": true,
+      "has_query_extensions": false,
+      "has_ingestion_variants": false,
+      "has_seed_memories": false,
+      "has_truth_state": true,
+      "has_provenance": true
+    },
+    {
+      "directory": "experiment_03_entity_identity_collision",
+      "experiment_number": 3,
+      "theme": "Entity Identity Collision",
+      "story_world": "Thornfield Biotech",
+      "description": "Multiple entities share similar names, aliases, or surface forms, requiring disambiguation under ambiguity.",
+      "adversarial_patterns": [
+        "name collision",
+        "alias confusion",
+        "entity merging",
+        "context-dependent identity"
+      ],
+      "counts": {
+        "memories": 200,
+        "queries": 75,
+        "truth_roles": 8,
+        "query_categories": 10,
+        "memory_types": 8
+      },
+      "truth_roles": {
+        "underspecified": 46,
+        "globally_true": 45,
+        "scoped_true": 36,
+        "false": 25,
+        "overgeneralized": 22,
+        "partially_true": 12,
+        "unresolved": 7,
+        "corrected": 7
+      },
+      "query_categories": {
+        "A": 18,
+        "E": 12,
+        "F": 9,
+        "H": 9,
+        "I": 6,
+        "B": 6,
+        "C": 6,
+        "G": 3,
+        "D": 3,
+        "CONTROL": 3
+      },
+      "difficulty_distribution": {
+        "medium": 75
+      },
+      "files": [
+        "extensions.jsonl",
+        "id_mapping.json",
+        "ingestion_chronological.jsonl",
+        "ingestion_late_arrival.jsonl",
+        "ingestion_shuffled.jsonl",
+        "manifest.json",
+        "memories.jsonl",
+        "provenance.json",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": true,
+      "has_query_extensions": true,
+      "has_ingestion_variants": true,
+      "has_seed_memories": false,
+      "has_truth_state": true,
+      "has_provenance": true
+    },
+    {
+      "directory": "experiment_04_scope_context_partial_truth",
+      "experiment_number": 4,
+      "theme": "Scope, Context & Partial Truth",
+      "story_world": "Thornfield Biotech",
+      "description": "Claims that are true in one scope (time, department, role) are false in another; partial truths must be qualified.",
+      "adversarial_patterns": [
+        "scope-dependent truth",
+        "partial truth",
+        "overgeneralization",
+        "context collapse"
+      ],
+      "counts": {
+        "memories": 200,
+        "queries": 75,
+        "truth_roles": 9,
+        "query_categories": 14,
+        "memory_types": 8
+      },
+      "truth_roles": {
+        "scoped_true": 57,
+        "underspecified": 57,
+        "overgeneralized": 40,
+        "partially_true": 25,
+        "exception": 9,
+        "globally_true": 3,
+        "outdated": 3,
+        "false": 3,
+        "corrected": 3
+      },
+      "query_categories": {
+        "D": 9,
+        "C": 9,
+        "J": 9,
+        "A": 6,
+        "G": 6,
+        "K": 6,
+        "M": 6,
+        "X": 6,
+        "B": 3,
+        "I": 3,
+        "F": 3,
+        "H": 3,
+        "L": 3,
+        "E": 3
+      },
+      "difficulty_distribution": {
+        "medium": 75
+      },
+      "files": [
+        "extensions.jsonl",
+        "id_mapping.json",
+        "ingestion_chronological.jsonl",
+        "ingestion_late_arrival.jsonl",
+        "ingestion_shuffled.jsonl",
+        "manifest.json",
+        "memories.jsonl",
+        "provenance.json",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": true,
+      "has_query_extensions": true,
+      "has_ingestion_variants": true,
+      "has_seed_memories": false,
+      "has_truth_state": true,
+      "has_provenance": true
+    },
+    {
+      "directory": "experiment_05_contested_reality",
+      "experiment_number": 5,
+      "theme": "Contested Reality",
+      "story_world": "Thornfield Biotech",
+      "description": "Multiple parties disagree about facts; the system must represent disagreement without collapsing to one view.",
+      "adversarial_patterns": [
+        "conflicting claims",
+        "perspective-dependent truth",
+        "disputed evidence",
+        "confidence calibration"
+      ],
+      "counts": {
+        "memories": 202,
+        "queries": 153,
+        "truth_roles": 7,
+        "query_categories": 7,
+        "memory_types": 19
+      },
+      "truth_roles": {
+        "unresolved": 136,
+        "globally_true": 54,
+        "corrected": 7,
+        "false": 2,
+        "overgeneralized": 1,
+        "underspecified": 1,
+        "partially_true": 1
+      },
+      "query_categories": {
+        "9.1_current_state": 25,
+        "9.7_confidence_calibration": 25,
+        "9.2_historical_epistemic_state": 25,
+        "9.3_contention_retrieval": 25,
+        "9.4_evidence_weighting": 25,
+        "9.5_authority_traps": 25,
+        "9.6_forced_choice": 3
+      },
+      "difficulty_distribution": {
+        "medium": 153
+      },
+      "files": [
+        "extensions.jsonl",
+        "id_mapping.json",
+        "ingestion_chronological.jsonl",
+        "ingestion_late_arrival.jsonl",
+        "ingestion_shuffled.jsonl",
+        "manifest.json",
+        "memories.jsonl",
+        "provenance.json",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": true,
+      "has_query_extensions": true,
+      "has_ingestion_variants": true,
+      "has_seed_memories": false,
+      "has_truth_state": true,
+      "has_provenance": true
+    },
+    {
+      "directory": "experiment_06_evidence_lineage",
+      "experiment_number": 6,
+      "theme": "Evidence Lineage",
+      "story_world": "Thornfield Biotech",
+      "description": "Claims derive from other claims through chains of inference; the system must track provenance and detect cycles.",
+      "adversarial_patterns": [
+        "derivation chains",
+        "circular reasoning",
+        "missing provenance",
+        "independent root counting"
+      ],
+      "counts": {
+        "memories": 413,
+        "queries": 128,
+        "truth_roles": 3,
+        "query_categories": 8,
+        "memory_types": 17
+      },
+      "truth_roles": {
+        "scoped_true": 402,
+        "partially_true": 6,
+        "corrected": 5
+      },
+      "query_categories": {
+        "9.2": 34,
+        "9.1": 26,
+        "9.7": 15,
+        "9.4": 14,
+        "9.3": 13,
+        "9.6": 11,
+        "9.5": 10,
+        "9.8": 5
+      },
+      "difficulty_distribution": {
+        "medium": 128
+      },
+      "files": [
+        "extensions.jsonl",
+        "id_mapping.json",
+        "ingestion_chronological.jsonl",
+        "ingestion_late_arrival.jsonl",
+        "ingestion_shuffled.jsonl",
+        "manifest.json",
+        "memories.jsonl",
+        "provenance.json",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": true,
+      "has_query_extensions": true,
+      "has_ingestion_variants": true,
+      "has_seed_memories": false,
+      "has_truth_state": true,
+      "has_provenance": true
+    },
+    {
+      "directory": "experiment_07_shape_of_not_known",
+      "experiment_number": 7,
+      "theme": "Shape of Not-Known",
+      "story_world": "Thornfield Biotech",
+      "description": "Questions whose answers are genuinely unknown, unanswerable, or require abstention rather than a fabricated response.",
+      "adversarial_patterns": [
+        "missing data",
+        "unanswerable queries",
+        "negative inference",
+        "premise invalidity",
+        "abstention triggers"
+      ],
+      "counts": {
+        "memories": 358,
+        "queries": 80,
+        "truth_roles": 7,
+        "query_categories": 8,
+        "memory_types": 12
+      },
+      "truth_roles": {
+        "scoped_true": 219,
+        "globally_true": 69,
+        "underspecified": 62,
+        "exception": 4,
+        "unresolved": 2,
+        "partially_true": 1,
+        "false": 1
+      },
+      "query_categories": {
+        "9.8": 21,
+        "9.1": 16,
+        "9.2": 12,
+        "9.4": 8,
+        "9.3": 8,
+        "9.6": 6,
+        "9.5": 6,
+        "9.7": 3
+      },
+      "difficulty_distribution": {
+        "medium": 80
+      },
+      "files": [
+        "extensions.jsonl",
+        "id_mapping.json",
+        "ingestion_chronological.jsonl",
+        "ingestion_late_arrival.jsonl",
+        "ingestion_shuffled.jsonl",
+        "manifest.json",
+        "memories.jsonl",
+        "provenance.json",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": true,
+      "has_query_extensions": true,
+      "has_ingestion_variants": true,
+      "has_seed_memories": false,
+      "has_truth_state": true,
+      "has_provenance": true
+    },
+    {
+      "directory": "experiment_08_episode_reconstruction",
+      "experiment_number": 8,
+      "theme": "Episode Reconstruction",
+      "story_world": "Kestrel Scheduler Migration",
+      "description": "Reconstructing multi-step episodes from fragmented, out-of-order observations across different temporal windows.",
+      "adversarial_patterns": [
+        "temporal fragmentation",
+        "out-of-order ingestion",
+        "episode boundaries",
+        "partial observation"
+      ],
+      "counts": {
+        "memories": 525,
+        "queries": 129,
+        "truth_roles": 4,
+        "query_categories": 15,
+        "memory_types": 10
+      },
+      "truth_roles": {
+        "objective_trace": 516,
+        "precursor": 3,
+        "consequence": 3,
+        "ambiguous": 3
+      },
+      "query_categories": {
+        "point_membership": 45,
+        "negative_membership": 26,
+        "episode_membership": 12,
+        "episode_boundary": 12,
+        "episode_reconstruction": 12,
+        "cross_artifact": 5,
+        "semantic_near_miss": 4,
+        "ambiguous_membership": 3,
+        "resumption": 2,
+        "consequence_vs_membership": 2,
+        "interruption": 2,
+        "recurrence": 1,
+        "same_artifact_multi_episode": 1,
+        "false_merge": 1,
+        "precursor_vs_membership": 1
+      },
+      "difficulty_distribution": {
+        "medium": 129
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "seed_memories.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": true,
+      "has_ingestion_variants": false,
+      "has_seed_memories": true,
+      "has_truth_state": true,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_09_causal_attribution",
+      "experiment_number": 9,
+      "theme": "Causal Attribution",
+      "story_world": "Kestrel Scheduler Migration",
+      "description": "Distinguishing correlation from causation, tracking causal chains, and avoiding post-hoc attribution errors.",
+      "adversarial_patterns": [
+        "spurious correlation",
+        "confounded causes",
+        "causal chain breaks",
+        "post-hoc reasoning"
+      ],
+      "counts": {
+        "memories": 525,
+        "queries": 133,
+        "truth_roles": 6,
+        "query_categories": 17,
+        "memory_types": 10
+      },
+      "truth_roles": {
+        "objective_trace": 303,
+        "background": 180,
+        "belief": 21,
+        "hypothesis": 12,
+        "official_position": 8,
+        "retrospective_interpretation": 1
+      },
+      "query_categories": {
+        "single_memory_overclaim": 55,
+        "distractor_resistance": 25,
+        "causal_status": 10,
+        "causal_evidence": 10,
+        "historical_causal_belief": 10,
+        "causal_layering": 6,
+        "historical_epistemic_state": 4,
+        "causal_reasoning_control": 4,
+        "post_hoc": 1,
+        "reverse_causality": 1,
+        "trigger_vs_root": 1,
+        "confounded_intervention": 1,
+        "common_cause": 1,
+        "clean_intervention": 1,
+        "unresolved_causality": 1,
+        "symptom_vs_cause": 1,
+        "prevented_outcome": 1
+      },
+      "difficulty_distribution": {
+        "medium": 133
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "seed_memories.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": true,
+      "has_ingestion_variants": false,
+      "has_seed_memories": true,
+      "has_truth_state": true,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_10_kestrel_full_corpus",
+      "experiment_number": 10,
+      "theme": "Kestrel Full Corpus",
+      "story_world": "Kestrel Scheduler Migration",
+      "description": "Complete corpus combining episode reconstruction and causal reasoning at scale with delivery-run invariants.",
+      "adversarial_patterns": [
+        "scale",
+        "cross-episode reasoning",
+        "run invariants",
+        "temporal span"
+      ],
+      "counts": {
+        "memories": 500,
+        "queries": 120,
+        "truth_roles": 20,
+        "query_categories": 21,
+        "memory_types": 54
+      },
+      "truth_roles": {
+        "primary_record": 195,
+        "primary_observation": 65,
+        "primary_machine_observation": 52,
+        "primary_machine_record": 40,
+        "belief_record": 32,
+        "transport_record": 25,
+        "derived_claim": 23,
+        "corrective_record": 16,
+        "derived_summary": 15,
+        "initial_record": 15,
+        "primary_source": 12,
+        "derived_representation": 2,
+        "accurate_record_of_incomplete_system_state": 1,
+        "incorrect_record": 1,
+        "derived_belief_summary": 1,
+        "derived_provenance_record": 1,
+        "primary_system_state": 1,
+        "derived_interpretation": 1,
+        "epistemic_boundary": 1,
+        "derived_final_reconstruction": 1
+      },
+      "query_categories": {
+        "event_vs_discovery": 20,
+        "ambiguous_order": 10,
+        "order_invariance": 10,
+        "non_impacting_late_evidence": 10,
+        "confidence_reduction": 10,
+        "temporal_overwrite": 10,
+        "replay_inflation": 10,
+        "authored_vs_event": 10,
+        "provenance": 9,
+        "causal_restraint": 6,
+        "historical_state": 2,
+        "belief_state": 2,
+        "arrival_relative": 2,
+        "event_time": 2,
+        "current_state": 1,
+        "explanation": 1,
+        "correction": 1,
+        "historical_record": 1,
+        "epistemic_boundary": 1,
+        "observation_time": 1,
+        "authorship_time": 1
+      },
+      "difficulty_distribution": {
+        "medium": 120
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "provenance.json",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": true,
+      "has_ingestion_variants": false,
+      "has_seed_memories": false,
+      "has_truth_state": true,
+      "has_provenance": true
+    },
+    {
+      "directory": "experiment_11_forgetting_retraction_deletion",
+      "experiment_number": 11,
+      "theme": "Forgetting, Retraction & Deletion",
+      "story_world": "Verdant Municipal Water District",
+      "description": "Memories that should be forgotten, retracted, or deleted \u2014 testing whether the system respects removal signals.",
+      "adversarial_patterns": [
+        "soft deletion",
+        "hard deletion",
+        "retraction",
+        "right to be forgotten",
+        "tombstone reasoning"
+      ],
+      "counts": {
+        "memories": 207,
+        "queries": 77,
+        "truth_roles": 6,
+        "query_categories": 9,
+        "memory_types": 12
+      },
+      "truth_roles": {
+        "objective_trace": 99,
+        "background": 93,
+        "derived_claim": 7,
+        "hypothesis": 3,
+        "belief": 3,
+        "retraction": 2
+      },
+      "query_categories": {
+        "distractor_resistance": 20,
+        "current_state": 13,
+        "deletion_status": 10,
+        "cascade_detection": 9,
+        "lifecycle_tracking": 8,
+        "historical_state": 7,
+        "retrieval_prohibition": 4,
+        "provenance_after_deletion": 4,
+        "aggregate_preservation": 2
+      },
+      "difficulty_distribution": {
+        "medium": 77
+      },
+      "files": [
+        "extensions.jsonl",
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "seed_memories.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": true,
+      "has_query_extensions": true,
+      "has_ingestion_variants": false,
+      "has_seed_memories": true,
+      "has_truth_state": true,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_12_privacy_namespace_isolation",
+      "experiment_number": 12,
+      "theme": "Privacy & Namespace Isolation",
+      "story_world": "Palomar Municipal Services",
+      "description": "Multi-tenant data isolation where queries must respect access control boundaries and not leak across namespaces.",
+      "adversarial_patterns": [
+        "cross-tenant leakage",
+        "access control",
+        "namespace boundaries",
+        "aggregation inference"
+      ],
+      "counts": {
+        "memories": 212,
+        "queries": 80,
+        "truth_roles": 4,
+        "query_categories": 9,
+        "memory_types": 14
+      },
+      "truth_roles": {
+        "objective_trace": 106,
+        "background": 54,
+        "current_truth": 51,
+        "derived_claim": 1
+      },
+      "query_categories": {
+        "distractor_resistance": 13,
+        "access_level": 12,
+        "namespace_isolation": 9,
+        "alias_collision": 9,
+        "cross_tenant_sharing": 9,
+        "access_revocation": 8,
+        "shared_space": 8,
+        "mixed_scope_summary": 6,
+        "cascading_scope": 6
+      },
+      "difficulty_distribution": {
+        "medium": 59,
+        "hard": 15,
+        "easy": 6
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "seed_memories.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": true,
+      "has_ingestion_variants": false,
+      "has_seed_memories": true,
+      "has_truth_state": true,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_13_consolidation_summarization_drift",
+      "experiment_number": 13,
+      "theme": "Consolidation & Summarization Drift",
+      "story_world": "Halcyon Brewing Cooperative",
+      "description": "Information distortion through progressive summarization \u2014 each layer loses nuance, flattens scope, or shifts meaning.",
+      "adversarial_patterns": [
+        "summarization loss",
+        "layer drift",
+        "detail flattening",
+        "meaning shift"
+      ],
+      "counts": {
+        "memories": 232,
+        "queries": 98,
+        "truth_roles": 6,
+        "query_categories": 10,
+        "memory_types": 12
+      },
+      "truth_roles": {
+        "ground_truth": 77,
+        "current_truth": 65,
+        "distorted_summary": 52,
+        "background": 36,
+        "editorial_inference": 1,
+        "false_claim": 1
+      },
+      "query_categories": {
+        "temporal_flattening": 13,
+        "qualifier_loss": 12,
+        "provenance_loss": 12,
+        "identity_collapse": 11,
+        "lossy_numeric": 11,
+        "distractor_resistance": 11,
+        "uncertainty_loss": 10,
+        "summary_drift": 7,
+        "summarization_awareness": 6,
+        "layer_preference": 5
+      },
+      "difficulty_distribution": {
+        "hard": 47,
+        "medium": 34,
+        "easy": 13,
+        "very_hard": 4
+      },
+      "files": [
+        "extensions.jsonl",
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "seed_memories.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": true,
+      "has_query_extensions": true,
+      "has_ingestion_variants": false,
+      "has_seed_memories": true,
+      "has_truth_state": true,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_14_semantic_near_miss",
+      "experiment_number": 14,
+      "theme": "Semantic Near-Miss & Distractor Resistance",
+      "story_world": "Ridgeline Alpine Rescue",
+      "description": "Semantically similar but factually distinct memories that a retrieval system might conflate.",
+      "adversarial_patterns": [
+        "near-miss retrieval",
+        "semantic similarity traps",
+        "distractor confusion",
+        "surface-form matching"
+      ],
+      "counts": {
+        "memories": 214,
+        "queries": 75,
+        "truth_roles": 2,
+        "query_categories": 9,
+        "memory_types": 28
+      },
+      "truth_roles": {
+        "ground_truth": 159,
+        "background": 55
+      },
+      "query_categories": {
+        "wrong_entity": 11,
+        "control": 10,
+        "wrong_time": 9,
+        "template_reuse": 9,
+        "name_collision": 9,
+        "terminology": 7,
+        "misleading_embedding": 7,
+        "cross_case": 7,
+        "near_identical_events": 6
+      },
+      "difficulty_distribution": {
+        "hard": 47,
+        "medium": 11,
+        "easy": 10,
+        "very_hard": 7
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl",
+        "query_extensions.jsonl",
+        "seed_memories.jsonl",
+        "truth_state.json"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": true,
+      "has_ingestion_variants": false,
+      "has_seed_memories": true,
+      "has_truth_state": true,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_15_contradictory_metadata",
+      "experiment_number": 15,
+      "theme": "Contradictory Metadata",
+      "story_world": "Ashford County Historical Archive",
+      "description": "Metadata (timestamps, source labels, confidence scores) contradicts the content of the memories themselves.",
+      "adversarial_patterns": [
+        "metadata-content conflict",
+        "timestamp inconsistency",
+        "confidence miscalibration",
+        "label error"
+      ],
+      "counts": {
+        "memories": 208,
+        "queries": 75,
+        "truth_roles": 1,
+        "query_categories": 9,
+        "memory_types": 4
+      },
+      "truth_roles": {
+        "ground_truth": 208
+      },
+      "query_categories": {
+        "control": 14,
+        "source_dependent": 9,
+        "revised_estimates": 8,
+        "observer_disagreement": 8,
+        "regulatory_conflict": 8,
+        "self_contradicting": 8,
+        "contradictory_sources": 7,
+        "measurement_conflict": 7,
+        "cross_case": 6
+      },
+      "difficulty_distribution": {
+        "hard": 61,
+        "easy": 13,
+        "medium": 1
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": false,
+      "has_ingestion_variants": false,
+      "has_seed_memories": false,
+      "has_truth_state": false,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_16_multi_hop_dependencies",
+      "experiment_number": 16,
+      "theme": "Multi-Hop Dependencies",
+      "story_world": "Cascadia Transit Authority",
+      "description": "Answering queries requires chaining information across multiple memories in sequence.",
+      "adversarial_patterns": [
+        "multi-hop reasoning",
+        "chain breaks",
+        "intermediate inference",
+        "transitive dependencies"
+      ],
+      "counts": {
+        "memories": 202,
+        "queries": 76,
+        "truth_roles": 1,
+        "query_categories": 15,
+        "memory_types": 5
+      },
+      "truth_roles": {
+        "ground_truth": 202
+      },
+      "query_categories": {
+        "causal_chain": 14,
+        "cross_case": 13,
+        "temporal_chain": 7,
+        "factual_retrieval": 5,
+        "transfer_cascade": 4,
+        "staff_dependency": 4,
+        "budget_chain": 4,
+        "control": 4,
+        "cascade_analysis": 4,
+        "intermediate_node": 4,
+        "information_chain": 3,
+        "equipment_provenance": 3,
+        "full_chain_traversal": 3,
+        "meta_analysis": 2,
+        "temporal_overlap": 2
+      },
+      "difficulty_distribution": {
+        "hard": 56,
+        "medium": 11,
+        "easy": 9
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl",
+        "query_extensions.jsonl"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": true,
+      "has_ingestion_variants": false,
+      "has_seed_memories": false,
+      "has_truth_state": false,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_17_belief_state_vs_objective",
+      "experiment_number": 17,
+      "theme": "Belief State vs Objective Reality",
+      "story_world": "Lakeshore Community Health Clinic",
+      "description": "Agents hold beliefs that diverge from objective reality; the system must track both without conflation.",
+      "adversarial_patterns": [
+        "belief-reality divergence",
+        "agent perspective",
+        "belief update lag",
+        "objective ground truth"
+      ],
+      "counts": {
+        "memories": 206,
+        "queries": 75,
+        "truth_roles": 4,
+        "query_categories": 15,
+        "memory_types": 4
+      },
+      "truth_roles": {
+        "ground_truth": 158,
+        "contextual_true": 26,
+        "belief_only": 20,
+        "supporting_belief": 2
+      },
+      "query_categories": {
+        "belief_vs_reality": 13,
+        "consequence_of_belief": 11,
+        "root_cause_analysis": 8,
+        "methodology_analysis": 6,
+        "belief_attribution": 6,
+        "factual_retrieval": 6,
+        "cross_case_synthesis": 4,
+        "temporal_belief_gap": 4,
+        "meta_analysis": 4,
+        "decision_evaluation": 3,
+        "source_reliability": 2,
+        "factual_discrepancy": 2,
+        "witness_account": 2,
+        "quantitative_comparison": 2,
+        "information_chain": 2
+      },
+      "difficulty_distribution": {
+        "hard": 44,
+        "medium": 25,
+        "easy": 6
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": false,
+      "has_ingestion_variants": false,
+      "has_seed_memories": false,
+      "has_truth_state": false,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_18_counterfactual_negative",
+      "experiment_number": 18,
+      "theme": "Counterfactual & Negative Reasoning",
+      "story_world": "Cedarpoint Unified School District",
+      "description": "Reasoning about events that did not happen, conditions that do not hold, and counterfactual scenarios.",
+      "adversarial_patterns": [
+        "negative evidence",
+        "absence of event",
+        "counterfactual queries",
+        "closed-world assumption"
+      ],
+      "counts": {
+        "memories": 207,
+        "queries": 76,
+        "truth_roles": 5,
+        "query_categories": 8,
+        "memory_types": 3
+      },
+      "truth_roles": {
+        "ground_truth": 149,
+        "counterfactual": 32,
+        "negation": 20,
+        "contextual_true": 5,
+        "supporting_belief": 1
+      },
+      "query_categories": {
+        "factual_recall": 26,
+        "negation_detection": 14,
+        "counterfactual_distinction": 9,
+        "scope_preservation": 7,
+        "evidence_absence": 7,
+        "status_tracking": 5,
+        "temporal_reasoning": 5,
+        "confusion_resistance": 3
+      },
+      "difficulty_distribution": {
+        "medium": 31,
+        "easy": 30,
+        "hard": 15
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": false,
+      "has_ingestion_variants": false,
+      "has_seed_memories": false,
+      "has_truth_state": false,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_19_repeated_exposure",
+      "experiment_number": 19,
+      "theme": "Repeated Exposure & Confidence Inflation",
+      "story_world": "Pinehurst Property Management",
+      "description": "Repeated exposure to the same claim inflates confidence without adding new evidence.",
+      "adversarial_patterns": [
+        "repetition bias",
+        "confidence inflation",
+        "echo amplification",
+        "evidence-free reinforcement"
+      ],
+      "counts": {
+        "memories": 201,
+        "queries": 78,
+        "truth_roles": 6,
+        "query_categories": 8,
+        "memory_types": 4
+      },
+      "truth_roles": {
+        "ground_truth": 105,
+        "repeated_claim": 52,
+        "inflated_claim": 24,
+        "corrected": 16,
+        "contextual_true": 3,
+        "supporting_belief": 1
+      },
+      "query_categories": {
+        "factual_recall": 17,
+        "confidence_calibration": 13,
+        "source_quality": 12,
+        "deduplication": 9,
+        "status_tracking": 9,
+        "correction_handling": 8,
+        "provenance_tracking": 8,
+        "temporal_reasoning": 2
+      },
+      "difficulty_distribution": {
+        "hard": 36,
+        "medium": 29,
+        "easy": 13
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": false,
+      "has_ingestion_variants": false,
+      "has_seed_memories": false,
+      "has_truth_state": false,
+      "has_provenance": false
+    },
+    {
+      "directory": "experiment_20_scope_boundary",
+      "experiment_number": 20,
+      "theme": "Cross-Context Transfer & Scope Boundary Violation",
+      "story_world": "Mariner's Wharf Redevelopment Project",
+      "description": "Information valid in one context (project, jurisdiction, role, time) is incorrectly applied to another.",
+      "adversarial_patterns": [
+        "scope violation",
+        "cross-context transfer",
+        "role-based boundaries",
+        "jurisdictional limits"
+      ],
+      "counts": {
+        "memories": 205,
+        "queries": 78,
+        "truth_roles": 6,
+        "query_categories": 8,
+        "memory_types": 4
+      },
+      "truth_roles": {
+        "ground_truth": 126,
+        "scoped_true": 52,
+        "scope_violation": 10,
+        "out_of_scope": 9,
+        "supporting_belief": 5,
+        "contextual_true": 3
+      },
+      "query_categories": {
+        "factual_recall": 16,
+        "scope_enforcement": 14,
+        "role_based_access": 11,
+        "temporal_scoping": 11,
+        "client_confidentiality": 7,
+        "jurisdictional_boundary": 7,
+        "off_record_handling": 7,
+        "status_tracking": 5
+      },
+      "difficulty_distribution": {
+        "hard": 34,
+        "medium": 28,
+        "easy": 16
+      },
+      "files": [
+        "id_mapping.json",
+        "manifest.json",
+        "memories.jsonl",
+        "queries.jsonl"
+      ],
+      "has_extensions": false,
+      "has_query_extensions": false,
+      "has_ingestion_variants": false,
+      "has_seed_memories": false,
+      "has_truth_state": false,
+      "has_provenance": false
+    }
+  ],
+  "totals": {
+    "experiments": 20,
+    "memories": 5424,
+    "queries": 1842
+  }
+}

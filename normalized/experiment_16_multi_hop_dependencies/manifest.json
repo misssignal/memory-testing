@@ -1,0 +1,25 @@
+{
+  "experiment": "exp16_multi_hop_dependencies",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 9192,
+      "sha256": "09db6c5234371dc976cfe2b641f8f600db0ceecf41d97e4a046594c3c433e4d7"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 168891,
+      "sha256": "2f004f484220624744207a8557543b102e91e632e1b57ceda8feb4599e0b8617"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 56027,
+      "sha256": "edacabc98ea1f4602066fa93d6b57552dcdf9beae45f1e34177b700fe941d238"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 4915,
+      "sha256": "9555192b80860adaa2048e28c94bd22f295d716debaacceaaba33de6fc734541"
+    }
+  ]
+}

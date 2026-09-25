@@ -1,0 +1,35 @@
+{
+  "experiment": "exp08_episode_reconstruction",
+  "files": [
+    {
+      "path": "id_mapping.json",
+      "bytes": 18138,
+      "sha256": "28def598d47a203d9e51670df0eafbac8ef19a82d093d62804f42bba7ff58a93"
+    },
+    {
+      "path": "memories.jsonl",
+      "bytes": 419571,
+      "sha256": "22269b5984c1c9da7d9f678ee549bbce966b8524b537a7e5420455c0358cf4f8"
+    },
+    {
+      "path": "queries.jsonl",
+      "bytes": 69030,
+      "sha256": "28fbc65773e62e6413990ee1138b86d3c70237c5dab3b4b7ee71b44f5e49293f"
+    },
+    {
+      "path": "query_extensions.jsonl",
+      "bytes": 18186,
+      "sha256": "1133b5248df3bc80abc70c444cc6b3dbc33eaab3338cb57a2ef6b1489ae08efb"
+    },
+    {
+      "path": "seed_memories.jsonl",
+      "bytes": 46082,
+      "sha256": "197b1d76f516b2ac91869f07394de2003b13e4441a98b044259653227b8ffcd3"
+    },
+    {
+      "path": "truth_state.json",
+      "bytes": 6079,
+      "sha256": "67ffd58f808517cd7bf3f08920457c72002176137ec7dcce4cc471aacc77105d"
+    }
+  ]
+}
